@@ -1,0 +1,34 @@
+[user]
+	name = gaitano
+	email = dev.gaitano@gmail.com
+[core]
+	compression = 5
+	whitespace = error
+	preloadIndex = true
+
+[url "git@github.com:dev-gaitano/"]
+	insteadOf = "devg:"
+
+[url "git@github.com:"]
+	insteadOf = "gh:"
+
+[init]
+	defaultBranch = dev
+
+[status]
+	branch = true
+	showStash = true
+
+[diff]
+	context = 3
+	renames = copies
+	interHunkContext = 10
+
+[push]
+	default = current
+
+[pull]
+	default = current
+
+[rebase]
+	autostash = true

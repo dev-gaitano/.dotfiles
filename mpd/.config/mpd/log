@@ -1,0 +1,141 @@
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+WARNING: Unhandled message: interface=org.freedesktop.DBus, path=/org/freedesktop/DBus, member=ActivatableServicesChanged
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T18:45:27 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T18:45:27 update: added /'king.'.mp3
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T18:53:42 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T18:53:42 update: added /king-db.mp3
+2025-07-28T18:53:42 update: removing 'king.'.mp3
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:23:01 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:04 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:07 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:09 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:09 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:09 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:10 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:10 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:11 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:11 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:11 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:11 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:12 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:12 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:12 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:14 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:14 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:14 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:18 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:18 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:18 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:19 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:19 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:19 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:20 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:20 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:20 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:20 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:20 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:20 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:21 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:21 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:21 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:22 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:22 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:22 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:22 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:22 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:22 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:33 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:33 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:33 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:33 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:33 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:34 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:37 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:37 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:43:37 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:51 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:43:53 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:44:02 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:44:04 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:44:04 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:44:04 player: played "king-db.mp3"
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:44:05 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+[src/libmpg123/parse.c:skip_junk():1300] error: Giving up searching valid MPEG header after 65536 bytes of junk.
+2025-07-28T19:44:06 mpg123: mpg123_getformat() failed: A generic mpg123 error.
+2025-07-28T19:44:06 player: played "king-db.mp3"

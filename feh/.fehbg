@@ -1,0 +1,2 @@
+#!/bin/sh
+feh --no-fehbg --bg-fill '/home/gaitano/Pictures/paintings/odalisque-with-tambourine-1914.jpg' 

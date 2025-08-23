@@ -3,7 +3,7 @@ fastfetch --logo "~/Documents/fetch-logo.txt"
 
 # Tmux startup script
 if [[ -z "$TMUX" ]]; then
-	~/scripts/startUp	
+	~/.scripts/startUp	
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -138,13 +138,12 @@ alias obsidian="~/Downloads/Obsidian-1.8.10.AppImage"
 alias blender="~/Downloads/blender-4.5.0-linux-x64/blender"
 alias browser="firefox"
 alias ra="ranger"
-alias nvim="~/Downloads/squashfs-root/AppRun"
 
 # Scripts
-alias tmuc="~/scripts/tmuxCreate"
-alias pywal="~/scripts/pywal.sh"
-alias nvimUpdate="~/scripts/neovimUpdate.sh"
-alias schrofer="~/scripts/schroferStart.sh"
+alias tmuc="~/.scripts/tmuxCreate"
+alias pywal="~/.scripts/pywal.sh"
+alias nvimUpdate="~/.scripts/neovimUpdate.sh"
+alias schrofer="~/.scripts/schroferStart.sh"
 
 # Custom Aliases
 # git
@@ -165,13 +164,13 @@ alias gi="git init"
 alias gcl="git clone"
 
 # Obsidian CLI
-alias obsdnOpen="nvim ~/Desktop/sftw/obsidian/gaitanos_mind"
-alias obsdn="cd ~/Desktop/sftw/obsidian/gaitanos_mind"
-alias obsdn1="cd ~/Desktop/sftw/obsidian/gaitanos_mind/'1 - Fleeting Notes'"
-alias obsdn2="cd ~/Desktop/sftw/obsidian/gaitanos_mind/'2 - Literature Notes'"
-alias obsdn3="cd ~/Desktop/sftw/obsidian/gaitanos_mind/'3 - Permanent Notes'"
-alias obsdn4="cd ~/Desktop/sftw/obsidian/gaitanos_mind/'4 - Source'"
-alias obsdn5="cd ~/Desktop/sftw/obsidian/gaitanos_mind/'5 - MOCs'"
+alias obsdnOpen="nvim ~/obsidian/gaitanos_mind"
+alias obsdn="cd ~/obsidian/gaitanos_mind"
+alias obsdn1="cd ~/obsidian/gaitanos_mind/'1 - Fleeting Notes'"
+alias obsdn2="cd ~/obsidian/gaitanos_mind/'2 - Literature Notes'"
+alias obsdn3="cd ~/obsidian/gaitanos_mind/'3 - Permanent Notes'"
+alias obsdn4="cd ~/obsidian/gaitanos_mind/'4 - Source'"
+alias obsdn5="cd ~/obsidian/gaitanos_mind/'5 - MOCs'"
 
 
 export NVM_DIR="$HOME/.nvm"
@@ -183,7 +182,7 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$PATH:/home/gaitano/.local/bin"
 
 
-export PATH="$HOME/gaitano/scripts:$PATH"
+export PATH="$HOME/gaitano/.scripts:$PATH"
 
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

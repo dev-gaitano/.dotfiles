@@ -1,0 +1,8 @@
+#!/usr/bin/zsh
+
+cd ~/Builds/neovim
+git checkout release-0.11
+git pull
+make distclean
+make CMAKE_BUILD_TYPE=Release
+sudo make install

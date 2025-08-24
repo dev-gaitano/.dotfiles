@@ -17,7 +17,6 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
 
 	NVIM_VERSION=$(nvim --version | head -n 1)
 	echo "$NVIM_VERSION successfully installed"
-	exit 0
 else
 	exit 0
 fi

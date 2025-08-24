@@ -1,6 +1,6 @@
-#!/usr/bin/zsh
+#!/usr/bin/env sh
 
-cd ~/Builds/neovim
+cd ~/neovim
 git checkout release-0.11
 git pull
 make distclean

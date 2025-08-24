@@ -1,4 +1,5 @@
-#!/bin/sh
+#!/usr/bin/env sh
+
 BLANK='#00000000'
 CLEAR='#ffffff22'
 DEFAULT='#00897bE6'

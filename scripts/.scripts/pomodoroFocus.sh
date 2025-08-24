@@ -1,4 +1,4 @@
-#!/usr/bin/zsh 
+#!/usr/bin/env sh 
 
 # Usage: ./pomodoro -s <work_minutes> <break_minutes> <sessions>
 # Example: ./pomodoro -s 45 15 2

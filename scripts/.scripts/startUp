@@ -1,15 +1,9 @@
 #!/usr/bin/env sh
 
-name="$USER"
-
-echo "Goood Morning, $name!"
-echo "Today is $(date +%A), $(date +%B) $(date +%d), $(date +%Y)."
-echo " "
-echo -n "Enter name of the tmux session: " 
-read SESSION
-echo " "
+SESSION=1914
 
 echo "Creating a new tmux session \"$SESSION\"..."
+echo " "
 
 sleep 2
 
@@ -23,6 +17,7 @@ fi
 
 tmux new-session -d -s "$SESSION" -n main
 tmux send-keys -t "$SESSION:1" "clear" C-m
+tmux send-keys -t "$SESSION:1" "~/.scripts/rss-feed.sh" C-m
 tmux new-window -t "$SESSION:2" -n ranger
 tmux send-keys -t "$SESSION:2" "ranger" C-m
 tmux new-window -t "$SESSION:3" -n ai
@@ -31,5 +26,5 @@ tmux send-keys -t "$SESSION:3" "gemini" C-m
 tmux a -t "$SESSION":1
 
 
-
 echo "attached to the tmux session $SESSION."
+echo " "

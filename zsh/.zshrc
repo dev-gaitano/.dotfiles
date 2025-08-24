@@ -1,5 +1,5 @@
-# fetch
-fastfetch --logo "~/Documents/fetch-logo.txt"
+~/.scripts/pywal.sh
+echo " "
 
 # Tmux startup script
 if [[ -z "$TMUX" ]]; then

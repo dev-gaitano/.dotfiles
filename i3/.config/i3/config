@@ -38,11 +38,11 @@ exec --no-startup-id xrandr --output HDMI-1 --mode 1920x1080 --right-of eDP-1 --
 set $mod Mod4
 set $polybar polybar
 set $term kitty
-set $browser firefox
+#set $browser firefox
+set $browser firefox-dev
 set $spotify spotify
 set $discord discord
-set $obsidian ~/Downloads/'Obsidian-1.8.10.AppImage'
-
+set $obsidian obsidian
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -77,6 +77,8 @@ exec --no-startup-id dunst --config ~/.config/dunst/dunstrc
 exec --no-startup-id i3-msg "workspace 1; exec $term"
 exec --no-startup-id i3-msg "workspace 2; exec $browser"
 exec --no-startup-id i3-msg "workspace 3; exec $spotify"
+exec --no-startup-id i3-msg "workspace 4; exec flatpak run com.protonvpn.www"
+exec --no-startup-id i3-msg "workspace 4; exec flatpak run md.obsidian.Obsidian"
 
 
 
@@ -91,8 +93,8 @@ set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/volumeNotify.sh up
 bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/volumeNotify.sh down
 bindsym XF86AudioMute        exec --no-startup-id ~/.config/i3/volumeNotify.sh mute
-bindsym $mod+F6 exec --no-startup-id ~/.config/i3/volume_notify.sh down
-bindsym $mod+F7 exec --no-startup-id ~/.config/i3/volume_notify.sh up
+bindsym $mod+F6 exec --no-startup-id ~/.config/i3/volumeNotify.sh down
+bindsym $mod+F7 exec --no-startup-id ~/.config/i3/volumeNotify.sh up
 
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
@@ -247,5 +249,3 @@ bindsym $mod+r mode "resize"
 bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+Shift+m move container to workspace current
 bindsym $mod+minus scratchpad show
-
-for_window [class="obs"] move scratchpad

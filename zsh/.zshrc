@@ -133,9 +133,6 @@ alias picomconf="nvim ~/.config/picom/picom.conf"
 alias dunstconf="nvim ~/.config/dunst/dunstrc"
 
 # Programs
-alias zen="~/Downloads/zen/zen"
-alias obsidian="~/Downloads/Obsidian-1.8.10.AppImage"
-alias blender="~/Downloads/blender-4.5.0-linux-x64/blender"
 alias browser="firefox"
 alias ra="ranger"
 
@@ -162,6 +159,11 @@ alias gco="git checkout"
 alias gb="git branch"
 alias gi="git init"
 alias gcl="git clone"
+
+# tmux
+alias ta='tmux attach'
+alias tl='tmux list-sessions'
+alias tn='tmux new-session -s'
 
 # Obsidian CLI
 alias obsdnOpen="nvim ~/obsidian/gaitanos_mind"
@@ -197,7 +199,7 @@ export FZF_DEFAULT_COMMAND='rg --files --hidden'
 #export FZF_DEFAULT_OPTS="--border --inline-info"
 export FZF_DEFAULT_OPTS="--style full --height 100% --preview 'batcat --color=always {}' --layout=reverse --bind 'focus:transform-header:file --brief {}'"
 
-source ~/powerlevel10k/powerlevel10k.zsh-theme
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
 
 
 eval "$(zoxide init zsh)"
@@ -205,3 +207,5 @@ eval "$(zoxide init zsh)"
 
 export MANPAGER="sh -c 'col -bx | batcat -l man'"
 export MANROFFOPT="-c"
+
+setopt CORRECT

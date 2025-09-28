@@ -1,0 +1,14 @@
+{
+  "sessionId": "a9ddc9ad-48f3-4d19-9878-c928dee51764",
+  "projectHash": "db93fa14cb182e4e1ebfa86593cab01cfa1323de9a425bcc1a8fd16c9f2cc8f9",
+  "startTime": "2025-09-27T05:40:11.696Z",
+  "lastUpdated": "2025-09-27T05:40:11.697Z",
+  "messages": [
+    {
+      "id": "e68e6504-999f-4982-b0d4-1e5dac1d5c6b",
+      "timestamp": "2025-09-27T05:40:11.697Z",
+      "type": "user",
+      "content": "Hallo chat, explain mein gemini config"
+    }
+  ]
+}

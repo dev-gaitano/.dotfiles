@@ -1,10 +1,12 @@
 " BASE SETTINGS
 let mapleader = "\<Space>"
 
+
 " Line Numbers set number
 set number
 set relativenumber
 set cursorline
+set conceallevel=2
 
 " Display, indentation and Wrapping
 set autoindent
@@ -57,11 +59,11 @@ nnoremap gK :lua require("hover").hover_select()<CR>
 nnoremap <leader>d :lua require("hover.providers.dictionary").hover()<CR>
 
 " Use Ctrl + Tab / Ctrl + Shift + Tab to switch tabs
-nnoremap <C-t>   :tabnext<CR>
+nnoremap <C-Tab>   :tabnext<CR>
 nnoremap <C-A-t> :tabprevious<CR>
 
 " Open a new tab quickly
-nnoremap <C-n> :tabnew<CR>
+nnoremap <C-t> :tabnew<CR>
 
 " Close the current tab
 nnoremap <C-w> :tabclose<CR>
@@ -168,6 +170,7 @@ Plug 'CopilotC-Nvim/CopilotChat.nvim' " Copilot Chat integration
 Plug 'MeanderingProgrammer/render-markdown.nvim' " Render markdown syntax
 Plug 'code-biscuits/nvim-biscuits'    " Show code context in the gutter
 Plug 'epwalsh/obsidian.nvim'          " Obsidian integration for Neovim
+Plug 'epwalsh/pomo.nvim'          " Pomodoro timer
 Plug 'stevearc/conform.nvim'	      " Code formatting plugin
 Plug 'folke/zen-mode.nvim'	      " Zen mode
 Plug 'folke/twilight.nvim'	      " Dim inactive portions of the code
@@ -180,6 +183,8 @@ Plug '3rd/diagram.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug '0x100101/lab.nvim', { 'do': 'cd js && npm ci' }
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'rcarriga/nvim-notify'
 
 call plug#end()
 
@@ -562,6 +567,9 @@ EOF
 " OBSIDIAN NVIM
 autocmd BufRead,BufNewFile ~/Desktop/sftw/obsidian/*/*.md setlocal conceallevel=2
 nnoremap <leader>op :lua require("obsidianPreview").preview_link()<CR>
+nnoremap <leader>ot :ObsidianTemplate<CR>
+nnoremap <leader>ol :ObsidianFollowLink<CR>
+nnoremap <leader>on :ObsidianNew<CR>
 
 lua << EOF
 require("obsidian").setup({
@@ -570,8 +578,57 @@ require("obsidian").setup({
       name = "gaitanos_mind",
       path = "~/obsidian/gaitanos_mind",
     },
-  }
+  },
+  completion = {
+    nvim_cmp = true,
+    min_chars = 2,
+  },
+  templates = {
+    folder = "Templates", -- das ist der Directory inside mein vault
+    date_format = "%a %d %B %Y",
+    time_format = "%H:%M",
+  },
+  attachments = {
+    img_folder = "~/obsidian/gaitanos_mind/Media/",
+  },
+  new_notes_location = "~/obsidian/gaitanos_mind/1 - Fleeting Notes/",
 })
+
+local vault_root = os.getenv("HOME") .. "/obsidian/gaitanos_mind"
+local media_folder = vault_root .. "/Media"
+
+local function open_image_vsplit()
+  local line = vim.api.nvim_get_current_line()
+  local link = line:match("!%[%[(.+)%]%]")
+
+  if not link then
+    print("No image link under cursor")
+    return
+  end
+
+  -- expand ~
+  link = link:gsub("^~", os.getenv("HOME"))
+
+  -- try vault root first
+  local full_path = vault_root .. "/" .. link
+
+  -- if not found, try Media/
+  if vim.fn.filereadable(full_path) == 0 then
+    full_path = media_folder .. "/" .. link
+  end
+
+  -- still not found? give up
+  if vim.fn.filereadable(full_path) == 0 then
+    print("Image not found: " .. full_path)
+    return
+  end
+
+  vim.cmd("leftabove vsplit")
+  vim.cmd("edit " .. full_path)
+end
+
+vim.keymap.set("n", "<leader>io", open_image_vsplit, { desc = "Open image in vsplit" })
+
 EOF
 
 
@@ -796,3 +853,44 @@ require('lab').setup {
   }
 }
 EOF
+
+
+" POMO.NVIM
+lua << EOF
+require('pomo').setup({
+  sessions = {
+      main = {
+        { name = "Work", duration = "45m" },
+        { name = "Short Break", duration = "15m" },
+        { name = "Work", duration = "45m" },
+        { name = "Short Break", duration = "15m" },
+        { name = "Work", duration = "45m" },
+        { name = "Long Break", duration = "30m" },
+      },
+  },
+})
+EOF
+
+
+" NVIM-NOTIFY
+lua << EOF
+vim.schedule(function()
+    require("notify").setup({
+      stages = "fade_in_slide_out",
+      timeout = 3000,
+    })
+    vim.notify = require("notify")
+end)
+EOF
+
+
+" NVIM-NOTIFY SETUP
+lua << EOF
+require("notify").setup({
+  background_colour = "#000000",
+  stages = "fade_in_slide_out",
+  timeout = 3000,
+})
+vim.notify = require("notify")
+EOF
+

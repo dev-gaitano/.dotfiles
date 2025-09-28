@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-wal -i ~/Pictures/paintings/odalisque-with-tambourine-1914.jpg
+wal -i ~/Pictures/wallpapers/gemälde/
 
 clear
 

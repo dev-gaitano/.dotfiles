@@ -1,0 +1,20 @@
+{
+  "general": {
+    "preferredEditor": "neovim",
+    "vimMode": false,
+    "checkpointing.enabled": true
+  },
+  "ui": {
+    "showMemoryUsage": true,
+    "showLineNumbers": true,
+    "showCitations": true
+  },
+  "ide": {
+    "enabled": true
+  },
+  "security": {
+    "auth": {
+      "selectedType": "oauth-personal"
+    }
+  }
+}

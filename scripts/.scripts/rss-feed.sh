@@ -21,6 +21,6 @@ FROM rss_item
 JOIN rss_feed ON rss_feed.rssurl = rss_item.feedurl
 WHERE rss_item.unread = 1
 ORDER BY pubDate DESC
-LIMIT 5;
+LIMIT 8;
 EOF
 

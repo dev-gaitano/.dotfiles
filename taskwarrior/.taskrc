@@ -39,4 +39,18 @@ data.location=/home/gaitano/.task
 #include solarized-light-256.theme
 #include no-color.theme
 
+color.uda.priority.H=color196
+color.uda.priority.M=color226
+color.uda.priority.L=color21
+color.uda.priority.N=color15
+
+uda.priority.label=Priority
+uda.priority.type=string
+uda.priority.values=H,M,L,N,
+
+urgency.uda.priority.H.coefficient=20.0
+urgency.uda.priority.M.coefficient=10.0
+urgency.uda.priority.L.coefficient=6.0
+urgency.uda.priority.L.coefficient=1.0
+
 news.version=2.6.0

@@ -25,6 +25,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
+
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
@@ -137,6 +141,9 @@ alias browser="firefox"
 alias ra="ranger"
 
 # Scripts
+export PATH="$HOME/gaitano/.scripts:$PATH"
+
+alias scripts="nvim ~/.scripts/"
 alias tmuc="~/.scripts/tmuxCreate"
 alias pywal="~/.scripts/pywal.sh"
 alias nvimUpdate="~/.scripts/neovimUpdate.sh"
@@ -161,51 +168,59 @@ alias gi="git init"
 alias gcl="git clone"
 
 # tmux
-alias ta='tmux attach'
-alias tl='tmux list-sessions'
-alias tn='tmux new-session -s'
+alias ta="tmux attach"
+alias tl="tmux list-sessions"
+alias tn="tmux new-session -s"
+alias tks="tmux kill server"
+
+#hledger
+export HLEDGER_CASHFLOW_RULES=~/01-studio/03-finance/cashflow.rules
+export LEDGER_FILE=~/01-studio/03-finance/2025.journal
+
+alias hla="hledger add"
+alias hlb="hledger balance"
+alias hlp="hledger print"
+alias ledger="nvim $LEDGER_FILE"
 
 # Obsidian CLI
-alias obsdnOpen="nvim ~/obsidian/gaitanos_mind"
-alias obsdn="cd ~/obsidian/gaitanos_mind"
-alias obsdn1="cd ~/obsidian/gaitanos_mind/'1 - Fleeting Notes'"
-alias obsdn2="cd ~/obsidian/gaitanos_mind/'2 - Literature Notes'"
-alias obsdn3="cd ~/obsidian/gaitanos_mind/'3 - Permanent Notes'"
-alias obsdn4="cd ~/obsidian/gaitanos_mind/'4 - Source'"
-alias obsdn5="cd ~/obsidian/gaitanos_mind/'5 - MOCs'"
+alias obsdnOpen="nvim ~/01-studio/02-obsidian/gaitanos-mind"
+alias obsdn="cd ~/01-studio/02-obsidian/gaitanos-mind"
+alias obsdn1="cd ~/01-studio/02-obsidian/gaitanos-mind/01-fleeting"
+alias obsdn2="cd ~/01-studio/02-obsidian/gaitanos-mind/02-literature"
+alias obsdn3="cd ~/01-studio/02-obsidian/gaitanos-mind/03-permanent"
+alias obsdn4="cd ~/01-studio/02-obsidian/gaitanos-mind/04-MOCs"
 
 
+# NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
+# batcat
+export MANPAGER="sh -c 'col -bx | batcat -l man'"
+export MANROFFOPT="-c"
+
+
+# FZF
+source <(fzf --zsh)
+
+export FZF_DEFAULT_COMMAND='rg --files --hidden'
+export FZF_DEFAULT_OPTS="--style full --height 100% --preview 'batcat --color=always {}' --layout=reverse --bind 'focus:transform-header:file --brief {}'"
+
+
+# zoxide
+eval "$(zoxide init zsh)"
+
+
+# pyenv & pipx
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
 # Created by `pipx` on 2025-03-06 13:03:30
 export PATH="$PATH:/home/gaitano/.local/bin"
 
 
-export PATH="$HOME/gaitano/.scripts:$PATH"
-
-
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-# FZF
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-
-export FZF_DEFAULT_COMMAND='rg --files --hidden'
-#export FZF_DEFAULT_OPTS="--border --inline-info"
-export FZF_DEFAULT_OPTS="--style full --height 100% --preview 'batcat --color=always {}' --layout=reverse --bind 'focus:transform-header:file --brief {}'"
-
-source ~/.oh-my-zsh/custom/themes/powerlevel10k/powerlevel10k.zsh-theme
-
-
-eval "$(zoxide init zsh)"
-
-
-export MANPAGER="sh -c 'col -bx | batcat -l man'"
-export MANROFFOPT="-c"
-
 setopt CORRECT
+setxkbmap -option compose:ralt

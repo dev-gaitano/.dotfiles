@@ -1,8 +1,6 @@
 sw_volume: 100
 audio_device_state:1:Pipewire Output
-state: pause
-current: 0
-time: 48.581
+state: stop
 random: 0
 repeat: 0
 single: 0
@@ -12,5 +10,5 @@ mixrampdb: 0
 mixrampdelay: -1
 lastloadedplaylist: 
 playlist_begin
-0:playlists/Can't Rush Greatness/No Introduction - Central Cee.mp3
+0:Central Cee/Can't Rush Greatness/5 STAR - Central Cee.mp3
 playlist_end

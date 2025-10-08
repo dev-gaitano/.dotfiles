@@ -341,5 +341,215 @@
     "type": "user",
     "message": "```sh\n❯ git push\nEnumerating objects: 132, done.\nCounting objects: 100% (132/132), done.\nDelta compression using up to 8 threads\nCompressing objects: 100% (64/64), done.\nWriting objects: 100% (87/87), 2.77 MiB | 1.16 MiB/s, done.\nTotal 87 (delta 12), reused 1 (delta 0), pack-reused 0 (from 0)\nremote: Resolving deltas: 100% (12/12), completed with 11 local objects.\nremote: error: GH013: Repository rule violations found for refs/heads/dev.\nremote:\nremote: - GITHUB PUSH PROTECTION\nremote:   —————————————————————————————————————————\nremote:     Resolve the following violations before pushing again\nremote:\nremote:     - Push cannot contain secrets\nremote:\nremote:\nremote:      (?) Learn how to resolve a blocked push\nremote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push\nremote:\nremote:\nremote:       —— Google OAuth Access Token —————————————————————————\nremote:        locations:\nremote:          - commit: 3ba275d7cbf9b2d6b8bc6dee5c9827bf8ac4b12c\nremote:            path: gemini/.gemini/oauth_creds.json:2\nremote:\nremote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.\nremote:        https://github.com/dev-gaitano/dotfiles/security/secret-scanning/unblock-secret/33L8rgwmyEPU7IQ1qb47s2fXWZw\nremote:\nremote:\nremote:       —— Google OAuth Refresh Token ————————————————————————\nremote:        locations:\nremote:          - commit: 3ba275d7cbf9b2d6b8bc6dee5c9827bf8ac4b12c\nremote:            path: gemini/.gemini/oauth_creds.json:7\nremote:\nremote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.\nremote:        https://github.com/dev-gaitano/dotfiles/security/secret-scanning/unblock-secret/33L8rcWiLCay3uP0I3hkSMWFQK5\nremote:\nremote:\nremote:\nTo github.com:dev-gaitano/dotfiles.git\n ! [remote rejected] dev -> dev (push declined due to repository rule violations)\nerror: failed to push some refs to 'github.com:dev-gaitano/dotfiles.git'\n```",
     "timestamp": "2025-09-28T18:47:05.058Z"
+  },
+  {
+    "sessionId": "55803648-e6e1-438a-9305-2230c02cb4aa",
+    "messageId": 2,
+    "type": "user",
+    "message": "I want json LSP in my nvim conf",
+    "timestamp": "2025-09-29T04:44:17.488Z"
+  },
+  {
+    "sessionId": "55803648-e6e1-438a-9305-2230c02cb4aa",
+    "messageId": 3,
+    "type": "user",
+    "message": "Was does das \"automatic_installation = false\" do?",
+    "timestamp": "2025-09-29T04:46:15.835Z"
+  },
+  {
+    "sessionId": "55803648-e6e1-438a-9305-2230c02cb4aa",
+    "messageId": 4,
+    "type": "user",
+    "message": "Do ich also need zu add \"jsonls\" zu, das servers?",
+    "timestamp": "2025-09-29T04:47:41.278Z"
+  },
+  {
+    "sessionId": "55803648-e6e1-438a-9305-2230c02cb4aa",
+    "messageId": 5,
+    "type": "user",
+    "message": "What about markdown",
+    "timestamp": "2025-09-29T04:52:17.510Z"
+  },
+  {
+    "sessionId": "9a204640-8beb-4457-b8c7-3bce90bca1de",
+    "messageId": 0,
+    "type": "user",
+    "message": "How to dennotate task in taskwarrior",
+    "timestamp": "2025-09-29T10:00:32.135Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 0,
+    "type": "user",
+    "message": "How to configure priority colours",
+    "timestamp": "2025-09-29T10:04:12.037Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 1,
+    "type": "user",
+    "message": "Für taskwarrior",
+    "timestamp": "2025-09-29T10:04:41.203Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 2,
+    "type": "user",
+    "message": "What is color256",
+    "timestamp": "2025-09-29T10:11:06.877Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 3,
+    "type": "user",
+    "message": "I want red yellow blue und white",
+    "timestamp": "2025-09-29T10:11:37.814Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 4,
+    "type": "user",
+    "message": "H - Red\nM - Yellow\nL - Blue",
+    "timestamp": "2025-09-29T10:12:23.848Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 5,
+    "type": "user",
+    "message": "Use colorN format",
+    "timestamp": "2025-09-29T10:12:53.669Z"
+  },
+  {
+    "sessionId": "c56f6bac-9ffa-42d1-b6d1-4b95935de2ad",
+    "messageId": 6,
+    "type": "user",
+    "message": "Und white für tasks mit kein priority",
+    "timestamp": "2025-09-29T10:14:09.322Z"
+  },
+  {
+    "sessionId": "2f9c57ff-cbac-4195-b78b-9594f941f96d",
+    "messageId": 0,
+    "type": "user",
+    "message": "Wie zu mount rclone",
+    "timestamp": "2025-09-29T10:38:21.995Z"
+  },
+  {
+    "sessionId": "2f9c57ff-cbac-4195-b78b-9594f941f96d",
+    "messageId": 1,
+    "type": "user",
+    "message": "Auf Englisch bitte",
+    "timestamp": "2025-09-29T10:39:21.052Z"
+  },
+  {
+    "sessionId": "2f9c57ff-cbac-4195-b78b-9594f941f96d",
+    "messageId": 2,
+    "type": "user",
+    "message": "Was next?",
+    "timestamp": "2025-09-29T10:42:37.523Z"
+  },
+  {
+    "sessionId": "2f9c57ff-cbac-4195-b78b-9594f941f96d",
+    "messageId": 3,
+    "type": "user",
+    "message": "How to copy a directory from a rclone remote to disk",
+    "timestamp": "2025-09-29T10:54:28.691Z"
+  },
+  {
+    "sessionId": "2f9c57ff-cbac-4195-b78b-9594f941f96d",
+    "messageId": 4,
+    "type": "user",
+    "message": "I want to copy a specific directory from the remote to my disk as a directory",
+    "timestamp": "2025-09-29T10:56:40.501Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 0,
+    "type": "user",
+    "message": "Wie zu create ein new tasks in vit",
+    "timestamp": "2025-09-30T05:22:30.767Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 1,
+    "type": "user",
+    "message": "Was ist der parent property für in taskwarrior",
+    "timestamp": "2025-09-30T05:32:11.326Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 2,
+    "type": "user",
+    "message": "Auf Englisch",
+    "timestamp": "2025-09-30T05:33:01.749Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 3,
+    "type": "user",
+    "message": "Was about the mask property",
+    "timestamp": "2025-09-30T05:37:14.355Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 4,
+    "type": "user",
+    "message": "Help me create a recurring task called \"Lerne Deutsch mit Duolingo\", that reccurs every day. Every task ist due at das end von das day. Nicht create andere task until eins ist completed.",
+    "timestamp": "2025-09-30T05:41:26.973Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 5,
+    "type": "user",
+    "message": "Wie zu mark as done in taskwarrior-tui",
+    "timestamp": "2025-09-30T05:42:48.161Z"
+  },
+  {
+    "sessionId": "d2afd42e-e5d3-4465-91bf-bb86fba12cd4",
+    "messageId": 6,
+    "type": "user",
+    "message": "```sh\n╭─░▒▓    ~ ▓▒░                                                                                                                                                                                                     ░▒▓ 1 ✘  5  ▓▒░─╮\n╰─ task                                                                                                                                                                                                                                ─╯\n\nID Age   P Project Tag             Recur Due   Description                                Urg\n 2 26min H jasmijn red werk               5h   Make Wörter in Hero sektion move up slowly 30.6\n 3 22min H jasmijn red werk               5h   Reduce das gap between sektions            30.6\n 5  7min M deutsch                   P1D 15h   Lerne Deutsch mit Duolingo                 19.5\n 7  5min M deutsch                   P1D 15h   Lerne Deutsch mit Anja                     19.5\n 1 20h   L deutsch studieren white        2h   Transfer die Notizen von paper zu Obsidian 11.7\n\n5 tasks\n\n╭─░▒▓    ~ ▓▒░                                                                                                                                                                                                       ░▒▓ ✔  5  ▓▒░─╮\n╰─ task 5 +studieren +blue                                                                                                                                                                                                             ─╯\nNo matches.\n```",
+    "timestamp": "2025-09-30T05:52:56.538Z"
+  },
+  {
+    "sessionId": "476a5bab-0fbb-41f8-b8ad-808c71ad718e",
+    "messageId": 0,
+    "type": "user",
+    "message": "Wie to install hledger-web",
+    "timestamp": "2025-10-01T08:37:27.855Z"
+  },
+  {
+    "sessionId": "476a5bab-0fbb-41f8-b8ad-808c71ad718e",
+    "messageId": 1,
+    "type": "user",
+    "message": "Ich using linux debian 13 trixie",
+    "timestamp": "2025-10-01T08:38:19.017Z"
+  },
+  {
+    "sessionId": "476a5bab-0fbb-41f8-b8ad-808c71ad718e",
+    "messageId": 2,
+    "type": "user",
+    "message": "╰─ sudo apt install hledger hledger-ui hledger-web                                                                                                                                                                                     ─╯\n\nError: Unable to locate package hledger-web",
+    "timestamp": "2025-10-01T08:39:17.526Z"
+  },
+  {
+    "sessionId": "2b462c55-2c71-4614-9de8-ae62e6c9bb84",
+    "messageId": 0,
+    "type": "user",
+    "message": "How to open price chart in openbb cli",
+    "timestamp": "2025-10-02T18:01:13.415Z"
+  },
+  {
+    "sessionId": "2b462c55-2c71-4614-9de8-ae62e6c9bb84",
+    "messageId": 1,
+    "type": "user",
+    "message": "2025 Oct 02, 14:05 (🦋) /equity/price/ $ historical --symbol AAPL\n\n\n2025 Oct 02, 14:05 (🦋) /equity/price/ $ Exception in callback Process.terminate()\nhandle: <Handle Process.terminate()>\nTraceback (most recent call last):\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/events.py\", line 84, in _run\n    self._context.run(self._callback, *self._args)\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/subprocess.py\", line 143, in terminate\n    self._transport.terminate()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_subprocess.py\", line 149, in terminate\n    self._check_proc()eturn to previous menu    [e] exit the program    [cmd -h] see usage and available options    Price (cmd/menu) Documentation\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_subprocess.py\", line 142, in _check_proc\n    raise ProcessLookupError()\nProcessLookupError\nException in callback Process.kill()\nhandle: <Handle Process.kill()>\nTraceback (most recent call last):\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/events.py\", line 84, in _run\n    self._context.run(self._callback, *self._args)\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/subprocess.py\", line 146, in kill\n    self._transport.kill()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_subprocess.py\", line 153, in kill\n    self._check_proc()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_subprocess.py\", line 142, in _check_proc\n    raise ProcessLookupError()\nProcessLookupError\nException in thread Thread-4 (run):\nTraceback (most recent call last):\n  File \"/home/gaitano/.pyenv/versions/3.11.9/envs/openbb/lib/python3.11/site-packages/pywry/core.py\", line 349, in run_backend\n    await self.runner.stdin.drain()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/streams.py\", line 392, in drain\n    await self._protocol._drain_helper()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/streams.py\", line 166, in _drain_helper\n    raise ConnectionResetError('Connection lost')\nConnectionResetError: Connection lost\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/threading.py\", line 1045, in _bootstrap_inner\n    self.run()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/threading.py\", line 982, in run\n    self._target(*self._args, **self._kwargs)\n  File \"/home/gaitano/.pyenv/versions/3.11.9/envs/openbb/lib/python3.11/site-packages/pywry/core.py\", line 384, in run\n    asyncio.run(self.run_backend())\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py\", line 190, in run\n    return runner.run(main)\n           ^^^^^^^^^^^^^^^^\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/runners.py\", line 118, in run\n    return self._loop.run_until_complete(task)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/base_events.py\", line 654, in run_until_complete\n    return future.result()\n           ^^^^^^^^^^^^^^^\n  File \"/home/gaitano/.pyenv/versions/3.11.9/envs/openbb/lib/python3.11/site-packages/pywry/core.py\", line 358, in run_backend\n    await self.run_backend()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/envs/openbb/lib/python3.11/site-packages/pywry/core.py\", line 339, in run_backend\n    await self.runner.stdin.drain()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/streams.py\", line 392, in drain\n    await self._protocol._drain_helper()\n  File \"/home/gaitano/.pyenv/versions/3.11.9/lib/python3.11/asyncio/streams.py\", line 166, in _drain_helper\n    raise ConnectionResetError('Connection lost')\nConnectionResetError: Connection lost",
+    "timestamp": "2025-10-02T18:06:35.121Z"
+  },
+  {
+    "sessionId": "ea4c55d0-5bb2-40c0-8deb-d9b9aa2d3649",
+    "messageId": 0,
+    "type": "user",
+    "message": "```sh\n╰─ cargo install --locked hygg                                                                                                                                                                                                         ─╯\n    Updating crates.io index\nerror: cannot install package `hygg 0.1.19`, it requires rustc 1.88 or newer, while the currently active rustc version is 1.85.0\n`hygg 0.1.16` has an unspecified minimum rustc version\n```",
+    "timestamp": "2025-10-06T06:23:26.822Z"
   }
 ]

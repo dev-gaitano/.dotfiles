@@ -1,7 +1,6 @@
 " BASE SETTINGS
 let mapleader = "\<Space>"
 
-
 " Line Numbers set number
 set number
 set relativenumber
@@ -354,12 +353,12 @@ require("mason").setup()
 
 -- MASON-LSP
 require("mason-lspconfig").setup {
-    ensure_installed = { "pyright", "ts_ls", "html", "cssls", "lua_ls", "vimls" },
-    automatic_installation = false,
+    ensure_installed = { "pyright", "ts_ls", "html", "cssls", "lua_ls", "vimls", "jsonls", "marksman" },
+    automatic_installation = true,
 }
 
 local lspconfig = require("lspconfig")
-local servers = { "pyright", "ts_ls", "html", "cssls", "lua_ls", "vimls" }
+local servers = { "pyright", "ts_ls", "html", "cssls", "lua_ls", "vimls", "jsonls", "marksman" }
 
 for _, server in ipairs(servers) do
   require("lspconfig")[server].setup {
@@ -565,7 +564,7 @@ EOF
 
 
 " OBSIDIAN NVIM
-autocmd BufRead,BufNewFile ~/Desktop/sftw/obsidian/*/*.md setlocal conceallevel=2
+autocmd BufRead,BufNewFile ~/01-studio/02-obsidian/*/*.md setlocal conceallevel=2
 nnoremap <leader>op :lua require("obsidianPreview").preview_link()<CR>
 nnoremap <leader>ot :ObsidianTemplate<CR>
 nnoremap <leader>ol :ObsidianFollowLink<CR>
@@ -575,8 +574,8 @@ lua << EOF
 require("obsidian").setup({
   workspaces = {
     {
-      name = "gaitanos_mind",
-      path = "~/obsidian/gaitanos_mind",
+      name = "gaitanos-mind",
+      path = "~/01-studio/02-obsidian/gaitanos-mind",
     },
   },
   completion = {
@@ -589,12 +588,12 @@ require("obsidian").setup({
     time_format = "%H:%M",
   },
   attachments = {
-    img_folder = "~/obsidian/gaitanos_mind/Media/",
+    img_folder = "~/01-studio/02-obsidian/gaitanos-mind/Media/",
   },
-  new_notes_location = "~/obsidian/gaitanos_mind/1 - Fleeting Notes/",
+  new_notes_location = "~/01-studio/02-obsidian/gaitanos-mind/01-fleeting/",
 })
 
-local vault_root = os.getenv("HOME") .. "/obsidian/gaitanos_mind"
+local vault_root = os.getenv("HOME") .. "/01-studio/02-obsidian/gaitanos-mind"
 local media_folder = vault_root .. "/Media"
 
 local function open_image_vsplit()

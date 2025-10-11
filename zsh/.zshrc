@@ -174,14 +174,25 @@ alias tl="tmux list-sessions"
 alias tn="tmux new-session -s"
 alias tks="tmux kill server"
 
-#hledger
+# hledger
 export HLEDGER_CASHFLOW_RULES=~/01-studio/03-finance/cashflow.rules
 export LEDGER_FILE=~/01-studio/03-finance/2025.journal
 
 alias hla="hledger add"
 alias hlb="hledger balance"
 alias hlp="hledger print"
+alias hle="hledger print -o ~/01-studio/03-finance/export.beancount"
+alias hlweb="fava ~/01-studio/03-finance/export.beancount"
+alias hlis="hledger is"
+alias hlbs="hledger bs"
+alias hlcf="hledger cf"
 alias ledger="nvim $LEDGER_FILE"
+
+# taskwarrior
+alias t="task"
+alias tl="task list"
+alias ta="task add"
+alias tui="taskwarrior-tui"
 
 # Obsidian CLI
 alias obsdnOpen="nvim ~/01-studio/02-obsidian/gaitanos-mind"

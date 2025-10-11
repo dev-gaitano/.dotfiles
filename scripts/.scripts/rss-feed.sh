@@ -1,5 +1,11 @@
 #!/usr/bin/env sh
 
+redshift -O 5000
+
+pywal
+
+clear
+
 # fetch
 fastfetch --logo "~/04-documents/04-misc/fetch-logo.txt"
 

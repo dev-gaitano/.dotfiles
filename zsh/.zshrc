@@ -146,6 +146,7 @@ export PATH="$HOME/gaitano/.scripts:$PATH"
 alias scripts="nvim ~/.scripts/"
 alias tmuc="~/.scripts/tmuxCreate"
 alias pywal="~/.scripts/pywal.sh"
+alias hdmi="~/.scripts/hdmi-connect.sh"
 alias nvimUpdate="~/.scripts/neovimUpdate.sh"
 alias schrofer="~/.scripts/schroferStart.sh"
 

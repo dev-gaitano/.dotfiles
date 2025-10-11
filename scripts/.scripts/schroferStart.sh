@@ -3,7 +3,7 @@
 echo "Entering Jasmijn Schrofer's project directory..."
 notify-send "Entering Jasmijn Schrofer's project directory..."
 
-cd ~/01-studio/src/jasmijn-schrofer/ || { echo "Directory not found!"; exit 1; }
+cd ~/01-studio/01-src/jasmijn-schrofer/ || { echo "Directory not found!"; exit 1; }
 
 echo "Directory changed to $(pwd)" || notify-send "Directory changed to $(pwd)"
 

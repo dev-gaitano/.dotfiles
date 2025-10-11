@@ -1,9 +1,0 @@
-[
-  {
-    "sessionId": "c62f57d2-7dba-4aa5-816f-4b348fc25d46",
-    "messageId": 0,
-    "type": "user",
-    "message": "```sh\n❯ doppler run -- npm run dev\nUnable to fetch secrets from the Doppler API\nDoppler Error: You must specify a project\nReading secrets from fallback file\nDoppler Error: The fallback file does not exist\n```\n\nWhy ich getting dies error?",
-    "timestamp": "2025-09-29T16:17:54.305Z"
-  }
-]

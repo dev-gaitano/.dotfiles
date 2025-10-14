@@ -147,6 +147,7 @@ alias scripts="nvim ~/.scripts/"
 alias tmuc="~/.scripts/tmuxCreate"
 alias pywal="~/.scripts/pywal.sh"
 alias hdmi="~/.scripts/hdmi-connect.sh"
+alias bt="~/.scripts/bluetooth-connect.sh"
 alias nvimUpdate="~/.scripts/neovimUpdate.sh"
 alias schrofer="~/.scripts/schroferStart.sh"
 

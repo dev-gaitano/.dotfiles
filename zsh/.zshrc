@@ -3,7 +3,7 @@ echo " "
 
 # Tmux startup script
 if [[ -z "$TMUX" ]]; then
-	~/.scripts/startUp	
+	~/.scripts/startUp.sh
 fi
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -144,11 +144,11 @@ alias ra="ranger"
 export PATH="$HOME/gaitano/.scripts:$PATH"
 
 alias scripts="nvim ~/.scripts/"
-alias tmuc="~/.scripts/tmuxCreate"
+alias tmuc="~/.scripts/tmuxCreate.sh"
 alias pywal="~/.scripts/pywal.sh"
-alias hdmi="~/.scripts/hdmi-connect.sh"
-alias bt="~/.scripts/bluetooth-connect.sh"
-alias nvimUpdate="~/.scripts/neovimUpdate.sh"
+alias hdmi="~/.scripts/hdmiConnect.sh"
+alias bt="~/.scripts/bluetoothConnect.sh"
+alias nvimUpdate="~/.scripts/linux-setup/nvimUpdate.sh"
 alias schrofer="~/.scripts/schroferStart.sh"
 
 # Custom Aliases

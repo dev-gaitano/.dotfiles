@@ -17,7 +17,7 @@ fi
 
 tmux new-session -d -s "$SESSION" -n main
 tmux send-keys -t "$SESSION:1" "clear" C-m
-tmux send-keys -t "$SESSION:1" "~/.scripts/rss-feed.sh" C-m
+tmux send-keys -t "$SESSION:1" "~/.scripts/intro.sh" C-m
 tmux new-window -t "$SESSION:2" -n ranger
 tmux send-keys -t "$SESSION:2" "ranger" C-m
 tmux new-window -t "$SESSION:3" -n ai

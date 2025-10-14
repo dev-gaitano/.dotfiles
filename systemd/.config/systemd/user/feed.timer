@@ -1,0 +1,11 @@
+[Unit]
+Description=Run feed every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Unit=feed.service
+Persistent=true
+
+[Install]
+WantedBy=timers.target

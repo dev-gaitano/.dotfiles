@@ -3,6 +3,10 @@
 newsboat -x reload
 
 DB="$HOME/.newsboat/cache.db"
+STATE="$HOME/.cache/newsboat_last_seen.txt"
+
+# Ensure cache dir exists
+mkdir -p "$(dirname "$STATE")"
 
 # Fetch feed + article titles, separated by |
 headlines=("${(@f)$(sqlite3 "$DB" <<'EOF'
@@ -17,9 +21,29 @@ LIMIT 10;
 EOF
 )}")
 
-# Send each headline as its own notification
+# If first run, store state and exit
+if [ ! -f "$STATE" ]; then
+    printf "%s\n" "${headlines[@]}" > "$STATE"
+    exit 0
+fi
+
+# Compare with previous headlines
+new_headlines=()
 for h in "${headlines[@]}"; do
-    IFS='|' read -r feed article <<< "$h"
-    notify-send -u critical "$feed" "$article"
-    sleep 0.5
+    if ! grep -qxF "$h" "$STATE"; then
+        new_headlines+=("$h")
+    fi
 done
+
+# Send notifications only for new headlines
+if (( ${#new_headlines[@]} > 0 )); then
+    for h in "${new_headlines[@]}"; do
+        IFS='|' read -r feed article <<< "$h"
+        notify-send -u critical "$feed" "$article"
+        sleep 0.5
+    done
+fi
+
+# Update stored headlines
+printf "%s\n" "${headlines[@]}" > "$STATE"
+

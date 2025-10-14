@@ -1,4 +1,5 @@
 ~/.scripts/pywal.sh
+~/.scripts/feed.sh
 echo " "
 
 # Tmux startup script

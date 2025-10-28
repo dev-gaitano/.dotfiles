@@ -1,3 +1,6 @@
+scriptencoding utf-8
+
+
 " BASE SETTINGS
 let mapleader = "\<Space>"
 
@@ -27,7 +30,7 @@ set shortmess+=c
 set nobackup
 set nowritebackup
 set noswapfile
-let &undodir = expand("$HOME/.vim/undodir")
+let &undodir = expand('$HOME/.vim/undodir')
 set undofile
 set isfname+=@-@
 
@@ -39,12 +42,11 @@ set nohlsearch
 " Syntax
 syntax on
 
-" Color Scheme
-" colorscheme habamax
-
 " Filetype Specific Settings 
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
-autocmd FileType html,css,javascript,typescript,typescriptreact,javascriptreact setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+augroup FiletypeSettings
+  autocmd FileType python,c,cpp setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+  autocmd FileType html,css,javascript,typescript,typescriptreact,javascriptreact,lua,vim setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+augroup END
 
 
 "SYSTEM REMAPS
@@ -152,8 +154,6 @@ Plug 'hrsh7th/nvim-cmp'               " Core autocompletion engine
 Plug 'hrsh7th/cmp-nvim-lsp'           " Integrates nvim-cmp with Neovim's built-in LSP
 Plug 'hrsh7th/cmp-buffer'             " Buffer completion
 Plug 'hrsh7th/cmp-path'               " Path completion
-Plug 'saadparwaiz1/cmp_luasnip'       " Snippet completion
-Plug 'L3MON4D3/LuaSnip'               " Snippet engine
 Plug 'glepnir/lspsaga.nvim'           " UI Enhancements for LSP
 Plug 'lewis6991/hover.nvim'           " Add hover properties
 Plug 'lukas-reineke/indent-blankline.nvim' " Indentation Guidelines
@@ -164,12 +164,10 @@ Plug 'tweekmonster/django-plus.vim'   " Django Template Syntax Highlighting
 Plug 'ThePrimeagen/harpoon'           " Harpoon File Navigator
 Plug 'mbbill/undotree'                " Undo Tree
 Plug 'ThePrimeagen/vim-be-good'       " Vim Practice Game
-Plug 'github/copilot.vim'	      " AI Copilot
 Plug 'CopilotC-Nvim/CopilotChat.nvim' " Copilot Chat integration
 Plug 'MeanderingProgrammer/render-markdown.nvim' " Render markdown syntax
 Plug 'code-biscuits/nvim-biscuits'    " Show code context in the gutter
 Plug 'epwalsh/obsidian.nvim'          " Obsidian integration for Neovim
-Plug 'epwalsh/pomo.nvim'          " Pomodoro timer
 Plug 'stevearc/conform.nvim'	      " Code formatting plugin
 Plug 'folke/zen-mode.nvim'	      " Zen mode
 Plug 'folke/twilight.nvim'	      " Dim inactive portions of the code
@@ -315,9 +313,9 @@ let g:ale_javascript_eslint_options = '--config ~/.eslintrc.js'
 " TREESITTER
 lua << EOF
 require('nvim-treesitter.configs').setup({
-    ensure_installed = { "python", "javascript", "typescript", "tsx", "lua", "bash", "json", "html", "css", "markdown", "markdown_inline" },
+  ensure_installed = { "python", "javascript", "typescript", "tsx", "lua", "bash", "json", "html", "css", "markdown", "markdown_inline", "c", "cpp" },
     highlight = {
-        enable = true, 
+      enable = true, 
     },
 })
 EOF
@@ -326,12 +324,12 @@ EOF
 " TOKYONIGHT COLORSHCEME
 lua << EOF
 require("tokyonight").setup({
-    style = "night",  -- Options: "night", "storm", "day", "moon"
-    transparent = true,
-    styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-    },
+  style = "night",  -- Options: "night", "storm", "day", "moon"
+  transparent = true,
+  styles = {
+    sidebars = "transparent",
+    floats = "transparent",
+  },
 })
 
 -- Ensure background transparency for UI elements
@@ -346,70 +344,53 @@ EOF
 colorscheme tokyonight
 
 
+" LSP
+lua << EOF 
+vim.lsp.enable("ast_grep")
+vim.lsp.enable("bashls")
+vim.lsp.enable("jsonls")
+vim.lsp.enable("marksman")
+vim.lsp.enable("vimls")
+EOF
+
+
 " MASON
 lua << EOF
-require("mason").setup()
-
-
--- MASON-LSP
-require("mason-lspconfig").setup {
-    ensure_installed = { "pyright", "ts_ls", "html", "cssls", "lua_ls", "vimls", "jsonls", "marksman" },
-    automatic_installation = true,
-}
-
-local lspconfig = require("lspconfig")
-local servers = { "pyright", "ts_ls", "html", "cssls", "lua_ls", "vimls", "jsonls", "marksman" }
-
-for _, server in ipairs(servers) do
-  require("lspconfig")[server].setup {
-        handlers = {
-            ["textDocument/publishDiagnostics"] = function() end,
-            ["textDocument/hover"] = function() end,
-        },
-    }
-end
-
--- Python LSP Setup
-lspconfig.pylsp.setup{
-  settings = {
-    pylsp = {
-      plugins = {
-        jedi_completion = { enabled = true },
-        jedi_definition = { enabled = true },
-        pyflakes = { enabled = true },
-        pylint = { enabled = false },  -- Set to true if you want Pylint
-        django_lsp = { enabled = true }
-      }
+require("mason").setup({
+  ui = {
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗"
     }
   }
-}
-
--- LSP Autocompletion
-local cmp = require("cmp")
-cmp.setup({
-    mapping = {
-        ["<C-Space>"] = cmp.mapping.complete(),
-        ["<CR>"] = cmp.mapping.confirm({ select = true }),
-	['<Tab>'] = cmp.mapping.select_next_item(),
-    	['<S-Tab>'] = cmp.mapping.select_prev_item(),
-    	['<Esc>'] = cmp.mapping.close(),
-    },
-    sources = {
-        { name = "nvim_lsp" },
-        { name = "luasnip" },
-	{ name = "path" },
-        { name = "buffer" },
-    },
-    snippet = {
-        expand = function(args)
-            require("luasnip").lsp_expand(args.body)
-        end,
-    },
 })
 EOF
 
-"autocmd CursorHold * lua vim.lsp.buf.hover()
-"set updatetime=5000  " Reduce delay for hover popup
+
+" CMP
+lua << EOF
+local cmp = require'cmp'
+
+cmp.setup({
+  window = {
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  mapping = cmp.mapping.preset.insert({ ['<C-b>'] = cmp.mapping.scroll_docs(-4), ['<C-f>'] = cmp.mapping.scroll_docs(4), ['<C-Space>'] = cmp.mapping.complete(),
+		-- ['<Tab>'] = cmp.mapping.select_next_item(),
+    -- ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+    -- ['<Esc>'] = cmp.mapping.close(),
+    ['<C-e>'] = cmp.mapping.abort(),
+    ['<CR>'] = cmp.mapping.confirm({ select = true }),
+  }),
+  sources = cmp.config.sources({
+    { name = 'nvim_lsp' },
+  }, {
+    { name = 'buffer' },
+  })
+})
+EOF
 
 
 " LSPSAGA
@@ -421,30 +402,27 @@ EOF
 " HOVER NVIM
 lua << EOF
 require("hover").setup {
-            init = function()
-                -- Require providers
-                require("hover.providers.lsp")
-                -- require('hover.providers.gh')
-                -- require('hover.providers.gh_user')
-                -- require('hover.providers.jira')
-                -- require('hover.providers.dap')
-                -- require('hover.providers.fold_preview')
-                -- require('hover.providers.diagnostic')
-                -- require('hover.providers.man')
-                require('hover.providers.dictionary')
-                -- require('hover.providers.highlight')
-            end,
-            preview_opts = {
-                border = 'rounded'
-            },
-            -- Whether the contents of a currently open hover window should be moved
-            -- to a :h preview-window when pressing the hover keymap.
-            preview_window = false,
-            title = true,
-            mouse_providers = {
-                'LSP'
-            },
-            mouse_delay = 000
+  init = function()
+  -- Require providers
+  require("hover.providers.lsp")
+    require('hover.providers.gh')
+    require('hover.providers.gh_user')
+    require('hover.providers.dap')
+    require('hover.providers.diagnostic')
+    require('hover.providers.man')
+    require('hover.providers.dictionary')
+  end,
+  preview_opts = {
+    border = 'rounded'
+  },
+  -- Whether the contents of a currently open hover window should be moved
+  -- to a :h preview-window when pressing the hover keymap.
+  preview_window = false,
+  title = true,
+  mouse_providers = {
+    'LSP'
+  },
+  mouse_delay = 000
 }
 EOF
 
@@ -452,8 +430,8 @@ EOF
 " INDENT-BLACKLINE
 lua << EOF
 require("ibl").setup {
-    indent = { char = "│" },
-    scope = { show_start = false, show_end = false }
+  indent = { char = "│" },
+  scope = { show_start = false, show_end = false }
 }
 EOF
 
@@ -476,12 +454,6 @@ require'tailwindcss-colorizer-cmp'.setup()
 EOF
 
 
-" FRIENDLY-SNIPPETS
-lua << EOF
-require("luasnip.loaders.from_vscode").lazy_load()
-EOF
-
-
 " HARPOON
 nnoremap <leader>a :lua require("harpoon.mark").add_file()<CR>
 nnoremap <leader>e :lua require("harpoon.ui").toggle_quick_menu()<CR>
@@ -494,10 +466,6 @@ nnoremap <leader>4 :lua require("harpoon.ui").nav_file(4)<CR>
 " UNDOTREE
 let g:undotree_SetFocusWhenToggle = 1
 nnoremap <leader>u :UndotreeToggle<CR>
-
-
-" GITHUB COPILOT
-let g:copilot_enabled = v:true
 
 
 " RENDER MARKDOWN
@@ -520,7 +488,7 @@ EOF
 " COPILOT CHAT
 lua << EOF
 require("CopilotChat").setup {
-	 window = {
+  window = {
     layout = 'vertical', -- 'vertical', 'horizontal', 'float', 'replace', or a function that returns the layout
     width = 0.3, -- fractional width of parent, or absolute width in columns when > 1
     height = 0.5, -- fractional height of parent, or absolute height in rows when > 1
@@ -533,31 +501,31 @@ require("CopilotChat").setup {
     footer = nil, -- footer of chat window
     zindex = 1, -- determines if window is on top or below other floating windows
   },
-	 prompts = {
-    Explain = {
-      prompt = 'Write an explanation for the selected code as paragraphs of text.',
-      system_prompt = 'COPILOT_EXPLAIN',
-    },
-    Review = {
-      prompt = 'Review the selected code.',
-      system_prompt = 'COPILOT_REVIEW',
-    },
-    Fix = {
-      prompt = 'There is a problem in this code. Identify the issues and rewrite the code with fixes. Explain what was wrong and how your changes address the problems.',
-    },
-    Optimize = {
-      prompt = 'Optimize the selected code to improve performance and readability. Explain your optimization strategy and the benefits of your changes.',
-    },
-    Docs = {
-      prompt = 'Please add documentation comments to the selected code.',
-    },
-    Tests = {
-      prompt = 'Please generate tests for my code.',
-    },
-    Commit = {
-      prompt = 'Write commit message for the change with commitizen convention. Keep the title under 50 characters and wrap message at 72 characters. Format as a gitcommit code block.',
-      context = 'git:staged',
-    },
+  prompts = {
+  Explain = {
+    prompt = 'Write an explanation for the selected code as paragraphs of text.',
+    system_prompt = 'COPILOT_EXPLAIN',
+  },
+  Review = {
+    prompt = 'Review the selected code.',
+    system_prompt = 'COPILOT_REVIEW',
+  },
+  Fix = {
+    prompt = 'There is a problem in this code. Identify the issues and rewrite the code with fixes. Explain what was wrong and how your changes address the problems.',
+  },
+  Optimize = {
+    prompt = 'Optimize the selected code to improve performance and readability. Explain your optimization strategy and the benefits of your changes.',
+  },
+  Docs = {
+    prompt = 'Please add documentation comments to the selected code.',
+  },
+  Tests = {
+    prompt = 'Please generate tests for my code.',
+  },
+  Commit = {
+    prompt = 'Write commit message for the change with commitizen convention. Keep the title under 50 characters and wrap message at 72 characters. Format as a gitcommit code block.',
+    context = 'git:staged',
+  },
   },
 }
 EOF
@@ -854,31 +822,14 @@ require('lab').setup {
 EOF
 
 
-" POMO.NVIM
-lua << EOF
-require('pomo').setup({
-  sessions = {
-      main = {
-        { name = "Work", duration = "45m" },
-        { name = "Short Break", duration = "15m" },
-        { name = "Work", duration = "45m" },
-        { name = "Short Break", duration = "15m" },
-        { name = "Work", duration = "45m" },
-        { name = "Long Break", duration = "30m" },
-      },
-  },
-})
-EOF
-
-
 " NVIM-NOTIFY
 lua << EOF
 vim.schedule(function()
-    require("notify").setup({
-      stages = "fade_in_slide_out",
-      timeout = 3000,
-    })
-    vim.notify = require("notify")
+  require("notify").setup({
+    stages = "fade_in_slide_out",
+    timeout = 3000,
+  })
+  vim.notify = require("notify")
 end)
 EOF
 
@@ -892,4 +843,3 @@ require("notify").setup({
 })
 vim.notify = require("notify")
 EOF
-

@@ -17,7 +17,7 @@
     #
     # If this option is set to mouse or keyboard, the monitor option
     # will be ignored.
-    follow = none
+    follow = mouse
 
     ### Geometry ###
 
@@ -47,7 +47,7 @@
     scale = 0
 
     # Maximum number of notification (0 means no limit)
-    notification_limit = 20
+    notification_limit = 10
 
     ### Progress bar ###
 
@@ -102,7 +102,6 @@
 
     # Notification Frame
     frame_width = 1
-    frame_color = "#E8DDB5"
 
     # Size of gap to display between notifications - requires a compositor.
     # If value is greater than 0, separator_height will be ignored and a border
@@ -261,7 +260,7 @@
     # corners.
     # The radius will be automatically lowered if it exceeds half of the
     # notification height to avoid clipping text and/or icons.
-    corner_radius = 0
+    corner_radius = 8
 
     # Define which corners to round when drawing the window. If the corner radius
     # is set to 0 this option will be ignored.
@@ -338,15 +337,15 @@
 
 [urgency_normal]
     background = "#00000000"
-    frame_color = "#E8DDB5"
     foreground = "#E8DDB5"
+    frame_color = "#5B5B5B"
     timeout = 10
     override_pause_level = 30
 
 [urgency_critical]
     background = "#00000000"
     foreground = "#E8DDB5"
-    frame_color = "#ff0000"
+    frame_color = "#E8DDB5"
     timeout = 0
     override_pause_level = 60
     default_icon = dialog-warning

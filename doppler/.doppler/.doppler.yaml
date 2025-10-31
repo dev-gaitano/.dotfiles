@@ -1,0 +1,18 @@
+scoped:
+    /:
+        token: secret-ac7e199d-65f4-452e-8f4b-e397a3479b89
+        api-host: https://api.doppler.com
+        dashboard-host: https://dashboard.doppler.com
+    /home/gaitano/01-studio/01-src/jasmijn-schrofer:
+        enclave.project: jasmijn-schrofer
+        enclave.config: dev
+    /home/gaitano/01-studio/src/jasmijn-schrofer:
+        enclave.project: jasmijn-schrofer
+        enclave.config: dev
+    /home/gaitano/Desktop/src/jasmijn-schrofer:
+        enclave.project: jasmijn-schrofer
+        enclave.config: dev
+version-check:
+    checked-at: 2025-10-14T09:09:41.398880282+03:00
+tui:
+    introVersionSeen: 0

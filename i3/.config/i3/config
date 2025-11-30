@@ -124,6 +124,7 @@ bindsym $mod+Shift+q kill
 #bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+d exec rofi -show drun -theme ~/.config/rofi/config.rasi -show-icons
 bindsym $mod+b exec ~/.scripts/rofiBlueToothConnect.sh
+bindsym $mod+n exec ~/.scripts/rofiRecentNotes.sh
 
 # change focus
 bindsym $mod+h focus left

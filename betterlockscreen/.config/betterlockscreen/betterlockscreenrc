@@ -1,0 +1,28 @@
+# ~/.config/betterlockscreen/betterlockscreenrc
+
+# Time format
+time_format="%H:%M"
+
+# Date format
+date_format="%A, %d %B"
+
+# Lock screen options
+fx_color="00000088"
+ring_color="88c0d0"
+inside_color="00000000"
+line_color="00000000"
+keyhl_color="a3be8c"
+bshl_color="bf616a"
+verif_color="88c0d0"
+wrong_color="bf616a"
+layout_color="81a1c1"
+time_color="eceff4"
+date_color="d8dee9"
+
+# Effects
+blur_radius=5
+brightness=1
+
+# Other settings
+dim_level=40
+

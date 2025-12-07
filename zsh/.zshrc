@@ -171,30 +171,15 @@ alias gi="git init"
 alias gcl="git clone"
 
 # tmux
-alias ta="tmux attach"
-alias tl="tmux list-sessions"
-alias tn="tmux new-session -s"
-alias tks="tmux kill server"
+alias tma="tmux attach"
+alias tml="tmux list-sessions"
+alias tmn="tmux new-session -s"
+alias tmks="tmux kill-server"
 
-# hledger
-export HLEDGER_CASHFLOW_RULES=~/01-studio/03-finance/cashflow.rules
-export LEDGER_FILE=~/01-studio/03-finance/2025.journal
-
-alias hla="hledger add"
-alias hlb="hledger balance"
-alias hlp="hledger print"
-alias hle="hledger print -o ~/01-studio/03-finance/export.beancount"
-alias hlweb="fava ~/01-studio/03-finance/export.beancount"
-alias hlis="hledger is"
-alias hlbs="hledger bs"
-alias hlcf="hledger cf"
-alias ledger="nvim $LEDGER_FILE"
-
-# taskwarrior
-alias t="task"
-alias tl="task list"
-alias ta="task add"
-alias tui="taskwarrior-tui"
+# eza
+alias ls='eza --icons --group-directories-first'
+alias ll='eza -l --icons --group-directories-first'
+alias la='eza -lA --icons --group-directories-first'
 
 # Obsidian CLI
 alias obsdnOpen="nvim ~/01-studio/02-obsidian/gaitanos-mind"
@@ -236,5 +221,24 @@ eval "$(pyenv virtualenv-init -)"
 export PATH="$PATH:/home/gaitano/.local/bin"
 
 
+export PATH="$PATH:/opt/resolve/bin/resolve"
+
+
 setopt CORRECT
 setxkbmap -option compose:ralt
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/gaitano/.miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/gaitano/.miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/gaitano/.miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/gaitano/.miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

@@ -1,6 +1,5 @@
 scriptencoding utf-8
 
-
 " BASE SETTINGS
 let mapleader = "\<Space>"
 
@@ -118,16 +117,8 @@ nnoremap <C-f> :silent !tmux neww tmux-sessionizer<CR>
 " Disable the Q command
 nnoremap Q <nop>
 
-" Format using LSP
-nnoremap <leader>f :lua vim.lsp.buf.format()<CR>
-
 " initiates a search-and-replace operation in the whole file
 nnoremap <leader>s :%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left>
-
-" lab.nvim
-nnoremap <F4> :Lab code stop<CR>
-nnoremap <F5> :Lab code run<CR>
-nnoremap <F6> :Lab code panel<CR>
 
 
 " PLUGINS
@@ -135,7 +126,6 @@ call plug#begin('~/.local/share/nvim/site/plugged')
 
 Plug 'nvim-tree/nvim-tree.lua'        " File tree
 Plug 'nvim-tree/nvim-web-devicons'    " Icons
-Plug 'airblade/vim-gitgutter'         " Displays git diff markers in the gutter
 Plug 'preservim/nerdcommenter'        " Enables quick commenting in code
 Plug 'christoomey/vim-tmux-navigator' " Navigation between Vim and Tmux splits 
 Plug 'nvim-lua/plenary.nvim'          " Lua utility library
@@ -146,7 +136,6 @@ Plug 'vim-airline/vim-airline-themes' " Vim Airline themes
 Plug 'dense-analysis/ale'             " Linting Engine
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Syntax Highlighting
 Plug 'folke/tokyonight.nvim'          " Tokyonight colorscheme
-Plug 'tpope/vim-fugitive'             " Git Wrapper Plugin
 Plug 'neovim/nvim-lspconfig'          " Core LSP support
 Plug 'mason-org/mason.nvim'           " Easy LSP installation
 Plug 'mason-org/mason-lspconfig.nvim' " Bridge between Mason and lspconfig
@@ -154,13 +143,11 @@ Plug 'hrsh7th/nvim-cmp'               " Core autocompletion engine
 Plug 'hrsh7th/cmp-nvim-lsp'           " Integrates nvim-cmp with Neovim's built-in LSP
 Plug 'hrsh7th/cmp-buffer'             " Buffer completion
 Plug 'hrsh7th/cmp-path'               " Path completion
-Plug 'glepnir/lspsaga.nvim'           " UI Enhancements for LSP
 Plug 'lewis6991/hover.nvim'           " Add hover properties
+Plug 'lewis6991/gitsigns.nvim'        " Git Wrapper Plugin
 Plug 'lukas-reineke/indent-blankline.nvim' " Indentation Guidelines
 Plug 'NvChad/nvim-colorizer.lua'      " Highlight colors
 Plug 'roobert/tailwindcss-colorizer-cmp.nvim' " Show TailwindCSS colors in preview
-Plug 'rafamadriz/friendly-snippets'   " Django Snippets
-Plug 'tweekmonster/django-plus.vim'   " Django Template Syntax Highlighting
 Plug 'ThePrimeagen/harpoon'           " Harpoon File Navigator
 Plug 'mbbill/undotree'                " Undo Tree
 Plug 'ThePrimeagen/vim-be-good'       " Vim Practice Game
@@ -168,13 +155,12 @@ Plug 'CopilotC-Nvim/CopilotChat.nvim' " Copilot Chat integration
 Plug 'MeanderingProgrammer/render-markdown.nvim' " Render markdown syntax
 Plug 'code-biscuits/nvim-biscuits'    " Show code context in the gutter
 Plug 'epwalsh/obsidian.nvim'          " Obsidian integration for Neovim
-Plug 'stevearc/conform.nvim'	      " Code formatting plugin
-Plug 'folke/zen-mode.nvim'	      " Zen mode
-Plug 'folke/twilight.nvim'	      " Dim inactive portions of the code
+Plug 'folke/zen-mode.nvim'	          " Zen mode
+Plug 'folke/twilight.nvim'	          " Dim inactive portions of the code
 Plug 'folke/todo-comments.nvim'	      " Highlight TODO comments
-Plug 'jiangmiao/auto-pairs'	      " Auto close pairs like brackets, quotes, etc.
+Plug 'jiangmiao/auto-pairs'	          " Auto close pairs like brackets, quotes, etc.
 Plug 'windwp/nvim-ts-autotag'
-Plug 'mracos/mermaid.vim'		" Render mermaid syntax in neovim
+Plug 'mracos/mermaid.vim'		          " Render mermaid syntax in neovim
 Plug '3rd/image.nvim', { 'do': 'make' }   " render images in terminal buffers
 Plug '3rd/diagram.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -346,12 +332,30 @@ colorscheme tokyonight
 
 " LSP
 lua << EOF 
-vim.lsp.enable("ast_grep")
+vim.lsp.config("clangd", {
+  cmd = { "clangd", "--fallback-style=Google" },
+  })
+vim.lsp.enable("clangd")
+vim.lsp.enable("pyright")
+vim.lsp.enable("html")
+vim.lsp.enable("cssls")
+vim.lsp.enable("ts_ls")
 vim.lsp.enable("bashls")
 vim.lsp.enable("jsonls")
 vim.lsp.enable("marksman")
 vim.lsp.enable("vimls")
+vim.lsp.enable("lua_ls")
+
+-- Format on save using LSP
+vim.api.nvim_create_autocmd("BufWritePre", {
+  callback = function()
+    vim.lsp.buf.format({ async = false })
+  end,
+})
 EOF
+
+" Format using LSP
+nnoremap <leader>f :lua vim.lsp.buf.format()<CR>
 
 
 " MASON
@@ -378,9 +382,9 @@ cmp.setup({
     documentation = cmp.config.window.bordered(),
   },
   mapping = cmp.mapping.preset.insert({ ['<C-b>'] = cmp.mapping.scroll_docs(-4), ['<C-f>'] = cmp.mapping.scroll_docs(4), ['<C-Space>'] = cmp.mapping.complete(),
-		-- ['<Tab>'] = cmp.mapping.select_next_item(),
-    -- ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-    -- ['<Esc>'] = cmp.mapping.close(),
+		['<Tab>'] = cmp.mapping.select_next_item(),
+    ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+    ['<Esc>'] = cmp.mapping.close(),
     ['<C-e>'] = cmp.mapping.abort(),
     ['<CR>'] = cmp.mapping.confirm({ select = true }),
   }),
@@ -393,18 +397,12 @@ cmp.setup({
 EOF
 
 
-" LSPSAGA
-lua << EOF
-require("lspsaga").setup({})
-EOF
-
-
 " HOVER NVIM
 lua << EOF
 require("hover").setup {
   init = function()
-  -- Require providers
-  require("hover.providers.lsp")
+    -- Require providers
+    require("hover.providers.lsp")
     require('hover.providers.gh')
     require('hover.providers.gh_user')
     require('hover.providers.dap')
@@ -427,30 +425,66 @@ require("hover").setup {
 EOF
 
 
+" GITSIGNS
+lua << EOF
+require('gitsigns').setup {
+  signs = {
+    add          = { text = '┃' },
+    change       = { text = '┃' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+    untracked    = { text = '┆' },
+  },
+  signs_staged = {
+    add          = { text = '┃' },
+    change       = { text = '┃' },
+    delete       = { text = '_' },
+    topdelete    = { text = '‾' },
+    changedelete = { text = '~' },
+    untracked    = { text = '┆' },
+  },
+  signs_staged_enable = true,
+  signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
+  numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
+  linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
+  word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
+  watch_gitdir = {
+    follow_files = true
+  },
+  auto_attach = true,
+  attach_to_untracked = false,
+  current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+  current_line_blame_opts = {
+    virt_text = true,
+    virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
+    delay = 1000,
+    ignore_whitespace = false,
+    virt_text_priority = 100,
+    use_focus = true,
+  },
+  current_line_blame_formatter = '<author>, <author_time:%R> - <summary>',
+  sign_priority = 6,
+  update_debounce = 100,
+  status_formatter = nil, -- Use default
+  max_file_length = 40000, -- Disable if file is longer than this (in lines)
+  preview_config = {
+    -- Options passed to nvim_open_win
+    style = 'minimal',
+    relative = 'cursor',
+    row = 0,
+    col = 1
+  },
+}
+EOF
+
+
 " INDENT-BLACKLINE
 lua << EOF
 require("ibl").setup {
   indent = { char = "│" },
   scope = { show_start = false, show_end = false }
 }
-EOF
-
-
-" NVIM-COLORIZER
-lua <<EOF
-require'colorizer'.setup()
-EOF
-
-
-" TailwindCSS Autocompletion
-lua << EOF
-require'lspconfig'.tailwindcss.setup{}
-EOF
-
-
-" TAILWINDCSS-COLORIZER-CMP
-lua <<EOF
-require'tailwindcss-colorizer-cmp'.setup()
 EOF
 
 
@@ -596,33 +630,6 @@ end
 
 vim.keymap.set("n", "<leader>io", open_image_vsplit, { desc = "Open image in vsplit" })
 
-EOF
-
-
-" CONFORM
-lua << EOF
-require("conform").setup({
-  format_on_save = {
-    lsp_fallback = true,
-    timeout_ms = 500,
-  },
-  formatters_by_ft = {
-    javascript      = { "prettier" },
-    javascriptreact = { "prettier" },
-    typescript      = { "prettier" },
-    typescriptreact = { "prettier" },
-    mjs             = { "prettier" },
-    css             = { "prettier" },
-    less            = { "prettier" },
-    scss            = { "prettier" },
-    json            = { "prettier" },
-    graphql         = { "prettier" },
-    markdown        = { "prettier" },
-    vue             = { "prettier" },
-    yaml            = { "prettier" },
-    html            = { "prettier" },
-  },
-})
 EOF
 
 

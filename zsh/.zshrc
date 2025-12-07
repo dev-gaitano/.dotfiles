@@ -6,7 +6,6 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 ~/.scripts/pywal.sh
-~/.scripts/feed.sh
 echo " "
 
 # Tmux startup script

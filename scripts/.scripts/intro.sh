@@ -1,18 +1,16 @@
 #!/usr/bin/env sh
 
 redshift -O 5000
+~/.scripts/pywal.sh
 clear
 
+~/.scripts/feed.sh
+
 # fetch
-fastfetch --logo "~/04-documents/04-misc/fetch-logo.txt"
+fastfetch --logo "~/03-documents/04-misc/fetch-logo.txt"
 
+echo " "
 name="$USER"
-
 echo "Hallo, $name!"
 echo "Heute ist $(date +%A), $(date +%B) $(date +%d), $(date +%Y)."
 echo " "
-
-# Task List
-echo "Dein Aufgaben sind..."
-echo " "
-task list

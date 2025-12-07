@@ -39,8 +39,9 @@ set $polybar polybar
 set $term kitty
 set $browser firefox-dev
 set $spotify spotify
-set $discord discord
-set $obsidian obsidian
+set $obsidian flatpak run md.obsidian.Obsidian 
+set $calc speedcrunch
+set $finance gnucash
 
 
 # Font for window titles. Will also be used by the bar unless a different font
@@ -74,8 +75,7 @@ exec --no-startup-id dunst --config ~/.config/dunst/dunstrc
 
 exec --no-startup-id i3-msg "workspace 1; exec $term"
 exec --no-startup-id i3-msg "workspace 2; exec $browser"
-exec --no-startup-id i3-msg "workspace 3; exec $spotify"
-exec --no-startup-id ~/.scripts/i3WorkSpace4.sh
+exec --no-startup-id i3-msg "workspace 3; exec $obsidian"
 
 
 
@@ -115,6 +115,8 @@ tiling_drag modifier titlebar
 # start a terminal
 bindsym $mod+Return exec $term
 bindsym $mod+z exec $browser
+bindsym $mod+F9 exec $finance
+bindsym $mod+F12 exec $calc
 bindsym $mod+Shift+s exec --no-startup-id flameshot gui
 
 # kill focused window

@@ -1,51 +1,74 @@
 #!/usr/bin/env sh
 
-# Parse args
-session=$1
-subcommand=$2
-shift 2
+set -eu
 
-# Defaults
-server_cmd=""
+raw="$(basename "$PWD")"
 
-# Parse flags
-while getopts "s:" opt; do
-  case $opt in
-    s)
-      server_cmd=$OPTARG
-      ;;
-    \?)
-      echo "Invalid option: -$OPTARG" >&2
-      exit 1
-      ;;
-  esac
-done
+session="$(printf '%s' "$raw" \
+	| sed 's/^[.]*//' \
+	| sed 's/[^a-zA-Z0-9_-]/_/g')"
 
-# Check required args
-if [ -z "$session" ] || [ -z "$subcommand" ]; then
-  echo "Usage: $0 <session> <subcommand> [-s npm|npx]"
-  exit 1
+[ -z "$session" ] && session="default"
+
+SERVERCMD="${1:-}"
+
+# Create session if missing
+if ! tmux has-session -t "${session}:" 2>/dev/null; then
+	tmux new-session -ds "$session" -n main
+	tmux send-keys -t "$session":1 'clear' C-m 'nvim .' C-m
+
+	tmux new-window -t "$session":2 -n trmnl
+	tmux send-keys -t "$session":2 'clear' C-m 'ls -a' C-m 'git status' C-m
+
+	tmux new-window -t "$session":3 -n ai
+	tmux send-keys -t "$session":3 'gemini' C-m
+
+	notify-send "Created Session '$session'..."
 fi
 
-# Start tmux session and windows
-tmux new-session -d -s "$session" -n main
-tmux send-keys -t "$session":1 'clear' C-m 'nvim .' C-m
+# Server window logic
+if [ -n "$SERVERCMD" ]; then
+	cmd=""
 
-tmux new-window -t "$session":2 -n trmnl
-tmux send-keys -t "$session":2 'clear' C-m 'ls -a' C-m 'git status' C-m
+	if ! tmux list-windows -t "${session}:" | awk '{print $1}' \
+		| grep -q '^4:'; then
+		tmux new-window -t "$session":4 -n server
+	fi
 
-tmux new-window -t "$session":3 -n ai
-tmux send-keys -t "$session":3 'gemini' C-m
+	case "$SERVERCMD" in
+		npm)
+			cmd='npm run dev'
+			;;
+		npx)
+			cmd='npx serve dist'
+			;;
+		python)
+			cmd='python3 -m http.server'
+			;;
+		jupyter)
+			cmd='jupyter lab'
+			;;
+		ngrok)
+			cmd='ngrok http 8000'
+			;;
+		*)
+			echo "Unknown server command: $SERVERCMD" >&2
+			;;
+	esac
 
-tmux new-window -t "$session":4 -n server
-case "$server_cmd" in
-  npm)
-    tmux send-keys -t "$session":4 'clear' C-m 'npm run dev' C-m
-    ;;
-  npx)
-    tmux send-keys -t "$session":4 'clear' C-m 'npx serve dist' C-m
-    ;;
-esac
+	if [ -n "$cmd" ]; then
+		tmux send-keys -t "${session}":4 C-c
+		tmux send-keys -t "${session}":4 'clear' C-m
+		tmux send-keys -t "${session}":4 "$cmd" C-m
+	fi
+fi
 
-tmux attach -t "$session":1
-notify-send "Created and attached to session '$session'..."
+# Attach or switch
+if [ -n "${TMUX:-}" ]; then
+	notify-send "Session '$session' already exists"
+	notify-send "Switching to '$session'..."
+	tmux switch-client -t "${session}:"
+else
+	notify-send "Attached to Session '$session'..."
+	tmux attach -t "${session}":1
+fi

@@ -131,9 +131,7 @@ Plug 'christoomey/vim-tmux-navigator' " Navigation between Vim and Tmux splits
 Plug 'nvim-lua/plenary.nvim'          " Lua utility library
 Plug 'nvim-lua/popup.nvim'            " Popup API for Neovim
 Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' } " Fuzzy File Finder
-Plug 'vim-airline/vim-airline'        " Status bar customization
-Plug 'vim-airline/vim-airline-themes' " Vim Airline themes
-Plug 'dense-analysis/ale'             " Linting Engine
+Plug 'nvim-lualine/lualine.nvim'      " Status Bar
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Syntax Highlighting
 Plug 'folke/tokyonight.nvim'          " Tokyonight colorscheme
 Plug 'neovim/nvim-lspconfig'          " Core LSP support
@@ -168,6 +166,8 @@ Plug 'junegunn/fzf.vim'
 Plug '0x100101/lab.nvim', { 'do': 'cd js && npm ci' }
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rcarriga/nvim-notify'
+Plug 'chomosuke/typst-preview.nvim', {'tag': 'v1.*'}
+Plug 'hat0uma/csvview.nvim'
 
 call plug#end()
 
@@ -254,46 +254,63 @@ nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
 nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 
-" VIM-AIRLINE
-let g:airline_theme='angr'
-let g:airline#extensions#branch#enabled = 1
-let g:airline#extensions#hunks#enabled = 1
-let g:airline_powerline_fonts = 1
-
-
-" ALE (Asynchronous Lint Engine)
-let g:ale_enabled = 1
-
-let g:ale_linters = {
-\   'python': ['flake8', 'pylint', 'mypy'],
-\   'css': ['stylelint'],
-\   'scss': ['stylelint'],
-\   'html': ['htmlhint'],
-\   'javascript': ['eslint', 'tsserver'],
-\   'typescript': ['eslint', 'tsserver'],
-\   'typescriptreact': ['eslint', 'tsserver'],
-\   'javascriptreact': ['eslint', 'tsserver'],
-\}
-
-let g:ale_fixers = {
-\   'python': ['black', 'autopep8'],
-\   'javascript': ['eslint', 'prettier'],
-\   'typescript': ['eslint', 'prettier'],
-\   'typescriptreact': ['eslint', 'prettier'],
-\   'javascriptreact': ['eslint', 'prettier'],
-\}
-
-" Enable fixing on save
-let g:ale_fix_on_save = 1
-
-" Set Python linters
-let g:ale_python_flake8_options = '--max-line-length=88'
-let g:ale_python_pylint_options = '--disable=C0114,C0115,C0116'
-
-" Use globally installed ESLint and Prettier
-let g:ale_javascript_eslint_use_global = 1
-let g:ale_javascript_prettier_use_global = 1
-let g:ale_javascript_eslint_options = '--config ~/.eslintrc.js'
+" LUALINE
+lua << EOF
+require('lualine').setup {
+  options = {
+    icons_enabled = true,
+    theme = 'auto',
+    component_separators = { left = '', right = ''},
+    section_separators = { left = '', right = ''},
+    disabled_filetypes = {
+      statusline = {},
+      winbar = {},
+    },
+    ignore_focus = {},
+    always_divide_middle = true,
+    always_show_tabline = true,
+    globalstatus = false,
+    refresh = {
+      statusline = 1000,
+      tabline = 1000,
+      winbar = 1000,
+      refresh_time = 16, -- ~60fps
+      events = {
+        'WinEnter',
+        'BufEnter',
+        'BufWritePost',
+        'SessionLoadPost',
+        'FileChangedShellPost',
+        'VimResized',
+        'Filetype',
+        'CursorMoved',
+        'CursorMovedI',
+        'ModeChanged',
+      },
+    }
+  },
+  sections = {
+    lualine_a = {'mode'},
+    lualine_b = {'branch', 'diff', 'diagnostics'},
+    lualine_c = {'filename'},
+    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_y = {'progress'},
+    lualine_z = {'location'}
+  },
+  inactive_sections = {
+    lualine_a = {},
+    lualine_b = {},
+    lualine_c = {'filename'},
+    lualine_x = {'location'},
+    lualine_y = {},
+    lualine_z = {}
+  },
+  tabline = {},
+  winbar = {},
+  inactive_winbar = {},
+  extensions = {}
+}
+EOF
 
 
 " TREESITTER
@@ -849,4 +866,162 @@ require("notify").setup({
   timeout = 3000,
 })
 vim.notify = require("notify")
+EOF
+
+
+" CSVVIEW
+lua << EOF
+require('csvview').setup({
+  parser = {
+    --- The number of lines that the asynchronous parser processes per cycle.
+    --- This setting is used to prevent monopolization of the main thread when displaying large files.
+    --- If the UI freezes, try reducing this value.
+    --- @type integer
+    async_chunksize = 50,
+
+    --- Specifies the delimiter character to separate columns.
+    --- This can be configured in one of three ways:
+    ---
+    --- 1. As a single string for a fixed delimiter.
+    ---    e.g., delimiter = ","
+    ---
+    --- 2. As a function that dynamically returns the delimiter.
+    ---    e.g., delimiter = function(bufnr) return "\t" end
+    ---
+    --- 3. As a table for advanced configuration:
+    ---    - `ft`: Maps filetypes to specific delimiters. This has the highest priority.
+    ---    - `fallbacks`: An ordered list of delimiters to try for automatic detection
+    ---      when no `ft` rule matches. The plugin will test them in sequence and use
+    ---      the first one that highest scores based on the number of fields in each line.
+    ---
+    --- Note: Only fixed-length strings are supported as delimiters.
+    --- Regular expressions (e.g., `\s+`) are not currently supported.
+    --- @type CsvView.Options.Parser.Delimiter
+    delimiter = {
+      ft = {
+        csv = ",",
+        tsv = "\t",
+      },
+      fallbacks = {
+        ",",
+        "\t",
+        ";",
+        "|",
+        ":",
+        " ",
+      },
+    },
+
+    --- The quote character
+    --- If a field is enclosed in this character, it is treated as a single field and the delimiter in it will be ignored.
+    --- e.g:
+    ---  quote_char= "'"
+    --- You can also specify it on the command line.
+    --- e.g:
+    --- :CsvViewEnable quote_char='
+    --- @type string
+    quote_char = '"',
+
+    --- The comment prefix characters
+    --- If the line starts with one of these characters, it is treated as a comment.
+    --- Comment lines are not displayed in tabular format.
+    --- You can also specify it on the command line.
+    --- e.g:
+    --- :CsvViewEnable comment=#
+    --- @type string[]
+    comments = {
+      -- "#",
+      -- "--",
+      -- "//",
+    },
+
+    --- Maximum lookahead for multi-line fields
+    --- This limits how many lines ahead the parser will look when trying to find 
+    --- the closing quote of a multi-line field. Setting this too high may cause
+    --- performance issues when editing files with unmatched quotes.
+    --- @type integer
+    max_lookahead = 50,
+  },
+  view = {
+    --- minimum width of a column
+    --- @type integer
+    min_column_width = 5,
+
+    --- spacing between columns
+    --- @type integer
+    spacing = 2,
+
+    --- The display method of the delimiter
+    --- "highlight" highlights the delimiter
+    --- "border" displays the delimiter with `│`
+    --- You can also specify it on the command line.
+    --- e.g:
+    --- :CsvViewEnable display_mode=border
+    ---@type CsvView.Options.View.DisplayMode
+    display_mode = "highlight",
+
+    --- The line number of the header row
+    --- Controls which line should be treated as the header for the CSV table.
+    --- This affects both visual styling and the sticky header feature.
+    ---
+    --- Values:
+    --- - `true`: Automatically detect the header line (default)
+    --- - `integer`: Specific line number to use as header (1-based)
+    --- - `false`: No header line, treat all lines as data rows
+    ---
+    --- When a header is defined, it will be:
+    --- - Highlighted with the CsvViewHeaderLine highlight group
+    --- - Used for the sticky header feature if enabled
+    --- - Excluded from normal data processing in some contexts
+    ---
+    --- See also: `view.sticky_header`
+    --- @type integer|false|true
+    header_lnum = true,
+
+    --- The sticky header feature settings
+    --- If `view.header_lnum` is set, the header line is displayed at the top of the window.
+    sticky_header = {
+      --- Whether to enable the sticky header feature
+      --- @type boolean
+      enabled = true,
+
+      --- The separator character for the sticky header window
+      --- set `false` to disable the separator
+      --- @type string|false
+      separator = "─",
+    },
+  },
+
+  --- Keymaps for csvview.
+  --- These mappings are only active when csvview is enabled.
+  --- You can assign key mappings to each action defined in `opts.actions`.
+  --- For example:
+  --- ```lua
+  --- keymaps = {
+  ---   -- Text objects for selecting fields
+  ---   textobject_field_inner = { "if", mode = { "o", "x" } },
+  ---   textobject_field_outer = { "af", mode = { "o", "x" } },
+  ---
+  ---   -- Excel-like navigation:
+  ---   -- Use <Tab> and <S-Tab> to move horizontally between fields.
+  ---   -- Use <Enter> and <S-Enter> to move vertically between rows.
+  ---   -- Note: In terminals, you may need to enable CSI-u mode to use <S-Tab> and <S-Enter>.
+  ---   jump_next_field_end = { "<Tab>", mode = { "n", "v" } },
+  ---   jump_prev_field_end = { "<S-Tab>", mode = { "n", "v" } },
+  ---   jump_next_row = { "<Enter>", mode = { "n", "v" } },
+  ---   jump_prev_row = { "<S-Enter>", mode = { "n", "v" } },
+  ---
+  ---   -- Custom key mapping example:
+  ---   { "<leader>h", function() print("hello") end, mode = "n" },
+  --- }
+  --- ```
+  --- @type CsvView.Options.Keymaps
+  keymaps = {},
+
+  --- Actions for keymaps.
+  ---@type CsvView.Options.Actions
+  actions = {
+    -- See lua/csvview/config.lua
+  },
+})
 EOF

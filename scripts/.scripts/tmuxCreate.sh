@@ -63,6 +63,8 @@ if [ -n "$SERVERCMD" ]; then
 	fi
 fi
 
+tmux select-window -t "${session}:1"
+
 # Attach or switch
 if [ -n "${TMUX:-}" ]; then
 	notify-send "Session '$session' already exists"

@@ -18,7 +18,7 @@ if ! tmux has-session -t "${session}:" 2>/dev/null; then
 	tmux send-keys -t "$session":1 'clear' C-m 'nvim .' C-m
 
 	tmux new-window -t "$session":2 -n trmnl
-	tmux send-keys -t "$session":2 'clear' C-m 'ls -a' C-m 'git status' C-m
+	tmux send-keys -t "$session":2 'clear' C-m 'la' C-m 'git status' C-m
 
 	tmux new-window -t "$session":3 -n ai
 	tmux send-keys -t "$session":3 'gemini' C-m

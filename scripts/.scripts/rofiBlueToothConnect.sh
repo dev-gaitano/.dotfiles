@@ -11,7 +11,6 @@ get_bluetooth_devices() {
 	bluetoothctl scan on &
 	scan_pid=$!
 
-
 	# Wait a few seconds to discover devices
 	notify-send -u low "Please wait, scanning for devices..."
 	sleep "$scan_time"
@@ -21,18 +20,18 @@ get_bluetooth_devices() {
 	kill "$scan_pid" 2>/dev/null
 
 	# Clear the temporary file
-	> "$config_tmp"
+	>"$config_tmp"
 
 	# Paired devices (filter lines starting with 'Device' and parse MAC;Name)
-	bluetoothctl paired-devices | grep -E '^Device ([0-9A-F]{2}:){5}[0-9A-F]{2}' \
-		| awk '{print $2 ";" substr($0, index($0,$3))}' >> "$config_tmp"
+	bluetoothctl paired-devices | grep -E '^Device ([0-9A-F]{2}:){5}[0-9A-F]{2}' |
+		awk '{print $2 ";" substr($0, index($0,$3))}' >>"$config_tmp"
 
 	# Nearby devices (filter lines starting with 'Device' and parse MAC;Name)
-	bluetoothctl devices | grep -E '^Device ([0-9A-F]{2}:){5}[0-9A-F]{2}' \
-		| awk '{print $2 ";" substr($0, index($0,$3))}' >> "$config_tmp"
+	bluetoothctl devices | grep -E '^Device ([0-9A-F]{2}:){5}[0-9A-F]{2}' |
+		awk '{print $2 ";" substr($0, index($0,$3))}' >>"$config_tmp"
 
 	# Remove duplicates (by MAC)
-	awk -F';' '!seen[$1]++' "$config_tmp" > "${config_tmp}.tmp" && mv "${config_tmp}.tmp" "$config_tmp"
+	awk -F';' '!seen[$1]++' "$config_tmp" >"${config_tmp}.tmp" && mv "${config_tmp}.tmp" "$config_tmp"
 }
 
 connect_device() {
@@ -55,30 +54,30 @@ choose_bluetooth_device() {
 
 	# Build menu with device names + "off" option
 	menu=$(awk -F';' '{print $2}' "$config_tmp" | sort)
-	choice=$(printf "%s\ndisconnect\noff" "$menu" \
-		| rofi -dmenu -i -p "Bluetooth" -theme-str 'window {width: 20%; height: 24%;}')
+	choice=$(printf "%s\ndisconnect\noff" "$menu" |
+		rofi -dmenu -i -p "Bluetooth" -theme-str 'window {width: 20%; height: 24%;}')
 
 	case "$choice" in
-		disconnect)
-			bluetoothctl disconnect
-			notify-send -u low "Bluetooth disconnected"
-			#TODO: Add logic to check if Bluetooth is on
+	disconnect)
+		bluetoothctl disconnect
+		notify-send -u low "Bluetooth disconnected"
+		#TODO: Add logic to check if Bluetooth is on
 		;;
-		off)
-			bluetoothctl power off
-			notify-send -u low "Bluetooth turned off"
-			#TODO: Add logic to check if Bluetooth is on
+	off)
+		bluetoothctl power off
+		notify-send -u low "Bluetooth turned off"
+		#TODO: Add logic to check if Bluetooth is on
 		;;
-		"")
-			exit
+	"")
+		exit
 		;;
-		*)
-			mac=$(grep -F ";$choice" "$config_tmp" | awk -F';' '{print $1}')
-			if [ -n "$mac" ]; then
-				connect_device "$mac" "$choice"
-			else
-				notify-send -u critical "Device not found"
-			fi
+	*)
+		mac=$(grep -F ";$choice" "$config_tmp" | awk -F';' '{print $1}')
+		if [ -n "$mac" ]; then
+			connect_device "$mac" "$choice"
+		else
+			notify-send -u critical "Device not found"
+		fi
 		;;
 	esac
 }

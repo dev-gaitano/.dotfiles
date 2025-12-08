@@ -4,9 +4,9 @@ set -eu
 
 raw="$(basename "$PWD")"
 
-session="$(printf '%s' "$raw" \
-	| sed 's/^[.]*//' \
-	| sed 's/[^a-zA-Z0-9_-]/_/g')"
+session="$(printf '%s' "$raw" |
+	sed 's/^[.]*//' |
+	sed 's/[^a-zA-Z0-9_-]/_/g')"
 
 [ -z "$session" ] && session="default"
 
@@ -30,30 +30,30 @@ fi
 if [ -n "$SERVERCMD" ]; then
 	cmd=""
 
-	if ! tmux list-windows -t "${session}:" | awk '{print $1}' \
-		| grep -q '^4:'; then
+	if ! tmux list-windows -t "${session}:" | awk '{print $1}' |
+		grep -q '^4:'; then
 		tmux new-window -t "$session":4 -n server
 	fi
 
 	case "$SERVERCMD" in
-		npm)
-			cmd='npm run dev'
-			;;
-		npx)
-			cmd='npx serve dist'
-			;;
-		python)
-			cmd='python3 -m http.server'
-			;;
-		jupyter)
-			cmd='jupyter lab'
-			;;
-		ngrok)
-			cmd='ngrok http 8000'
-			;;
-		*)
-			echo "Unknown server command: $SERVERCMD" >&2
-			;;
+	npm)
+		cmd='npm run dev'
+		;;
+	npx)
+		cmd='npx serve dist'
+		;;
+	python)
+		cmd='python3 -m http.server'
+		;;
+	jupyter)
+		cmd='jupyter lab'
+		;;
+	ngrok)
+		cmd='ngrok http 8000'
+		;;
+	*)
+		echo "Unknown server command: $SERVERCMD" >&2
+		;;
 	esac
 
 	if [ -n "$cmd" ]; then

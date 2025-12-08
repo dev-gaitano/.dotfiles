@@ -7,7 +7,7 @@ clear
 ~/.scripts/feed.sh
 
 # fetch
-fastfetch --logo "~/03-documents/04-misc/fetch-logo.txt"
+fastfetch --logo "$HOME/03-documents/04-misc/fetch-logo.txt"
 
 echo " "
 name="$USER"

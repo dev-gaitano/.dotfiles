@@ -20,7 +20,3 @@ if [ "$answer" = "y" ] || [ "$answer" = "Y" ]; then
 else
 	exit 0
 fi
-
-
-
-

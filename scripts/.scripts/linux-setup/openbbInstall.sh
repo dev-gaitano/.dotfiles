@@ -29,4 +29,3 @@ echo "Then launch with:"
 echo "    python -m openbb"
 echo "or"
 echo "    openbb"
-

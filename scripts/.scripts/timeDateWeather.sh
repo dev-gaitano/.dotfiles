@@ -11,12 +11,7 @@ geo=$(curl -s https://ipapi.co/json)
 lat=$(printf "%s" "$geo" | jq -r '.latitude')
 lon=$(printf "%s" "$geo" | jq -r '.longitude')
 
-#printf "%s\n" "$lat"
-#printf "%s\n" "$lon"
-
 weather=$(curl -s "https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric")
-#printf "%s\n" "$weather"
-
 temp=$(printf "%s" "$weather" | jq -r '.main.temp')
-#printf "| %s C" "$temp"
+
 echo " $time | $date | ${temp}°C"

@@ -2,7 +2,12 @@
   "general": {
     "preferredEditor": "neovim",
     "vimMode": false,
-    "checkpointing.enabled": true
+    "checkpointing.enabled": true,
+    "sessionRetention": {
+      "enabled": true,
+      "maxAge": "30d",
+      "warningAcknowledged": true
+    }
   },
   "ui": {
     "showMemoryUsage": true,

@@ -168,7 +168,6 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rcarriga/nvim-notify'
 Plug 'chomosuke/typst-preview.nvim', {'tag': 'v1.*'}
 Plug 'hat0uma/csvview.nvim'
-Plug 'TiagoMDG/react-comp-gen.nvim'
 Plug 'mfussenegger/nvim-dap'
 Plug 'nvim-neotest/nvim-nio'
 Plug 'rcarriga/nvim-dap-ui'
@@ -1031,31 +1030,6 @@ require('csvview').setup({
   },
 })
 EOF
-
-
-" Configure it with the correct module name
-lua << EOF
-require('react-component-generator').setup({
-  templates = {
-    component = [[
-import React from 'react';
-
-function {{ComponentName}} () {
-  return (
-    <div>
-      <h1>{{ComponentName}}</h1>
-    </div>
-  );
-};
-
-export default {{ComponentName}};
-    ]],
-  },
-})
-EOF
-
-nnoremap <leader>rc :ReactCompGen<CR>
-
 
 
 " DAP

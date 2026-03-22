@@ -29,6 +29,16 @@
 
 [pull]
 	default = current
+	rebase = true
 
 [rebase]
 	autostash = true
+
+[difftool "oy"]
+    cmd = oy "$LOCAL" "$REMOTE"
+
+[difftool]
+    prompt = false
+
+[alias]
+    d = difftool -y --tool=oy

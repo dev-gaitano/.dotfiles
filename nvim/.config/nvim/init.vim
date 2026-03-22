@@ -168,6 +168,11 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'rcarriga/nvim-notify'
 Plug 'chomosuke/typst-preview.nvim', {'tag': 'v1.*'}
 Plug 'hat0uma/csvview.nvim'
+Plug 'TiagoMDG/react-comp-gen.nvim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-neotest/nvim-nio'
+Plug 'rcarriga/nvim-dap-ui'
+Plug 'theHamsta/nvim-dap-virtual-text'
 
 call plug#end()
 

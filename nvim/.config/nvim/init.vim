@@ -1030,3 +1030,89 @@ require('csvview').setup({
   },
 })
 EOF
+
+
+" Configure it with the correct module name
+lua << EOF
+require('react-component-generator').setup({
+  templates = {
+    component = [[
+import React from 'react';
+
+function {{ComponentName}} () {
+  return (
+    <div>
+      <h1>{{ComponentName}}</h1>
+    </div>
+  );
+};
+
+export default {{ComponentName}};
+    ]],
+  },
+})
+EOF
+
+nnoremap <leader>rc :ReactCompGen<CR>
+
+
+
+" DAP
+lua << EOF
+local dap = require("dap")
+local ui = require("dapui")
+
+require("dapui").setup()
+
+local debugpy = vim.fn.exepath "debugpy"
+if debugpy ~= "" then
+  dap.adapters.python = {
+    type = 'executable',
+    command = 'python3',
+    args = { '-m', 'debugpy.adapter' },
+  }
+
+  dap.configurations.python = {
+    {
+      type = 'python',
+      request = 'launch',
+      name = "Launch file",
+      program = "${file}",
+      pythonPath = function()
+        -- Try to detect virtual environment
+        local cwd = vim.fn.getcwd()
+        if vim.fn.executable(cwd .. '/venv/bin/python') == 1 then
+          return cwd .. '/venv/bin/python'
+        elseif vim.fn.executable(cwd .. '/.venv/bin/python') == 1 then
+          return cwd .. '/.venv/bin/python'
+        else
+          return '/usr/bin/python3'
+        end
+      end,
+    },
+  }
+
+  
+end
+
+-- Auto-open DAP UI on debugging events
+local dap, dapui = require("dap"), require("dapui")
+dap.listeners.before.attach.dapui_config = function()
+  dapui.open()
+end
+dap.listeners.before.launch.dapui_config = function()
+  dapui.open()
+end
+EOF
+
+nnoremap <leader>du :lua require("dapui").toggle()<CR>
+nnoremap <leader>db :lua require('dap').toggle_breakpoint()<CR>
+nnoremap <leader>dc :lua require('dap').continue()<CR>
+nnoremap <leader>di :lua require('dap').step_into()<CR>
+nnoremap <leader>do :lua require('dap').step_over()<CR>
+nnoremap <leader>dO :lua require('dap').step_out()<CR>
+nnoremap <leader>dr :lua require('dap').repl.open()<CR>
+nnoremap <leader>dl :lua require('dap').run_last()<CR>
+nnoremap <leader>dt :lua require('dap').terminate()<CR>
+nnoremap <leader>dh :lua require('dap.ui.widgets').hover()<CR>
+vnoremap <M-k> <Cmd>lua require("dapui").eval()<CR>

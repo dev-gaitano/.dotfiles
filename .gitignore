@@ -3,3 +3,4 @@ gemini/.gemini/tmp/
 newsboat/.newsboat/cache.db
 
 mpd/.mpd/log
+mpd/.mpd/state

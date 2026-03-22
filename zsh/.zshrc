@@ -155,7 +155,7 @@ alias schrofer="~/.scripts/schroferStart.sh"
 # Custom Aliases
 # git
 alias gs="git status"
-alias gd="git diff"
+alias gd="git d"
 alias gds="git diff --staged"
 alias ga="git add"
 alias gap="git add -p"

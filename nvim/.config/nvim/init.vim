@@ -367,6 +367,7 @@ vim.lsp.enable("jsonls")
 vim.lsp.enable("marksman")
 vim.lsp.enable("vimls")
 vim.lsp.enable("lua_ls")
+vim.lsp.enable("sqlls")
 
 -- Format on save using LSP
 vim.api.nvim_create_autocmd("BufWritePre", {
@@ -468,7 +469,7 @@ require('gitsigns').setup {
   },
   signs_staged_enable = true,
   signcolumn = true,  -- Toggle with `:Gitsigns toggle_signs`
-  numhl      = false, -- Toggle with `:Gitsigns toggle_numhl`
+  numhl      = true, -- Toggle with `:Gitsigns toggle_numhl`
   linehl     = false, -- Toggle with `:Gitsigns toggle_linehl`
   word_diff  = false, -- Toggle with `:Gitsigns toggle_word_diff`
   watch_gitdir = {

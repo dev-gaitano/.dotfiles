@@ -21,7 +21,7 @@ if ! tmux has-session -t "${session}:" 2>/dev/null; then
 	tmux send-keys -t "$session":2 'clear' C-m 'la' C-m 'git status' C-m
 
 	tmux new-window -t "$session":3 -n ai
-	tmux send-keys -t "$session":3 'gemini' C-m
+	tmux send-keys -t "$session":3 'clear' C-m 'gemini' C-m
 
 	notify-send "Created Session '$session'..."
 fi

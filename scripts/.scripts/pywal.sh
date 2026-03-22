@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-wal -i ~/02-media/01-pictures/04-wallpapers/
+wal -i ~/02-media/01-pictures/03-wallpapers/
 
 clear
 

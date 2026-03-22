@@ -60,7 +60,7 @@ if tmux has-session -t "$SESSION" 2>/dev/null; then
 	elif [ "$answer" -eq 2 ]; then
 		createNewSession
 	else
-		attachToExistingSession
+		exit 0
 	fi
 else
 	createSession1914

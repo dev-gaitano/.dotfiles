@@ -75,7 +75,7 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 exec --no-startup-id dunst --config ~/.config/dunst/dunstrc
 
 
-exec --no-startup-id i3-msg "workspace 1; exec $term"
+exec --no-startup-id i3-msg "workspace 1; exec $term -e ~/.scripts/startUp.sh"
 exec --no-startup-id i3-msg "workspace 2; exec $browser"
 exec --no-startup-id i3-msg "workspace 3; exec $obsidian"
 

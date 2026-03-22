@@ -39,6 +39,9 @@ if [ -n "$SERVERCMD" ]; then
 	npm)
 		cmd='npm run dev'
 		;;
+	npm-fs)
+		cmd='cd frontend && npm run dev'
+		;;
 	npx)
 		cmd='npx serve dist'
 		;;

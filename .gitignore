@@ -1,3 +1,5 @@
 gemini/.gemini/oauth_creds.json
 gemini/.gemini/tmp/
 newsboat/.newsboat/cache.db
+
+mpd/.mpd/log

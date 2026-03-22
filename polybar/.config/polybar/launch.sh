@@ -7,4 +7,5 @@ killall -q polybar
 while pgrep -u $UID -x polybar >/dev/null; do sleep 0.2; done
 
 # Launch main bar
-polybar main &
+polybar top &
+polybar bottom &

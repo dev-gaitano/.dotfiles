@@ -13,7 +13,7 @@ session="$(printf '%s' "$raw" |
 SERVERCMD="${1:-}"
 
 # Create session if missing
-if ! tmux has-session -t "${session}:" 2>/dev/null; then
+if ! tmux has-session -t "${session}:" 2>/dev/null; then # NOTE: What does this do?
 	tmux new-session -ds "$session" -n main
 	tmux send-keys -t "$session":1 'clear' C-m 'nvim .' C-m
 
@@ -21,8 +21,8 @@ if ! tmux has-session -t "${session}:" 2>/dev/null; then
 	tmux send-keys -t "$session":2 'clear' C-m 'la' C-m 'git status' C-m
 
 	tmux new-window -t "$session":3 -n ai
-	#tmux send-keys -t "$session":3 'clear' C-m 'gemini' C-m
-	tmux send-keys -t "$session":3 'clear' C-m 'openclaude' C-m
+	tmux send-keys -t "$session":3 'clear' C-m 'gemini' C-m
+	#tmux send-keys -t "$session":3 'clear' C-m 'openclaude' C-m
 
 	notify-send "Created Session '$session'..."
 fi

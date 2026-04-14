@@ -13,8 +13,8 @@ createSession1914() {
 	tmux new-window -t "$SESSION:2" -n ranger
 	tmux send-keys -t "$SESSION:2" "ranger" C-m
 	tmux new-window -t "$SESSION:3" -n ai
-	#tmux send-keys -t "$SESSION:3" "gemini" C-m
-	tmux send-keys -t "$SESSION:3" "openclaude" C-m
+	tmux send-keys -t "$SESSION:3" "gemini" C-m
+	#tmux send-keys -t "$SESSION:3" "openclaude" C-m
 	tmux new-window -t "$SESSION:4" -n obsidian
 	tmux send-keys -t "$SESSION:4" "obsdn" C-m
 	tmux send-keys -t "$SESSION:4" "nvim ." C-m

@@ -59,7 +59,7 @@ nnoremap gK :lua require("hover").hover_select()<CR>
 nnoremap <leader>d :lua require("hover.providers.dictionary").hover()<CR>
 
 " Use Ctrl + Tab / Ctrl + Shift + Tab to switch tabs
-nnoremap <C-Tab>   :tabnext<CR>
+nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-A-t> :tabprevious<CR>
 
 " Open a new tab quickly
@@ -81,10 +81,10 @@ nnoremap <C-p> :belowright split<CR>:terminal<CR>
 tnoremap <Esc> <C-\><C-n>
 
 " Resize splits using Shift + Arrow keys
-nnoremap <S-Left>  :vertical resize -5<CR>
-nnoremap <S-Right> :vertical resize +5<CR>
-nnoremap <S-Up>    :resize +5<CR>
-nnoremap <S-Down>  :resize -5<CR>
+nnoremap <S-Left>  :vertical resize -2<CR>
+nnoremap <S-Right> :vertical resize +2<CR>
+nnoremap <S-Up>    :resize +2<CR>
+nnoremap <S-Down>  :resize -2<CR>
 
 " Browser-sync (works like live server)
 nnoremap <leader>bs :!browser-sync start --server --files "*.html, css/*.css, js/*.js" &<CR>

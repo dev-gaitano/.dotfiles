@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-NVIM_RELEASE="release-0.11"
+NVIM_RELEASE="release-0.12"
 
 read -r -p "Do you want to install Neovim $NVIM_RELEASE? (y/n): " answer
 

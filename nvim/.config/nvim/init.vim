@@ -873,6 +873,11 @@ require('lab').setup {
   },
   quick_data = {
     enabled = true,
+  },
+  icons = {
+    log = '',
+    error = '',
+    paused = '',
   }
 }
 EOF

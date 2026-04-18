@@ -319,11 +319,14 @@ EOF
 
 " TREESITTER
 lua << EOF
-require('nvim-treesitter.configs').setup({
-  ensure_installed = { "python", "javascript", "typescript", "tsx", "lua", "bash", "json", "html", "css", "markdown", "markdown_inline", "c", "cpp" },
-    highlight = {
-      enable = true, 
-    },
+require('nvim-treesitter').setup {
+  -- Directory to install parsers and queries to (prepended to `runtimepath` to have priority)
+  install_dir = vim.fn.stdpath('data') .. '/site'
+}
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { "python", "javascript", "typescript", "sql", "tsx", "lua", "dockerfile", "vim", "vimdoc", "bash", "json", "html", "css", "markdown", "markdown_inline", "c", "cpp" },
+  callback = function() vim.treesitter.start() end,
 })
 EOF
 

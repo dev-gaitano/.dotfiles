@@ -85,7 +85,7 @@ nnoremap <S-Up>    :resize +2<CR>
 nnoremap <S-Down>  :resize -2<CR>
 
 " Browser-sync (works like live server)
-nnoremap <leader>bs :!browser-sync start --server --files "*.html, css/*.css, js/*.js" &<CR>
+nnoremap <leader>bs :!browser-sync start --server --files "*.html,css/*.css,js/*.js" &<CR>
 
 " Move highlighted block
 vnoremap J :m '>+1<CR>gv=gv

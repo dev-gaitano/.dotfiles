@@ -59,20 +59,18 @@ nnoremap gK :lua require("hover").hover_select()<CR>
 nnoremap <leader>d :lua require("hover.providers.dictionary").hover()<CR>
 
 " Use Ctrl + Tab / Ctrl + Shift + Tab to switch tabs
-nnoremap <C-Tab> :tabnext<CR>
+"nnoremap <C-Tab> :tabnext<CR>
 nnoremap <C-A-t> :tabprevious<CR>
 
-" Open a new tab quickly
+" Open a new tab and Close the current tab quickly
 nnoremap <C-t> :tabnew<CR>
-
-" Close the current tab
 nnoremap <C-w> :tabclose<CR>
 
 " Use Alt + Arrow Keys to move between splits
-nnoremap <A-Left>  :leftabove vsplit<CR>
-nnoremap <A-Down>  :split<CR>
-nnoremap <A-Up>    :aboveleft split<CR>
-nnoremap <A-Right> :vsplit<CR>
+nnoremap <A-h> :leftabove vsplit<CR>
+nnoremap <A-j> :split<CR>
+nnoremap <A-k> :aboveleft split<CR>
+nnoremap <A-l> :vsplit<CR>
 
 " Use Ctrl+` to open terminal
 nnoremap <C-p> :belowright split<CR>:terminal<CR>

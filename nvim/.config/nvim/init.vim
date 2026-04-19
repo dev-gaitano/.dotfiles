@@ -332,9 +332,13 @@ require('nvim-treesitter').setup {
 }
 
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { "python", "javascript", "typescript", "sql", "tsx", "lua", "dockerfile", "vim", "vimdoc", "bash", "json", "html", "css", "markdown", "markdown_inline", "c", "cpp" },
+  pattern = { "python", "javascript", "typescript", "sql", "tsx", "typst", "lua", "dockerfile", "vim", "vimdoc", "bash", "zsh", "json", "html", "css", "markdown", "markdown_inline", "c", "cpp" },
   callback = function() vim.treesitter.start() end,
 })
+
+vim.opt.foldexpr = 'v:lua.vim.treesitter.foldexpr()'
+vim.opt.foldmethod = 'expr'
+vim.opt.foldlevelstart = 99
 EOF
 
 

@@ -128,7 +128,7 @@ Plug 'preservim/nerdcommenter'        " Enables quick commenting in code
 Plug 'christoomey/vim-tmux-navigator' " Navigation between Vim and Tmux splits 
 Plug 'nvim-lua/plenary.nvim'          " Lua utility library
 Plug 'nvim-lua/popup.nvim'            " Popup API for Neovim
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.8' } " Fuzzy File Finder
+Plug 'nvim-telescope/telescope.nvim', { 'branch': '0.1.x' } " Fuzzy File Finder
 Plug 'nvim-lualine/lualine.nvim'      " Status Bar
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} " Syntax Highlighting
 Plug 'folke/tokyonight.nvim'          " Tokyonight colorscheme

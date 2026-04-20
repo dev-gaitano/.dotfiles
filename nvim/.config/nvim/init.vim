@@ -147,7 +147,6 @@ Plug 'roobert/tailwindcss-colorizer-cmp.nvim' " Show TailwindCSS colors in previ
 Plug 'ThePrimeagen/harpoon'           " Harpoon File Navigator
 Plug 'mbbill/undotree'                " Undo Tree
 Plug 'ThePrimeagen/vim-be-good'       " Vim Practice Game
-Plug 'CopilotC-Nvim/CopilotChat.nvim' " Copilot Chat integration
 Plug 'MeanderingProgrammer/render-markdown.nvim' " Render markdown syntax
 Plug 'code-biscuits/nvim-biscuits'    " Show code context in the gutter
 Plug 'epwalsh/obsidian.nvim'          " Obsidian integration for Neovim
@@ -567,52 +566,6 @@ require("nvim-biscuits").setup({
   },
   cursor_line_only = true,
 })
-EOF
-
-
-" COPILOT CHAT
-lua << EOF
-require("CopilotChat").setup {
-  window = {
-    layout = 'vertical', -- 'vertical', 'horizontal', 'float', 'replace', or a function that returns the layout
-    width = 0.3, -- fractional width of parent, or absolute width in columns when > 1
-    height = 0.5, -- fractional height of parent, or absolute height in rows when > 1
-    -- Options below only apply to floating windows
-    relative = 'win', -- 'editor', 'win', 'cursor', 'mouse'
-    border = 'single', -- 'none', single', 'double', 'rounded', 'solid', 'shadow'
-    row = nil, -- row position of the window, default is centered
-    col = nil, -- column position of the window, default is centered
-    title = 'Copilot Chat', -- title of chat window
-    footer = nil, -- footer of chat window
-    zindex = 1, -- determines if window is on top or below other floating windows
-  },
-  prompts = {
-  Explain = {
-    prompt = 'Write an explanation for the selected code as paragraphs of text.',
-    system_prompt = 'COPILOT_EXPLAIN',
-  },
-  Review = {
-    prompt = 'Review the selected code.',
-    system_prompt = 'COPILOT_REVIEW',
-  },
-  Fix = {
-    prompt = 'There is a problem in this code. Identify the issues and rewrite the code with fixes. Explain what was wrong and how your changes address the problems.',
-  },
-  Optimize = {
-    prompt = 'Optimize the selected code to improve performance and readability. Explain your optimization strategy and the benefits of your changes.',
-  },
-  Docs = {
-    prompt = 'Please add documentation comments to the selected code.',
-  },
-  Tests = {
-    prompt = 'Please generate tests for my code.',
-  },
-  Commit = {
-    prompt = 'Write commit message for the change with commitizen convention. Keep the title under 50 characters and wrap message at 72 characters. Format as a gitcommit code block.',
-    context = 'git:staged',
-  },
-  },
-}
 EOF
 
 

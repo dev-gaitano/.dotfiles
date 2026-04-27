@@ -225,7 +225,7 @@ export PATH="$PATH:/opt/resolve/bin/resolve"
 
 
 setopt CORRECT
-setxkbmap -option compose:ralt
+#setxkbmap -option compose:ralt
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!

@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-redshift -O 5000
+wlsunset -T 5000 &
 ~/.scripts/pywal.sh
 clear
 

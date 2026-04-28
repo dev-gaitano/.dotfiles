@@ -136,6 +136,8 @@ alias neofetchconf="nvim ~/.config/neofetch/config.conf"
 alias kittyconf="nvim ~/.config/kitty/kitty.conf"
 alias picomconf="nvim ~/.config/picom/picom.conf"
 alias dunstconf="nvim ~/.config/dunst/dunstrc"
+alias hyprconf="nvim ~/.config/hypr/"
+alias waybarconf="nvim ~/.config/wayabar/"
 
 # Programs
 alias browser="firefox"

@@ -243,12 +243,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-#export CLAUDE_CODE_USE_OPENAI=1
-#export OPENAI_API_KEY="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"
-#export OPENAI_MODEL=gpt-4o
-
-export CLAUDE_CODE_USE_OPENAI=1
-export OPENAI_API_KEY="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"
-export OPENAI_BASE_URL=https://openrouter.ai/api/v1
-export OPENAI_MODEL=google/gemini-2.0-flash-001

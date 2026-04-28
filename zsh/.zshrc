@@ -137,7 +137,7 @@ alias kittyconf="nvim ~/.config/kitty/kitty.conf"
 alias picomconf="nvim ~/.config/picom/picom.conf"
 alias dunstconf="nvim ~/.config/dunst/dunstrc"
 alias hyprconf="nvim ~/.config/hypr/"
-alias waybarconf="nvim ~/.config/wayabar/"
+alias waybarconf="nvim ~/.config/waybar/"
 
 # Programs
 alias browser="firefox"
@@ -153,6 +153,7 @@ alias hdmi="~/.scripts/hdmiConnect.sh"
 alias bt="~/.scripts/bluetoothConnect.sh"
 alias nvimUpdate="~/.scripts/linux-setup/nvimUpdate.sh"
 alias schrofer="~/.scripts/schroferStart.sh"
+alias mm="~/.scripts/marinesOpen.sh"
 
 # Custom Aliases
 # git

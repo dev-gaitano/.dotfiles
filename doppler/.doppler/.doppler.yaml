@@ -6,6 +6,9 @@ scoped:
     /home/gaitano/01-studio/01-src/jasmijn-schrofer:
         enclave.project: jasmijn-schrofer
         enclave.config: dev
+    /home/gaitano/01-studio/01-src/topbox:
+        enclave.project: topbox
+        enclave.config: dev
     /home/gaitano/01-studio/src/jasmijn-schrofer:
         enclave.project: jasmijn-schrofer
         enclave.config: dev
@@ -13,6 +16,6 @@ scoped:
         enclave.project: jasmijn-schrofer
         enclave.config: dev
 version-check:
-    checked-at: 2025-10-14T09:09:41.398880282+03:00
+    checked-at: 2026-04-14T21:58:18.366438438+03:00
 tui:
     introVersionSeen: 0

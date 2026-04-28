@@ -6,12 +6,10 @@
 }
 
 window#waybar {
-  background-color: alpha(@background, 0.7);
+  background: none;
   border: none;
   border-radius: 15px;
   color: @foreground;
-  transition-property: background-color;
-  transition-duration: .5s;
 }
 
 window#waybar.hidden {
@@ -27,6 +25,7 @@ window#waybar.hidden {
 #idle_inhibitor,
 #custom-power,
 #pulseaudio,
+#keyboard-state,
 #backlight,
 #cpu,
 #memory,
@@ -46,27 +45,28 @@ window#waybar.hidden {
   margin: 0 4px;
 }
 
-.modules-left>widget:first-child>#workspaces {
-  margin-left: 0;
-}
-
-.modules-right>widget:last-child>#workspaces {
-  margin-right: 0;
+#workspaces {
+  background-color: alpha(@background, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: solid 2px @color1;
+  border-radius: 15px;
 }
 
 #workspaces button {
   padding: 0 4px;
   background-color: transparent;
-  color: @foreground;
+  color: @color1;
+  -gtk-icon-effect: dim;
 }
 
 #workspaces button:hover {
   background: rgba(0, 0, 0, 0.2);
 }
 
-#workspaces button.focused {
-  background-color: @color1;
-  color: @background;
+#workspaces button.active {
+  color: @foreground;
+  -gtk-icon-effect: none;
 }
 
 #workspaces button.urgent {
@@ -76,6 +76,7 @@ window#waybar.hidden {
 #mpd {
   background-color: @color8;
   color: @background;
+  border-radius: 15px;
 }
 
 #mpd.disconnected {
@@ -94,6 +95,7 @@ window#waybar.hidden {
   background-color: #66cc99;
   color: #2a5c45;
   min-width: 100px;
+  border-radius: 15px;
 }
 
 #custom-media.custom-spotify {
@@ -105,13 +107,22 @@ window#waybar.hidden {
 }
 
 #clock {
-  background-color: @color2;
-  color: @background;
+  background-color: @color1;
+  border-radius: 15px;
 }
 
 #network {
   background-color: @color4;
   color: @background;
+  border-radius: 15px;
+}
+
+#tray {
+  background-color: alpha(@background, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: solid 2px @color1;
+  border-radius: 15px;
 }
 
 #tray>.passive {
@@ -123,15 +134,47 @@ window#waybar.hidden {
   background-color: #eb4d4b;
 }
 
+#idle_inhibitor {
+  background-color: alpha(@background, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: solid 2px @color1;
+  border-radius: 15px;
+}
+
 #idle_inhibitor.activated {
   color: #26A65B;
 }
 
+#custom-power {
+  background-color: alpha(@background, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: solid 2px @color1;
+  border-radius: 15px;
+}
+
 /* Bottom bar */
+window#waybar.bottom .modules-left {
+  background-color: alpha(@background, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: solid 2px @color2;
+  border-radius: 15px;
+}
+
+window#waybar.bottom .modules-right {
+  background-color: alpha(@background, 0.7);
+  transition-property: background-color;
+  transition-duration: .5s;
+  border: solid 2px @color2;
+  border-radius: 15px;
+}
+
 #pulseaudio {
   background-color: @color5;
   color: @background;
-  border-radius: 15px 0 0 15px;
+  border-radius: 15px;
 }
 
 #pulseaudio.muted {
@@ -142,6 +185,7 @@ window#waybar.hidden {
 #temperature {
   background-color: #26A65B;
   color: @background;
+  border-radius: 15px;
 }
 
 #temperature.critical {
@@ -151,7 +195,7 @@ window#waybar.hidden {
 #battery {
   background-color: @color3;
   color: @background;
-  border-radius: 0 15px 15px 0;
+  border-radius: 15px;
 }
 
 #battery.charging,

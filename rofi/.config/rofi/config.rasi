@@ -29,7 +29,8 @@ window {
     border-radius:               20px;
     border-color:                @border-color;
     cursor:                      "default";
-    background-color:            @background-color;
+    //background-color:            @background-color;
+    background-color:		rgba(0, 0, 0, 0.5);
 }
 
 /*****----- Main Box -----*****/
@@ -87,13 +88,13 @@ element {
     text-color:                  @foreground;
 }
 
-element normal.normal       { background-color: var(normal-background); text-color: var(normal-foreground); }
+element normal.normal       { background-color: transparent; text-color: var(normal-foreground); }
 element normal.urgent       { background-color: var(urgent-background); text-color: var(urgent-foreground); }
 element normal.active       { background-color: var(active-background); text-color: var(active-foreground); }
 element selected.normal     { background-color: var(selected-normal-background); text-color: var(selected-normal-foreground); }
 element selected.urgent     { background-color: var(selected-urgent-background); text-color: var(selected-urgent-foreground); }
 element selected.active     { background-color: var(selected-active-background); text-color: var(selected-active-foreground); }
-element alternate.normal    { background-color: var(alternate-normal-background); text-color: var(alternate-normal-foreground); }
+element alternate.normal    { background-color: transparent; text-color: var(alternate-normal-foreground); }
 element alternate.urgent    { background-color: var(alternate-urgent-background); text-color: var(alternate-urgent-foreground); }
 element alternate.active    { background-color: var(alternate-active-background); text-color: var(alternate-active-foreground); }
 
@@ -121,7 +122,8 @@ mode-switcher {
 button {
     padding: 5px 10px;
     border-radius: 20px;
-    background-color: @alternate-normal-background;
+    //background-color: @alternate-normal-background;
+    background-color: rgba(255, 255, 255, 0.1);
     text-color: inherit;
 }
 

@@ -1,0 +1,19 @@
+Created At: 2026-11-19T23:32:02+03:00
+Completed At: 2026-11-19T23:32:02+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name               Version    Architecture Description
+├┼┼─══════════════════─══════════─════════════─════════════════════════════════════════════════════
+un  steam              <none>     <none>       (no description available)
+un  steam-devices      <none>     <none>       (no description available)
+un  steam-installer    <none>     <none>       (no description available)
+ii  steam-launcher     1:1.0.0.87 amd64        Launcher for the Steam software distribution service
+ii  steam-libs-amd64   1:1.0.0.87 amd64        Steam libraries metapackage
+un  steam-libs-i386    <none>     <none>       (no description available)
+un  steam64            <none>     <none>       (no description available)
+un  steamos-base-files <none>     <none>       (no description available)
+Steam	com.valvesoftware.Steam	1.0.0.83	stable	system

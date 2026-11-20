@@ -1,0 +1,79 @@
+commit 24f67ae0fc9856692b1e86698da7013fca28d622
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Wed Oct 28 20:59:25 2026 +0300
+
+    feat(projects): give each project card its own GLB model
+    
+    - Replace the three identical placeholder GLBs with distinct
+      models for jasmijn_schrofer, topbox, and wayalink
+    - Swap ProjectCard to load project_card_wayalink.glb and
+      ProjectCard02 to load project_card_jasmijn_schrofer.glb,
+      updating both preload calls to match
+
+ frontend/public/project_card_jasmijn_schrofer.glb | Bin 5899012 -> 5157384 bytes
+ frontend/public/project_card_topbox.glb           | Bin 5899012 -> 5185340 bytes
+ frontend/public/project_card_wayalink.glb         | Bin 5899012 -> 5698396 bytes
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 18133906a60a095192bf765d39f27b890e93e692
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Wed Oct 28 07:27:44 2026 +0300
+
+    feat: use distinct 3d models for project cards
+    
+    Enable unique 3D assets per card instead of sharing single placeholder
+
+ frontend/public/portfolio_bubble_text_desktop.glb    | Bin 0 -> 18518596 bytes
+ frontend/public/portfolio_bubble_text_ss1.glb        | Bin 46292496 -> 0 bytes
+ ...ct_card.glb => project_card_jasmijn_schrofer.glb} | Bin
+ frontend/public/project_card_topbox.glb              | Bin 0 -> 5899012 bytes
+ frontend/public/project_card_wayalink.glb            | Bin 0 -> 5899012 bytes
+ 5 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 5213ce549c6b7bdc0d5c4bcd0550bf2bd930dec7
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Thu Oct 15 16:45:30 2026 +0300
+
+    chore(assets): remove unused asset
+    
+    - polaroid_film.glb
+
+ frontend/public/polaroid_film.glb | Bin 5899012 -> 0 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit b5de6960dd663e8cc3818d1fbdb10cf0ee0a3248
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Thu Oct 15 16:27:10 2026 +0300
+
+    feat(contact-card): add scroll-driven 3D card animation
+    
+    - replace polaroid model with the new contact card GLB
+    - animate card rotation on scroll using GSAP ScrollTrigger
+    - add separate desktop and mobile rotation configurations
+    - improve 3D lighting and adjust mobile card scale
+    - update contact card prop types and preload the new model
+
+ frontend/public/contact_card.glb | Bin 0 -> 7711876 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit fd14c531d72af8b88e1e8921fee38a56081bea87
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 30 16:30:43 2026 +0300
+
+    feat(responsive): add mobile breakpoints across sections
+    
+    - Add resize-driven scale/rotation state to Hero, About, and
+      Projects, swapping in smaller scales (and a separate mobile
+      GLB model for Hero's bubble text) below 768px
+    - Add mobile @media rules for About, Footer, Hero, Navbar,
+      Projects, and ScrollIndicator (Navbar becomes a horizontal
+      bottom/top bar, ScrollIndicator hides entirely, tech pills
+      wrap, project cards resize)
+    - Shrink --side-gap/--nav-width, h1/h2 font sizes, and other
+      layout variables under 768px in index.css
+    - Add useIsMobile hook (single resize listener, 768px
+      breakpoint), replacing the four separate per-component
+      resize listeners in Hero, About, and Projects
+
+ frontend/public/portfolio_bubble_text_mobile.glb | Bin 0 -> 5097244 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)

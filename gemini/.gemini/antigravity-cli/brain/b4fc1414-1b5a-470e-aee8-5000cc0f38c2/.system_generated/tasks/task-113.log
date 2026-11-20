@@ -1,0 +1,17 @@
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+vite v8.2.1 building client environment for production...
+transforming (2) src/main.tsxtransforming (15) node_modules/react-router/dist/development/index.mjstransforming (18) src/components/ScrollIndicator/ScrollIndicator.tsxtransforming (25) src/components/ui/ProjectCard01.tsxtransforming (28) node_modules/react-dom/index.jstransforming (29) node_modules/react-dom/cjs/react-dom-client.production.jstransforming (32) src/components/ui/ContactCard.tsxtransforming (58) node_modules/@react-three/fiber/dist/events-156d8d12.esm.jstransforming (63) node_modules/@react-three/drei/core/ScreenSizer.jstransforming (74) node_modules/@react-three/drei/core/Text.jstransforming (86) node_modules/zustand/esm/middleware.mjstransforming (102) node_modules/@react-three/drei/core/ComputedAttribute.jstransforming (106) node_modules/@react-three/drei/core/Gltf.jstransforming (118) node_modules/@react-three/drei/core/Float.jstransforming (124) node_modules/@react-three/drei/core/SpotLight.jstransforming (138) node_modules/@react-three/drei/core/Points.jstransforming (169) node_modules/@react-three/drei/core/SpriteAnimator.jstransforming (202) node_modules/@react-three/drei/core/Hud.jstransforming (222) node_modules/@react-three/drei/core/Center.jstransforming (249) node_modules/@monogrid/gainmap-js/dist/QuadRenderer-Bj1xl_EK.transforming (264) node_modules/three-stdlib/shaders/FreiChenShader.jstransforming (286) node_modules/three-stdlib/shaders/SubsurfaceScatteringShader.transforming (327) node_modules/hls.js/dist/hls.mjstransforming (351) node_modules/three-stdlib/loaders/XLoader.jstransforming (355) node_modules/three-stdlib/loaders/MMDLoader.jstransforming (370) node_modules/three-stdlib/helpers/PositionalAudioHelper.jstransforming (384) node_modules/three-stdlib/misc/Gyroscope.jstransforming (407) node_modules/three-stdlib/_polyfill/LoaderUtils.jstransforming (418) node_modules/three-stdlib/exporters/USDZExporter.jstransforming (422) node_modules/three-stdlib/libs/mmdparser.jstransforming (423) node_modules/three-stdlib/_polyfill/uv1.jstransforming (424) node_modules/three-stdlib/libs/opentype.jstransforming (436) node_modules/three-mesh-bvh/src/utils/ArrayBoxUtilities.jstransforming (461) node_modules/three-stdlib/lines/LineMaterial.jstransforming (573) node_modules/three-stdlib/curves/CurveExtras.js✓ 599 modules transformed.
+rendering chunks (1)...computing gzip size...
+dist/index.html                     0.55 kB │ gzip:   0.34 kB
+dist/assets/index-DwGkHws9.css      4.36 kB │ gzip:   1.48 kB
+dist/assets/index-Ch9fkDp_.js   1,305.38 kB │ gzip: 374.84 kB
+
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 5.45s

@@ -1,0 +1,54 @@
+Created At: 2026-11-20T10:29:16+03:00
+Completed At: 2026-11-20T10:29:19+03:00
+The search for ""hl.dsp" OR "hl.config" "hyprland.lua" site:wiki.hypr.land OR site:github.com" returned the following summary:
+The search query targets documentation, discussions, and dotfiles related to **Hyprland's Lua-based configuration system** (introduced around versions 0.55+), specifically focusing on global functions and namespaces like `hl.config`, `hl.dsp`, and `hyprland.lua`[1][2].
+
+Here is a summary of what these components mean and how they are used in Hyprland's Lua configuration framework:
+
+### 1. `hyprland.lua`
+* **What it is:** The native Lua configuration entry point for Hyprland (replacing or running alongside the older `hyprland.conf`)[2]. 
+* **Structure:** Users write their configurations using standard Lua syntax, often splitting options into multiple files and bringing them together using `require()`[3][4].
+
+### 2. `hl.config`
+* **What it does:** Used to define layout settings, decorations, animations, environment variables, inputs, and general compositor configurations structurally using Lua tables[4][5].
+* *Example:*
+  ```lua
+  hl.config({
+      general = {
+          gaps_in = 0,
+          gaps_out = 5,
+          border_size = 2,
+          layout = "dwindle",
+      },
+      decoration = {
+          rounding = 10,
+      }
+  })
+  ```[4]
+
+### 3. `hl.dsp` (Dispatchers)
+* **What it does:** Represents Hyprland dispatchers[6]. `hl.dsp.*` functions generate description tables of actions you want to perform (such as executing commands, changing focus, resizing, or managing workspaces)[6].
+* **Crucial Behavior:** 
+  * When used directly inside a keybind declaration (`hl.bind`), they can often be passed directly[7].
+  * If you want to use a dispatcher *inside a custom Lua function or event listener*, you must wrap it inside `hl.dispatch()` to execute it[6]. Writing `hl.dsp.whatever()` on its own inside a function will do nothing[6].
+* *Example:*
+  ```lua
+  -- Directly in a bind:
+  hl.bind("SUPER + Return", hl.dsp.exec_cmd("kitty"))
+
+  -- Inside a custom function/event wrapper using hl.dispatch:
+  hl.bind("ALT + Tab", function()
+      hl.dispatch(hl.dsp.window.cycle_next())
+  end)
+  ```[5][6]
+
+Sources:
+[1] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-l2WVOQDlltXnWV5q9J8S43wfBm0QVeD8LAakMCP8mShiXPN6bB1aI7bXo52ZIBH73XfUBoSbdF6HHFXCqMrKcwGiyN1JUtCw7mEfRmSwJbIFT_JnQwzcsCaI-2-K5sxD-kLQxNNz8DiA9fPLDwla9ck85d5HHu-P-byV_gf54QkvDb3sR_dDwRH9GZEv_MWCdMbkR1oiE1CkDQ==)
+[2] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHVdyDLV1jPNpIH1zl-HOVpIH-z_l9DE4xUcnmKiIYSBRq0AqWCCbAuq_L_0rf31N3b3aSQQYmlBftTaVq3HgDV5GrGPD8NzE1Au0qtchMAXJRP57I=)
+[3] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEzJqYV7Bdn6TA124EA1AnGgMQ_ertXDKgxOZgGCwoug3QftzBUp6eT116OvWyjvs57Ca6UT88_180c_roGU6eDoytdegX0rRkT3ozaWL439F5sro48AnHwiGyc7-7bXmPLVPIk7hd2O75PvKTMK_CZ2qKwuvLS0w==)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEStpr7h6yke28zt2VnDMm3nF5JSBRefmvQV8m9VCoGoP7TCH5jQHay-GwRHe-kuksse3Eh5jofKAFmphohjFFQojxQdKOjqiV2NyUotfqAOJtFbgl1_ZL6B00rY1JTzPKRcEo-MZS_kVs0AjIJdCYeNqgvnKQdp5jyd19c)
+[5] [zero-knowledge.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHh_Rw7aGxsLRjxU37NjvU2sZObr_KHhzXr8eLmIEETw-RyZQdC4sddxF9n_rm12ES-25OONsZducnubltTDT9cJA51yg2hX8P3xESsGE4HjhFNBGNWKaTiwovysLou-XlCFG-9lwGILYBRTw1ZxA7bDFGD2jGiLv-yHUp9gghTaibxYfMDqyWvuZ_HY3HdzDV_3lz9khU_-dBtTPyGzEnhZ1Cgo5WdJw==)
+[6] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEpMamYFRZobGE4yjYUR-uhlrFzjHeRzxMwRwsu1mAouM5tVSwG4z-wAfQ-OpeiaIEWH6Fja1b1hTEad-V20Eliov-CWNJBO5pUmF9V5QFNjiADv7jPGW_ppsEQLnj8LqRGMZt7D5dyDffR)
+[7] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF_gu6xcV_vMCi4brwSguL3Wy2yXs-pL8muEl90aynm13POfkiYBwm43bH0PCqdl3JU_a4IHTZWwVMhLK_heSwOGozxRGmoAKPSJDsBPvyUxrV6S3LKLCK_y-TIZJ1GCU7ratNYktk6dwevISHZl2C6VJ8E47-BPA2xDJ3On7v0b4OdfnHhEGY1keqRww9WH44BLNo2)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

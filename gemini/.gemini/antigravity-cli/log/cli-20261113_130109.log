@@ -1,0 +1,447 @@
+I1113 13:01:09.982011      50 server.go:2335] Starting language server process with pid 10888
+I1113 13:01:09.991600      50 server.go:2394] Language server version: 1.5.4
+I1113 13:01:09.991645      50 server.go:1086] Language server will attempt to listen on host localhost
+I1113 13:01:09.994361      50 server.go:1101] Language server listening on random port at 34257 for HTTPS (gRPC)
+I1113 13:01:09.994611      50 server.go:1109] Language server listening on random port at 39397 for HTTP
+W1113 13:01:10.011014      42 cache.go:157] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1113 13:01:10.011124      42 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+I1113 13:01:10.008555      59 model_configs.go:195] Auth mode is unspecified, skipping fetchAvailableModels and returning empty response
+W1113 13:01:10.015689      67 cache.go:157] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E1113 13:01:10.016585      59 errorreport.go:273] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I1113 13:01:10.041665      63 store_client.go:714] summary store: starting background reconciliation (trigger=startup)
+I1113 13:01:10.059081      50 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1113 13:01:10.059149      50 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1113 13:01:10.060896      63 store_client.go:764] summary store: reconciliation complete, synced 39 records
+W1113 13:01:10.061473      99 cache.go:157] Cache(peopleInfo): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1113 13:01:10.061534      99 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+W1113 13:01:10.068661      50 defaults.go:725] failed to get cs path: cs path /usr/bin/cs invalid
+I1113 13:01:10.069426      50 manager.go:140] Creating trajectory store manager with proto store and SQLite store
+I1113 13:01:10.090094     132 manager.go:98] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I1113 13:01:10.090488     132 manager.go:107] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1113 13:01:10.090513     132 manager.go:98] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I1113 13:01:10.090671     132 manager.go:107] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1113 13:01:10.090689     132 manager.go:98] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I1113 13:01:10.090836     132 manager.go:107] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1113 13:01:10.090859     132 manager.go:95] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I1113 13:01:10.090870     132 manager.go:95] Migration [MIGRATION_ID_ADOPT_BWG_INSTALLS] is disabled, skipping entirely
+I1113 13:01:10.091459     132 manager.go:95] Migration [MIGRATION_ID_GDRIVE_BUILTIN_PLUGIN] is disabled, skipping entirely
+I1113 13:01:10.091494     132 manager.go:95] Migration [MIGRATION_ID_SPLIT_SCIENCE_PLUGIN] is disabled, skipping entirely
+I1113 13:01:10.300454      50 server.go:3632] initialized server successfully in 316.922581ms
+I1113 13:01:10.302712     135 server.go:4329] Auth succeeded, refreshing features and managers
+W1113 13:01:10.304992     146 cache.go:157] Cache(peopleInfo): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1113 13:01:10.306151     146 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+W1113 13:01:10.306963     147 cache.go:157] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1113 13:01:10.307053     147 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+W1113 13:01:10.306329     146 rpcs_plugin_auth.go:105] Not reloading plugin MCP servers: cannot get the signed-in user: error getting token source: You are not logged into Antigravity.
+E1113 13:01:10.308132     135 errorreport.go:273] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I1113 13:01:10.308278     135 server.go:4348] State refresh took 5ms
+I1113 13:01:10.308304     135 server.go:4363] [RemoteControl] Subscription callback triggered.
+I1113 13:01:10.307894       1 auto_updater.go:334] Spawned background update process with PID 11876
+I1113 13:01:10.309493       1 common.go:191] Launching CLI mode
+E1113 13:01:10.309551       1 launchsteps.go:95] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I1113 13:01:10.309590       1 common.go:212] CLI app data directory: /home/gaitano/.gemini/antigravity-cli
+I1113 13:01:10.310555     135 server.go:4366] [RemoteControl] RemoteControlEnabled value: false
+I1113 13:01:10.310582     135 server.go:5451] [RemoteControl] Session toggle is off, staying disconnected
+I1113 13:01:10.310593     135 server.go:5159] [RemoteControl] Resolved proxyServerURL: ""
+I1113 13:01:10.309633       1 server.go:313] Creating CLI server backend: product=antigravity workspaceDirs=[/home/gaitano] appDataDir=/home/gaitano/.gemini/antigravity-cli languageServer=true codeAssist=true
+I1113 13:01:10.312101     156 manager.go:98] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I1113 13:01:10.312431     156 manager.go:107] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1113 13:01:10.312458     156 manager.go:98] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I1113 13:01:10.312610     156 manager.go:107] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1113 13:01:10.312627     156 manager.go:98] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I1113 13:01:10.312771     156 manager.go:107] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1113 13:01:10.312797     156 manager.go:95] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I1113 13:01:10.312811     156 manager.go:95] Migration [MIGRATION_ID_ADOPT_BWG_INSTALLS] is disabled, skipping entirely
+I1113 13:01:10.312854     156 manager.go:95] Migration [MIGRATION_ID_GDRIVE_BUILTIN_PLUGIN] is disabled, skipping entirely
+I1113 13:01:10.312869     156 manager.go:95] Migration [MIGRATION_ID_SPLIT_SCIENCE_PLUGIN] is disabled, skipping entirely
+I1113 13:01:10.313820     153 reconcile_summaries.go:94] [Summaries] reconcile checked 39 conversations, restored 0, cached 39, skipped 0, dropped 0, cancelled false in 1ms (resident: 0 -> 0)
+I1113 13:01:10.311908     135 profiler.go:231] Continuous pprof profiling is disabled.
+I1113 13:01:10.314980       1 auth_provider.go:984] [AuthProvider] SetEnableBusinessLogin called with enable: true
+I1113 13:01:10.321472       1 server.go:2258] Backend project ID updated dynamically to: default-cli-project
+I1113 13:01:10.322714       1 manager.go:553] Initializing CLI store manager for workspace /home/gaitano
+E1113 13:01:10.344834     183 server.go:3211] Failed to read conversations directory /home/gaitano/.gemini/antigravity/conversations: open /home/gaitano/.gemini/antigravity/conversations: no such file or directory
+I1113 13:01:10.344933     183 server.go:3092] ListConversations: cache miss for 1 conversations, loading 1 in parallel, deferring 0
+I1113 13:01:10.350206       1 cli_setting_manager.go:162] applyUserSettings: no shared config permissions from /home/gaitano/.gemini/config/config.json
+I1113 13:01:10.352245       1 cli_setting_manager.go:96] CLI settings initialized: permissions=&{Allow:[command(git status) command(git diff) command(git log) command(pytest)] Deny:[] Ask:[]}, toolPermission=request-review
+I1113 13:01:10.377326     183 server.go:3113] ListConversations returning 39 summaries
+I1113 13:01:10.403916       1 hooks_manager.go:53] loaded 0 named hooks from 0 hooks.json file(s)
+I1113 13:01:10.403985       1 manager.go:727] CLI store manager initialized successfully
+I1113 13:01:10.404017       1 common.go:346] CLI store manager created successfully
+I1113 13:01:10.404051       1 cli_setting_manager.go:226] ApplyProjectPermissionGrants: no grants for project "CLI Project", cleared project permissions
+I1113 13:01:10.404665     191 quota_manager.go:36] doRefreshQuota: skipped (not logged in)
+I1113 13:01:10.472760       1 terminal_info_manager.go:354] Terminal detection: TERM="xterm-kitty" altScreen=true ssh=false osc8=false osc52=true appleTerminalSSH=false
+I1113 13:01:10.474215       1 common.go:543] Starting CLI program
+CLI ready for user input
+I1113 13:01:10.482691     281 gemini_extensions.go:29] Detecting Gemini extensions in /home/gaitano/.gemini/extensions
+I1113 13:01:10.484418     291 rerender.go:92] Window redraw committed (RerenderAll) for conversation  (epoch 0, items 1) after 1ms
+I1113 13:01:10.484477     291 manager.go:1147] Full redraw completed (RerenderAll) for conversation  (epoch 0, items 1) in 1ms
+I1113 13:01:10.484505       1 analytics.go:249] CLI startup completed (took 515.52298ms, phases [main_entered=4ms ls_start=10ms ls_ready=331ms launch_cli=340ms backend_created=350ms project_resolved=352ms manager_created=435ms program_run=505ms tui_init_start=507ms tui_init_done=508ms])
+I1113 13:01:10.487049     292 manager.go:1702] Reloading system slash commands and skills
+I1113 13:01:10.488000     292 manager.go:1658] Reloading system slash commands
+I1113 13:01:10.488027     292 manager.go:1667] Slash commands unchanged, skipping update
+I1113 13:01:10.491076     281 gemini_extensions.go:47] Found 1 extensions: [caveman]
+I1113 13:01:10.492289     287 hooks_manager.go:53] loaded 0 named hooks from 0 hooks.json file(s)
+I1113 13:01:10.492345     271 keyring.go:64] keyringAuth: loaded token, expiry=2026-11-13 13:55:38.267393723 +0300 EAT expired=false
+I1113 13:01:10.495989     270 auth.go:157] ChainedAuth: authenticated via keyring (effective: keyring)
+I1113 13:01:10.496029     270 server_oauth.go:221] applyAuthResult: email=dev.gaitano@gmail.com, authMethod=consumer, quotaProject=
+I1113 13:01:10.496041     270 server_oauth.go:226] OAuth: authenticated successfully as dev.gaitano@gmail.com
+I1113 13:01:10.496050     270 server_oauth.go:235] b.codeAssistClient.AuthProvider (0x2f914ef003c0) is same as b.cliAuth (0x2f914ef003c0)
+W1113 13:01:10.511383     218 cache.go:189] Failed to refresh cache in background: admin controls not applicable
+W1113 13:01:10.511438     125 cache.go:189] Failed to refresh cache in background: admin controls not applicable
+I1113 13:01:10.534246     255 rerender.go:92] Window redraw committed (RerenderAll) for conversation  (epoch 0, items 1) after 4ms
+I1113 13:01:10.534318     255 manager.go:1147] Full redraw completed (RerenderAll) for conversation  (epoch 0, items 1) in 4ms
+I1113 13:01:11.870651     214 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe063071b8075f0a3
+I1113 13:01:12.402079     214 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa4754b8a90f4ea6c
+I1113 13:01:12.655000     270 model_resolver.go:155] model alias "Gemini 3.6 Flash (Medium)" resolved to "Gemini 3.8 Flash (High)"
+I1113 13:01:12.655167     270 model_config_manager.go:375] Propagating selected model override to backend: label="Gemini 3.8 Flash (High)"
+I1113 13:01:12.655215     191 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I1113 13:01:12.655317     192 experiment_manager.go:66] Starting experiment refresh after login
+I1113 13:01:13.027993     192 http_helpers.go:104] UseAICodeMendel routing switch changed: false -> true
+I1113 13:01:13.028262     192 server.go:4975] [RemoteControl] Mendel flags changed (remote-control-setting-enabled=true, remote-control-proxy-server-url="jetski-webchannel.googleapis.com:443"), re-evaluating the connection
+I1113 13:01:13.028528     192 server.go:5451] [RemoteControl] Session toggle is off, staying disconnected
+I1113 13:01:13.028540     192 server.go:5159] [RemoteControl] Resolved proxyServerURL: ""
+I1113 13:01:13.028556     192 experiment_manager.go:70] Experiments refreshed after login
+I1113 13:01:13.028582     570 server.go:5451] [RemoteControl] Session toggle is off, staying disconnected
+I1113 13:01:13.028604     570 server.go:5159] [RemoteControl] Resolved proxyServerURL: ""
+I1113 13:01:13.028674     574 manager.go:1658] Reloading system slash commands
+I1113 13:01:13.098592     566 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x57d7a19877076baa
+I1113 13:01:13.733120     566 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xeb9ab9f84f6c9e7f
+W1113 13:01:13.836363     569 aicode_scope.go:88] OAuth token lacks https://www.googleapis.com/auth/aicode; routing AICode traffic to CCPA for 1h0m0s
+I1113 13:01:13.840067     260 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1113 13:01:13.840147     260 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1113 13:01:14.068130     764 auth_manager.go:354] Personal consumer token lacks https://www.googleapis.com/auth/aicode; warning the user to sign in again
+I1113 13:01:14.068439     566 model_config_manager.go:375] Propagating selected model override to backend: label="Gemini 3.8 Flash (High)"
+I1113 13:01:14.068493     191 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I1113 13:01:14.068575     192 experiment_manager.go:66] Starting experiment refresh after login
+I1113 13:01:14.069019     813 model_config_manager.go:375] Propagating selected model override to backend: label="Gemini 3.8 Flash (High)"
+I1113 13:01:14.861854     192 server.go:5451] [RemoteControl] Session toggle is off, staying disconnected
+I1113 13:01:14.861881     192 server.go:5159] [RemoteControl] Resolved proxyServerURL: ""
+I1113 13:01:14.861889     192 experiment_manager.go:70] Experiments refreshed after login
+I1113 13:01:14.861954     192 experiment_manager.go:66] Starting experiment refresh after login
+I1113 13:01:14.861949     818 manager.go:1658] Reloading system slash commands
+I1113 13:01:14.876319     818 manager.go:1667] Slash commands unchanged, skipping update
+I1113 13:01:15.138044     812 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa1a123c66aef5dcd
+I1113 13:01:15.138192     191 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I1113 13:01:15.415479     192 server.go:5451] [RemoteControl] Session toggle is off, staying disconnected
+I1113 13:01:15.415518     192 server.go:5159] [RemoteControl] Resolved proxyServerURL: ""
+I1113 13:01:15.415530     192 experiment_manager.go:70] Experiments refreshed after login
+I1113 13:01:15.415621     972 manager.go:1658] Reloading system slash commands
+I1113 13:01:15.429040     972 manager.go:1667] Slash commands unchanged, skipping update
+I1113 13:07:10.359120    1534 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xea09b92c57d0137e
+I1113 13:07:10.565390    1538 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2ca23a9acc35e9df
+I1113 13:13:10.469391    1928 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x571a1f5e3ef4a67e
+I1113 13:13:10.666772    1913 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xbb184cd85c9ac6de
+I1113 13:19:10.544243    2326 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf020d8ce66277d97
+I1113 13:19:10.596376    2338 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9ec3a16959ea6385
+I1113 13:25:10.636403    2705 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x42be510aaf52ea56
+I1113 13:25:10.683262    2722 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xda9e59bb154d0235
+I1113 13:31:10.657813    3128 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc7fa83c12d2373b6
+I1113 13:31:10.661892    3145 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4ff145021364e6ea
+I1113 13:37:10.806512    3542 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdba717f3528ac352
+I1113 13:37:10.879283    3536 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x66cfda59fbba939e
+I1113 13:43:47.301617    3920 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2f6faddfd0d3fc37
+I1113 13:43:47.302147    3839 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa99df2ccbb2fdf73
+I1113 13:49:11.506302    4315 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7789b3a8176dcf20
+I1113 13:49:11.617820    4316 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x11d4d8eca6b544fe
+I1113 13:55:10.716821    4710 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x62fa1363e12d024
+I1113 13:55:11.371298    4711 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x62435828a07bf555
+I1113 13:56:15.691882    4808 browser.go:265] token refreshed, new expiry=2026-11-13 14:56:14.69182047 +0300 EAT m=+6906.228171204
+I1113 14:01:10.900241    5146 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9c6b96f25c6e6cee
+I1113 14:01:11.709169    5159 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x926078b6ab6ee420
+E1113 14:01:22.445494      55 client.go:98] Post "https://play.googleapis.com/log": net/http: TLS handshake timeout
+E1113 14:01:53.442319      55 client.go:98] Post "https://play.googleapis.com/log": unexpected EOF
+W1113 14:02:17.662572    5185 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1113 14:07:10.632538    5601 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3f258485428291b5
+I1113 14:07:10.841575    5602 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf33b61d49c4eda02
+I1113 14:13:10.598546    5985 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x191683baa178e3a4
+I1113 14:13:10.647506    5995 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfa92f94c53a1f2f6
+I1113 14:19:10.803755    6404 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3218403dee3ef054
+I1113 14:19:11.715903    6367 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3cd3869b25c1a7f8
+I1113 14:25:10.710897    6776 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x20fb633910e092c1
+I1113 14:25:11.240705    6797 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa8406de17ba79d29
+I1113 14:31:13.845683    7203 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9024d057a48ee0be
+I1113 14:31:20.135628    7204 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa5f4d074891b4a64
+I1113 14:37:11.268495    7584 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xae8a1d66966f2370
+I1113 14:37:12.891833    7585 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb9243b074346d959
+I1113 14:43:27.618349    7973 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd264f82a39953379
+I1113 14:43:27.718871    7974 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xab7145e8bdbd21c6
+I1113 14:49:12.633793    8361 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xad73ef03d21735a5
+I1113 14:49:12.633826    8360 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2f66f3d6e2d8fb72
+I1113 14:55:11.181140    8762 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x318bd8fd822d0f28
+I1113 14:55:11.689864    8763 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x632386d53f0d13e4
+W1113 14:56:23.173688    8816 browser.go:256] token refresh failed due to network error: Post "https://oauth2.googleapis.com/token": net/http: TLS handshake timeout
+E1113 14:56:23.173963      59 errorreport.go:273] Failed to poll ListExperiments: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:listExperiments": Post "https://oauth2.googleapis.com/token": net/http: TLS handshake timeout
+I1113 14:57:23.230850    8891 browser.go:265] token refreshed, new expiry=2026-11-13 15:57:22.230795099 +0300 EAT m=+10573.767145823
+E1113 14:57:34.117179      59 errorreport.go:273] Failed to poll ListExperiments: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:listExperiments": net/http: TLS handshake timeout
+I1113 15:01:10.841020    9212 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3a5d0a463bbb4a72
+I1113 15:01:11.048268    9213 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe1149de381fa0821
+W1113 15:03:13.964390    9366 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1113 15:07:13.654338    9622 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x343baf6dc30b3b54
+I1113 15:07:13.654389    9616 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1ef89ce9efabb9ca
+I1113 15:13:11.074132   10029 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd18b0633c9272c9f
+I1113 15:13:12.254940   10030 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf6fbb4723d323cc4
+I1113 15:19:10.893527   10423 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x564de13a3afa71ee
+I1113 15:19:11.121874   10434 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2fdad572c13d2c7a
+I1113 15:25:10.587674   10727 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x74e8902080a6766e
+I1113 15:25:10.637280   10827 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4ee0e553b44b1881
+I1113 15:31:10.608646   11219 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5a4ec0186d9abfe5
+I1113 15:31:10.624364   11209 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x17ed7397fd4852bf
+I1113 15:37:10.671167   11517 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9ccc973de133aec2
+I1113 15:37:10.781902   11518 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xffee41fb7bf1c363
+I1113 15:43:10.370695   12010 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x31d6f3873f1d961e
+I1113 15:43:10.637158   12022 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x60506395cd3d02a0
+I1113 15:49:10.559352   12391 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x90342c258aaadad8
+I1113 15:49:10.611483   12405 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd8eb8afebbe7d5fb
+I1113 15:55:10.628971   12803 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc55b375da9be7890
+I1113 15:55:10.666204   12819 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf37aab1f6dfea045
+I1113 15:58:16.294462   13008 browser.go:265] token refreshed, new expiry=2026-11-13 16:58:15.294357937 +0300 EAT m=+14226.830708675
+I1113 16:01:10.576754   13179 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x79f73c9cdeaf4a9b
+I1113 16:01:10.677357   13180 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x839ba20375f0f61a
+W1113 16:04:10.914280   13455 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1113 16:07:10.712056   13626 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe4e8fa257ff060cd
+I1113 16:07:10.861271   13638 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xafd6d70446b7c93c
+I1113 16:13:10.535680   14047 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x517b850f6688b517
+I1113 16:13:10.612145   13812 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd752bfa0ed36e5bd
+I1113 16:19:10.633484   14419 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x68b742a7c99711a0
+I1113 16:19:10.633826   14435 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf62368d820aab7bb
+I1113 16:25:10.573964   14841 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xaa9dbdd09cf7d651
+I1113 16:25:10.651751   14842 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x55d374449b88e341
+I1113 16:31:10.599595   15230 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x77da98c4e973c9a0
+I1113 16:31:11.010368   15242 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1be510deab40b179
+I1113 16:37:10.563783   15638 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd8e6c46763a17d4e
+I1113 16:37:10.619654   15422 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf1e579a55b81484e
+I1113 16:43:10.805149   16029 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3b2df0581f4102d4
+I1113 16:43:10.828285   16030 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x73c1130d4b56bc87
+I1113 16:49:10.644584   16439 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8737905960b33212
+I1113 16:49:10.659094   16421 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf42c91c84d35c7cd
+I1113 19:48:43.127592   16838 browser.go:265] token refreshed, new expiry=2026-11-13 20:48:42.127558045 +0300 EAT m=+17641.062445881
+I1113 19:48:44.066084   16814 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2ecd2a9e4bc1366e
+I1113 19:48:44.066194   16838 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdfed8dafaf456bbc
+I1113 19:54:43.108893   17251 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6294148a4259cfe8
+I1113 19:54:43.163343   17231 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x100826e4c716325c
+W1113 19:58:43.311023   17539 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1113 20:00:43.086569   17652 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8a609e893a0008e9
+I1113 20:00:43.093940   17669 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdaa8aaefaef0a78b
+I1113 20:06:42.938772   18048 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd4fd4370116b55bd
+I1113 20:06:43.185857   18049 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xbeccee57e09caa6a
+I1113 20:12:43.191472   18466 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa60343ba620a7ff
+I1113 20:12:43.338968   18450 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8c9d201e48264df2
+I1113 20:18:43.092448   18870 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb5c718c752fdea98
+I1113 20:18:43.136980   18871 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x17ad2b2e5f013acc
+I1113 20:24:43.143319   19240 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9558aa38a3dc3b84
+I1113 20:24:43.199620   19252 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x45a4696d0ea97de0
+I1113 20:30:43.091877   19666 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x29489f3b7bb44dc3
+I1113 20:30:43.107318   19657 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x35f3c0b5039284e9
+I1113 20:36:43.131794   20044 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x470f10f86cec4bb
+I1113 20:36:43.181035   20045 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1a254183b2d1bdc3
+I1113 20:42:43.159024   20432 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xdef0921b284ecf6
+I1113 20:42:43.171863   20436 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf4311f39960cf054
+I1113 20:48:44.719146   20844 browser.go:265] token refreshed, new expiry=2026-11-13 21:48:43.719079788 +0300 EAT m=+21242.653967627
+I1113 20:48:45.211449   20844 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2f5974a590ed929b
+I1113 20:48:45.318340   20825 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc1d8efdd6f27c2ec
+I1113 20:54:43.119920   21253 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xbe8a1bbdb8075bc
+I1113 20:54:43.149777   21252 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb0171cf80ef8570
+W1113 20:59:43.193197   21608 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\",\n          \"service\": \"aicode.googleapis.com\"\n        }\n      }\n    ]\n  }\n}\n"
+I1113 20:59:43.664554   21599 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa56fb3a2e73b983
+I1113 21:00:43.115950   21646 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x93b14eec3a83d118
+I1113 21:05:43.208222   21993 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9defbe47775533ac
+I1113 21:06:43.108624   22071 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xaa149822aaa7e576
+I1113 21:11:43.088816   22398 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2449b4bc6dbe8438
+I1113 21:12:43.090696   22472 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa5cc205d7f920958
+I1113 21:17:43.104876   22792 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8d241ae65c4a465a
+I1113 21:18:43.087982   22874 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x14cd53c45224f6c6
+I1113 21:23:43.114105   23173 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x82e010b9b82f74a0
+I1113 21:24:43.074514   23277 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x783edf764286fb96
+I1113 21:29:43.140544   23620 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7979c391857aa126
+I1113 21:30:43.084653   23673 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xecc3b928c1a6a763
+I1113 21:35:43.136358   23997 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf33fa5ddf4b30d5c
+I1113 21:36:43.159295   24047 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe3349bb59863ba7f
+I1113 21:41:43.174928   24378 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc5bd8203dd7d7c8c
+I1113 21:42:43.116016   24456 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfae36d6889da1b65
+I1113 21:47:43.072983   24751 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x18a80c383b56af07
+I1113 21:48:43.250745   24883 browser.go:265] token refreshed, new expiry=2026-11-13 22:48:42.250675958 +0300 EAT m=+24841.185563901
+I1113 21:48:43.792611   24883 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7a4082f7ede147fc
+I1113 21:53:43.059363   25234 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf6bc6da5d15eec93
+I1113 21:54:43.092851   25301 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x73a673135d750a4b
+I1113 21:59:43.102659   25610 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9b72acc4f27da38e
+I1113 22:00:43.159277   25628 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x70083e42131e89c0
+W1113 22:00:43.415608   25627 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1113 22:05:43.116648   26018 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5f66b14bf3089abf
+I1113 22:06:43.090415   26087 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xea60e90b384cbd38
+I1113 22:11:43.194983   26422 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe3f4ecc23ad95ec2
+I1113 22:12:43.098029   26486 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x75597cda71fbaf61
+I1113 22:17:43.196413   26828 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4457d20f709d35c7
+I1113 22:18:43.258806   26887 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb4153662abcd9d01
+I1113 22:23:43.146156   27039 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xde2fbfc8526a1e92
+I1113 22:24:43.126279   27277 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd854356d6a82dc95
+I1113 22:29:43.163716   27610 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc567fc8ce41b38e9
+I1113 22:30:43.118316   27679 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x83386ef2bd71270f
+I1113 22:35:43.179388   28024 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4b2da855195a36d8
+I1113 22:36:43.172304   28086 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x343eb511900382f4
+I1113 22:41:43.192206   28399 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb9b452bd060aac8
+I1113 22:42:43.103903   28484 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2c6dae3840a84b21
+I1113 22:47:43.180360   28774 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb26ce31b3602e404
+I1113 22:48:43.087231   28882 browser.go:265] token refreshed, new expiry=2026-11-13 23:48:42.087163782 +0300 EAT m=+28441.022051671
+I1113 22:48:43.646082   28882 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd33cdf46d8ec461e
+I1113 22:53:43.810295   29227 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x54dbed1db5c8ff5c
+I1113 22:54:43.260720   29315 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xafe00fcc6cb1e58
+I1113 22:59:43.253772   29630 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x81a95942c2fa09fc
+I1113 23:00:43.432401   29714 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa43401cc1e77041e
+I1113 23:05:43.265784   30029 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x77c589fed5756f1f
+I1113 23:06:43.240947   30137 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2318b0b5be70dec9
+I1113 23:11:43.817691   30466 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd453692157421922
+I1113 23:12:43.256130   30525 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb8b71915124dd102
+I1113 23:17:43.785211   30867 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd7e8383849ba5ae5
+I1113 23:18:43.352549   30930 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa627195f6f6ad9b5
+I1113 23:23:43.681105   31195 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x179c4e84ae50af71
+I1113 23:24:43.789242   31322 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf95f9a101b678068
+I1113 23:29:43.166015   31654 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5245748598dbce36
+I1113 23:30:43.221385   31709 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xa2af61df394d4fc5
+I1113 23:35:43.651846   32054 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x149a2e6ce08200dc
+I1113 23:36:43.171779   32123 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1bea4ade8b74bdc1
+I1113 23:41:43.660946   32457 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfad948caac264824
+I1113 23:42:43.233815   32477 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3b393c424f0ef1f4
+I1113 23:47:43.081558   32851 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6a666d8d9a5d61cf
+I1113 23:48:48.220859   32905 browser.go:265] token refreshed, new expiry=2026-11-14 00:48:47.220830608 +0300 EAT m=+32046.155718441
+I1113 23:48:48.835878   32905 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf5740d3fcc5bc8e7
+I1113 23:53:43.609220   33255 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x42aed90fe66747c6
+I1113 23:54:44.124503   33336 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5a39ffd599e2a97a
+I1113 23:59:42.957910   33669 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfc45e795b0080c69
+I1114 00:00:43.158374   33742 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x205dc8a3d5711c2c
+W1114 00:01:44.283902   33818 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1114 00:05:43.697126   34067 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8dcfcada354c0083
+I1114 00:06:43.110523   34137 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1c8899d8985af451
+I1114 00:11:43.655588   34473 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x25cb2fe07f1ead07
+I1114 00:12:43.178188   34525 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x11b609deaef29afe
+I1114 00:17:43.694895   34883 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe2cabc95e4c85c5d
+I1114 00:18:43.207030   34929 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x39c63632ca1957aa
+I1114 00:23:43.054517   35254 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xaa6e173f69a2997f
+I1114 00:24:43.204975   35333 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8333bae9ed43a869
+I1114 00:29:43.732809   35653 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xea3f356d45df12ad
+I1114 00:30:43.265209   35719 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc8c8e21b06e8dcb6
+I1114 00:35:43.680763   36067 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa304af7c8630961a
+I1114 00:36:43.154403   36136 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x747053ddfa1f22a
+I1114 00:41:43.673312   36444 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7d53c955091537c1
+I1114 00:42:44.040047   36511 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xc900b6d3d180d109
+I1114 00:47:43.115274   36838 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x637dda73298ec13
+I1114 00:48:43.269455   36905 browser.go:265] token refreshed, new expiry=2026-11-14 01:48:42.269390069 +0300 EAT m=+35641.204277956
+I1114 00:48:43.895624   36906 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf4f18ec0d7b22faa
+I1114 00:53:43.227363   37269 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xa2cbb2956bc62d6c
+I1114 00:54:43.213359   37320 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2b61b4d5c799c2cc
+I1114 00:59:43.283282   37547 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xfb5539554551cdf1
+I1114 01:00:43.308883   37743 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x422a3886889952a9
+W1114 01:02:43.357740   37856 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1114 01:05:44.069680   38072 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xbbe0b78089d19cb5
+I1114 01:06:43.430174   38164 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x29c3f5c8ece190b3
+I1114 01:11:44.188664   38475 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xcd33dc5506cc39c4
+I1114 01:12:44.130344   38549 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfc0ba932a9617625
+I1114 01:17:44.134087   38885 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x172233dd5214fa2c
+I1114 01:18:43.349640   38920 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x714dd5448537b2e1
+I1114 01:23:44.106822   39264 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xeee0b88e71db2c66
+I1114 01:24:43.325434   39320 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb71ef5eb4a3bc92a
+I1114 01:29:43.343999   39649 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd91851c5f72e7538
+I1114 01:30:43.410477   39736 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x81bba4b9f83edac8
+I1114 01:35:44.194009   40033 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9cf5d90aedb6122f
+I1114 01:36:43.282784   40120 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9a1130727e4bb853
+I1114 01:41:44.121600   40270 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xff577bcfd43aeb4a
+I1114 01:42:44.106346   40546 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x3f3686b60ef84dd3
+I1114 01:47:44.165885   40855 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x901a32d65f1d3188
+W1114 01:48:52.882656   40918 browser.go:256] token refresh failed due to network error: Post "https://oauth2.googleapis.com/token": net/http: TLS handshake timeout
+W1114 01:48:52.882794   40918 cache.go:157] Cache(availableModels): Singleflight refresh failed: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels": Post "https://oauth2.googleapis.com/token": net/http: TLS handshake timeout
+E1114 01:48:52.882884   40918 errorreport.go:273] Post "https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels": Post "https://oauth2.googleapis.com/token": net/http: TLS handshake timeout
+W1114 01:48:52.883109   40918 cache.go:189] Failed to refresh cache in background: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels": Post "https://oauth2.googleapis.com/token": net/http: TLS handshake timeout
+I1114 01:48:55.440487   40917 browser.go:265] token refreshed, new expiry=2026-11-14 02:48:54.440460237 +0300 EAT m=+39253.375348079
+I1114 01:49:43.347196   41029 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x398e2ce66c5a400b
+I1114 01:53:44.112356   41276 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x998368874a71c8e
+I1114 02:41:43.071214   40620 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x667b9b6c7677d1f6
+I1114 02:45:43.254413   41720 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xf566aae38a818248
+I1114 02:47:43.047922   41825 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfd4cc00ed1213e7a
+I1114 02:49:43.091042   41962 browser.go:265] token refreshed, new expiry=2026-11-14 03:49:42.090953535 +0300 EAT m=+40141.170087209
+W1114 02:49:43.676835   41962 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1114 02:51:43.106209   42134 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1b841e1955d10b9d
+I1114 02:53:43.053722   42139 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdece51d21e94d32c
+I1114 02:57:43.006715   42533 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xadca3118a5fd2eac
+I1114 02:59:42.994601   40865 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x5303d64b3e977651
+I1114 03:03:42.920828   42892 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd54fcf99c191e224
+I1114 03:05:43.098916   43075 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xf895f92835238c02
+I1114 03:09:42.971202   43316 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x1763941776bb4f43
+I1114 03:11:43.121552   43476 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfdb64e61cb3c7ff0
+I1114 03:15:43.183389   43720 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x94defe52e2cb30ba
+I1114 03:17:43.053164   43807 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6fc740cbbf402f1e
+I1114 03:21:42.980846   44098 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x18b35ff587119de7
+I1114 03:23:43.021796   44208 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfc8d7722e96646b7
+I1114 03:27:43.636842   44501 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x7a86e8812b3d0e65
+I1114 03:29:43.032355   44605 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x8a82421a3f458ac7
+I1114 03:33:43.016406   43709 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd67a9328e313df4a
+I1114 03:35:43.022430   45030 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xea5204d76bea93c8
+I1114 03:39:43.499338   45151 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc8d1cc34a003e786
+I1114 03:41:43.017484   45431 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd6978dc9b85ae68a
+I1114 03:45:42.932607   45714 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x90a6b1e109931295
+I1114 03:47:43.217287   45837 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x7592c2834c7fd92
+I1114 03:49:43.587495   45956 browser.go:265] token refreshed, new expiry=2026-11-14 04:49:42.587411556 +0300 EAT m=+43741.666545242
+I1114 03:51:42.950529   46136 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xb7162478dae086a7
+I1114 03:53:43.466628   46277 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4ed61797ccfb6623
+I1114 03:57:43.033786   46548 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x5514e32a1616d9f9
+I1114 03:59:42.979356   46676 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb0086eb2875f802c
+I1114 04:03:42.945519   46932 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd6450a1d2db6ca6b
+I1114 04:05:42.991101   47077 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xcc7995d2e26d3b8b
+I1114 04:09:42.886840   47326 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x45ff31a27f0561dc
+I1114 04:11:43.592789   47474 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4d9dfbd335f67968
+I1114 04:15:43.532585   47731 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc07e2006df740789
+I1114 04:17:43.640584   47792 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdf38ed371f950ed5
+I1114 04:21:42.913181   47920 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3a42dba226cc2244
+I1114 04:23:47.135045   48276 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb4e1eb047a382935
+I1114 04:27:42.940459   48304 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd703fe2df84ce1c1
+I1114 04:29:43.058131   47863 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xdfb2fffbe74fd0cf
+I1114 04:33:43.713914   48913 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x3bf8ae78420ffc44
+I1114 04:35:43.033662   49005 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x946eedc111e9c28a
+I1114 04:39:42.935672   49150 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xefc2e505fd3628db
+I1114 04:41:43.006460   49295 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x894ae5d808f4315a
+I1114 04:45:42.930023   49706 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc4c533da7a21eac2
+I1114 04:47:42.987627   49859 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xb5afce56873ccee8
+I1114 04:49:43.213284   49979 browser.go:265] token refreshed, new expiry=2026-11-14 05:49:42.213178379 +0300 EAT m=+47341.292311987
+W1114 04:50:52.467004   50060 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: Get "https://aicode.googleapis.com/v1alpha:fetchConfig": context deadline exceeded
+I1114 04:50:53.519785   50074 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x67aa54c77b6aab65
+W1114 04:51:43.071600   50101 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\",\n          \"service\": \"aicode.googleapis.com\"\n        }\n      }\n    ]\n  }\n}\n"
+I1114 04:53:42.973951   50275 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1a608e0d9acf84de
+I1114 04:56:43.549101   50464 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xdb39d6d11d87b3e1
+I1114 04:59:42.993647   50690 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x9e3780b69d43e61f
+I1114 05:02:43.478408   50878 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x98c1e8b1c3a68e23
+I1114 05:05:43.069170   51077 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfe81489b07a6e678
+W1114 08:36:21.925667   50859 browser.go:256] token refresh failed due to network error: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: Temporary failure in name resolution
+W1114 08:36:21.925657   51226 browser.go:256] token refresh failed due to network error: Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: Temporary failure in name resolution
+W1114 08:36:21.941338   51226 cache.go:157] Cache(loadCodeAssistResponse): Singleflight refresh failed: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: Temporary failure in name resolution
+E1114 08:36:21.958340   51226 errorreport.go:273] Post "https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: Temporary failure in name resolution
+E1114 08:36:21.959467      59 errorreport.go:273] Failed to poll ListExperiments: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:listExperiments": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: Temporary failure in name resolution
+W1114 08:36:21.982598   51226 cache.go:189] Failed to refresh cache in background: Post "https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist": Post "https://oauth2.googleapis.com/token": dial tcp: lookup oauth2.googleapis.com: Temporary failure in name resolution
+I1114 08:37:02.347014   51260 browser.go:265] token refreshed, new expiry=2026-11-14 09:37:01.346516404 +0300 EAT m=+48481.136680858
+I1114 08:37:04.264520   51261 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe7e78d41cf1be92d
+I1114 08:40:02.294735   51512 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x2101dc6b190b0ccf
+I1114 08:43:02.193955   51715 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x8992dc7aa8a93b85
+I1114 08:46:02.306054   51895 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xe0c3095f8c0b848b
+I1114 08:49:02.198163   52089 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6267cf1f87851ae8
+I1114 08:52:02.304872   52303 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x1f1281defed04186
+I1114 08:55:03.060841   52461 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x990692fbc6ddfc52
+I1114 08:58:03.166540   52640 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x92e5b64c43a4f978
+I1114 09:01:03.647158   52877 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x2f33d36d0c18a202
+I1114 09:04:03.194287   53071 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x51d6a5aa9f2586d0
+I1114 09:07:04.155331   53290 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xd7c8faed644720cc
+I1114 09:10:03.716286   53514 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x6a5a549d08e4c2dc
+I1114 09:13:03.092793   53691 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x9dbfbc575ae27d64
+I1114 09:16:03.168772   53885 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xfdb12e998ac7282b
+I1114 09:19:03.706879   54107 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x97d52d74fc4ec858
+W1114 09:21:03.557790   54235 code_assist_client.go:429] AICode FetchConfig failed, falling back to CCPA ListExperiments: failed to make AI Code FetchConfig request: "403 Forbidden", body: "{\n  \"error\": {\n    \"code\": 403,\n    \"message\": \"Request had insufficient authentication scopes.\",\n    \"status\": \"PERMISSION_DENIED\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"ACCESS_TOKEN_SCOPE_INSUFFICIENT\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"aicode.googleapis.com\",\n          \"method\": \"google.gca.aicode.v1alpha.ManagementService.FetchConfig\"\n        }\n      }\n    ]\n  }\n}\n"
+I1114 09:22:03.742124   54297 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x29adefbfcfef0d4d
+I1114 09:25:03.620063   54499 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc0b233fb650e3d1f
+I1114 09:28:03.191795   54698 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x401a104da13da804
+I1114 09:31:03.679030   54860 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe84c6d9cd23b2c7f
+I1114 09:34:03.174316   55073 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd389ebfdb166bdcf
+I1114 09:37:03.059901   55277 browser.go:265] token refreshed, new expiry=2026-11-14 10:37:02.059822908 +0300 EAT m=+52080.986690893
+I1114 09:37:03.712214      47 server.go:3999] Got signal terminated, shutting down
+I1114 09:37:03.717250     265 common.go:472] Terminal gone, shutting down
+I1114 09:37:03.717103   55314 server.go:4046] Language server shutting down
+I1114 09:37:03.729495   55314 server.go:4068] Waiting for migrations to complete to prevent partial migration state...
+E1114 09:37:03.921201      26 file_watcher.go:194] skipping empty or temp file: 
+I1114 09:37:03.973035       1 common.go:552] CLI program exited, shutting down
+I1114 09:37:04.000870       1 manager.go:965] CLI store manager shutting down
+I1114 09:37:04.101430   55278 http_helpers.go:654] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4c28022307503fff

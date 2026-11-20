@@ -1,0 +1,18 @@
+Created At: 2026-11-14T10:03:32+03:00
+Completed At: 2026-11-14T10:03:33+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/frontend/src/components/Hero/Hero.tsx b/frontend/src/components/Hero/Hero.tsx
+index dbb3a05..d0ba16b 100644
+--- a/frontend/src/components/Hero/Hero.tsx
++++ b/frontend/src/components/Hero/Hero.tsx
+@@ -4,7 +4,7 @@ import { Suspense } from "react";
+ import "./Hero.css";
+ import { useIsMobile } from "../../hooks/useIsMobile";
+ 
+-const DESKTOP_BUBBLE_MODEL = "/portfolio_bubble_text_desktop.glb";
++const DESKTOP_BUBBLE_MODEL = "/portfolio_text_desktop.glb";
+ const MOBILE_BUBBLE_MODEL = "/portfolio_bubble_text_mobile.glb";
+ 
+ interface HeroProps {

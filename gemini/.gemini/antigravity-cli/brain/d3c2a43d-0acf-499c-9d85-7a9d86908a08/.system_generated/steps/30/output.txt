@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+frontend/src/components/ui/ProjectCard02.tsx:  const model = useGLTF("/project_card_wayalink.glb");
+frontend/src/components/ui/ProjectCard02.tsx:useGLTF.preload("/project_card_wayalink.glb");

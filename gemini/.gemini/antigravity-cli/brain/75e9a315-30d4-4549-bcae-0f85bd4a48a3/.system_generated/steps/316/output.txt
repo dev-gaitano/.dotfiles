@@ -1,0 +1,6 @@
+Created At: 2026-11-20T00:31:24+03:00
+Completed At: 2026-11-20T00:31:25+03:00
+Command exited with code 0.
+
+Command output:
+drwxrwxr-x 2 gaitano gaitano 4096 Nov 19 22:08 /home/gaitano/.local/bin

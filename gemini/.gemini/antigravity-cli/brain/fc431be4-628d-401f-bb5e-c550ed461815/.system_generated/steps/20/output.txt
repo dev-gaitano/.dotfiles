@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+Binary file frontend/public/project_card_jasmijn_schrofer.glb matches
+frontend/src/components/ui/ProjectCard02.tsx:  const model = useGLTF("/project_card_jasmijn_schrofer.glb");
+frontend/src/components/ui/ProjectCard02.tsx:useGLTF.preload("/project_card_jasmijn_schrofer.glb");
+frontend/src/pages/Resume.tsx:                      <strong>Jasmijn Schrofer's Personal Portfolio:</strong>

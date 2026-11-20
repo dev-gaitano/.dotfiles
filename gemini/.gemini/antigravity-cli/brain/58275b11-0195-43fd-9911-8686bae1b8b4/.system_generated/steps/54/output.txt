@@ -1,0 +1,14 @@
+Created At: 2026-11-19T18:58:34+03:00
+Completed At: 2026-11-19T18:58:34+03:00
+Command exited with code 0.
+
+Command output:
+frontend/src/pages/Home.tsx:16:  const [isLoaded, setIsLoaded] = useState(false);
+frontend/src/pages/Home.tsx:73:        <Hero className="hero-section" setIsLoaded={setIsLoaded} />
+frontend/src/components/Hero/Hero.tsx:12:  setIsLoaded: React.Dispatch<React.SetStateAction<boolean>>;
+frontend/src/components/Hero/Hero.tsx:15:function Hero({ className, setIsLoaded }: HeroProps) {
+frontend/src/components/Hero/Hero.tsx:34:                  setIsLoaded={setIsLoaded}
+frontend/src/components/ui/BubbleText.tsx:10:  setIsLoaded: React.Dispatch<React.SetStateAction<boolean>>;
+frontend/src/components/ui/BubbleText.tsx:19:  setIsLoaded,
+frontend/src/components/ui/BubbleText.tsx:27:    setIsLoaded(true);
+frontend/src/components/ui/BubbleText.tsx:28:  }, [model_scene, setIsLoaded]);

@@ -1,0 +1,78 @@
+Created At: 2026-11-15T13:13:19+03:00
+Completed At: 2026-11-15T13:13:23+03:00
+The search for ""hyprpaper" "wallpaper {" path directory cycle OR slideshow" returned the following summary:
+If you are trying to configure a **slideshow**, **directory path cycling**, or **random wallpaper rotation** using `hyprpaper`, there are two main approaches: using **native configuration blocks**[1] or using a **lightweight shell script with IPC (`hyprctl`)**[2][3].
+
+---
+
+### Method 1: Native `hyprpaper.conf` (Directory support)
+Recent versions of `hyprpaper` natively accept a **directory path** inside the `wallpaper { ... }` block, along with parameters for rotation timeout and ordering[1]:
+
+1. Open your configuration file at `~/.config/hypr/hyprpaper.conf`[1].
+2. Add a `wallpaper` block pointing to your directory[1]:
+
+```ini
+splash = false
+ipc = true
+
+wallpaper {
+    monitor = eDP-1                    # Leave empty (monitor =) for a fallback/all monitors
+    path = ~/Pictures/Wallpapers/      # Path to your wallpaper directory
+    fit_mode = cover                   # Options: contain | cover | tile | fill
+    timeout = 300                      # Time interval in seconds between changes (default is 30)
+    order = random                     # Display order (currently supports 'random')
+    recursive = false                  # Set to true if you want to scan subfolders
+}
+```
+
+---
+
+### Method 2: Shell Script + IPC (The Custom Slideshow Approach)
+If you want granular control, want to avoid preloading an entire massive directory into RAM all at once[4], or need to sync it with tools like `hyprlock`[5], you can use a short loop script leveraging `hyprctl hyprpaper`[3].
+
+#### 1. Create a script (e.g., `~/.config/hypr/hypr-slide.sh`):
+```bash
+#!/usr/bin/env bash
+
+# Path to your wallpaper directory
+WALLPAPER_DIR="$HOME/Pictures/Wallpapers"
+INTERVAL=300 # Time in seconds
+
+while true; do
+    # Pick a random image from the directory
+    RANDOM_WALL=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" \) | shuf -n 1)
+
+    if [ -n "$RANDOM_WALL" ]; then
+        # Unload unused images to save RAM, preload the new one, and apply it via IPC
+        hyprctl hyprpaper preload "$RANDOM_WALL"
+        hyprctl hyprpaper wallpaper ",$RANDOM_WALL"  # Use monitor name instead of comma if targeting a specific screen
+        hyprctl hyprpaper unload unused
+    fi
+
+    sleep "$INTERVAL"
+done
+```
+
+#### 2. Make it executable:
+```bash
+chmod +x ~/.config/hypr/hypr-slide.sh
+```
+
+#### 3. Start it automatically with Hyprland:
+Add this line to your `~/.config/hypr/hyprland.conf`[5]:
+```ini
+exec-once = ~/.config/hypr/hypr-slide.sh
+```
+
+*(Note: Ensure that `ipc = true` is set inside your `~/.config/hypr/hyprpaper.conf` file so that runtime `hyprctl` commands can communicate with the daemon[6][7]).*
+
+Sources:
+[1] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGhZsZX8TolZpEgwy0EH7222Vv87rtEWPxBKq-MCISJvCWj8YDEb3mIc9P5iJeeHpJFNSTskBIDv4go8E1iRwpz4XJMa6pD0V9xeUs5xvQ03HRXio9ZoWt3ATxs1BVZljUtQiD434QOrGVjzA==)
+[2] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFnsaOrc5PmewoeciclwBXVlt2tNZyO8Uv3lQod2SAyYiM02Hti0UcORkD07VM-Ds7syoH_I1q4wdFulH7DaMEDqcQN8tZGm04jFcKr-bnyMNmpD3vlNWstUHRFSi4epw8uN86Y)
+[3] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEPDhlsKgKw18TaNj2pFGjhZqDoEBu8eDOtoQcXyo7pREeIFsa6eo4n7z2_CQ8hKmDOxT2h45Hv6wyq8rYhgNHKwivdSbsOmD7EOl-mWbTS6ib0RKi38DMNK3KqHcyoxJHXyNgdwhL0dccqeihc)
+[4] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZoJewQ3G-2AsrwMZU7nSvkKFyWBn2X2xgQuDevqosDE0Z9gu4pGq1x5TjHFMucfOaE3o92RaLSXclU-paoyGJzP5V58APt--8m8lhTmddJggL2oIGLTcxIkHzelttoms3h8uNbFLKugfwF5i5FmR16KCZyrdxTqbFKdHpNfZErp47x15E6raIyPCEsj8XmAhGPFOI3kE78Q==)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHUT_cYz4t5N7cFl9ZKrHn171x0EqTrWiVTsEKWe4GtFfvReWpOehC0G4L6NsxgWEnz_hjT_EVOystSsDJHB0IbR6yacevtHsZTJHc4pN9L8Bk1Kdq56VDwWGYOJHyt0Yke8PHHld7NqaLEpnMKORBmuzPjoSSicbBn5Ml1M0tZCdXtXVrK4LdT_M_NvUD2qKZfb7tO)
+[6] [hyprland.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEL21mV0_DpZyYNUz-gNEwX-TQX7XKPL1D-Tk5SN4R5DXjF7smQv3oiGz1QhIbmk6Do7L7l7JVKNKU214YK4TcxYZKMPeSNLeEh3Q9o4aVmkQj8X1JzGm0K310RXMrXGHXreOPO_fxpvknyGiEWtoK-)
+[7] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFOtnFnM-_e7cSKaYig6irVy7DTN6Nyr8dzlXcEsBfD-7OuMyU3w6ey_5jFQapdYS1-mJRxKQMKkeu36TaVqq_3HE2epNmpgJX6klzgHYlQ1KE8qvUN5Pq-HHn8Bnw3T4uu9Js_H4PUFV3BYT2j)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

@@ -1,0 +1,6 @@
+Created At: 2026-11-15T13:16:28+03:00
+Completed At: 2026-11-15T13:16:29+03:00
+Command exited with code 2.
+
+Command output:
+/home/gaitano/.config/kitty/kitty.conf:3:listen_on unix:/tmp/kitty_pywal

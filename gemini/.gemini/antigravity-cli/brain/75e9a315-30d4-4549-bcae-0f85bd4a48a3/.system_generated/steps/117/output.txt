@@ -1,0 +1,6 @@
+Created At: 2026-11-15T13:21:03+03:00
+Completed At: 2026-11-15T13:21:04+03:00
+Command exited with code 0.
+
+Command output:
+lrwxrwxrwx 1 gaitano gaitano 102 Nov 15 13:20 /home/gaitano/.config/hypr/current_wallpaper.jpg -> /home/gaitano/02-media/01-pictures/03-wallpapers/wp14754302-toji-jujutsu-kaisen-desktop-wallpapers.jpg

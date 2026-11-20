@@ -1,0 +1,13 @@
+Created At: 2026-11-15T13:14:52+03:00
+Completed At: 2026-11-15T13:14:52+03:00
+Command exited with code 2.
+
+Command output:
+usage: wal [-h] [-a "alpha"] [-b background] [--fg foreground]
+           [--backend [backend]] [--out-dir [out_dir]]
+           [--theme [/path/to/file or theme_name]] [--iterative]
+           [--cols16 [method]] [--recursive] [--saturate 0.0-1.0] [--preview]
+           [--vte] [-c] [-i "/path/to/img.jpg"] [-l] [-n] [-o "script_name"]
+           [-p "theme_name"] [-q] [-r] [-R] [-s] [-t] [-v] [-w] [-e]
+           [--contrast [1.0-21.0]]
+wal: error: unrecognized arguments: --version

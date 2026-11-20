@@ -1,0 +1,41 @@
+Created At: 2026-11-20T10:30:49+03:00
+Completed At: 2026-11-20T10:30:49+03:00
+Command exited with code 0.
+
+Command output:
+665:---@class HL.WindowRuleSpec
+666----@field enabled? boolean
+667----@field match? table<string, string|number|boolean>
+668----@field name? string
+669-local __HL_WindowRuleSpec = {}
+670-
+671----@class HL.WorkspaceRuleSpec
+672----@field animation? string
+673----@field border_size? integer|boolean
+674----@field decorate? boolean
+675----@field default? boolean
+676----@field default_name? string
+677----@field enabled? boolean
+678----@field float_gaps? integer|HL.CssGap
+679----@field gaps_in? integer|HL.CssGap
+680----@field gaps_out? integer|HL.CssGap
+681----@field layout? string
+682----@field layout_opts? table<string, string|number|boolean>
+683----@field monitor? string
+684----@field no_border? boolean
+685----@field no_rounding? boolean
+686----@field no_shadow? boolean
+687----@field on_created_empty? string
+688----@field persistent? boolean
+689----@field workspace string
+690-local __HL_WorkspaceRuleSpec = {}
+691-
+692----@class HL.Device
+693----@field active_keymap? string
+694----@field active_layout_index? integer
+695----@field address? string
+696----@field belongs_to? {address:string, name:string}
+697----@field caps_lock? boolean
+698----@field default_speed? number
+699----@field layout? string
+700----@field main? boolean

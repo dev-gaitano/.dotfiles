@@ -1,0 +1,14 @@
+Created At: 2026-11-20T10:29:41+03:00
+Completed At: 2026-11-20T10:29:41+03:00
+Command exited with code 0.
+
+Command output:
+total 256
+drwxr-xr-x   3 nobody nogroup   4096 Nov 18 21:20 .
+drwxr-xr-x 301 nobody nogroup  12288 Nov 20 00:39 ..
+-rw-r--r--   1 nobody nogroup   1665 Jul 26 17:44 hypridle.conf
+-rw-r--r--   1 nobody nogroup  12532 Oct 28 13:42 hyprland.lua
+-rw-r--r--   1 nobody nogroup   2550 Nov  1 21:12 hyprlock.conf
+-rw-r--r--   1 nobody nogroup  49466 Oct 28 13:42 lockdead2.png
+-rw-r--r--   1 nobody nogroup 163413 Oct 29 18:55 lockdead.png
+drwxr-xr-x   2 nobody nogroup   4096 Nov 18 21:20 stubs

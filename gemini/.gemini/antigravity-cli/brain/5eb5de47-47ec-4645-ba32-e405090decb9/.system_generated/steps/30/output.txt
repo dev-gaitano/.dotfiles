@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+total 28
+drwxrwxr-x 2 gaitano gaitano 4096 Aug 24 15:11 .
+drwxrwxr-x 9 gaitano gaitano 4096 Aug 15 14:08 ..
+-rw-rw-r-- 1 gaitano gaitano  988 Sep  2 10:20 BubbleText.tsx
+-rw-rw-r-- 1 gaitano gaitano  630 Aug 30 14:35 ContactCard.tsx
+-rw-rw-r-- 1 gaitano gaitano  709 Aug 15 14:08 ProjectCard01.tsx
+-rw-rw-r-- 1 gaitano gaitano  709 Aug 15 14:08 ProjectCard02.tsx
+-rw-rw-r-- 1 gaitano gaitano  602 Aug 15 14:08 ProjectCard.tsx
+

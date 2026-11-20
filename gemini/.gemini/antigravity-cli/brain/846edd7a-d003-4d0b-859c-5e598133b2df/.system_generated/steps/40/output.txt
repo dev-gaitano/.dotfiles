@@ -1,0 +1,2 @@
+A1: (Recommended) Use GSAP ScrollTrigger scrub to smoothly interpolate rotation as the About section scrolls
+A2: (Recommended) Y and Z axes (gentle card tilt while keeping card facing user)

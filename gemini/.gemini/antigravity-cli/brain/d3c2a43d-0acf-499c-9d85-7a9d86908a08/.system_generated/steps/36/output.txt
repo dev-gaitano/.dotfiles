@@ -1,0 +1,6 @@
+Command exited with code 0.
+
+Command output:
+frontend/src/components/ui/ProjectCard01.tsx:  const model = useGLTF("/project_card_topbox.glb");
+frontend/src/components/ui/ProjectCard01.tsx:useGLTF.preload("/project_card_topbox.glb");
+frontend/src/pages/Resume.tsx:                  <div className="job-company">TopBox AI Studios</div>

@@ -1,0 +1,9 @@
+Created At: 2026-11-20T10:29:52+03:00
+Completed At: 2026-11-20T10:29:52+03:00
+Command exited with code 0.
+
+Command output:
+total 84
+drwxr-xr-x 2 nobody nogroup  4096 Nov 18 21:20 .
+drwxr-xr-x 3 nobody nogroup  4096 Nov 18 21:20 ..
+-rw-r--r-- 1 nobody nogroup 76699 Oct 29 18:55 hl.meta.lua

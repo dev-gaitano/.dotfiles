@@ -1,0 +1,24 @@
+Created At: 2026-11-19T23:31:10+03:00
+Completed At: 2026-11-19T23:31:10+03:00
+Command exited with code 0.
+
+Command output:
+total 68
+drwx------  3 gaitano gaitano 4096 Nov 19 22:13  .
+drwx------ 82 gaitano gaitano 4096 Nov 19 23:06  ..
+-rw-------  1 gaitano gaitano 1238 Oct 28 20:54  com.anthropic.Claude.desktop
+-rw-rw-r--  1 gaitano gaitano  324 Mar  7  2026  FFPWA-01KK3MQYH2KA75HNC143BGHPYR.desktop
+-rw-rw-r--  1 gaitano gaitano    0 Apr 14  2026  mimeapps.list
+-rw-rw-r--  1 gaitano gaitano  770 Nov 15 14:21  mimeinfo.cache
+-rw-------  1 gaitano gaitano  199 Sep  4  2025 'userapp-Firefox Developer Edition-3REKC3.desktop'
+drwxrwxr-x  3 gaitano gaitano 4096 Feb 28  2026  wine
+-rw-rw-r--  1 gaitano gaitano  237 Jul 15 21:20  wine-extension-application.desktop
+-rw-rw-r--  1 gaitano gaitano  248 Jul 15 21:20  wine-extension-appref-ms.desktop
+-rw-rw-r--  1 gaitano gaitano  219 Jul 16 09:35  wine-extension-chm.desktop
+-rw-rw-r--  1 gaitano gaitano  224 Jul 16 09:35  wine-extension-crt.desktop
+-rw-rw-r--  1 gaitano gaitano  221 Jul 16 09:35  wine-extension-hlp.desktop
+-rw-rw-r--  1 gaitano gaitano  242 Jul 16 09:35  wine-extension-msp.desktop
+-rw-rw-r--  1 gaitano gaitano  197 Feb 28  2026  wine-extension-reg.desktop
+-rw-rw-r--  1 gaitano gaitano  214 Jul 16 09:35  wine-extension-vbs.desktop
+-rw-rw-r--  1 gaitano gaitano  265 Jul 15 21:20  wine-extension-xaml.desktop
+-rw-rw-r--  1 gaitano gaitano  258 Jul 15 21:20  wine-extension-xbap.desktop

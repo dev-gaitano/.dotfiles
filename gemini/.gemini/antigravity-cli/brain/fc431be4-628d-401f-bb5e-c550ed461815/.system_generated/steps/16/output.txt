@@ -1,0 +1,43 @@
+Command exited with code 0.
+
+Command output:
+diff --git a/frontend/src/pages/Resume.tsx b/frontend/src/pages/Resume.tsx
+index 40d5a0b..293e5c4 100644
+--- a/frontend/src/pages/Resume.tsx
++++ b/frontend/src/pages/Resume.tsx
+@@ -210,16 +210,13 @@ function Resume() {
+                   </div>
+                   <ul className="job-details">
+                     <li>
+-                      <strong>3D Interactive Portfolio Platform:</strong> Built
++                      <strong>3D Interactive Personal Portfolio:</strong> Built
+                       high-performance responsive portfolio featuring custom
+                       WebGL 3D canvas card objects, GSAP scroll triggers, and
+                       mobile touch interactions.
+                     </li>
+                     <li>
+-                      <strong>Full-Stack Product Architectures:</strong>{" "}
+-                      Developed modular REST API backends, relational database
+-                      schemas, and clean frontend UI designs tailored for
+-                      performance and accessibility.
++                      <strong>Jasmijn Schrofer's Personal Portfolio:</strong>
+                     </li>
+                   </ul>
+                 </article>
+@@ -279,7 +276,15 @@ function Resume() {
+               <section className="resume-section">
+                 <h2 className="section-title">Education</h2>
+                 <div className="edu-item">
+-                  <div className="edu-title">Software Engineering</div>
++                  <div className="edu-title">
++                    Full Stack Software Engineering Bootcamp
++                  </div>
++                  <div className="edu-sub">Moringa School</div>
++                </div>
++                <div className="edu-item">
++                  <div className="edu-title">
++                    Foundations of Software Engineering
++                  </div>
+                   <div className="edu-sub">Moringa School</div>
+                 </div>
+               </section>

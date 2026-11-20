@@ -1,0 +1,149 @@
+Created At: 2026-11-15T13:19:42+03:00
+Completed At: 2026-11-15T13:19:42+03:00
+Command exited with code 0.
+
+Command output:
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   feh/.fehbg
+	modified:   gemini/.gemini/extension_integrity.json
+	modified:   gemini/.gemini/extensions/caveman/.claude-plugin/plugin.json
+	deleted:    gemini/.gemini/extensions/caveman/.clinerules/caveman.md
+	modified:   gemini/.gemini/extensions/caveman/.codex/config.toml
+	deleted:    gemini/.gemini/extensions/caveman/.cursor/rules/caveman.mdc
+	deleted:    gemini/.gemini/extensions/caveman/.cursor/skills/caveman/SKILL.md
+	modified:   gemini/.gemini/extensions/caveman/.gemini-extension-install.json
+	deleted:    gemini/.gemini/extensions/caveman/.github/copilot-instructions.md
+	modified:   gemini/.gemini/extensions/caveman/.github/workflows/sync-skill.yml
+	modified:   gemini/.gemini/extensions/caveman/.gitignore
+	deleted:    gemini/.gemini/extensions/caveman/.windsurf/rules/caveman.md
+	deleted:    gemini/.gemini/extensions/caveman/.windsurf/skills/caveman/SKILL.md
+	modified:   gemini/.gemini/extensions/caveman/AGENTS.md
+	modified:   gemini/.gemini/extensions/caveman/CLAUDE.md
+	deleted:    gemini/.gemini/extensions/caveman/CLAUDE.original.md
+	modified:   gemini/.gemini/extensions/caveman/CONTRIBUTING.md
+	modified:   gemini/.gemini/extensions/caveman/GEMINI.md
+	modified:   gemini/.gemini/extensions/caveman/README.md
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/README.md
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/SECURITY.md
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/SKILL.md
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/__init__.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/__main__.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/benchmark.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/cli.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/compress.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/detect.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman-compress/scripts/validate.py
+	deleted:    gemini/.gemini/extensions/caveman/caveman.skill
+	deleted:    gemini/.gemini/extensions/caveman/caveman/SKILL.md
+	deleted:    gemini/.gemini/extensions/caveman/hooks/README.md
+	deleted:    gemini/.gemini/extensions/caveman/hooks/caveman-activate.js
+	deleted:    gemini/.gemini/extensions/caveman/hooks/caveman-config.js
+	deleted:    gemini/.gemini/extensions/caveman/hooks/caveman-mode-tracker.js
+	deleted:    gemini/.gemini/extensions/caveman/hooks/caveman-statusline.ps1
+	deleted:    gemini/.gemini/extensions/caveman/hooks/caveman-statusline.sh
+	deleted:    gemini/.gemini/extensions/caveman/hooks/install.ps1
+	deleted:    gemini/.gemini/extensions/caveman/hooks/install.sh
+	deleted:    gemini/.gemini/extensions/caveman/hooks/package.json
+	deleted:    gemini/.gemini/extensions/caveman/hooks/uninstall.ps1
+	deleted:    gemini/.gemini/extensions/caveman/hooks/uninstall.sh
+	modified:   gemini/.gemini/extensions/caveman/plugins/caveman/skills/caveman/SKILL.md
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/SKILL.md
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/__init__.py
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/__main__.py
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/benchmark.py
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/cli.py
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/compress.py
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/detect.py
+	deleted:    gemini/.gemini/extensions/caveman/plugins/caveman/skills/compress/scripts/validate.py
+	deleted:    gemini/.gemini/extensions/caveman/rules/caveman-activate.md
+	modified:   gemini/.gemini/extensions/caveman/skills/caveman-help/SKILL.md
+	modified:   gemini/.gemini/extensions/caveman/skills/caveman/SKILL.md
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/SKILL.md
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/__init__.py
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/__main__.py
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/benchmark.py
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/cli.py
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/compress.py
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/detect.py
+	deleted:    gemini/.gemini/extensions/caveman/skills/compress/scripts/validate.py
+	modified:   gemini/.gemini/extensions/caveman/tests/caveman-compress/claude-md-project.md
+	modified:   gemini/.gemini/extensions/caveman/tests/caveman-compress/mixed-with-code.md
+	modified:   gemini/.gemini/extensions/caveman/tests/test_hooks.py
+	modified:   gemini/.gemini/extensions/caveman/tests/verify_repo.py
+	modified:   gemini/.gemini/projects.json
+	modified:   gemini/.gemini/state.json
+	modified:   hypr/.config/hypr/hyprland.conf
+	modified:   nvim/.config/nvim/init.vim
+	modified:   ranger/.config/ranger/rc.conf
+	modified:   scripts/.scripts/intro.sh
+	modified:   scripts/.scripts/startUp.sh
+	modified:   scripts/.scripts/tmuxCreate.sh
+	modified:   vlc/.config/vlc/vlc-qt-interface.conf
+	modified:   waybar/.config/waybar/config.jsonc
+	modified:   waybar/.config/waybar/style.css
+	modified:   zsh/.zshrc
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	gemini/.gemini/antigravity-cli/
+	gemini/.gemini/config/
+	gemini/.gemini/extensions/caveman/.agents/skills/
+	gemini/.gemini/extensions/caveman/.junie/
+	gemini/.gemini/extensions/caveman/.kiro/
+	gemini/.gemini/extensions/caveman/.roo/
+	gemini/.gemini/extensions/caveman/INSTALL.md
+	gemini/.gemini/extensions/caveman/agents/
+	gemini/.gemini/extensions/caveman/bin/
+	gemini/.gemini/extensions/caveman/commands/caveman-init.toml
+	gemini/.gemini/extensions/caveman/dist/
+	gemini/.gemini/extensions/caveman/docs/install-windows.md
+	gemini/.gemini/extensions/caveman/install.ps1
+	gemini/.gemini/extensions/caveman/install.sh
+	gemini/.gemini/extensions/caveman/package.json
+	gemini/.gemini/extensions/caveman/plugins/caveman/agents/
+	gemini/.gemini/extensions/caveman/plugins/caveman/skills/cavecrew/
+	gemini/.gemini/extensions/caveman/plugins/caveman/skills/caveman-compress/
+	gemini/.gemini/extensions/caveman/plugins/caveman/skills/caveman-stats/
+	gemini/.gemini/extensions/caveman/skills-lock.json
+	gemini/.gemini/extensions/caveman/skills/cavecrew/
+	gemini/.gemini/extensions/caveman/skills/caveman-commit/README.md
+	gemini/.gemini/extensions/caveman/skills/caveman-compress/
+	gemini/.gemini/extensions/caveman/skills/caveman-help/README.md
+	gemini/.gemini/extensions/caveman/skills/caveman-review/README.md
+	gemini/.gemini/extensions/caveman/skills/caveman-stats/
+	gemini/.gemini/extensions/caveman/skills/caveman/README.md
+	gemini/.gemini/extensions/caveman/src/
+	gemini/.gemini/extensions/caveman/tests/installer/
+	gemini/.gemini/extensions/caveman/tests/test_caveman_init.js
+	gemini/.gemini/extensions/caveman/tests/test_caveman_stats.js
+	gemini/.gemini/extensions/caveman/tests/test_compress_safety.py
+	gemini/.gemini/extensions/caveman/tests/test_mcp_shrink.js
+	gemini/.gemini/extensions/caveman/tests/test_symlink_flag.js
+	gemini/.gemini/extensions/caveman/tests/test_validate_inline.py
+	gemini/.gemini/history/course-7-module-6-pip-pypi-scripting-lab/
+	gemini/.gemini/history/lab-react-hooks-state/
+	gemini/.gemini/history/minescript/
+	gemini/.gemini/history/module-4/
+	gemini/.gemini/history/nato-fashion-house/
+	gemini/.gemini/history/obsdn-tui/
+	gemini/.gemini/history/oop-p2-cash-register-lab/
+	gemini/.gemini/history/project-management-cli-tool/
+	gemini/.gemini/history/python-music-library-system-lab/
+	gemini/.gemini/history/python-oop1-lab/
+	gemini/.gemini/history/react-components-props-vite-lab/
+	gemini/.gemini/history/react-hooks-plantshop-cr-vite/
+	gemini/.gemini/history/react-hooks-toy-tales-vite/
+	gemini/.gemini/history/react-portfolio/
+	gemini/.gemini/history/shopease/
+	gemini/.gemini/history/spa-wk1/
+	gemini/.gemini/history/test-minecraft-scripting/
+	gemini/.gemini/history/test-zentra/
+	gemini/.gemini/history/trackr/
+	systemd/.config/systemd/user/default.target.wants/ydotool.service
+
+no changes added to commit (use "git add" and/or "git commit -a")

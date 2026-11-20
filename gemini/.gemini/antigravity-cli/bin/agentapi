@@ -1,0 +1,2 @@
+#!/bin/sh
+exec "/home/gaitano/.local/bin/agy.1795159464857468319.old" agentapi "$@"

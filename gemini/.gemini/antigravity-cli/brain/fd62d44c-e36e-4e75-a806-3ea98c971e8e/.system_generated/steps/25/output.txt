@@ -1,0 +1,120 @@
+Created At: 2026-11-18T17:37:19+03:00
+Completed At: 2026-11-18T17:37:19+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/src/scene.js b/src/scene.js
+index 8993251..dbdc161 100644
+--- a/src/scene.js
++++ b/src/scene.js
+@@ -1,41 +1,72 @@
+ import * as THREE from "three";
+ 
+-import fragment from "./shader/fragment.glsl";
+-import vertex from "./shader/vertex.glsl";
+-
+-export default class Sketch {
+-  constructor() {
+-    this.container = getElementById("container");
+-
+-    this.scene = new THREE.Scene();
+-    this.clock = new THREE.Clock();
+-
+-    this.camera = new THREE.PerspectiveCamera(
+-      75,
+-      window.innerWidth / window.innerHeight,
+-      0.001,
+-      1000,
+-    );
+-
+-    this.addObjects();
+-  }
+-
+-  addObjects() {
+-    this.geometry = new THREE.PlaneBufferGeometry(2, 2);
+-
+-    this.uniforms = {
+-      u_time: { type: "f", value: 1.0 },
+-      u_resolution: { type: "v2", value: new THREE.Vector2() },
+-      u_mouse: { type: "v2", value: new THREE.Vector2() },
+-    };
+-
+-    this.material = new THREE.ShaderMaterial({
+-      uniforms: this.uniforms,
+-      vertexShader: vertex,
+-      fragmentShader: fragment,
+-    });
+-  }
+-
+-  onWindowResize(event) { }
+-  render() { }
++import fragment from "/shader/fragment.glsl";
++import vertex from "/shader/vertex.glsl";
++
++let container;
++let camera, scene, renderer, clock;
++let uniforms;
++
++init();
++animate();
++
++function init() {
++  //Scene container
++  container = document.getElementById("app");
++
++  // Camera
++  camera = new THREE.Camera();
++  camera.position.z = 1;
++
++  scene = new THREE.Scene();
++  clock = new THREE.Clock();
++
++  // Add objects
++  let geometry = new THREE.PlaneGeometry(2, 2);
++
++  uniforms = {
++    u_time: { type: "f", value: 1.0 },
++    u_resolution: { type: "v2", value: new THREE.Vector2() },
++    u_mouse: { type: "v2", value: new THREE.Vector2() },
++  };
++
++  let material = new THREE.ShaderMaterial({
++    uniforms: uniforms,
++    vertexShader: vertex,
++    fragmentShader: fragment,
++  });
++
++  // Create mesh object
++  let mesh = new THREE.Mesh(geometry, material);
++  scene.add(mesh);
++
++  // Render
++  renderer = new THREE.WebGLRenderer();
++  renderer.setPixelRatio(window.devicePixelRatio);
++  container.appendChild(renderer.domElement);
++
++  // Handle window resize
++  onWindowResize();
++  window.addEventListener("resize", onWindowResize, false);
++
++  document.onmousemove = function(e) {
++    uniforms.u_mouse.value.x = e.pageX;
++    uniforms.u_mouse.value.y = e.pageY;
++  };
++}
++
++function onWindowResize(event) {
++  renderer.setSize(window.innerWidth, window.innerHeight);
++  uniforms.u_resolution.value.x = renderer.domElement.width;
++  uniforms.u_resolution.value.y = renderer.domElement.height;
++}
++
++function animate() {
++  requestAnimationFrame(animate);
++  render();
++}
++
++function render() {
++  uniforms.u_time.value += clock.getDelta();
++  renderer.render(scene, camera);
+ }

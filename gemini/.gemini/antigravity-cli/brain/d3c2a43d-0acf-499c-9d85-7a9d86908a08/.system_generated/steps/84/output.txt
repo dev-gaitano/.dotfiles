@@ -1,0 +1,17 @@
+Command exited with code 0.
+
+Command output:
+M  frontend/src/components/ui/contactCardConstants.ts
+diff --git a/frontend/src/components/ui/contactCardConstants.ts b/frontend/src/components/ui/contactCardConstants.ts
+index 93cfea6..20ece1a 100644
+--- a/frontend/src/components/ui/contactCardConstants.ts
++++ b/frontend/src/components/ui/contactCardConstants.ts
+@@ -28,7 +28,7 @@ export const MOBILE_ROTATION_START: CardRotation = {
+ };
+ 
+ export const MOBILE_ROTATION_END: CardRotation = {
+-  x: ROTATION_X,
++  x: Math.PI / 2.5,
+   y: 0,
+   z: 0,
+ };

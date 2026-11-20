@@ -1,0 +1,13 @@
+
+The command exited with code 0.
+Output:
+frontend/src/types/MeshImportProps.tsx:1:export type ContactCardProps = {
+frontend/src/types/MeshImportProps.tsx:14:export type ProjectCardProps = {
+frontend/src/components/Projects/Projects.tsx:9:interface ProjectsProps {
+frontend/src/components/Hero/Hero.tsx:10:interface HeroProps {
+frontend/src/components/Footer/Footer.tsx:3:interface FooterProps {
+frontend/src/components/ScrollIndicator/ScrollIndicator.tsx:4:interface ScrollIndicatorProps {
+frontend/src/components/About/About.tsx:7:interface AboutProps {
+frontend/src/components/Navbar/Navbar.tsx:4:interface NavbarProps {
+frontend/src/components/ui/BubbleText.tsx:4:interface BubbleTextProps {
+

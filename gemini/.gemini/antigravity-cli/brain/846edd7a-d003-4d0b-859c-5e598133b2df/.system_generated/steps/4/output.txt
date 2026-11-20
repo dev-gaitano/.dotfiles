@@ -1,0 +1,6 @@
+
+The command exited with code 0.
+Output:
+./frontend/src/components/ui/ContactCard.tsx
+./frontend/node_modules/@dimforge/rapier3d-compat/geometry/contact.d.ts
+

@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+b5d0dbe (HEAD -> feat/ui-elements, origin/feat/ui-elements) feat(projects): add swipe interaction and lights
+24f67ae feat(projects): give each project card its own GLB model
+1813390 feat: use distinct 3d models for project cards
+a89ab3b feat(3d-models): support responsive bubble text models
+5213ce5 chore(assets): remove unused asset

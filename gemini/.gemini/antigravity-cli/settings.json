@@ -1,0 +1,36 @@
+{
+  "allowNonWorkspaceAccess": true,
+  "altScreenMode": "always",
+  "colorScheme": "tokyo night",
+  "editor": "nvim",
+  "enableTerminalSandbox": true,
+  "model": "Gemini 3.8 Flash (Medium)",
+  "notifications": true,
+  "permissions": {
+    "allow": [
+      "command(git status)",
+      "command(git diff)",
+      "command(git log)",
+      "command(pytest)"
+    ]
+  },
+  "trustedWorkspaces": [
+    "/home/gaitano/.minecraft/versions/better-defaults 26.1.2/minescript",
+    "/home/gaitano/01-studio/01-src/jasmijn-schrofer",
+    "/home/gaitano",
+    "/home/gaitano/01-studio/01-src/moringa-marines/module-4/spa-wk1",
+    "/home/gaitano/.dotfiles",
+    "/home/gaitano/01-studio/01-src/topbox",
+    "/home/gaitano/01-studio/01-src/test-morphing-gradient",
+    "/home/gaitano/01-studio/01-src/moringa-marines/m5/lab-workout-application",
+    "/home/gaitano/01-studio/01-src/eugene-gaitano",
+    "/home/gaitano/01-studio/01-src/shaders-intro",
+    "/home/gaitano/01-studio/01-src/shaders-intro-01",
+    "/home/gaitano/01-studio/01-src/shaders-algo-drawing",
+    "/home/gaitano/01-studio/01-src/moringa-marines/module-6/Mealy-Front---End-build-",
+    "/home/gaitano/01-studio/01-src/shaders/homoculus-jp",
+    "/home/gaitano/01-studio/01-src/shaders/shader-template-react-ts",
+    "/home/gaitano/01-studio/01-src/shaders/shader-template-react-vanilla",
+    "/home/gaitano/01-studio/01-src/shaders/monopo-vn"
+  ]
+}

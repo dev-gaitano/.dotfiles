@@ -1,0 +1,1264 @@
+{
+  "conversations": {
+    "04cdf207-7210-4096-93c4-dfe571fe8f79": {
+      "summary": {
+        "ID": "04cdf207-7210-4096-93c4-dfe571fe8f79",
+        "Title": "",
+        "Preview": "Caveman Persona Activation",
+        "NumSteps": 140,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-28T13:06:22.706383851Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-28T16:06:30.13828173+03:00"
+    },
+    "07b937b6-0297-42a5-839b-2ce4e24074e7": {
+      "summary": {
+        "ID": "07b937b6-0297-42a5-839b-2ce4e24074e7",
+        "Title": "",
+        "Preview": "Caveman Persona Simulation",
+        "NumSteps": 55,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-29T15:09:47.847278097Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-29T18:10:19.918902528+03:00"
+    },
+    "0e73c241-48d1-4856-974d-fc21b8bec229": {
+      "summary": {
+        "ID": "0e73c241-48d1-4856-974d-fc21b8bec229",
+        "Title": "",
+        "Preview": "/caveman:caveman",
+        "NumSteps": 9,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-14T04:53:56.972251502Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-14T07:54:26.975978417+03:00"
+    },
+    "0ed34dd1-5ce9-43bd-8e06-13b48ae8ecca": {
+      "summary": {
+        "ID": "0ed34dd1-5ce9-43bd-8e06-13b48ae8ecca",
+        "Title": "",
+        "Preview": "Caveman Roleplay Command",
+        "NumSteps": 194,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-22T12:45:39.189744064Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/moringa-marines/module-6/Mealy-Front---End-build-"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-22T15:46:09.192434111+03:00"
+    },
+    "186d028a-f044-41fd-a818-ede5351b8577": {
+      "summary": {
+        "ID": "186d028a-f044-41fd-a818-ede5351b8577",
+        "Title": "Fix Three.js Camera Undefined Error",
+        "Preview": "/caveman:caveman ```",
+        "NumSteps": 12,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T09:19:29.330242556Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders/shader-template-react-vanilla"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-19T12:19:45.448815764+03:00"
+    },
+    "18a1b066-2338-46b1-9daa-2d8b3911d38a": {
+      "summary": {
+        "ID": "18a1b066-2338-46b1-9daa-2d8b3911d38a",
+        "Title": "",
+        "Preview": "/caveman:caveman",
+        "NumSteps": 8,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-11T16:08:35.008421474Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/moringa-marines/m5/lab-workout-application"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-11T19:09:08.724422844+03:00"
+    },
+    "22d1bdc1-48a9-46d7-a8d2-1ec7731c6249": {
+      "summary": {
+        "ID": "22d1bdc1-48a9-46d7-a8d2-1ec7731c6249",
+        "Title": "",
+        "Preview": "Caveman Role-Play Command",
+        "NumSteps": 59,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-19T08:12:41.315108854Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/moringa-marines/module-6/Mealy-Front---End-build-"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-19T11:13:14.951825381+03:00"
+    },
+    "281a14be-6363-4e17-9359-a241c27c941f": {
+      "summary": {
+        "ID": "281a14be-6363-4e17-9359-a241c27c941f",
+        "Title": "",
+        "Preview": "Caveman Persona Activation",
+        "NumSteps": 164,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-28T12:14:43.767647875Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-28T15:15:20.926740488+03:00"
+    },
+    "406c223e-4c1a-4f0e-83e6-5cad5ed6fdfa": {
+      "summary": {
+        "ID": "406c223e-4c1a-4f0e-83e6-5cad5ed6fdfa",
+        "Title": "",
+        "Preview": "Caveman Persona Activation",
+        "NumSteps": 22,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-18T16:30:09.939803489Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-18T19:30:42.420674325+03:00"
+    },
+    "46d5cbb2-7722-42b6-87fa-0c7b7ce0312a": {
+      "summary": {
+        "ID": "46d5cbb2-7722-42b6-87fa-0c7b7ce0312a",
+        "Title": "Caveman Persona Prompt",
+        "Preview": "/caveman:caveman-commit gen commit msg for currently staged files",
+        "NumSteps": 40,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T09:15:42.288574829Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders/shader-template-react-ts"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-19T12:16:16.660125514+03:00"
+    },
+    "492fdc09-10da-4cf4-b58f-9affc198ac1e": {
+      "summary": {
+        "ID": "492fdc09-10da-4cf4-b58f-9affc198ac1e",
+        "Title": "",
+        "Preview": "Responsive Partner Logo Grid",
+        "NumSteps": 77,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-16T16:55:47.615501603Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/jasmijn-schrofer"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-16T19:56:17.714221542+03:00"
+    },
+    "49de0b2e-6863-4163-ad70-236f958edc01": {
+      "summary": {
+        "ID": "49de0b2e-6863-4163-ad70-236f958edc01",
+        "Title": "Caveman Persona Prompt",
+        "Preview": "How can I connect @[src/scene.ts] with @[src/App.tsx] ?",
+        "NumSteps": 30,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-18T18:12:32.462124792Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders/homoculus-jp"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-18T21:13:08.845678998+03:00"
+    },
+    "4b8827d1-7753-4fd1-9efc-b6f2cc063b9d": {
+      "summary": {
+        "ID": "4b8827d1-7753-4fd1-9efc-b6f2cc063b9d",
+        "Title": "",
+        "Preview": "Caveman Persona Activation",
+        "NumSteps": 4,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-18T12:54:59.959440233Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-18T15:55:31.030194877+03:00"
+    },
+    "58275b11-0195-43fd-9911-8686bae1b8b4": {
+      "summary": {
+        "ID": "58275b11-0195-43fd-9911-8686bae1b8b4",
+        "Title": "Connecting Scene.ts As Website Background",
+        "Preview": "/caveman:caveman How do I connect my @[frontend/src/scene.ts] to my website so that it acts as the background",
+        "NumSteps": 77,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T16:01:32.209783171Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-20T10:24:22.33242908+03:00"
+    },
+    "5eb5de47-47ec-4645-ba32-e405090decb9": {
+      "summary": {
+        "ID": "5eb5de47-47ec-4645-ba32-e405090decb9",
+        "Title": "",
+        "Preview": "make me the resume page",
+        "NumSteps": 62,
+        "Loaded": true,
+        "UpdatedAt": "2026-10-07T05:22:36.519826551Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-10-07T08:23:24.623587434+03:00"
+    },
+    "72ae26e6-2da3-4cf0-b18c-4c3dbba67d73": {
+      "summary": {
+        "ID": "72ae26e6-2da3-4cf0-b18c-4c3dbba67d73",
+        "Title": "",
+        "Preview": "How to open dapui in nvim",
+        "NumSteps": 14,
+        "Loaded": true,
+        "UpdatedAt": "2026-05-26T04:19:50.573689115Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "e2709ce7-e897-4766-91de-e0f66ace03b3",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-05-26T07:19:52.856430418+03:00"
+    },
+    "73a03b63-5a69-4bf3-a9ae-ac0a8699a8b4": {
+      "summary": {
+        "ID": "73a03b63-5a69-4bf3-a9ae-ac0a8699a8b4",
+        "Title": "",
+        "Preview": "Custom Caveman Persona Generation",
+        "NumSteps": 34,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-29T15:05:52.642997342Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-29T18:06:24.258126328+03:00"
+    },
+    "75a7216b-ba9f-4150-a95f-037ffb3dc09b": {
+      "summary": {
+        "ID": "75a7216b-ba9f-4150-a95f-037ffb3dc09b",
+        "Title": "",
+        "Preview": "Unit Testing Brand Parsing",
+        "NumSteps": 65,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-18T16:42:26.334600688Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-18T19:42:50.359911969+03:00"
+    },
+    "75e9a315-30d4-4549-bcae-0f85bd4a48a3": {
+      "summary": {
+        "ID": "75e9a315-30d4-4549-bcae-0f85bd4a48a3",
+        "Title": "Caveman Mode Request",
+        "Preview": "My pywal @[pywal.sh] is only loading the same colors after every boot, and even after I type the custom command `pywal` the colors don't change and neither does the wallpaper. Meanwhile, the wallpapaper changes after a certain duration automatically.",
+        "NumSteps": 353,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T22:00:54.052664796Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-20T01:01:29.812029111+03:00"
+    },
+    "791a168e-0d4f-4f0d-80d8-1bd68a9cddd9": {
+      "summary": {
+        "ID": "791a168e-0d4f-4f0d-80d8-1bd68a9cddd9",
+        "Title": "",
+        "Preview": "Brand Data Parsing Tests",
+        "NumSteps": 161,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-20T08:13:08.410829296Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-20T11:13:13.455409065+03:00"
+    },
+    "792c5265-efdf-4241-9a8d-3ce04c9b2e0a": {
+      "summary": {
+        "ID": "792c5265-efdf-4241-9a8d-3ce04c9b2e0a",
+        "Title": "",
+        "Preview": "/caveman:caveman Modify the Project structure in @README.md to match the new backend folder structure",
+        "NumSteps": 8,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-20T08:13:45.209791455Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-20T11:14:20.688345516+03:00"
+    },
+    "846edd7a-d003-4d0b-859c-5e598133b2df": {
+      "summary": {
+        "ID": "846edd7a-d003-4d0b-859c-5e598133b2df",
+        "Title": "Caveman Persona Activation",
+        "Preview": "I want to alter the rotation constants in the ContactCard component while I scroll",
+        "NumSteps": 153,
+        "Loaded": true,
+        "UpdatedAt": "2026-10-15T17:38:22.054290469Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-10-23T06:02:57.265554022+03:00"
+    },
+    "8ba1e57d-3aab-4505-8e36-dff57a9de353": {
+      "summary": {
+        "ID": "8ba1e57d-3aab-4505-8e36-dff57a9de353",
+        "Title": "",
+        "Preview": "Understanding SVG ViewBox Scaling",
+        "NumSteps": 12,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-11T08:08:39.080908263Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/jasmijn-schrofer"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-11T11:09:13.734994182+03:00"
+    },
+    "8dfa20a0-6092-4601-917a-7b5898ff4007": {
+      "summary": {
+        "ID": "8dfa20a0-6092-4601-917a-7b5898ff4007",
+        "Title": "",
+        "Preview": "Tailwind Letter Spacing Guide",
+        "NumSteps": 38,
+        "Loaded": true,
+        "UpdatedAt": "2026-05-23T07:25:33.524161446Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "1d7ee520-7b76-43a4-9505-0bf6a9c50eef",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-05-23T10:25:33.54135567+03:00"
+    },
+    "8f189f13-1e38-4b9c-860e-25a9f52ebbb5": {
+      "summary": {
+        "ID": "8f189f13-1e38-4b9c-860e-25a9f52ebbb5",
+        "Title": "",
+        "Preview": "Caveman Character Role-Play",
+        "NumSteps": 7,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-21T09:11:13.202986275Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-21T12:11:45.176860771+03:00"
+    },
+    "913a08f1-55c8-4068-a941-6b7da15ee096": {
+      "summary": {
+        "ID": "913a08f1-55c8-4068-a941-6b7da15ee096",
+        "Title": "",
+        "Preview": "Debugging Live Site Signup",
+        "NumSteps": 181,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-30T06:06:49.843990446Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-30T09:07:19.88460987+03:00"
+    },
+    "986f366f-8064-4d78-aec7-175b05f3281b": {
+      "summary": {
+        "ID": "986f366f-8064-4d78-aec7-175b05f3281b",
+        "Title": "Caveman Persona Prompt",
+        "Preview": "How do I position html body div#root main.main section#about.section.about.about-section img @[frontend/src/components/About] absolutely relative to the about section",
+        "NumSteps": 12,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-10T13:05:02.781514347Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-10T16:05:38.59705009+03:00"
+    },
+    "a6c72519-e136-46a3-9e8b-a07d520c7d17": {
+      "summary": {
+        "ID": "a6c72519-e136-46a3-9e8b-a07d520c7d17",
+        "Title": "",
+        "Preview": "Caveman Persona Activation",
+        "NumSteps": 257,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-16T15:22:28.786759169Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders-intro-01"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-16T18:23:02.278685517+03:00"
+    },
+    "af052c0d-20c1-4f94-ba37-d63ed27d72b2": {
+      "summary": {
+        "ID": "af052c0d-20c1-4f94-ba37-d63ed27d72b2",
+        "Title": "",
+        "Preview": "Git Commit Message Generation",
+        "NumSteps": 151,
+        "Loaded": true,
+        "UpdatedAt": "2026-06-22T16:42:53.423345938Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "3042e9c7-965d-4711-87ba-fe2b382450c4",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-06-22T19:43:27.783192047+03:00"
+    },
+    "b4fc1414-1b5a-470e-aee8-5000cc0f38c2": {
+      "summary": {
+        "ID": "b4fc1414-1b5a-470e-aee8-5000cc0f38c2",
+        "Title": "",
+        "Preview": "Activating Caveman Mode",
+        "NumSteps": 117,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-29T15:03:41.471577128Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-29T18:04:14.35514077+03:00"
+    },
+    "b6c49ea2-7f3e-4b9d-82fd-e30d250d7bef": {
+      "summary": {
+        "ID": "b6c49ea2-7f3e-4b9d-82fd-e30d250d7bef",
+        "Title": "Caveman Commit Message Generation",
+        "Preview": "/caveman:caveman-commit gen commit msg for currently staged files",
+        "NumSteps": 4,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T09:21:10.390481702Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders/shader-template-react-vanilla"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-19T12:21:37.819766121+03:00"
+    },
+    "b84ce1d5-ba9e-4868-aa23-f948336c382d": {
+      "summary": {
+        "ID": "b84ce1d5-ba9e-4868-aa23-f948336c382d",
+        "Title": "",
+        "Preview": "Debugging AutoMiner Script Assertion",
+        "NumSteps": 138,
+        "Loaded": true,
+        "UpdatedAt": "2026-05-20T12:17:32.014299468Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "3a0ee011-859e-4e56-bc33-b5ddaee9978d",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-05-20T15:17:37.641062379+03:00"
+    },
+    "be37d1e4-0f93-447b-a908-f9497defaac0": {
+      "summary": {
+        "ID": "be37d1e4-0f93-447b-a908-f9497defaac0",
+        "Title": "",
+        "Preview": "Speaking Like A Caveman",
+        "NumSteps": 114,
+        "Loaded": true,
+        "UpdatedAt": "2026-07-16T14:54:42.906193295Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-07-16T17:55:17.563231539+03:00"
+    },
+    "c6b932c6-ca2a-408a-9838-8f9f493520f9": {
+      "summary": {
+        "ID": "c6b932c6-ca2a-408a-9838-8f9f493520f9",
+        "Title": "Three.js OrbitControls TypeScript Error",
+        "Preview": "/caveman:caveman ```",
+        "NumSteps": 11,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T09:12:35.347969373Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders/shader-template-react-vanilla"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-19T12:12:37.748788971+03:00"
+    },
+    "cdee20ed-c2a6-4747-99b3-f86c9f0b81db": {
+      "summary": {
+        "ID": "cdee20ed-c2a6-4747-99b3-f86c9f0b81db",
+        "Title": "GLSL Fragment Shader Debugging",
+        "Preview": "/caveman:caveman What's wrong with my code @[src/shader/fragment.glsl]",
+        "NumSteps": 37,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-19T13:21:03.48860568Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders/monopo-vn"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-19T16:21:46.455717093+03:00"
+    },
+    "d193aa24-eebb-4923-8801-cbb54980ff47": {
+      "summary": {
+        "ID": "d193aa24-eebb-4923-8801-cbb54980ff47",
+        "Title": "",
+        "Preview": "Refactor Token Authentication Service",
+        "NumSteps": 111,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-01T07:12:39.557861922Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-01T10:13:13.212614281+03:00"
+    },
+    "d1eddfae-7ad1-4299-8060-d82be440c528": {
+      "summary": {
+        "ID": "d1eddfae-7ad1-4299-8060-d82be440c528",
+        "Title": "",
+        "Preview": "Caveman Persona Activation",
+        "NumSteps": 59,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-15T10:46:51.028381495Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-15T13:47:24.571472774+03:00"
+    },
+    "d391debe-cf66-4b92-aee3-6d8bf8f19dc4": {
+      "summary": {
+        "ID": "d391debe-cf66-4b92-aee3-6d8bf8f19dc4",
+        "Title": "",
+        "Preview": "Checking Substring in Strings",
+        "NumSteps": 52,
+        "Loaded": true,
+        "UpdatedAt": "2026-05-27T04:49:59.083399836Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "3a0ee011-859e-4e56-bc33-b5ddaee9978d",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-05-27T07:50:02.125806921+03:00"
+    },
+    "d3c2a43d-0acf-499c-9d85-7a9d86908a08": {
+      "summary": {
+        "ID": "d3c2a43d-0acf-499c-9d85-7a9d86908a08",
+        "Title": "Caveman Persona Activation",
+        "Preview": "/caveman:caveman-commit check currently staged and gen commit msg",
+        "NumSteps": 86,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-04T07:24:43.014777417Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-04T10:25:20.199229172+03:00"
+    },
+    "d446e11f-1a14-47fb-bd9e-db7ea0145267": {
+      "summary": {
+        "ID": "d446e11f-1a14-47fb-bd9e-db7ea0145267",
+        "Title": "",
+        "Preview": "Configuring Fastfetch System Information",
+        "NumSteps": 17,
+        "Loaded": true,
+        "UpdatedAt": "2026-06-01T06:06:00.845387654Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "e2709ce7-e897-4766-91de-e0f66ace03b3",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-06-01T09:06:09.038656135+03:00"
+    },
+    "e4c1b80e-996a-4835-8bfe-10d72f82a522": {
+      "summary": {
+        "ID": "e4c1b80e-996a-4835-8bfe-10d72f82a522",
+        "Title": "Caveman Persona Activation",
+        "Preview": "My @[frontend/src/components/Hero/Hero.tsx] is still loading the smae bubble text for desktop, despite me changing it",
+        "NumSteps": 68,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-14T07:18:48.533507867Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-14T10:19:31.12866796+03:00"
+    },
+    "e5ecf460-0ad0-4c62-8093-32b0c9015e9a": {
+      "summary": {
+        "ID": "e5ecf460-0ad0-4c62-8093-32b0c9015e9a",
+        "Title": "",
+        "Preview": "Fixing 404 Login Error",
+        "NumSteps": 253,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-09T05:27:43.475764023Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-09T08:28:13.471005984+03:00"
+    },
+    "e822e1a1-be40-4865-9261-3641b862950a": {
+      "summary": {
+        "ID": "e822e1a1-be40-4865-9261-3641b862950a",
+        "Title": "",
+        "Preview": "I will run `git status` to see if there is a repository and what files are currently staged.",
+        "NumSteps": 65,
+        "Loaded": true,
+        "UpdatedAt": "2026-05-30T11:31:25.292823413Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "3a0ee011-859e-4e56-bc33-b5ddaee9978d",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-05-30T14:31:27.610525779+03:00"
+    },
+    "eab8ce68-b441-475b-a4a2-46caad34097a": {
+      "summary": {
+        "ID": "eab8ce68-b441-475b-a4a2-46caad34097a",
+        "Title": "Update Meal Rating Display",
+        "Preview": "/caveman:caveman Make ratings in @[src/components/CurrentMealOptionCard] reflect actual rating using the stars",
+        "NumSteps": 153,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-30T00:03:25.844043328Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/moringa-marines/module-6/Mealy-Front---End-build-"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-30T03:03:55.842731868+03:00"
+    },
+    "f2d5a468-020c-42a9-a231-2d3c31b4fd32": {
+      "summary": {
+        "ID": "f2d5a468-020c-42a9-a231-2d3c31b4fd32",
+        "Title": "",
+        "Preview": "How to quit agy",
+        "NumSteps": 12,
+        "Loaded": true,
+        "UpdatedAt": "2026-05-30T07:35:27.06978338Z",
+        "WorkspaceURIs": null,
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "1d7ee520-7b76-43a4-9505-0bf6a9c50eef",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-05-30T10:35:29.122975801+03:00"
+    },
+    "f45b3ff0-0232-4e90-a035-11c6c2bab697": {
+      "summary": {
+        "ID": "f45b3ff0-0232-4e90-a035-11c6c2bab697",
+        "Title": "",
+        "Preview": "Caveman Persona Initiation",
+        "NumSteps": 93,
+        "Loaded": true,
+        "UpdatedAt": "2026-08-03T11:11:22.007186586Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/topbox"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-08-03T14:11:52.035352467+03:00"
+    },
+    "fc431be4-628d-401f-bb5e-c550ed461815": {
+      "summary": {
+        "ID": "fc431be4-628d-401f-bb5e-c550ed461815",
+        "Title": "Caveman Persona Activation",
+        "Preview": "/caveman:caveman-commit gen commit msg for currently staged files",
+        "NumSteps": 76,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-04T10:51:21.969261317Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/eugene-gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-04T13:52:03.87510469+03:00"
+    },
+    "fd62d44c-e36e-4e75-a806-3ea98c971e8e": {
+      "summary": {
+        "ID": "fd62d44c-e36e-4e75-a806-3ea98c971e8e",
+        "Title": "Caveman Persona Prompt",
+        "Preview": "@[src/scene.js]",
+        "NumSteps": 103,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-18T16:48:10.029373263Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano/01-studio/01-src/shaders-intro-01"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-18T19:48:48.426024264+03:00"
+    },
+    "fe435ac6-2696-4c29-a483-2b89589aade4": {
+      "summary": {
+        "ID": "fe435ac6-2696-4c29-a483-2b89589aade4",
+        "Title": "Caveman Persona Mode",
+        "Preview": "How do I remove the \"Blender\" app without an icon from rofi",
+        "NumSteps": 6,
+        "Loaded": true,
+        "UpdatedAt": "2026-11-04T06:51:54.262177219Z",
+        "WorkspaceURIs": [
+          "file:///home/gaitano"
+        ],
+        "AppDataDir": "antigravity-cli",
+        "ProjectID": "default-cli-project",
+        "AgentName": "",
+        "GroupID": "",
+        "Internal": false,
+        "Cloud": false,
+        "CloudProject": {
+          "ID": "",
+          "Name": ""
+        },
+        "PermissionPreset": 0
+      },
+      "is_internal": false,
+      "last_modified_time": "2026-11-04T09:52:35.676187708+03:00"
+    }
+  }
+}

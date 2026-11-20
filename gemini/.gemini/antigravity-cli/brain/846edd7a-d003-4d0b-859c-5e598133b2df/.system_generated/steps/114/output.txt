@@ -1,0 +1,16 @@
+The following changes were made by the replace_file_content tool to: /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/src/types/MeshImportProps.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -2,8 +2,10 @@
+   rotationX?: number;
+   rotationY?: number;
+   rotationZ?: number;
++  startX?: number;
+   startY?: number;
+   startZ?: number;
++  endX?: number;
+   endY?: number;
+   endZ?: number;
+   scale: number;
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

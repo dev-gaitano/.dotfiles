@@ -1,0 +1,30 @@
+
+p5@2.3.2 | LGPL-2.1 | deps: 13 | versions: 187
+[![npm version](https://badge.fury.io/js/p5.svg)](https://www.npmjs.com/package/p5)
+https://p5js.org
+
+dist
+.tarball: https://registry.npmjs.org/p5/-/p5-2.3.2.tgz
+.shasum: f355e5823d1212df89da89a5db42145701bf8418
+.integrity: sha512-DlX4rVQb9R2Z16XtTTNN/1zf7FZWy55ApA6ZS0GNJBDraymJcd9kbxmpIDKYnVxiXrchgb2YckWsmm+TSEJVPg==
+.unpackedSize: 17.4 MB
+
+dependencies:
+@davepagurek/bezier-path: ^0.0.7, @japont/unicode-range: ^1.0.0, acorn: ^8.15.0, acorn-walk: ^8.3.4, colorjs.io: ^0.6.0, escodegen: ^2.1.0, gifenc: ^1.0.3, i18next: ^19.0.2, i18next-browser-languagedetector: ^4.0.1, libtess: ^1.2.2, omggif: ^1.0.10, pako: ^2.1.0, zod: ^4.2.1
+
+maintainers:
+- p5.js <p5@processingfoundation.org>
+- stalgiag <stalgia.grigg@gmail.com>
+- outofambit <coding@outofambit.com>
+- limzykenneth <limzy.kenneth@gmail.com>
+- ksen0 <kit@processingfoundation.org>
+- lmccart <laurenleemccarthy@gmail.com>
+- davepagurek <davepagurek@gmail.com>
+- qianqianye <qianqian.ye44@gmail.com>
+
+dist-tags:
+latest: 2.3.2
+beta: 2.3.1-rc.2
+r1: 1.11.13
+
+published 2 weeks ago by ksen0 <kit@processingfoundation.org>

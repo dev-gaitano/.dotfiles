@@ -1,0 +1,35 @@
+Created At: 2026-11-20T00:02:28+03:00
+Completed At: 2026-11-20T00:02:28+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name                            Version     Architecture Description
+├┼┼─═══════════════════════════════─═══════════─════════════─═══════════════════════════════════════════════════════
+ii  libvlc-bin:amd64                3.0.24-4+b1 amd64        tools for VLC's base library
+ii  libvlc5:amd64                   3.0.24-4+b1 amd64        multimedia player and streamer library
+ii  libvlccore9:amd64               3.0.24-4+b1 amd64        base library for VLC and its modules
+un  phonon4qt6-backend-vlc          <none>      <none>       (no description available)
+ii  vlc                             3.0.24-4+b1 amd64        multimedia player and streamer
+ii  vlc-bin                         3.0.24-4+b1 amd64        binaries from VLC
+ii  vlc-data                        3.0.24-4    all          common data for VLC
+ii  vlc-l10n                        3.0.24-4    all          translations for VLC
+un  vlc-plugin-abi-3-0-0ft64        <none>      <none>       (no description available)
+un  vlc-plugin-access-extra         <none>      <none>       (no description available)
+ii  vlc-plugin-base:amd64           3.0.24-4+b1 amd64        multimedia player and streamer (base plugins)
+un  vlc-plugin-fluidsynth           <none>      <none>       (no description available)
+un  vlc-plugin-jack                 <none>      <none>       (no description available)
+ii  vlc-plugin-notify:amd64         3.0.24-4+b1 amd64        LibNotify plugin for VLC
+un  vlc-plugin-pipewire             <none>      <none>       (no description available)
+ii  vlc-plugin-qt:amd64             3.0.24-4+b1 amd64        multimedia player and streamer (Qt plugin)
+ii  vlc-plugin-samba:amd64          3.0.24-4+b1 amd64        Samba plugin for VLC
+ii  vlc-plugin-skins2:amd64         3.0.24-4+b1 amd64        multimedia player and streamer (Skins2 plugin)
+un  vlc-plugin-svg                  <none>      <none>       (no description available)
+ii  vlc-plugin-video-output:amd64   3.0.24-4+b1 amd64        multimedia player and streamer (video output plugins)
+ii  vlc-plugin-video-splitter:amd64 3.0.24-4+b1 amd64        multimedia player and streamer (video splitter plugins)
+ii  vlc-plugin-visualization:amd64  3.0.24-4+b1 amd64        multimedia player and streamer (visualization plugins)
+/usr/bin/vlc
+lrwxrwxrwx 1 gaitano gaitano   28 Oct  8  2025 /home/gaitano/.config/vlc -> ../.dotfiles/vlc/.config/vlc
+drwx------ 2 gaitano gaitano 4096 Nov 19 10:39 /home/gaitano/.local/share/vlc

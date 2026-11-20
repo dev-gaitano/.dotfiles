@@ -1,0 +1,20 @@
+Created At: 2026-11-20T00:02:36+03:00
+Completed At: 2026-11-20T00:02:37+03:00
+Command exited with code 0.
+
+Command output:
+libvlc5
+Reverse Depends:
+  vlc-bin
+  libvlc-bin
+libvlccore9
+Reverse Depends:
+  vlc-plugin-visualization
+  vlc-plugin-video-splitter
+  vlc-plugin-video-output
+  vlc-plugin-skins2
+  vlc-plugin-samba
+  vlc-plugin-qt
+  vlc-plugin-notify
+  vlc-plugin-base
+  libvlc5

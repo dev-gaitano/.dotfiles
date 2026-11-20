@@ -1,0 +1,29 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0
+rootdir: /home/gaitano/01-studio/01-src/topbox/backend
+plugins: langsmith-0.7.9, anyio-4.12.1
+collecting ... collecting 0 items / 1 error                                                   collected 0 items / 1 error                                                    
+
+==================================== ERRORS ====================================
+_______________ ERROR collecting tests/test_parse_brand_data.py ________________
+tests/test_parse_brand_data.py:7: in <module>
+    from utils import extract_text, parse_brand_data
+utils/__init__.py:2: in <module>
+    from .parse_brand_data import *
+utils/parse_brand_data.py:4: in <module>
+    from agents import model as llm
+agents/__init__.py:1: in <module>
+    from .agentSetup import *
+agents/agentSetup.py:4: in <module>
+    model = ChatOpenAI(
+../../topbox-mvp/venv/lib/python3.13/site-packages/langchain_core/load/serializable.py:118: in __init__
+    super().__init__(*args, **kwargs)
+../../topbox-mvp/venv/lib/python3.13/site-packages/langchain_openai/chat_models/base.py:1071: in validate_environment
+    self.root_async_client = openai.AsyncOpenAI(
+../../topbox-mvp/venv/lib/python3.13/site-packages/openai/_client.py:496: in __init__
+    raise OpenAIError(
+E   openai.OpenAIError: The api_key client option must be set either by passing api_key to the client or by setting the OPENAI_API_KEY environment variable
+=========================== short test summary info ============================
+ERROR tests/test_parse_brand_data.py - openai.OpenAIError: The api_key client...
+!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
+=============================== 1 error in 2.60s ===============================

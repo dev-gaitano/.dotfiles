@@ -1,0 +1,30 @@
+Created At: 2026-11-19T22:07:58+03:00
+Completed At: 2026-11-19T22:08:03+03:00
+Workflow "Inspect blender desktop details and fix agy symlink" completed.
+Output:
+local blender.desktop: Name=Blender
+local blender.desktop: Exec=blender %f
+agy exists? True
+agy_old exists? False
+Created symlink for agy.old!
+Flatpak info:
+ 
+Blender - Model, animate, rig, & more in 3D
+
+            ID: org.blender.Blender
+           Ref: app/org.blender.Blender/x86_64/stable
+          Arch: x86_64
+        Branch: stable
+       Version: 4.5.2
+       License: GPL-3.0
+        Origin: flathub
+    Collection: org.flathub.Stable
+  Installation: system
+Installed Size: 1.1 GB
+       Runtime: org.freedesktop.Platform/x86_64/24.08
+           Sdk: org.freedesktop.Sdk/x86_64/24.08
+
+        Commit: ea1392e0941e0b865610a3644f44a4aba405066804af2c2b9d2bb18e694e424c
+        Parent: 00950a12ad1eb3f8c34a62c0647622510a93c7e3439c769a07e13fa91dfecb10
+       Subject: Merge pull request #215 from flathub/update-master-916ca0c (e9fd7ecf5a06)
+          Date: 2025-08-24 21:12:08 +0000

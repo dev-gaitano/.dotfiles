@@ -1,0 +1,19 @@
+Created At: 2026-11-14T10:03:26+03:00
+Completed At: 2026-11-14T10:03:27+03:00
+Command exited with code 0.
+
+Command output:
+On branch feat/ui-elements
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	deleted:    frontend/public/portfolio_bubble_text_desktop.glb
+	modified:   frontend/src/components/About/About.css
+	modified:   frontend/src/components/About/About.tsx
+	modified:   frontend/src/components/Hero/Hero.tsx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	frontend/public/portfolio_text_desktop.glb
+
+no changes added to commit (use "git add" and/or "git commit -a")

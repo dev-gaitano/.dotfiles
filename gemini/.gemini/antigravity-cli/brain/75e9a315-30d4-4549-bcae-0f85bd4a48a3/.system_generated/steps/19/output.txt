@@ -1,0 +1,50 @@
+Created At: 2026-11-15T13:13:01+03:00
+Completed At: 2026-11-15T13:13:01+03:00
+Command exited with code 0.
+
+Command output:
+total 44
+drwxrwxr-x 2 gaitano gaitano  4096 Apr 28  2026 .
+drwxrwxr-x 3 gaitano gaitano  4096 Apr 27  2026 ..
+-rwxrwxr-x 1 gaitano gaitano   513 Sep  4  2025 brightnessNotify.sh
+-rw-r--r-- 1 gaitano gaitano  1534 Apr 28  2026 hypridle.conf
+-rw-rw-r-- 1 gaitano gaitano 12351 Nov  4 09:46 hyprland.conf
+-rw-r--r-- 1 gaitano gaitano  2367 Apr 28  2026 hyprlock.conf
+-rw-r--r-- 1 gaitano gaitano    98 Apr 27  2026 hyprpaper.conf
+-rwxrwxr-x 1 gaitano gaitano   497 Apr 27  2026 volumeNotify.sh
+source = ~/.cache/wal/colors-hyprland.conf
+# Or execute your favorite apps at launch like this:
+exec-once = $bar
+exec-once = $terminal -e ~/.scripts/startUp.sh
+exec-once = [workspace 2 silent] $browser
+#exec-once = [workspace 3 silent] $ai
+#exec-once = [workspace 4 silent] $discord
+exec-once = hyprpaper
+exec-once = dunst --config ~/.config/dunst/dunstrc
+exec-once = nm-applet &
+exec-once = hypridle -q
+# permission = /usr/(lib|libexec|lib64)/xdg-desktop-portal-hyprland, screencopy, allow
+    force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
+bind = $mainMod, I, exec, hyprctl layers > /tmp/layers.txt
+bind = $mainMod, Return, exec, $terminal
+bind = $mainMod, Z, exec, $browser
+bind = $mainMod, E, exec, $fileManager
+bind = $mainMod, D, exec, $menu
+bind = $mainMod SHIFT, S, exec, $screenshotManager
+bind = $mainMod SHIFT, R, exec, hyprctl reload,
+bind = $mainMod, M, exec, command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch exit
+bindel = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 1%+
+bindel = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 1%-
+#bindel = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindel = , semicolon, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindel = ,XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
+bindel = ,XF86MonBrightnessUp, exec, brightnessctl -e4 -n2 set 1%+
+bindel = ,XF86MonBrightnessDown, exec, brightnessctl -e4 -n2 set 1%-
+bindl = , XF86AudioNext, exec, playerctl next
+bindl = , XF86AudioPause, exec, playerctl play-pause
+bindl = , XF86AudioPlay, exec, playerctl play-pause
+bindl = , XF86AudioPrev, exec, playerctl previous
+bind = $mainMod, Up, exec, ydotool mousemove -x 0 -y -10
+bind = $mainMod, Down, exec, ydotool mousemove -x 0 -y 10
+bind = $mainMod, Left, exec, ydotool mousemove -x -10 -y 0
+bind = $mainMod, Right, exec, ydotool mousemove -x 10 -y 0

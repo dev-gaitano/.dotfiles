@@ -1,0 +1,13 @@
+Created At: 2026-11-19T19:01:06+03:00
+Completed At: 2026-11-19T19:01:08+03:00
+Command exited with code 0.
+
+Command output:
+{
+  errors: [],
+  active: false,
+  progress: 0,
+  item: '',
+  loaded: 0,
+  total: 0
+}

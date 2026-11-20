@@ -1,0 +1,16 @@
+
+The command exited with code 0.
+Output:
+
+> mealy-front---end-build-@0.0.0 build
+> vite build
+
+vite v8.2.1 building client environment for production...
+transforming (40) node_modules/react-router/dist/development/chunk-ZA36QIGN.mjstransforming (58) node_modules/lucide-react/dist/esm/icons/between-horizontal-sttransforming (57) node_modules/lucide-react/dist/esm/icons/alarm-clock-check.mjstransforming (1265) node_modules/lucide-react/dist/esm/icons/scaling.mjstransforming (1266) node_modules/lucide-react/dist/esm/icons/ship-wheel.mjs✓ 1842 modules transformed.
+rendering chunks (1)...computing gzip size...
+dist/index.html                   0.47 kB │ gzip:  0.32 kB
+dist/assets/index-CZ1qc8jN.css   19.48 kB │ gzip:  3.81 kB
+dist/assets/index-yGO1Q6N6.js   262.29 kB │ gzip: 82.18 kB
+
+✓ built in 664ms
+

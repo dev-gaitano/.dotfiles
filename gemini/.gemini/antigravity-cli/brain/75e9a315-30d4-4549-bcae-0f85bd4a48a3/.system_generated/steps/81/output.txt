@@ -1,0 +1,6 @@
+Created At: 2026-11-15T13:16:23+03:00
+Completed At: 2026-11-15T13:16:23+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.config/waybar/style.css:1:@import "../../.cache/wal/colors-waybar.css";

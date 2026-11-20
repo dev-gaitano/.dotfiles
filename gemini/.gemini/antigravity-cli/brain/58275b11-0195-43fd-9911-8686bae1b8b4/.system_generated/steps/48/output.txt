@@ -1,0 +1,14 @@
+Created At: 2026-11-19T18:58:22+03:00
+Completed At: 2026-11-19T18:58:23+03:00
+Command exited with code 0.
+
+Command output:
+frontend/src/pages/Home.tsx:16:  const [isLoaded, setIsLoaded] = useState(false);
+frontend/src/pages/Home.tsx:20:    if (!isLoaded) return;
+frontend/src/pages/Home.tsx:55:  }, [isLoaded, isMobile]);
+frontend/src/pages/Home.tsx:59:      {!isLoaded && (
+frontend/src/pages/Home.tsx:70:      <Navbar className={`${!isLoaded ? "hidden" : ""}`} />
+frontend/src/pages/Home.tsx:72:      <main className={`main ${!isLoaded ? "hidden" : ""}`}>
+frontend/src/pages/Home.tsx:78:      <Footer className={`footer-section ${!isLoaded ? "hidden" : ""}`} />
+frontend/src/pages/Home.tsx:81:        className={`scroll-indicator ${!isLoaded ? "hidden" : ""}`}
+frontend/src/components/ui/BubbleText.tsx:25:  // Update isLoaded state variable to match model load state

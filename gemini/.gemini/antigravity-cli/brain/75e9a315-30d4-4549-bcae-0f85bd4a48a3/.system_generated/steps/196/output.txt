@@ -1,0 +1,6 @@
+Created At: 2026-11-19T23:30:42+03:00
+Completed At: 2026-11-19T23:30:43+03:00
+Command exited with code 1.
+
+Command output:
+/usr/share/applications/steam.desktop

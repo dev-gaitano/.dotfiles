@@ -1,0 +1,53 @@
+Created At: 2026-11-20T10:28:42+03:00
+Completed At: 2026-11-20T10:28:45+03:00
+The search for ""hyprland" lua config OR hyprland lua plugin" returned the following summary:
+Hyprland natively supports **Lua configuration** (introduced in v0.55 to replace the legacy `hyprland.conf` / `hyprlang` syntax)[1][2]. 
+
+### 1. Native Lua Configuration (`hyprland.lua`)
+Instead of writing configuration files in `hyprland.conf`, you can use a `hyprland.lua` file inside your `~/.config/hypr/` directory[3][4]. 
+
+* **How it works:** If Hyprland finds a `hyprland.lua` file at startup, it loads it natively[5]. (Previously, community tools like the third-party `hyprlua` plugin[4] handled this, but Lua is now integrated directly into the compositor core).
+* **Migration Tool:** If you are transitioning an old configuration, tools like [`hyprlang2lua`](https://github.com/EIonTusk/hyprlang2lua) can automatically convert your old `hyprland.conf` blocks into the modern Lua format[1].
+
+#### Example Syntax:
+```lua
+-- General configuration and bindings using the native Lua API
+hl.config({
+    general = {
+        gaps_in = 5,
+        gaps_out = 10,
+        border_size = 2,
+    },
+})
+
+-- Keybindings
+hl.bind("SUPER", "Return", function()
+    hl.exec("alacritty")
+end)
+
+hl.bind("SUPER", "Q", function()
+    hl.killactive()
+end)
+```
+
+---
+
+### 2. Lua and Hyprland Plugins
+With native Lua support, interacting with plugins, writing custom window layouts, and managing hooks has become deeply integrated[6][7]:
+
+* **Loading Plugins via Lua:** You can load external plugins directly via code using `hl.plugin.load(path)`[8] or configure them inside your Lua setup blocks[7].
+* **Custom Layouts:** Hyprland's Lua API allows you to write entirely custom window management layouts directly in Lua using `hl.layout.register()` without needing to compile a C++ plugin[6].
+* **Advanced Scripting:** You can hook into Lua events, build custom timers, manage notifications, and utilize built-in utility wrappers natively[9][2].
+
+Sources:
+[1] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFTWKl4F0X04yEH-FVqjuinLGBjYNkJGkT8XIjgSdOjYeMK53Y9i7KOxWc0NSl3UzvQrd4fGJ5sTOHOuWXYRXeaOUY8_w8OyEBLm3PiyD2eHnALNLUDpzAxxyMyQE3H)
+[2] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsQAZ56sOfGR_UcXutM70pthtw0ss19xasdZ1n72i6zzvCQKrZt4BbgHwIYmg80KrFB0QcHGMaJWRo7kZ68aOOwNdAiSbAMYKkccTjIT2pNpWFVTQ=)
+[3] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGspgcZ-Lnh8Ulw65DpOim4vHqxnGU4S5dy1tbOx7vunB8yrsMpQZbhImJghJ-m22lPHOfqlcghrtEgmPncnJZ10Cm8GZ1M0oUxFgBf_t1tEKD-8apWNwuTmibf8LcUBw5hHXsto2bBkhcOTysJ0KGtbN549et3Cl8n73uVRz9-Qwc=)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGs03HRb6hvWQc750pCMop4TOsYaNoQcWfs_yZ2HQxFm95zoTn2f6ZWlqLsU7vtEQUdquABnBuvaLL7hAaCILocUuhnwQNAPaHXeeIAvdqJzjKd8post-Iqbxk=)
+[5] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGsQAZ56sOfGR_UcXutM70pthtw0ss19xasdZ1n72i6zzvCQKrZt4BbgHwIYmg80KrFB0QcHGMaJWRo7kZ68aOOwNdAiSbAMYKkccTjIT2pNpWFVTQ=)
+[6] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFJkwEPCA2zelc_Hs9YR8Eu4jf26c_5CUyShweq1SRn3xk4g4fsaqh89B5qRv4lJ986MSrBo_QckGTLW2-I-OIWPKRzWJu65B5Re9lmCFqqCcS8-1G2YFYWdRORsCQC7QjosBBr8LvsUxT8frFP8XHJ)
+[7] [context7.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEWXOeto6L6qnVSj38UyztBeDTcIgCUN1LzgThKrbjJ3nB5amRMKLFp7ID-BA0Jki8hTHt61tpl6geC1zfIso15EKdM0fER6SoN9xE7fWr8qA2DibwqisxtcbVYOV7IvfPG9w==)
+[8] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGfa98jqfieC8YH3mjyF5rimaUrpbLDtHWZ50lg2QLp9IM0RLJ09EC8mAf8qiieAz92aocrYoo4_T26qpA5k3bpDWTJp_LNjwmiKCI4L8Cvt3AyoCVMCmyvpUTrlxe87NK9MnQurElHb-V05Fo=)
+[9] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEtsD8oX-Iv3sPJy8C7yZXfOHE_E8ycBzuK_uyyCI8HS-6_W5z_DydcwCGNXGfpAYs-6eC0DzI-b5-fAV-RwDnbyRX6RXD49FXvF5HmCCVIBcvvZdeMkb4EEB81RNCMRQ1FQVu7KvYHWpfZ87gutaix0PMrL5s=)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

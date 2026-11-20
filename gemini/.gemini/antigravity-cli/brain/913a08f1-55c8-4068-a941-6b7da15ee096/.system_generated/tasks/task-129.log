@@ -1,0 +1,63 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0
+rootdir: /home/gaitano/01-studio/01-src/topbox/backend
+plugins: langsmith-0.7.9, anyio-4.12.1
+collecting ... collecting 5 items                                                             collected 36 items                                                             
+
+tests/test_company.py .....                                              [ 13%]
+tests/test_create_company.py ..                                          [ 19%]
+tests/test_extract_text.py ........                                      [ 41%]
+tests/test_login.py ..                                                   [ 47%]
+tests/test_map_to_model.py ......                                        [ 63%]
+tests/test_parse_brand_data.py .....                                     [ 77%]
+tests/test_signup.py .....                                               [ 91%]
+tests/test_upload_brand_guidelines.py FFF                                [100%]
+
+=================================== FAILURES ===================================
+______________________________ test_missing_file _______________________________
+
+client = <FlaskClient <Flask 'app'>>
+
+    def test_missing_file(client):
+        response = client.post(API_URL)
+    
+>       assert response.status_code == 400
+E       assert 404 == 400
+E        +  where 404 = <WrapperTestResponse streamed [404 NOT FOUND]>.status_code
+
+tests/test_upload_brand_guidelines.py:31: AssertionError
+______________________________ test_non_pdf_file _______________________________
+
+client = <FlaskClient <Flask 'app'>>
+
+    def test_non_pdf_file(client):
+        response = client.post(
+            API_URL, data={"file": make_file(b"fake", "logo.jpg", "image/jpeg")}
+        )
+    
+>       assert response.status_code == 400
+E       assert 404 == 400
+E        +  where 404 = <WrapperTestResponse streamed [404 NOT FOUND]>.status_code
+
+tests/test_upload_brand_guidelines.py:40: AssertionError
+_____________________________ test_oversized_file ______________________________
+
+client = <FlaskClient <Flask 'app'>>
+
+    def test_oversized_file(client):
+        big = b"%PDF-1.4 " + b"x" * (11 * 1024 * 1024)
+    
+        response = client.post(
+            API_URL, data={"file": make_file(big, "big.pdf", "application/pdf")}
+        )
+    
+>       assert response.status_code == 413
+E       assert 404 == 413
+E        +  where 404 = <WrapperTestResponse streamed [404 NOT FOUND]>.status_code
+
+tests/test_upload_brand_guidelines.py:51: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_upload_brand_guidelines.py::test_missing_file - assert 404 ...
+FAILED tests/test_upload_brand_guidelines.py::test_non_pdf_file - assert 404 ...
+FAILED tests/test_upload_brand_guidelines.py::test_oversized_file - assert 40...
+========================= 3 failed, 33 passed in 3.95s =========================

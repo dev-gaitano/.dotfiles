@@ -1,0 +1,67 @@
+
+The command exited with code 0.
+Output:
+commit 83f37b03f0ed5dc71f7045c047227137ff396770 (origin/feat/ui, feat/ui)
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 30 02:48:18 2026 +0300
+
+    feat(CurrentMealOptionCard): render dynamic star rating
+    
+    - Add rating/totalReviews props with a renderStars helper
+      supporting full, half (via clipped overlay), and empty stars,
+      replacing the five hardcoded <Star /> icons
+    - Restyle MealOptionCard's selected border and quantity-stepper
+      button background to use --color-primary/transparent instead
+      of --color-text/--color-surface-muted
+
+commit 12527edb5fd57d76dcfd2f1974cbb170e2ab52fb
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 30 02:45:48 2026 +0300
+
+    feat(FullMenu): rework category taxonomy, add icons to category buttons
+    
+    - Replace positional selectors (.full-menu>div:nth-child(2))
+      with named classes filter-search-wrapper/filters, and revert
+      category buttons from Btn back to plain <button> with a
+      category-btn class carrying an icon image and is-active state
+    - Rework categories: replace Lunch/Dinner with Whole Meals and
+      Fast Foods, add an icon URL to each category, and remap every
+      meal's category tags accordingly
+    - Comment out the "Chicken with Fries" daily option instead of
+      deleting it
+
+commit 51b48c785282776fbe5d8c4561ce58a8228e54be (main)
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Mon Aug 24 07:33:09 2026 +0300
+
+    feat(CurrentMealOptionCard): add featured meal card, wire into grid
+    
+    Add CurrentMealOptionCard, a large background-image card with
+    a blurred/masked overlay showing name, description, rating,
+    and price, and place it alongside the daily options grid in a
+    new grid-wrapper.
+
+commit f306c5afdf698c753fe7b339341900fabfbc0246 (origin/fix/ui, fix/ui)
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 23 17:57:20 2026 +0300
+
+    feat(DailyMealOptions): add cart submission states to floating cart bar
+    
+    - Add isSubmitting/addedToCart/isLeaving state and handleAddToCart,
+      driving the cart-float button through "Adding...", "Added
+      successfully!", and a slide-down exit animation
+    - Add cart-slide-down keyframes and .is-leaving/.is-success
+      modifier classes for the float bar and button
+    - Add --color-primary/--color-success/--color-failure variables,
+      apply --color-primary to .cart-float-btn's default background
+    - Rename button label from "Place Order" to "Add to cart"
+
+commit 855b2e629887c64b7a78522cde1b8d30498f25fa
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 23 15:50:48 2026 +0300
+
+    feat(MealOptionCard): add favorite icon on hover
+    
+    Show a Heart icon over the meal image on hover, faded in via
+    opacity transition, hidden by default.
+

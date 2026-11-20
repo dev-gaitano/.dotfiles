@@ -1,0 +1,41 @@
+The following changes were made by the replace_file_content tool to: /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/src/components/ui/ContactCard.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -8,28 +8,13 @@
+ 
+ gsap.registerPlugin(ScrollTrigger);
+ 
+-// Rotation constants for scroll animation
+-export const ROTATION_X = Math.PI / 2;
+-
+-export const DESKTOP_ROTATION_START = {
+-  y: 12.5 * (Math.PI / 180),
+-  z: -8 * (Math.PI / 180),
+-};
+-
+-export const DESKTOP_ROTATION_END = {
+-  y: -12.5 * (Math.PI / 180),
+-  z: 8 * (Math.PI / 180),
+-};
+-
+-export const MOBILE_ROTATION_START = {
+-  y: 0,
+-  z: 0,
+-};
+-
+-export const MOBILE_ROTATION_END = {
+-  y: 0,
+-  z: 0,
+-};
++import {
++  ROTATION_X,
++  DESKTOP_ROTATION_START,
++  DESKTOP_ROTATION_END,
++  MOBILE_ROTATION_START,
++  MOBILE_ROTATION_END,
++} from "./contactCardConstants";
+ 
+ function ContactCard({
+   rotationX = ROTATION_X,
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

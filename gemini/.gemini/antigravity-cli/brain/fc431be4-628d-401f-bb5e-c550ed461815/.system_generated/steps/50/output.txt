@@ -1,0 +1,1 @@
+Made 1 replacement in /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/src/pages/Resume.tsx starting at line 228 (+5/-1 lines).

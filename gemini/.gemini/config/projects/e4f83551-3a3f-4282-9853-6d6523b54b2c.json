@@ -1,0 +1,11 @@
+{
+  "id":  "e4f83551-3a3f-4282-9853-6d6523b54b2c",
+  "name":  "/home/gaitano/.dotfiles",
+  "projectResources":  {
+    "resources":  [
+      {
+        "folderUri":  "file:///home/gaitano/.dotfiles"
+      }
+    ]
+  }
+}

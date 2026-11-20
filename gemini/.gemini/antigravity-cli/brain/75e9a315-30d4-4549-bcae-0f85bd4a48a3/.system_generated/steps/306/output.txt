@@ -1,0 +1,33 @@
+Created At: 2026-11-20T00:30:32+03:00
+Completed At: 2026-11-20T00:30:33+03:00
+Command exited with code 0.
+
+Command output:
+116-ext midi?,        terminal, has wildmidi = wildmidi -- "$@"
+117-
+118-#--------------------------------------------
+119-# Video/Audio with a GUI
+120-#-------------------------------------------
+121:mime ^video|audio, has gmplayer, X, flag f = gmplayer -- "$@"
+122:mime ^video|audio, has smplayer, X, flag f = smplayer "$@"
+123:mime ^video,       has mpv,      X, flag f = mpv -- "$@"
+124:mime ^video,       has mpv,      X, flag f = mpv --fs -- "$@"
+125:mime ^video,       has mplayer2, X, flag f = mplayer2 -- "$@"
+126:mime ^video,       has mplayer2, X, flag f = mplayer2 -fs -- "$@"
+127:mime ^video,       has mplayer,  X, flag f = mplayer -- "$@"
+128:mime ^video,       has mplayer,  X, flag f = mplayer -fs -- "$@"
+129:mime ^video|audio, has vlc,      X, flag f = vlc -- "$@"
+130:mime ^video|audio, has totem,    X, flag f = totem -- "$@"
+131:mime ^video|audio, has totem,    X, flag f = totem --fullscreen -- "$@"
+132-
+133-#--------------------------------------------
+134-# Video without X
+135-#-------------------------------------------
+136:mime ^video, terminal, !X, has mpv       = mpv -- "$@"
+137:mime ^video, terminal, !X, has mplayer2  = mplayer2 -- "$@"
+138:mime ^video, terminal, !X, has mplayer   = mplayer -- "$@"
+139-
+140-#-------------------------------------------
+141-# Documents
+142-#-------------------------------------------
+143-ext pdf, has llpp,     X, flag f = llpp "$@"

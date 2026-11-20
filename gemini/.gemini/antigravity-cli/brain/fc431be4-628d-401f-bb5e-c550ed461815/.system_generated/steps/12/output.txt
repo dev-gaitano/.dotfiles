@@ -1,0 +1,52 @@
+Command exited with code 0.
+
+Command output:
+diff --git a/frontend/src/components/Navbar/Navbar.css b/frontend/src/components/Navbar/Navbar.css
+index 7e3c28e..a3212a7 100644
+--- a/frontend/src/components/Navbar/Navbar.css
++++ b/frontend/src/components/Navbar/Navbar.css
+@@ -18,6 +18,10 @@
+   font-weight: 400;
+ }
+ 
++.nav-link:hover {
++  color: var(--primary);
++}
++
+ @media (max-width: 768px) {
+   .navbar {
+     left: 0;
+diff --git a/frontend/src/pages/Resume.css b/frontend/src/pages/Resume.css
+index a4cd8dc..b0d53f4 100644
+--- a/frontend/src/pages/Resume.css
++++ b/frontend/src/pages/Resume.css
+@@ -9,6 +9,9 @@
+ .resume-container {
+   max-width: 960px;
+   margin: 0 auto;
++  display: flex;
++  flex-direction: column;
++  gap: 40px;
+ }
+ 
+ /* Header & Controls */
+@@ -16,7 +19,6 @@
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+-  margin-bottom: 40px;
+   padding-bottom: 24px;
+   border-bottom: 2px solid var(--black);
+ }
+@@ -70,11 +72,9 @@
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px 40px;
+-  margin-bottom: 40px;
+   background: var(--white);
+   border: 1px solid var(--gray-light-2);
+   padding: 20px 24px;
+-  box-shadow: 4px 4px 0px var(--black);
+ }
+ 
+ .contact-item {

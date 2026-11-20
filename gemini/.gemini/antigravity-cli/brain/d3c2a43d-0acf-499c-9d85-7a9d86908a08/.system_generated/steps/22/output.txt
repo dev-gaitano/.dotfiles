@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+1813390 (HEAD -> feat/ui-elements, origin/feat/ui-elements) feat: use distinct 3d models for project cards
+a89ab3b feat(3d-models): support responsive bubble text models
+5213ce5 chore(assets): remove unused asset
+a98229d refactor(scroll-indicator): make scroll navigation responsive
+b5de696 feat(contact-card): add scroll-driven 3D card animation

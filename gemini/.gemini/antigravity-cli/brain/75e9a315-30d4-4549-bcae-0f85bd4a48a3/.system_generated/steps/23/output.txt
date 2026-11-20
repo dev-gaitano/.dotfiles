@@ -1,0 +1,9 @@
+Created At: 2026-11-15T13:13:08+03:00
+Completed At: 2026-11-15T13:13:09+03:00
+Command exited with code 1.
+
+There were sandbox errors that may or may not be related to the failure. If you think the failure is because of running in the sandbox, you can run the command again with `BypassSandbox` set to true to request explicit user permission.
+
+Command output:
+hyprpaper v0.8.4
+Failed to connect to user scope bus via local transport: No such file or directory

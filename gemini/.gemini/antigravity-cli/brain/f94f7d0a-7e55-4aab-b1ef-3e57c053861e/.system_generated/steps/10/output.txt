@@ -1,0 +1,22 @@
+Created At: 2026-11-20T10:28:48+03:00
+Completed At: 2026-11-20T10:28:51+03:00
+The search for "site:wiki.hyprland.org "lua" OR site:wiki.hypr.land "lua" OR "hyprland.lua"" returned the following summary:
+Starting with **Hyprland version 0.55**, Hyprland officially transitioned away from the custom `hyprlang` syntax (`.conf` files) to a **Lua-based configuration system** (`.lua` files)[1][2][3]. 
+
+If you are looking for documentation, code snippets, or guides regarding the new Lua configuration architecture on the official Hyprland Wiki, key sections include:
+
+* **Configuration File Path:** Typically located at `~/.config/hypr/hyprland.lua` (or `/usr/share/hypr/hyprland.lua` for the default template)[2]. Modular files can be loaded using standard Lua `require()`[2].
+* **Lua Code Snippets & Examples:** The wiki provides community and official patterns under [Lua code snippets on the Hyprland Wiki](https://wiki.hypr.land/Extra/Lua_code_snippets/) (covering things like per-layout binds, smart gaps, and custom window management logic)[4].
+* **Advanced Configuration & APIs:** For scripting and extending the window manager, the wiki details APIs under [Advanced configuration – Lua events & utilities](https://wiki.hypr.land/Configuring/Advanced_configuration/)[5]. This includes lifecycle events (`config.reloaded`, `window.active`, etc.)[6] and custom Lua-driven layouts (`hl.layout.register`)[7].
+* **Older Versions:** If you are still looking for legacy formatting prior to the 0.55 shift, the wiki houses previous guidelines under the 0.54 documentation versions[3].
+
+Sources:
+[1] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGEcjO4X0tIj515q6D-Yvu7A4LGtI44Q95ABg8vGe_9GuLhuQ8vSsKD56gfEmSJinmOOTpSg1qZZGSSh0SGiXCNOD0v6mmdwWOCfgtL7-WNa1feSNNuvanIC5YK)
+[2] [archlinux.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFiBzpdMzhupp8-rhkd_RXVnZQJUO7EKtdYfBp6BvcQTs4JnyR-vJ-kNy-QyAy2yAk8y3isrF6zscyZxgBJyRFjopf_nIWafdY_NMST7pISlEelqQ98YcQWpm1DX7qs)
+[3] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE9cL5EMhYHLiX8XnPJkUDU7d6gdVzagrstHOzNEUUFrBpWm48R52VAA3tVnzmbVEgdoEwhEliBArsRe4y2s8pBndt9cm2FpGjoezBQVn27_a-E0-Z9uosDAaLIltfHS6gp9ZT0Hpz-eY4Hooq_gnOwH5JoX2w6OWtiNzrthpR3wE2j2m7_kxf4uMk=)
+[4] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFtSUdYYdL2ixMRzhDldSKVAg-KdE22VJQtZpDIyboGP1ZQbkZ46Cbx456_nz6Zsjzh29Z3l-Qt1Txky7gPkXwEmbqa9l-w0pw8K_gwMSHwjZsz5v5ZBhcSXnwcggOWkU6zLK1TU8uR)
+[5] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE6UqWg71og3x_6dqw_VlYkB7HZPW13qmPwvvZUf7h09QKQYZD43j6HAacPHH0-c_lH49P615MiXggHz5uJ15cn-AAfimy7wQ-zxVKmqchU6OdrGorH-MkTep0aIB3hILX6A0gn2BxmHVuVnp0ml6s8Gyhhd9Q=)
+[6] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGLfsc4Y3Tk6-c_ZSkkV8wbhH3c8AuGybhvICoj5Ja4P11Qpo5A5bs3ZOIkwhTSDnvKUeiUEKdNXbhG4ZkixPlc1upbVNCp3L6kgLtjOnle7FoOUlpzrgKtHUyxlGHw11R3CxmKevuzQRxlY1puHwWwCWvkKQVjdVTHN5Ts)
+[7] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGdbr2hUFGAgEu7XvsqjVO_UhIWsFUEpxezQy2NxakOF_zQcS5lJXj77-WvLpD7VVFHp1ISolX6gb1XjgWBBXNKOUgKEhtLw_qNca-7gNu0-BTo-2OQu3gxrRjjTTyBR1lc02ojoUN3kY41Hi-higHw)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

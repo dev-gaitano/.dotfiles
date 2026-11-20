@@ -1,0 +1,6 @@
+Created At: 2026-11-15T13:15:42+03:00
+Completed At: 2026-11-15T13:15:42+03:00
+Command exited with code 2.
+
+Command output:
+ls: cannot access '/run/user/1000/hypr/': No such file or directory

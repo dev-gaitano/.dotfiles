@@ -1,0 +1,20 @@
+Created At: 2026-11-19T15:29:21+03:00
+Completed At: 2026-11-19T15:29:37+03:00
+Command exited with code 0.
+
+Command output:
+[
+  'constructor',
+  'connect',
+  'disconnect',
+  'getDelta',
+  'getElapsed',
+  'getTimescale',
+  'setTimescale',
+  'reset',
+  'dispose',
+  'update'
+]
+(node:25) [THREE_CJS_DEPRECATED] DeprecationWarning: `require("three")` is deprecated and will be removed.
+Replace `const THREE = require("three")` with `import * as THREE from "three"`.
+(Use `node --trace-deprecation ...` to show where the warning was created)

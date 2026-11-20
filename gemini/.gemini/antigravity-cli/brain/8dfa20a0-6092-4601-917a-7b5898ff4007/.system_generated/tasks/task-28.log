@@ -1,0 +1,72 @@
+
+> jasmijn-schrofer-portfolio@0.0.0 build
+> vite build
+vite v7.0.6 building for production...
+Browserslist: browsers data (caniuse-lite) is 11 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#read
+me
+transforming (1) src/main.tsx
+transforming (4) node_modules/react-router-dom/dist/index.js
+
+transforming (7) src/pages/Work.tsx
+transforming (14) node_modules/react/cjs/react.production.min.js
+transforming (16) node_modules/@remix-run/router/dist/router.js
+transforming (26) node_modules/gsap/ScrollTrigger.js
+transforming (29) src/pages/InDevelopment.tsx
+
+transforming (45) node_modules/gsap/Observer.js
+
+transforming (47) node_modules/firebase/firestore/dist/esm/index.esm.js
+
+transforming (48) src/components/work/FilmSearchAndFilter.tsx
+transforming (53) node_modules/scheduler/cjs/scheduler.production.min.js
+transforming (627) node_modules/lucide-react/dist/esm/icons/corner-right-down.j
+transforming (1054) node_modules/react-dom/cjs/react-dom.production.min.js
+transforming (1055) node_modules/lucide-react/dist/esm/icons/message-circle.js
+transforming (1234) node_modules/lucide-react/dist/esm/icons/quote.js
+
+transforming (1604) node_modules/@firebase/firestore/dist/index.esm.js
+transforming (1617) src/components/ui/button.tsx
+
+transforming (1704) node_modules/@radix-ui/react-slider/dist/index.mjs
+
+transforming (1712) node_modules/@radix-ui/react-slot/dist/index.mjs
+transforming (1756) node_modules/motion-utils/dist/es/wrap.mjs
+
+transforming (1880) node_modules/framer-motion/dist/es/components/AnimatePresen
+
+transforming (1926) node_modules/@firebase/util/dist/postinstall.mjs
+
+transforming (1980) node_modules/framer-motion/dist/es/components/AnimatePresen
+
+transforming (2035) node_modules/framer-motion/dist/es/context/MotionContext/cr
+transforming (2069) node_modules/use-sidecar/dist/es2015/hoc.js
+
+✓ 2094 modules transformed.
+transforming (2097) node_modules/@radix-ui/react-accordion/dist/index.mjs
+
+rendering chunks (1)...
+rendering chunks (2)...
+rendering chunks (3)...
+rendering chunks (4)...
+rendering chunks (5)...
+
+computing gzip size (0)...
+computing gzip size (1)...
+computing gzip size (2)...
+computing gzip size (3)...
+computing gzip size (4)...
+computing gzip size (5)...
+
+computing gzip size (6)...
+computing gzip size (7)...
+
+dist/index.html                       1.46 kB │ gzip:   0.63 kB
+dist/assets/index-Ch_mJyZ6.css       71.46 kB │ gzip:  12.76 kB
+dist/assets/ui-DEiIX_8y.js           61.73 kB │ gzip:  22.37 kB
+dist/assets/animations-BUr6j6ix.js   63.15 kB │ gzip:  24.83 kB
+dist/assets/vendor-DavUf6mE.js      141.72 kB │ gzip:  45.48 kB
+dist/assets/index-CsTlO094.js       301.75 kB │ gzip: 101.46 kB
+dist/assets/firebase-CA_1hbh2.js    328.41 kB │ gzip:  82.55 kB
+✓ built in 40.70s

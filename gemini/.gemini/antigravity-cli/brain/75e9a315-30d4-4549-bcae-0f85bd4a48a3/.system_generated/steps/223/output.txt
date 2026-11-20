@@ -1,0 +1,9 @@
+Created At: 2026-11-19T23:38:25+03:00
+Completed At: 2026-11-19T23:38:25+03:00
+Command exited with code 0.
+
+Command output:
+/usr/bin
+/usr/share/spotify/spotify.desktop
+/usr/share/spotify/v8_context_snapshot.bin
+/usr/bin/spotify

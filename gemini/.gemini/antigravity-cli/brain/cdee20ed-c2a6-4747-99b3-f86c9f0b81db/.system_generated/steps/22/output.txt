@@ -1,0 +1,10 @@
+Created At: 2026-11-19T15:29:42+03:00
+Completed At: 2026-11-19T15:29:51+03:00
+Command exited with code 0.
+
+Command output:
+elapsed: -0.011986298000000005 delta: -0.011986298000000005
+elapsed: 0.088013702 delta: 0.1
+(node:25) [THREE_CJS_DEPRECATED] DeprecationWarning: `require("three")` is deprecated and will be removed.
+Replace `const THREE = require("three")` with `import * as THREE from "three"`.
+(Use `node --trace-deprecation ...` to show where the warning was created)

@@ -1,0 +1,30 @@
+Created At: 2026-11-20T10:32:12+03:00
+Completed At: 2026-11-20T10:32:12+03:00
+Command exited with code 0.
+
+Command output:
+171----| "decoration.motion_blur.enabled"
+172----| "decoration.motion_blur.samples"
+173----| "decoration.rounding"
+174----| "decoration.rounding_power"
+175----| "decoration.screen_shader"
+176:---| "decoration.shadow.color"
+177:---| "decoration.shadow.color_inactive"
+178----| "decoration.shadow.enabled"
+179----| "decoration.shadow.offset"
+180----| "decoration.shadow.range"
+181----| "decoration.shadow.render_power"
+182----| "decoration.shadow.scale"
+--
+1182----@field ['decoration.motion_blur.enabled'] boolean
+1183----@field ['decoration.motion_blur.samples'] integer|boolean
+1184----@field ['decoration.rounding'] integer|boolean
+1185----@field ['decoration.rounding_power'] number|boolean
+1186----@field ['decoration.screen_shader'] string
+1187:---@field ['decoration.shadow.color'] string|HL.Gradient
+1188:---@field ['decoration.shadow.color_inactive'] string|HL.Gradient
+1189----@field ['decoration.shadow.enabled'] boolean
+1190----@field ['decoration.shadow.offset'] HL.Vec2Like
+1191----@field ['decoration.shadow.range'] integer|boolean
+1192----@field ['decoration.shadow.render_power'] integer|boolean
+1193----@field ['decoration.shadow.scale'] number|boolean

@@ -1,0 +1,124 @@
+
+The command exited with code 0.
+Output:
+export const categories = [
+  {
+    id: 1,
+    name: "All",
+    icon: "https://res.cloudinary.com/diwkfbsgv/image/upload/v1787548169/CD265227-A7D6-4869-9F0C-A18049CA4A49_kebn6p.png",
+  },
+  {
+    id: 2,
+    name: "Breakfast",
+    icon: "https://res.cloudinary.com/diwkfbsgv/image/upload/v1787549853/1EF307C6-FB1A-4D2A-BD2B-1392F861B143_aca8tx.png",
+  },
+  {
+    id: 3,
+    name: "Whole Meals",
+    icon: "https://res.cloudinary.com/diwkfbsgv/image/upload/v1787549852/535D7166-0CC4-4CF1-80EE-C58B091C73D4_xo0ikp.png",
+  },
+  {
+    id: 4,
+    name: "Fast Foods",
+    icon: "https://res.cloudinary.com/diwkfbsgv/image/upload/v1787549866/0032C455-7826-4F93-A99F-37891AE48E13_sowzvh.png",
+  },
+  {
+    id: 5,
+    name: "Snacks",
+    icon: "https://res.cloudinary.com/diwkfbsgv/image/upload/v1787550623/639A699A-C43C-449D-AA4A-81635232815A_ocwfck.png",
+  },
+  {
+    id: 6,
+    name: "Drinks",
+    icon: "https://res.cloudinary.com/diwkfbsgv/image/upload/v1787549852/2CDFC2A0-66DA-4A63-938B-8A463585BF2F_htafm0.png",
+  },
+];
+
+export const dailyOptions = [
+  {
+    id: "d1",
+    name: "Beef with Rice",
+    description:
+      "Tender beef slices served over brown jasmine rice with steamed broccoli.",
+    price: 1050,
+    rating: 4.5,
+    image:
+      "https://i.pinimg.com/736x/fc/a4/03/fca4039903d2b6f0b4a553d33c85e513.jpg",
+  },
+  //{
+  //id: "d2",
+  //name: "Chicken with Fries",
+  //description:
+  //"Grilled chicken breast accompanied by sweet potato fries and herb aioli.",
+  //price: 1050,
+  //rating: 4.5,
+  //image:
+  //"https://i.pinimg.com/736x/a7/aa/ce/a7aace04c023adb95039697c0a1f4528.jpg",
+  //},
+  {
+    id: "d3",
+    name: "Veggie Pasta",
+    description:
+      "Whole wheat penne with fresh cherry tomatoes, basil, and light parmesan.",
+    price: 1200,
+    rating: 4.1,
+    image:
+      "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=400&h=300&fit=crop",
+  },
+  {
+    id: "d4",
+    name: "Salmon Teriyaki",
+    description:
+      "Salmon fillet glazed with teriyaki sauce, served with roasted bok choy.",
+    price: 2000,
+    rating: 4.6,
+    image:
+      "https://i.pinimg.com/736x/53/2f/79/532f79cad4cbc4632ebb841a119af048.jpg",
+  },
+  {
+    id: "d5",
+    name: "Pilau Special",
+    description:
+      "Fragrant spiced pilau rice paired with tender goat meat and kachumbari.",
+    price: 1300,
+    rating: 3.9,
+    image:
+      "https://i.pinimg.com/736x/45/b6/db/45b6db250dd2b0b8928b09af7c72cac3.jpg",
+  },
+  {
+    id: "d6",
+    name: "Nyama Choma Platter",
+    description:
+      "Charcoal-grilled beef ribs served with ugali, sukuma wiki, and chimichurri.",
+    price: 1800,
+    rating: 4.6,
+    image:
+      "https://images.unsplash.com/photo-1544025162-d76694265947?w=400&h=300&fit=crop",
+  },
+  {
+    id: "d7",
+    name: "Fish & Chips",
+    description:
+      "Beer-battered tilapia fillets with hand-cut chips and tangy tartar sauce.",
+    price: 1100,
+    rating: 3.6,
+    image:
+      "https://i.pinimg.com/1200x/20/31/2b/20312b036bb9fb978032f75bddcc3656.jpg",
+  },
+  {
+    id: "d8",
+    name: "Butter Chicken",
+    description:
+      "Creamy tomato-based chicken curry served with garlic naan and basmati rice.",
+    price: 1400,
+    rating: 4.8,
+    image:
+      "https://i.pinimg.com/736x/91/33/4f/91334f98a2a4535c4a7c0afb76b9543a.jpg",
+  },
+  {
+    id: "d9",
+    name: "Masala Chai",
+    description:
+      "Freshly fried Swahili mandazi served with spiced masala chai tea.",
+    price: 450,
+

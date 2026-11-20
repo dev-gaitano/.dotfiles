@@ -1,0 +1,5 @@
+Created At: 2026-11-19T22:07:30+03:00
+Completed At: 2026-11-19T22:07:30+03:00
+Command failed to run: fork/exec /home/gaitano/.local/bin/agy.1794657037410774654.old: no such file or directory.
+
+No output from the command.

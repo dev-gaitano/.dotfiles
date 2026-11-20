@@ -1,0 +1,12 @@
+
+The command exited with code 0.
+Output:
+frontend/src/index.css
+frontend/src/pages/Resume.css
+frontend/src/components/Projects/Projects.css
+frontend/src/components/Hero/Hero.css
+frontend/src/components/Footer/Footer.css
+frontend/src/components/ScrollIndicator/ScrollIndicator.css
+frontend/src/components/About/About.css
+frontend/src/components/Navbar/Navbar.css
+

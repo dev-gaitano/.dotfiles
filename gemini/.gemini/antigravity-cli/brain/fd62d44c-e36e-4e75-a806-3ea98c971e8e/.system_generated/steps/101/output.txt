@@ -1,0 +1,99 @@
+Created At: 2026-11-18T19:48:09+03:00
+Completed At: 2026-11-18T19:48:09+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/src/scene.js b/src/scene.js
+index ce50d02..a877400 100644
+--- a/src/scene.js
++++ b/src/scene.js
+@@ -40,21 +40,22 @@ function init() {
+ }
+ 
+ function addObjects() {
+-  let geometry = new THREE.PlaneGeometry(2, 2);
++  const geometry = new THREE.PlaneGeometry(10, 10, 60, 60);
+ 
+   uniforms = {
+-    u_time: { type: "f", value: 1.0 },
++    u_time: { type: "f", value: 0.0 },
+     u_resolution: { type: "v2", value: new THREE.Vector2() },
+     u_mouse: { type: "v2", value: new THREE.Vector2() },
+   };
+ 
+-  let material = new THREE.ShaderMaterial({
++  const material = new THREE.ShaderMaterial({
+     uniforms: uniforms,
+     vertexShader: vertex,
+     fragmentShader: fragment,
++    wireframe: true,
+   });
+ 
+-  let mesh = new THREE.Mesh(geometry, material);
++  const mesh = new THREE.Mesh(geometry, material);
+   scene.add(mesh);
+ }
+ 
+@@ -70,6 +71,7 @@ function animate() {
+ }
+ 
+ function render() {
+-  uniforms.u_time.value += timer.getDelta();
++  timer.update();
++  uniforms.u_time.value += timer.getElapsed();
+   renderer.render(scene, camera);
+ }
+diff --git a/src/shader/fragment.glsl b/src/shader/fragment.glsl
+index a8772fe..7990331 100644
+--- a/src/shader/fragment.glsl
++++ b/src/shader/fragment.glsl
+@@ -6,16 +6,17 @@ uniform vec2 u_resolution;
+ uniform vec2 u_mouse;
+ uniform float u_time;
+ 
+-varying vec2 pos;
++varying vec2 vUv;
+ 
+ void main() {
+-        //gl_FragColor = vec4(abs(sin(u_time / 1000.)), 1., 1., 1.);
+-        //vec2 rg = u_mouse.xy / u_resolution;
+-        vec2 rg = gl_FragCoord.xy / u_resolution;
++        //gl_FragColor = vec4(abs(sin(u_time / 100.)), 1., abs(tan(u_time / 20.)), 1.);
++
+         // While using mouse coordinates, (0., 0.) is at the top left
+         // While using global fragment coordinates, (0., 0.) is at the bottom left
+         // We divide by the resolution to normalize the values since they are in pixels
++        //vec2 rg = u_mouse.xy / u_resolution;
++        vec2 rg = gl_FragCoord.xy / u_resolution;
+ 
+-        //gl_FragColor = vec4(rg.x, rg.y, abs(sin(u_time / 1000.)), 1.);
++        //gl_FragColor = vec4(rg.x, rg.y, abs(sin(u_time / 500.)), 1.);
+         gl_FragColor = vec4(rg.x, rg.y, 0., 1.);
+ }
+diff --git a/src/shader/vertex.glsl b/src/shader/vertex.glsl
+index 7ffa5f9..65476a3 100644
+--- a/src/shader/vertex.glsl
++++ b/src/shader/vertex.glsl
+@@ -1,10 +1,17 @@
+-varying vec2 pos;
++#ifdef GL_ES
++precision mediump float;
++#endif
++
++uniform float u_time;
++
++varying vec2 vUv;
+ 
+ void main() {
+-        pos = uv;
++        vUv = uv;
++
++        // position - Three.js built-in uniform to calculate the final position of a vertex
++        //float newX = cos(position.x * (u_time / 100.)) * cos(position.y * (u_time / 100.));
++        //vec3 newPosition = vec3(newX, position.y, position.z);
+ 
+-        // Three.js built-in uniforms to calculate the final position of a vertex
+-        //     - projectionMatrix
+-        //     - modelViewMatrix
+         gl_Position = vec4(position, 1.0);
+ }

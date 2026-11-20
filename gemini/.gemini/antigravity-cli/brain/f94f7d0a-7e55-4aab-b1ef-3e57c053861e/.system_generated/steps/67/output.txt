@@ -1,0 +1,55 @@
+Created At: 2026-11-20T10:31:50+03:00
+Completed At: 2026-11-20T10:31:53+03:00
+The search for ""hyprland.lua" "source" OR "require" site:wiki.hypr.land" returned the following summary:
+As documented on the Hyprland Wiki, starting with version 0.55, Hyprland has transitioned from the legacy `hyprlang` syntax (`hyprland.conf`) to a Lua-based configuration system centered around **`hyprland.lua`**[1][2]. 
+
+Because the configuration is a standard Lua file typically located at `~/.config/hypr/hyprland.lua`, you are not forced to put everything into a single massive file[1]. You can split your configuration into multiple separate modules/files and import or load them using Lua's built-in **`require()`** function[1].
+
+### Modularizing your `hyprland.lua` Configuration
+
+You can structure your configuration directory like this:
+```text
+~/.config/hypr/
+├── hyprland.lua
+└── configs/
+    ├── env.lua
+    ├── keybinds.lua
+    ├── monitors.lua
+    └── windowrule.lua
+```
+
+Inside your main `~/.config/hypr/hyprland.lua`, you can pull in these modular files using standard Lua `require`:
+
+```lua
+-- ~/.config/hypr/hyprland.lua
+
+require("configs.env")
+require("configs.monitors")
+require("configs.keybinds")
+require("configs.windowrule")
+
+-- Global configuration table using the hl API
+hl.config({
+    general = {
+        gaps_in = 5,
+        gaps_out = 10,
+        border_size = 2,
+        resize_on_border = true,
+        layout = "dwindle",
+    },
+    decoration = {
+        rounding = 10,
+    },
+})
+```
+
+### Best Practices & Order of Execution
+* **Load Order Matters:** Ensure that environment or utility modules (`require`) are loaded before any other modules that rely on those states or call specific `hl.*` functions[3].
+* **File Paths:** Lua’s `require` looks for modules relative to your Lua search paths, or you can require them using relative paths/dot notation depending on how you structure your config directory tree.
+
+Sources:
+[1] [archlinux.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRfkvz6r2r0mph9mscG2bXeVqsk9_5O_dZ-BqvmCICGAvmDvX9LzcYyWZnLXejrLMVr6D3XlYpfXpekZPK09MOAC1aok_d8D8A8FvL3tGw7qSS6Q5Wdfe_-dI0Z12bqQ==)
+[2] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGaTuyM4SDuaQRuQ0lw6R4ewO5lTIgTAxgNcuFZcXgmq9NPVQRVS1SRHEQNBLv0zbhoOL9O8eZjPpcVi4HXAcxloJESkIu6Q7SLQQBaGKPn-MCKLwBxQr4YcUSxTg==)
+[3] [hyprflux.dev](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGS-GXqD5K8EuQS5iFZn-4RN1GQV3C7ARMQg-0wbBA3u7h5eh70quGTADUorWqT-kUeLxelf_xrQGsBE-TjaAsI7pPCWqapywzIWR_xs6nyy83qBUSZJmL-)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

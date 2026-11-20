@@ -1,0 +1,15 @@
+
+The command exited with code 0.
+Output:
+total 44
+drwxrwxr-x  6 gaitano gaitano 4096 Aug 24 15:36 .
+dr-xr-xr-x  3 gaitano gaitano   60 Oct  7 08:08 ..
+-rw-rw-r--  1 gaitano gaitano 9320 Aug 30 16:29 diff.txt
+-rw-rw-r--  1 gaitano gaitano 1223 Aug 14 09:39 .env.local
+drwxrwxr-x  6 gaitano gaitano 4096 Aug 24 15:34 frontend
+drwxrwxr-x  9 gaitano gaitano 4096 Oct  4 21:43 .git
+-rw-rw-r--  1 gaitano gaitano  578 Aug 14 08:12 .gitignore
+drwxrwxr-x 12 gaitano gaitano 4096 Aug 24 12:50 node_modules
+-rw-rw-r--  1 gaitano gaitano 2427 Aug 14 08:05 README.md
+drwxrwxr-x  2 gaitano gaitano 4096 Aug 14 23:55 .vercel
+

@@ -1,0 +1,22 @@
+Created At: 2026-11-20T00:30:13+03:00
+Completed At: 2026-11-20T00:30:13+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.config/ranger/:
+total 140
+drwxrwxr-x 4 gaitano gaitano  4096 Oct  8  2025 .
+drwxrwxr-x 3 gaitano gaitano  4096 Sep  4  2025 ..
+drwxrwxr-x 3 gaitano gaitano  4096 Sep  4  2025 colorschemes
+-rw-r--r-- 1 gaitano gaitano 62106 Oct  8  2025 commands_full.py
+-rw-r--r-- 1 gaitano gaitano  2763 Oct  8  2025 commands.py
+drwxrwxr-x 4 gaitano gaitano  4096 Sep  4  2025 plugins
+-rw-rw-r-- 1 gaitano gaitano 24322 Jul 19 13:51 rc.conf
+-rw-r--r-- 1 gaitano gaitano 14101 Oct  8  2025 rifle.conf
+-rwxrwxr-x 1 gaitano gaitano 13747 Sep  4  2025 scope.sh
+
+/home/gaitano/.dotfiles/ranger/:
+total 12
+drwxrwxr-x  3 gaitano gaitano 4096 Sep  4  2025 .
+drwxrwxr-x 32 gaitano gaitano 4096 Apr 28  2026 ..
+drwxrwxr-x  3 gaitano gaitano 4096 Sep  4  2025 .config

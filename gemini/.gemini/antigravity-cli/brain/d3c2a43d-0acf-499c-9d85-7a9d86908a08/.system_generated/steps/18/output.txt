@@ -1,0 +1,17 @@
+Command exited with code 0.
+
+Command output:
+frontend/src/components/ui/ContactCard.tsx:3:import { gsap } from "gsap";
+frontend/src/components/ui/ContactCard.tsx:4:import { ScrollTrigger } from "gsap/ScrollTrigger";
+frontend/src/components/ui/ContactCard.tsx:15:gsap.registerPlugin(ScrollTrigger);
+frontend/src/components/ui/ContactCard.tsx:40:    const context = gsap.context(() => {
+frontend/src/components/ui/ContactCard.tsx:41:      gsap.fromTo(
+frontend/src/pages/Home.tsx:10:import { gsap } from "gsap";
+frontend/src/pages/Home.tsx:11:import { ScrollTrigger } from "gsap/ScrollTrigger";
+frontend/src/pages/Home.tsx:13:gsap.registerPlugin(ScrollTrigger);
+frontend/src/pages/Home.tsx:25:    const tl = gsap.timeline({
+frontend/src/pages/Resume.tsx:2:import { gsap } from "gsap";
+frontend/src/pages/Resume.tsx:3:import { ScrollTrigger } from "gsap/ScrollTrigger";
+frontend/src/pages/Resume.tsx:10:gsap.registerPlugin(ScrollTrigger);
+frontend/src/pages/Resume.tsx:18:    const ctx = gsap.context(() => {
+frontend/src/pages/Resume.tsx:19:      gsap.to(".scroll-marker", {

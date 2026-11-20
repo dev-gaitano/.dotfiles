@@ -1,0 +1,14 @@
+Created At: 2026-11-19T23:53:58+03:00
+Completed At: 2026-11-19T23:53:58+03:00
+Command exited with code 0.
+
+Command output:
+drwxrwxr-x 4 gaitano gaitano 4096 Nov 19 23:20 /home/gaitano/.wine-sierrachart
+/home/gaitano/.local/share/applications/wine/Programs/SierraChart_64 (C_SierraChart).desktop
+/home/gaitano/.local/share/icons/hicolor/24x24/apps/1A15_SierraChart_64.0.png
+/home/gaitano/.local/share/icons/hicolor/64x64/apps/1A15_SierraChart_64.0.png
+/home/gaitano/.local/share/icons/hicolor/16x16/apps/1A15_SierraChart_64.0.png
+/home/gaitano/.local/share/icons/hicolor/32x32/apps/1A15_SierraChart_64.0.png
+/home/gaitano/.local/share/icons/hicolor/13x13/apps/1A15_SierraChart_64.0.png
+/home/gaitano/.local/share/icons/hicolor/128x128/apps/1A15_SierraChart_64.0.png
+/home/gaitano/.local/share/icons/hicolor/48x48/apps/1A15_SierraChart_64.0.png

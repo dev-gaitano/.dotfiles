@@ -1,0 +1,27 @@
+Created At: 2026-11-19T18:36:21+03:00
+Completed At: 2026-11-19T18:36:21+03:00
+Command exited with code 0.
+
+Command output:
+On branch feat/ui-elements
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   frontend/src/App.tsx
+	modified:   frontend/src/components/ScrollIndicator/ScrollIndicator.css
+	modified:   frontend/src/index.css
+	modified:   frontend/src/pages/Home.tsx
+	modified:   frontend/src/pages/Resume.css
+	modified:   frontend/src/pages/Resume.tsx
+	modified:   frontend/vite.config.ts
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	frontend/src/components/ui/BackgroundScene.tsx
+	frontend/src/scene.ts
+	frontend/src/shader/
+	frontend/vite-env.d.ts
+	package-lock.json
+	package.json
+
+no changes added to commit (use "git add" and/or "git commit -a")

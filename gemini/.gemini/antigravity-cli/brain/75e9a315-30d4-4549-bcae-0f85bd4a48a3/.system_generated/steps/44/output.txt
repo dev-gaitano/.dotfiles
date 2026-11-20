@@ -1,0 +1,36 @@
+Created At: 2026-11-15T13:14:05+03:00
+Completed At: 2026-11-15T13:14:05+03:00
+Command exited with code 0.
+
+Command output:
+total 260
+drwxrwxr-x  3 gaitano gaitano  4096 Apr 27  2026 .
+drwxrwxr-x 99 gaitano gaitano  4096 Nov 15 07:38 ..
+-rw-rw-r--  1 gaitano gaitano   128 Nov  4 10:38 colors
+-rw-rw-r--  1 gaitano gaitano  1023 Nov  4 10:38 colors-alacritty.toml
+-rw-rw-r--  1 gaitano gaitano  1100 Nov  4 10:38 colors-alacritty.yml
+-rw-rw-r--  1 gaitano gaitano   628 Nov  4 10:38 colors.css
+-rw-rw-r--  1 gaitano gaitano  1400 Nov  4 10:38 colors.fish
+-rw-rw-r--  1 gaitano gaitano   293 Nov  4 10:38 colors-foot.ini
+-rw-rw-r--  1 gaitano gaitano   194 Nov  4 10:38 colors-fuzzel.ini
+-rw-rw-r--  1 gaitano gaitano   935 Nov  4 10:38 Colors.hs
+-rw-rw-r--  1 gaitano gaitano   652 Nov  4 10:38 colors-hyprland.conf
+-rw-rw-r--  1 gaitano gaitano   769 Nov  4 10:38 colors.json
+-rw-rw-r--  1 gaitano gaitano   669 Nov  4 10:38 colors-kitty.conf
+-rw-rw-r--  1 gaitano gaitano   687 Nov  4 10:38 colors-konsole.colorscheme
+-rw-rw-r--  1 gaitano gaitano   215 Nov  4 10:38 colors-leftwm-theme.ron
+-rw-rw-r--  1 gaitano gaitano    65 Nov  4 10:38 colors-mako
+-rw-rw-r--  1 gaitano gaitano   925 Nov  4 10:38 colors--nodim-alacritty.yml
+-rw-rw-r--  1 gaitano gaitano  1743 Nov  4 10:38 colors-nqq.css
+-rw-rw-r--  1 gaitano gaitano   238 Nov  4 10:38 colors-oomox
+-rw-rw-r--  1 gaitano gaitano   159 Nov  4 10:38 colors-polybar
+-rw-rw-r--  1 gaitano gaitano   300 Nov  4 10:38 colors.properties
+-rw-rw-r--  1 gaitano gaitano  1006 Nov  4 10:38 colors-putty.reg
+-rw-rw-r--  1 gaitano gaitano   290 Nov  4 10:38 colors-retroarch.cfg
+-rw-rw-r--  1 gaitano gaitano   180 Nov  4 10:38 colors-rgb
+-rw-rw-r--  1 gaitano gaitano   700 Nov  4 10:38 colors-rio.toml
+-rw-rw-r--  1 gaitano gaitano  3352 Nov  4 10:38 colors-rofi-dark.rasi
+-rw-rw-r--  1 gaitano gaitano  3352 Nov  4 10:38 colors-rofi-light.rasi
+-rw-rw-r--  1 gaitano gaitano   497 Nov  4 10:38 colors.scss
+-rw-rw-r--  1 gaitano gaitano   739 Nov  4 10:38 colors.sh
+/home/gaitano/02-media/01-pictures/03-wallpapers/Pink_gyal.jpg

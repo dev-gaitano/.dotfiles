@@ -1,0 +1,40 @@
+Command exited with code 0.
+
+Command output:
+commit fd14c531d72af8b88e1e8921fee38a56081bea87
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 30 16:30:43 2026 +0300
+
+    feat(responsive): add mobile breakpoints across sections
+    
+    - Add resize-driven scale/rotation state to Hero, About, and
+      Projects, swapping in smaller scales (and a separate mobile
+      GLB model for Hero's bubble text) below 768px
+    - Add mobile @media rules for About, Footer, Hero, Navbar,
+      Projects, and ScrollIndicator (Navbar becomes a horizontal
+      bottom/top bar, ScrollIndicator hides entirely, tech pills
+      wrap, project cards resize)
+    - Shrink --side-gap/--nav-width, h1/h2 font sizes, and other
+      layout variables under 768px in index.css
+    - Add useIsMobile hook (single resize listener, 768px
+      breakpoint), replacing the four separate per-component
+      resize listeners in Hero, About, and Projects
+
+diff --git a/frontend/src/components/Projects/Projects.css b/frontend/src/components/Projects/Projects.css
+index 1ee61bd..b426893 100644
+--- a/frontend/src/components/Projects/Projects.css
++++ b/frontend/src/components/Projects/Projects.css
+@@ -29,3 +29,13 @@
+   left: 50%;
+   transform: translate(-50%, -50%);
+ }
++
++@media (max-width: 768px) {
++  .project-card {
++    height: 800px;
++    width: 680px;
++    max-width: 95vw;
++    max-height: 110vw;
++  }
++}
++

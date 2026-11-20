@@ -1,0 +1,7 @@
+Created At: 2026-11-19T23:59:12+03:00
+Completed At: 2026-11-19T23:59:13+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.cache/gnucash   /home/gaitano/.local/share/gnucash
+/home/gaitano/.config/gnucash

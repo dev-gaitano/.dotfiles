@@ -1,0 +1,57 @@
+Created At: 2026-11-18T18:26:05+03:00
+Completed At: 2026-11-18T18:26:05+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/public/shader/fragment.glsl b/public/shader/fragment.glsl
+new file mode 100644
+index 0000000..a8772fe
+--- /dev/null
++++ b/public/shader/fragment.glsl
+@@ -0,0 +1,21 @@
++#ifdef GL_ES
++precision mediump float;
++#endif
++
++uniform vec2 u_resolution;
++uniform vec2 u_mouse;
++uniform float u_time;
++
++varying vec2 pos;
++
++void main() {
++        //gl_FragColor = vec4(abs(sin(u_time / 1000.)), 1., 1., 1.);
++        //vec2 rg = u_mouse.xy / u_resolution;
++        vec2 rg = gl_FragCoord.xy / u_resolution;
++        // While using mouse coordinates, (0., 0.) is at the top left
++        // While using global fragment coordinates, (0., 0.) is at the bottom left
++        // We divide by the resolution to normalize the values since they are in pixels
++
++        //gl_FragColor = vec4(rg.x, rg.y, abs(sin(u_time / 1000.)), 1.);
++        gl_FragColor = vec4(rg.x, rg.y, 0., 1.);
++}
+diff --git a/public/shaders/vertex.glsl b/public/shader/vertex.glsl
+similarity index 100%
+rename from public/shaders/vertex.glsl
+rename to public/shader/vertex.glsl
+diff --git a/public/shaders/fragment.glsl b/public/shaders/fragment.glsl
+deleted file mode 100644
+index ae0ca2b..0000000
+--- a/public/shaders/fragment.glsl
++++ /dev/null
+@@ -1,15 +0,0 @@
+-#ifdef GL_ES
+-precision mediump float;
+-#endif
+-
+-uniform vec2 u_resolution;
+-uniform vec2 u_mouse;
+-uniform float u_time;
+-
+-varying vec2 pos;
+-
+-void main() {
+-        //gl_FragColor = vec4(abs(sin(u_time / 1000.)), 1., 1., 1.);
+-        vec2 rg = u_mouse.xy / u_resolution;
+-        gl_FragColor = vec4(1., abs(sin(u_time)) / 10., 0., 1.);
+-}

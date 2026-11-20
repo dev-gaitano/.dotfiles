@@ -1,0 +1,17 @@
+Created At: 2026-11-20T01:00:28+03:00
+Completed At: 2026-11-20T01:00:28+03:00
+Command exited with code 0.
+
+Command output:
+Uninstall a web app
+
+Usage: firefoxpwa site uninstall [OPTIONS] <ID>
+
+Arguments:
+  <ID>  Web app ID
+
+Options:
+  -q, --quiet                  Disable any interactive prompts
+      --no-system-integration  Disable system integration
+  -h, --help                   Print help
+  -V, --version                Print version

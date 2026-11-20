@@ -1,0 +1,48 @@
+Created At: 2026-11-20T10:28:54+03:00
+Completed At: 2026-11-20T10:28:57+03:00
+The search for ""hyprland.lua" "bind" "exec" "config" site:wiki.hypr.land OR site:github.com" returned the following summary:
+In Hyprland (version 0.55 and newer), the configuration format has transitioned from the legacy `hyprland.conf` (hyprlang) to native **Lua** configuration (`hyprland.lua`)[1][2]. 
+
+Keybindings and command executions are handled using the built-in Lua API functions, primarily `hl.bind()` paired with dispatcher helpers like `hl.dsp.exec_cmd(...)`[3].
+
+### Basic Syntax for Binds and Executing Commands
+
+According to the Hyprland Wiki, the basic syntax for keybindings takes the form[3]:
+```lua
+hl.bind("keys", dispatcher_or_function, { bind_flags })
+```
+
+To execute external programs or shell commands within a keybind, you should use `hl.dsp.exec_cmd(...)`[3]:
+
+```lua
+local mainMod = "SUPER"
+
+-- Bind SUPER + SHIFT + Q to open Firefox
+hl.bind(mainMod .. " + SHIFT + Q", hl.dsp.exec_cmd("firefox"))
+
+-- Bind SUPER + Return to open a terminal (e.g., ghostty or kitty)
+hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("ghostty"))
+```
+
+### Advanced Usage with Anonymous Functions
+
+You can also pass an anonymous Lua function to `hl.bind()` if you need to execute conditional logic or chain multiple dispatchers[3][4]:
+
+```lua
+hl.bind("SUPER + SHIFT + X", function()
+    -- Custom logic here
+    hl.dispatch(hl.dsp.window.float())
+end)
+```
+
+### Important Warning Regarding Performance
+* **Do not block the event loop:** Lua callbacks run directly on the compositor's event loop[3]. Avoid using heavy operations like `io.popen`, synchronous network I/O, clipboard utilities (`wl-paste`, `xclip`), or `sleep` directly inside bind callback functions[3]. 
+* Always use `hl.dsp.exec_cmd(...)` for spawning external processes so they run asynchronously outside the critical bind callback path[3].
+
+Sources:
+[1] [scribd.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFofiyKMMHTcFNzaszhF1gzM_80_5wcHSYsfo7pg84dzJzYqyuWlQXvzQPhwdDZVt68e-2p6_lwojvXv6YYNcg758_6H5fSURaci74fY5EKxTm255b-nxdEGrbjIHt3lU18v44rRchE72dMsi_abhAEXe4M-Q==)
+[2] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEYUgevBOQLmWt3tweIhlcF831sTunpu9K7HaZ1hZTjxoYYPFqB8Rz5eluT5ENq3zQTkhqhRLOfHwzuhkj0lF2_k9rkbWws6Jvl0_f-P-fEE_r6XNc=)
+[3] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFm02WTcVVMVku7dgZMsvCUoKbCcIZS63t3_VtZrvG4G1-yKM_re7RJH-sYyShxEB2AsnogzxnYA2z6x8FJ-6McMVJHOxLl0aSCKa6K2kyaaf6_PrNJgKHukKeSFaTCcC0PvxTV)
+[4] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEMTAzVTeFCasVOCHfLt4LUvu2ZBm-P8HThggbayjHMfHCLuLszwTshxzRiNWt0UYF1N8oS8mGvn6gLmCobkOer1Ge52Fu26GRjsM-Mf0BpUYqOIJh2zWjCPSpXooMaIPWdf5mpmkJp)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

@@ -1,0 +1,21 @@
+Created At: 2026-11-15T13:20:52+03:00
+Completed At: 2026-11-15T13:20:52+03:00
+Command exited with code 0.
+
+Command output:
+[I] image: Using image wp14754302-toji-jujutsu-kaisen-desktop-wallpapers.jpg.
+[I] theme: Set theme to _home_gaitano_02-media_01-pictures_03-wallpapers_wp14754302-toji-jujutsu-kaisen-desktop-wallpapers_jpg_dark_None_None_166022_2.0.0.json.
+[I] colors: Found cached colorscheme.
+[I] sequences: Set terminal colors.
+
+                                
+                                
+
+[I] export: Reading system templates from: /home/gaitano/.local/share/pipx/venvs/pywal16/lib/python3.14/site-packages/pywal/templates
+[I] export: Reading user templates from: /home/gaitano/.config/wal/templates
+[I] export: Exported all files.
+[I] export: Exported all user files to /home/gaitano/.cache/wal
+xrdb: Can't open display ''
+[I] reload: Reloaded environment.
+error: can't send: failed to connect to hyprpaper (is it running?)
+Pywal applied: /home/gaitano/02-media/01-pictures/03-wallpapers/wp14754302-toji-jujutsu-kaisen-desktop-wallpapers.jpg

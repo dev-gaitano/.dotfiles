@@ -1,0 +1,17 @@
+
+> jasmijn-schrofer-portfolio@0.0.0 build
+> vite build
+
+vite v7.0.6 building for production...
+Browserslist: browsers data (caniuse-lite) is 13 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+transforming (1) src/main.tsxtransforming (4) node_modules/@vercel/speed-insights/dist/react/index.mjstransforming (13) src/pages/About.tsxtransforming (15) src/index.csstransforming (20) node_modules/@clerk/clerk-react/dist/chunk-WXC6AKVT.mjstransforming (39) node_modules/react-router/dist/index.jstransforming (53) src/components/home/HeroBackground.tsxtransforming (63) node_modules/@clerk/shared/dist/deprecated.mjstransforming (98) node_modules/@clerk/shared/dist/chunk-7HPDNZ3R.mjstransforming (893) node_modules/lucide-react/dist/esm/icons/git-merge.jstransforming (1060) node_modules/lucide-react/dist/esm/icons/list-filter.jstransforming (1099) node_modules/lucide-react/dist/esm/icons/message-circle-quetransforming (1651) node_modules/lucide-react/dist/esm/icons/worm.jstransforming (1655) node_modules/scheduler/cjs/scheduler.production.min.jstransforming (1666) node_modules/react-dom/cjs/react-dom.production.min.jstransforming (1674) node_modules/use-sync-external-store/cjs/use-sync-external-transforming (1686) node_modules/react-dom/client.jstransforming (1740) node_modules/framer-motion/dist/es/motion/utils/is-motion-ctransforming (1781) node_modules/@radix-ui/react-select/dist/index.mjstransforming (1785) node_modules/@react-spring/types/dist/react-spring_types.motransforming (1957) node_modules/@radix-ui/number/dist/index.mjstransforming (1978) node_modules/framer-motion/dist/es/render/svg/SVGVisualElemtransforming (2043) node_modules/framer-motion/dist/es/render/dom/scroll/offsettransforming (2051) node_modules/framer-motion/dist/es/render/svg/utils/build-atransforming (2098) node_modules/react-remove-scroll/dist/es2015/sidecar.jstransforming (2130) node_modules/framer-motion/dist/es/render/html/utils/create✓ 2157 modules transformed.
+transforming (2160) node_modules/@radix-ui/react-accordion/dist/index.mjsrendering chunks (1)...rendering chunks (2)...rendering chunks (3)...rendering chunks (4)...rendering chunks (5)...computing gzip size (0)...computing gzip size (1)...computing gzip size (2)...computing gzip size (3)...computing gzip size (4)...computing gzip size (5)...computing gzip size (6)...computing gzip size (7)...dist/index.html                       1.46 kB │ gzip:  0.63 kB
+dist/assets/index-D7sy_rgv.css       72.28 kB │ gzip: 12.92 kB
+dist/assets/animations-B-oCd1G3.js   21.20 kB │ gzip:  9.30 kB
+dist/assets/ui-CB7Wpa0Z.js           61.11 kB │ gzip: 22.19 kB
+dist/assets/vendor-DavUf6mE.js      141.72 kB │ gzip: 45.48 kB
+dist/assets/firebase-DYsH3ZAi.js    148.07 kB │ gzip: 40.69 kB
+dist/assets/index-dqsRWhWj.js       277.59 kB │ gzip: 92.59 kB
+✓ built in 15.49s

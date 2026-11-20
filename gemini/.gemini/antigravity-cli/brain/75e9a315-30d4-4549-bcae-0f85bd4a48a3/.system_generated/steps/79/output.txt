@@ -1,0 +1,8 @@
+Created At: 2026-11-15T13:16:17+03:00
+Completed At: 2026-11-15T13:16:18+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.dotfiles/waybar
+/home/gaitano/.dotfiles/waybar/.config/waybar
+/home/gaitano/.config/waybar

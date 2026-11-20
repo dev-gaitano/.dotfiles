@@ -1,0 +1,5 @@
+Command exited with code 0.
+
+Command output:
+frontend/src/components/ui/ProjectCard.tsx:  const model = useGLTF("/project_card_jasmijn_schrofer.glb");
+frontend/src/components/ui/ProjectCard.tsx:useGLTF.preload("/project_card_jasmijn_schrofer.glb");

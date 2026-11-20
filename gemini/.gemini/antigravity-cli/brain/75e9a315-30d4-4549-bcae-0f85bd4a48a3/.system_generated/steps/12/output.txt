@@ -1,0 +1,36 @@
+Created At: 2026-11-15T13:12:48+03:00
+Completed At: 2026-11-15T13:12:48+03:00
+Command exited with code 0.
+
+Command output:
+lrwxrwxrwx 1 gaitano gaitano 26 Oct  8  2025 /home/gaitano/.scripts -> .dotfiles/scripts/.scripts
+total 278620
+drwxrwxr-x 2 gaitano gaitano     4096 Aug 16 09:02 .
+drwxrwxr-x 7 gaitano gaitano     4096 Jul 19 14:30 ..
+-rw-rw-r-- 1 gaitano gaitano  3361694 Apr 27  2026 400297mtsdl.jpg
+-rw-rw-r-- 1 gaitano gaitano  3326234 Apr 27  2026 400301mtsdl.jpg
+-rw-rw-r-- 1 gaitano gaitano  2127855 Apr 27  2026 601333slsdl.jpg
+-rw-rw-r-- 1 gaitano gaitano  1287524 Apr 27  2026 991577ilsdl.jpg
+-rwxrwxr-x 1 gaitano gaitano  4095666 Oct 14  2025 aesthetic_deer.png
+-rwxrwxr-x 1 gaitano gaitano  2654624 Oct 14  2025 anime-classroom.jpg
+-rw-rw-r-- 1 gaitano gaitano  2311272 Oct 14  2025 Biker_Girl.jpg
+-rw-rw-r-- 1 gaitano gaitano   493695 Sep 29  2025 bleach-wallpaper.jpg
+-rwxrwxr-x 1 gaitano gaitano  3516920 Oct 14  2025 borderlands.jpg
+-rw-rw-r-- 1 gaitano gaitano  1661366 Sep 25  2025 cherries-1873.jpg
+-rw-rw-r-- 1 gaitano gaitano   294768 Oct 14  2025 Cute-Aesthetic-4k-Wallpaper.jpg
+-rwxrwxr-x 1 gaitano gaitano  3049977 Oct 14  2025 cyberpunk-girl-pink.png
+-rwxrwxr-x 1 gaitano gaitano  1353698 Oct 14  2025 darkish.jpg
+-rw-rw-r-- 1 gaitano gaitano  1836734 Sep 15  2025 demon-rumi-and-the-demon-jinu.jpg
+-rwxrwxr-x 1 gaitano gaitano  1956350 Oct 14  2025 evangelion.png
+-rw-rw-r-- 1 gaitano gaitano  1775195 Sep  4  2025 festival-day-venice-1879.jpg
+-rw-rw-r-- 1 gaitano gaitano   171520 Sep 26  2025 girl-in-red.jpg
+-rwxrwxr-x 1 gaitano gaitano  3532461 Oct 14  2025 girl.jpg
+-rwxrwxr-x 1 gaitano gaitano  9311531 Oct 14  2025 Girl_with_latern.png
+-rwxrwxr-x 1 gaitano gaitano  1525830 Oct 14  2025 green-andro.png
+-rwxrwxr-x 1 gaitano gaitano 10681145 Oct 14  2025 green_dinasour.png
+-rw-rw-r-- 1 gaitano gaitano   212304 Oct 14  2025 green_girl.jpg
+-rwxrwxr-x 1 gaitano gaitano  4691716 Oct 14  2025 Kaiju.jpg
+-rw-rw-r-- 1 gaitano gaitano  8708737 Oct 14  2025 Kojiro.png
+-rw-rw-r-- 1 gaitano gaitano  2081168 Sep  4  2025 kraków-wedding-on-the-road-1941.jpg
+-rwxrwxr-x 1 gaitano gaitano  2656011 Oct 14  2025 lotm.png
+-rw-rw-r-- 1 gaitano gaitano 10062756 Oct 14  2025 main.png

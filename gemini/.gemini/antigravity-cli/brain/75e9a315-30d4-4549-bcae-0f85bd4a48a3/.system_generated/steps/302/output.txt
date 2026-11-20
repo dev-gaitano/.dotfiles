@@ -1,0 +1,13 @@
+Created At: 2026-11-20T00:30:19+03:00
+Completed At: 2026-11-20T00:30:19+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name                    Version  Architecture  Description
+├┼┼─═══════════════════════─════════─═════════════─═════════════════════════════
+un  phonon4qt6-backend-vlc  <none>   <none>        (no description available)
+un  vlc                     <none>   <none>        (no description available)
+VLC	org.videolan.VLC	3.0.24	stable	system

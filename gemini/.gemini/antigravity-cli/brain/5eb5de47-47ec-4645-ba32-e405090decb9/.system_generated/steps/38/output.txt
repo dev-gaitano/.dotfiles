@@ -1,0 +1,46 @@
+
+The command exited with code 1.
+There were sandbox errors that may or may not be related to the failure. If you think the failure is because of running in the sandbox, you can run the command again with `BypassSandbox` set to true to request explicit user permission.
+Output:
+
+> frontend@0.0.0 build
+> tsc -b && vite build
+
+error TS5033: Could not write file '/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/.tmp/tsconfig.app.tsbuildinfo': EROFS: read-only file system, open '/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/.tmp/tsconfig.app.tsbuildinfo'.
+
+src/pages/Resume.tsx:68:16 - error TS17008: JSX element 'section' has no corresponding closing tag.
+
+68               <section className="resume-section">
+                  ~~~~~~~
+
+src/pages/Resume.tsx:168:11 - error TS17002: Expected corresponding JSX closing tag for 'main'.
+
+168         </div>
+              ~~~
+
+src/pages/Resume.tsx:169:9 - error TS17015: Expected corresponding closing tag for JSX fragment.
+
+169       </main>
+            ~~~~
+
+src/pages/Resume.tsx:172:5 - error TS1128: Declaration or statement expected.
+
+172     </>
+        ~~
+
+src/pages/Resume.tsx:172:7 - error TS1109: Expression expected.
+
+172     </>
+          ~
+
+src/pages/Resume.tsx:173:3 - error TS1109: Expression expected.
+
+173   );
+      ~
+
+error TS5033: Could not write file '/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/.tmp/tsconfig.node.tsbuildinfo': EROFS: read-only file system, open '/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/.tmp/tsconfig.node.tsbuildinfo'.
+
+
+Found 8 errors.
+
+

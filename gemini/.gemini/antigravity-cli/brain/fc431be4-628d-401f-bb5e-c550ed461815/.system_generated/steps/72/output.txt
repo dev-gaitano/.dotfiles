@@ -1,0 +1,226 @@
+Command exited with code 0.
+
+Command output:
+diff --git a/frontend/src/pages/Resume.tsx b/frontend/src/pages/Resume.tsx
+index 40d5a0b..c80a836 100644
+--- a/frontend/src/pages/Resume.tsx
++++ b/frontend/src/pages/Resume.tsx
+@@ -46,7 +46,7 @@ function Resume() {
+             <div className="resume-title-box">
+               <h1>Eugene Gaitano</h1>
+               <div className="resume-subtitle">
+-                Full Stack Software Developer
++                Full Stack Software Engineer
+               </div>
+             </div>
+             <div className="resume-actions">
+@@ -79,23 +79,29 @@ function Resume() {
+               <span>Nairobi, Kenya</span>
+             </div>
+             <div className="contact-item">
+-              <span className="label">GitHub:</span>
++              <span className="label">Phone:</span>
++              <a href="tel:+254712743234" target="_blank" rel="noreferrer">
++                +254712743234
++              </a>
++            </div>
++            <div className="contact-item">
++              <span className="label">Email:</span>
+               <a
+-                href="https://github.com/dev-gaitano"
++                href="mailto:eugenecampbellgaitano@gmail.com"
+                 target="_blank"
+                 rel="noreferrer"
+               >
+-                github.com/dev-gaitano
++                eugenecampbellgaitano@gmail.com
+               </a>
+             </div>
+             <div className="contact-item">
+-              <span className="label">Email:</span>
++              <span className="label">GitHub:</span>
+               <a
+-                href="mailto:eugenecampbellgaitano@gmail.com"
++                href="https://github.com/dev-gaitano"
+                 target="_blank"
+                 rel="noreferrer"
+               >
+-                eugenecampbellgaitano@gmail.com
++                github.com/dev-gaitano
+               </a>
+             </div>
+             <div className="contact-item">
+@@ -108,6 +114,16 @@ function Resume() {
+                 linkedin.com/in/eugene-gaitano
+               </a>
+             </div>
++            <div className="contact-item">
++              <span className="label">LinkTree:</span>
++              <a
++                href="https://linktr.ee/eugenegaitano"
++                target="_blank"
++                rel="noreferrer"
++              >
++                linktr.ee/eugenegaitano
++              </a>
++            </div>
+           </section>
+ 
+           {/* Grid Layout: Main Left, Sidebar Right */}
+@@ -118,7 +134,7 @@ function Resume() {
+               <section className="resume-section">
+                 <h2 className="section-title">Summary</h2>
+                 <p className="summary-text">
+-                  Versatile Full-Stack Software Developer based in Nairobi,
++                  Versatile Full-Stack Software Engineer based in Nairobi,
+                   Kenya. Experienced in building end-to-end applications,
+                   combining robust backend architecture with interactive,
+                   3D-enhanced frontend interfaces. Skilled in taking complex
+@@ -139,16 +155,22 @@ function Resume() {
+                   <div className="job-company">TopBox AI Studios</div>
+                   <ul className="job-details">
+                     <li>
+-                      Architected and built full-stack web applications using
+-                      TypeScript, React, Node.js, and Python.
++                      Architected and deployed full-stack web applications using
++                      TypeScript, React and Python.
+                     </li>
+                     <li>
+-                      Designed and rendered real-time 3D web experiences using
+-                      React Three Fiber, Three.js, and custom GLTF models.
++                      Integrated generative AI model APIs and media pipelines
++                      with asynchronous task queues and streaming response
++                      handlers.
+                     </li>
+                     <li>
+-                      Integrated state management, routing, and GSAP animation
+-                      triggers for smooth interactive UI components.
++                      Built high-performance interactive interfaces with
++                      responsive modern design systems and real-time state
++                      management.
++                    </li>
++                    <li>
++                      Designed scalable PostgreSQL schemas and optimized media
++                      delivery pipelines for low-latency asset generation.
+                     </li>
+                   </ul>
+                 </article>
+@@ -161,20 +183,18 @@ function Resume() {
+                   <div className="job-company">Buzz Labs</div>
+                   <ul className="job-details">
+                     <li>
+-                      Architected and built full-stack web applications using
+-                      TypeScript, React, Node.js, and Python.
+-                    </li>
+-                    <li>
+-                      Designed and rendered real-time 3D web experiences using
+-                      React Three Fiber, Three.js, and custom GLTF models.
++                      Engineered full-stack e-commerce platform using React and
++                      TypeScript with dynamic product catalogs and global cart
++                      state.
+                     </li>
+                     <li>
+-                      Integrated state management, routing, and GSAP animation
+-                      triggers for smooth interactive UI components.
++                      Integrated secure checkout flows and payment gateway APIs
++                      with automated order confirmation and inventory sync.
+                     </li>
+                     <li>
+-                      Integrated state management, routing, and GSAP animation
+-                      triggers for smooth interactive UI components.
++                      Implemented client-side search, category filtering, and
++                      responsive mobile UI for friction-free purchase
++                      experience.
+                     </li>
+                   </ul>
+                 </article>
+@@ -187,16 +207,23 @@ function Resume() {
+                   <div className="job-company">Fixentra Tech Solutions</div>
+                   <ul className="job-details">
+                     <li>
+-                      Architected and built full-stack web applications using
+-                      TypeScript, React, Node.js, and Python.
++                      Built automated business workflows using Microsoft Power
++                      Automate, eliminating manual data entry across internal
++                      services and cloud storage.
+                     </li>
+                     <li>
+-                      Designed and rendered real-time 3D web experiences using
+-                      React Three Fiber, Three.js, and custom GLTF models.
++                      Integrated third-party APIs, email notifications, and
++                      database tables using low-code connectors and automated
++                      webhooks.
+                     </li>
+                     <li>
+-                      Integrated state management, routing, and GSAP animation
+-                      triggers for smooth interactive UI components.
++                      Designed lightweight internal forms and operational
++                      dashboards to streamline team reporting and status
++                      tracking.
++                    </li>
++                    <li>
++                      Monitored flow executions, debugged run failures, and
++                      maintained process documentation for team handoff.
+                     </li>
+                   </ul>
+                 </article>
+@@ -206,20 +233,28 @@ function Resume() {
+                     <span className="job-title">Featured Projects</span>
+                   </div>
+                   <div className="job-company">
+-                    Portfolio & Interactive Applications
++                    Portfolios & Individual Applications
+                   </div>
+                   <ul className="job-details">
+                     <li>
+-                      <strong>3D Interactive Portfolio Platform:</strong> Built
++                      <strong>Jasmijn Schrofer's Personal Portfolio:</strong>{" "}
++                      Designed and developed a responsive web portfolio for
++                      acclaimed filmmaker Jasmijn Schrofer, featuring optimized
++                      video showcases, editorial typography, and smooth
++                      cross-device navigation.
++                    </li>
++                    <li>
++                      <strong>3D Interactive Personal Portfolio:</strong> Built
+                       high-performance responsive portfolio featuring custom
+                       WebGL 3D canvas card objects, GSAP scroll triggers, and
+                       mobile touch interactions.
+                     </li>
+                     <li>
+-                      <strong>Full-Stack Product Architectures:</strong>{" "}
+-                      Developed modular REST API backends, relational database
+-                      schemas, and clean frontend UI designs tailored for
+-                      performance and accessibility.
++                      <strong>WayaLink:</strong> Built a dual-interface - Web UI
++                      and USSD interface - logistics tracking system designed to
++                      improve end-to-end product visibility in fragmented supply
++                      chains. Built specifically for regions with low technology
++                      adoption.
+                     </li>
+                   </ul>
+                 </article>
+@@ -271,6 +306,7 @@ function Resume() {
+                     <span className="skill-tag">Docker</span>
+                     <span className="skill-tag">Vercel</span>
+                     <span className="skill-tag">Linux</span>
++                    <span className="skill-tag">Power Automate</span>
+                   </div>
+                 </div>
+               </section>
+@@ -279,7 +315,15 @@ function Resume() {
+               <section className="resume-section">
+                 <h2 className="section-title">Education</h2>
+                 <div className="edu-item">
+-                  <div className="edu-title">Software Engineering</div>
++                  <div className="edu-title">
++                    Full Stack Software Engineering Bootcamp
++                  </div>
++                  <div className="edu-sub">Moringa School</div>
++                </div>
++                <div className="edu-item">
++                  <div className="edu-title">
++                    Foundations of Software Engineering
++                  </div>
+                   <div className="edu-sub">Moringa School</div>
+                 </div>
+               </section>

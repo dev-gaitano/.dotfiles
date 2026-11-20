@@ -1,0 +1,6 @@
+Created At: 2026-11-15T13:20:11+03:00
+Completed At: 2026-11-15T13:20:12+03:00
+Command exited with code 0.
+
+Command output:
+lrwxrwxrwx 1 gaitano gaitano 58 Nov 15 13:20 /home/gaitano/.config/hypr/current_wallpaper.jpg -> /home/gaitano/02-media/01-pictures/03-wallpapers/Kaiju.jpg

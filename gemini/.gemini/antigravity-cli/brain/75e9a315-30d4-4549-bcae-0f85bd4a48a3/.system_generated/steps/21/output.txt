@@ -1,0 +1,101 @@
+Created At: 2026-11-15T13:13:04+03:00
+Completed At: 2026-11-15T13:13:05+03:00
+Command exited with code 0.
+
+Command output:
+wallpaper {
+    monitor = 
+    path = ~/02-media/01-pictures/03-wallpapers
+    fit_mode = cover
+}
+---
+#!/usr/bin/env sh
+
+SESSION=1914
+
+createSession1914() {
+	echo "Creating a new tmux session \"$SESSION\"..."
+	echo " "
+	sleep 2
+
+	tmux new-session -d -s "$SESSION" -n main
+	tmux send-keys -t "$SESSION:1" "clear" C-m
+	tmux send-keys -t "$SESSION:1" "~/.scripts/intro.sh" C-m
+	tmux new-window -t "$SESSION:2" -n ranger
+	tmux send-keys -t "$SESSION:2" "ranger" C-m
+	tmux new-window -t "$SESSION:3" -n ai
+	tmux send-keys -t "$session":3 'clear' C-m 'agy' C-m
+	#tmux send-keys -t "$SESSION:3" "openclaude" C-m
+	tmux new-window -t "$SESSION:4" -n obsidian
+	tmux send-keys -t "$SESSION:4" "obsdn" C-m
+	tmux send-keys -t "$SESSION:4" "nvim ." C-m
+	tmux new-window -t "$SESSION:5" -n stats
+	tmux send-keys -t "$SESSION:5" "btop" C-m
+
+	notify-send -u low "Attached to the tmux session $SESSION."
+	tmux a -t "$SESSION":1
+}
+
+attachToExistingSession() {
+	notify-send -u low "Attached to the tmux session $SESSION."
+	tmux a -t "$SESSION"
+	exit 0
+}
+
+createNewSession() {
+	read -p "Directory (absolute) path: " SESSIONDIR # TODO: Modify so that it doesn't depend on Absolute
+	read -p "Session Name: " SESSION
+	echo " "
+
+	echo "Changing Directory..."
+	cd "$SESSIONDIR"
+	echo "Creating a new tmux session \"$SESSION\"..."
+	echo " "
+	sleep 2
+	~/.scripts/tmuxCreate.sh "$SESSION" dev
+
+	exit 0
+}
+
+if tmux has-session -t "$SESSION" 2>/dev/null; then
+	echo "Session \"$SESSION\" already exists"
+	echo " "
+	echo "Do you want to:"
+	echo " 1. Attach to session"
+	echo " 2. Create New Session"
+	echo " 3. Don't Attach nor Create"
+	read -p "(1) (2) (3) - default is (1): " answer
+	echo " "
+
+	case "$answer" in
+	1)
+		attachToExistingSession
+		;;
+	2)
+		createNewSession
+		;;
+	*)
+		exit 0
+		;;
+	esac
+else
+	createSession1914
+fi
+---
+total 64
+drwxrwxr-x 3 gaitano gaitano 4096 Apr 14  2026 .
+drwxrwxr-x 3 gaitano gaitano 4096 Sep  4  2025 ..
+-rwxrwxr-x 1 gaitano gaitano 1070 Dec 20  2025 batteryMonitor.sh
+-rwxrwxr-x 1 gaitano gaitano  639 Dec  8  2025 bluetoothConnect.sh
+-rwxrwxr-x 1 gaitano gaitano 1077 Dec  8  2025 feed.sh
+-rwxrwxr-x 1 gaitano gaitano  421 Dec  8  2025 hdmiConnect.sh
+-rwxrwxr-x 1 gaitano gaitano  285 Sep 25 13:04 intro.sh
+drwxrwxr-x 2 gaitano gaitano 4096 Oct 14  2025 linux-setup
+-rwxrwxr-x 1 gaitano gaitano 1265 Apr 19  2026 marinesOpen.sh
+-rwxrwxr-x 1 gaitano gaitano  181 Apr 27  2026 pywal.sh
+-rwxrwxr-x 1 gaitano gaitano 2180 Dec  8  2025 rofiBlueToothConnect.sh
+-rwxrwxr-x 1 gaitano gaitano  784 Dec  8  2025 rofiRecentNotes.sh
+-rwxrwxr-x 1 gaitano gaitano 1163 Dec  8  2025 schroferStart.sh
+-rwxrwxr-x 1 gaitano gaitano 1694 Sep 25 13:00 startUp.sh
+-rwxrwxr-x 1 gaitano gaitano  494 Dec  8  2025 timeDateWeather.sh
+-rwxrwxr-x 1 gaitano gaitano 1783 Nov  4 10:38 tmuxCreate.sh

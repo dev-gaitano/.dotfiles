@@ -1,0 +1,22 @@
+Created At: 2026-11-19T12:19:27+03:00
+Completed At: 2026-11-19T12:19:29+03:00
+Command exited with code 0.
+
+Command output:
+
+> shaders-intro-01@0.0.0 build
+> vite build
+
+vite v8.2.1 building client environment for production...
+transforming (11) node_modules/three/build/three.core.js✓ 11 modules transformed.
+rendering chunks (1)...computing gzip size...
+dist/index.html                   0.52 kB │ gzip:   0.33 kB
+dist/assets/index-C3WUKyKt.css    0.04 kB │ gzip:   0.06 kB
+dist/assets/index-36sPWfBg.js   537.53 kB │ gzip: 134.26 kB
+
+✓ built in 396ms
+[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.

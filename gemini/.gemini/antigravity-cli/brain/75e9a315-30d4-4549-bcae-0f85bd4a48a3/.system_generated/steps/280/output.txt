@@ -1,0 +1,14 @@
+Created At: 2026-11-20T00:16:56+03:00
+Completed At: 2026-11-20T00:16:56+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name        Version    Architecture Description
+├┼┼─═══════════─══════════─════════════─════════════════════════════════════════
+ii  easyeffects 8.3.2+ds-1 amd64        Audio effects for PipeWire applications
+/usr/bin/easyeffects
+drwxrwxr-x 8 gaitano gaitano 4096 May 24 15:42  /home/gaitano/.config/easyeffects
+drwxrwxr-x 7 gaitano gaitano 4096 May 24 15:42  /home/gaitano/.local/share/easyeffects

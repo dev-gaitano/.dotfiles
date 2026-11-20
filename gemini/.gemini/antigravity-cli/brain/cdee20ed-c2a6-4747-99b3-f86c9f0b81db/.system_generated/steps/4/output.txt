@@ -1,0 +1,13 @@
+Created At: 2026-11-19T14:50:24+03:00
+Completed At: 2026-11-19T14:50:29+03:00
+Command exited with code 0.
+
+Command output:
+total 28
+drwxrwxr-x 3 gaitano gaitano 4096 Nov 18 20:32 .
+drwxrwxr-x 6 gaitano gaitano 4096 Nov 19 14:41 ..
+-rw-rw-r-- 1 gaitano gaitano  356 Nov 18 20:49 App.tsx
+-rw-rw-r-- 1 gaitano gaitano   59 Nov 18 20:30 index.css
+-rw-rw-r-- 1 gaitano gaitano  230 Nov 18 20:20 main.tsx
+-rw-r--r-- 1 gaitano gaitano 2484 Nov 19 12:14 scene.ts
+drwxrwxrwx 2 gaitano gaitano 4096 Nov 18 17:37 shader

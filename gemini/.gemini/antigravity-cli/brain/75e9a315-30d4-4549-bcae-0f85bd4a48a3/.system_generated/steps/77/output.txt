@@ -1,0 +1,7 @@
+Created At: 2026-11-15T13:16:07+03:00
+Completed At: 2026-11-15T13:16:07+03:00
+Command exited with code 0.
+
+Command output:
+-rw-r--r-- 1 gaitano gaitano 98 Apr 27  2026 /home/gaitano/.config/hypr/hyprpaper.conf
+-rw-r--r-- 1 gaitano gaitano 98 Apr 27  2026 /home/gaitano/.dotfiles/hypr/.config/hypr/hyprpaper.conf

@@ -1,0 +1,34 @@
+============================= test session starts ==============================
+platform linux -- Python 3.13.9, pytest-9.1.0, pluggy-1.6.0
+rootdir: /home/gaitano/01-studio/01-src/topbox/backend
+plugins: langsmith-0.7.9, anyio-4.12.1
+collecting ... collecting 8 items                                                             collected 19 items                                                             
+
+tests/test_company.py .....                                              [ 26%]
+tests/test_create_company.py F..                                         [ 42%]
+tests/test_extract_text.py ........                                      [ 84%]
+tests/test_upload_brand_guidelines.py ...                                [100%]
+
+=================================== FAILURES ===================================
+________________________ test_company_data_returns_none ________________________
+
+client = <FlaskClient <Flask 'main'>>
+
+    def test_company_data_returns_none(client):
+        """
+        Check if correct status code and json is returned when company data is an
+        empty dict or a None type
+        """
+        response = client.post("/api/companies", json={})
+    
+>       assert response.status_code == 400
+E       assert 500 == 400
+E        +  where 500 = <WrapperTestResponse streamed [500 INTERNAL SERVER ERROR]>.status_code
+
+tests/test_create_company.py:24: AssertionError
+----------------------------- Captured stdout call -----------------------------
+Error creating company: could not translate host name "ep-round-sun-alto78g8-pooler.c-3.eu-central-1.aws.neon.tech" to address: Temporary failure in name resolution
+
+=========================== short test summary info ============================
+FAILED tests/test_create_company.py::test_company_data_returns_none - assert ...
+========================= 1 failed, 18 passed in 3.59s =========================

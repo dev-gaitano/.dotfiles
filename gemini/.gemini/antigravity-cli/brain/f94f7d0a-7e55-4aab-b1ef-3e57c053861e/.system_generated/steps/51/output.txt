@@ -1,0 +1,32 @@
+Created At: 2026-11-20T10:30:54+03:00
+Completed At: 2026-11-20T10:30:54+03:00
+Command exited with code 0.
+
+Command output:
+660----@field supports_wide_color? integer|boolean
+661----@field transform? integer|boolean
+662----@field vrr? integer|boolean
+663-local __HL_MonitorSpec = {}
+664-
+665:---@class HL.WindowRuleSpec
+666----@field enabled? boolean
+667----@field match? table<string, string|number|boolean>
+668----@field name? string
+669:local __HL_WindowRuleSpec = {}
+670-
+671----@class HL.WorkspaceRuleSpec
+672----@field animation? string
+673----@field border_size? integer|boolean
+674----@field decorate? boolean
+--
+947----@field monitor fun(spec: HL.MonitorSpec): nil
+948----@field permission fun(spec: HL.PermissionSpec): nil
+949----@field timer fun(callback: function, opts: HL.TimerOptions): HL.Timer
+950----@field unbind fun(key: string): nil
+951----@field version fun(): string
+952:---@field window_rule fun(spec: HL.WindowRuleSpec): HL.WindowRule
+953----@field workspace_rule fun(spec: HL.WorkspaceRuleSpec): HL.WorkspaceRule
+954----@field dsp HL.DspNamespace
+955----@field layout HL.LayoutNamespace
+956----@field notification HL.NotificationNamespace
+957----@field plugin HL.PluginNamespace

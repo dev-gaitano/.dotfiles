@@ -1,0 +1,6 @@
+Created At: 2026-11-19T22:10:27+03:00
+Completed At: 2026-11-19T22:10:27+03:00
+Command exited with code 0.
+
+Command output:
+lrwxrwxrwx 1 nobody nogroup 20 Jul 19 14:43  /usr/local/bin/blender -> /opt/blender/blender

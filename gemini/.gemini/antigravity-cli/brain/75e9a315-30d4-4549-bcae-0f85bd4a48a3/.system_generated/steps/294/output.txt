@@ -1,0 +1,22 @@
+Created At: 2026-11-20T00:22:14+03:00
+Completed At: 2026-11-20T00:22:14+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name                  Version Architecture Description
+├┼┼─═════════════════════─═══════─════════════─════════════════════════════════════════════════
+ii  gimp                  3.2.6-1 amd64        GNU Image Manipulation Program
+ii  gimp-data             3.2.6-1 all          Data files for GIMP
+un  gimp-data-extras      <none>  <none>       (no description available)
+un  gimp-dds              <none>  <none>       (no description available)
+un  gimp-help             <none>  <none>       (no description available)
+un  gimp-help-en          <none>  <none>       (no description available)
+ii  gir1.2-gimp-3.0:amd64 3.2.6-1 amd64        Introspection data for the GIMP library
+un  gir1.2-gimpui-3.0     <none>  <none>       (no description available)
+ii  libgimp-3.0-0:amd64   3.2.6-1 amd64        Libraries for the GNU Image Manipulation Program
+/usr/bin/gimp
+drwxrwxr-x 3 gaitano gaitano 4096 Feb 22  2026  /home/gaitano/.cache/gimp
+drwxr-xr-x 3 gaitano gaitano 4096 Feb 22  2026  /home/gaitano/.config/GIMP

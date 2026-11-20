@@ -1,0 +1,5 @@
+bash: line 1: type: pywal: not found
+/home/gaitano/.zshrc:8:~/.scripts/pywal.sh
+/home/gaitano/.zshrc:150:alias pywal="~/.scripts/pywal.sh"
+/home/gaitano/.dotfiles/scripts/.scripts/hdmiConnect.sh:8:	~/.scripts/pywal.sh
+/home/gaitano/.dotfiles/scripts/.scripts/intro.sh:4:~/.scripts/pywal.sh

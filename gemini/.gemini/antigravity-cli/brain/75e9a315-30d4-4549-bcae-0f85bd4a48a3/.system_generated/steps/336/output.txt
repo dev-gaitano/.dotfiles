@@ -1,0 +1,26 @@
+Created At: 2026-11-20T00:32:30+03:00
+Completed At: 2026-11-20T00:32:30+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/ranger/.config/ranger/rifle.conf b/ranger/.config/ranger/rifle.conf
+index 59c1832..d36483b 100644
+--- a/ranger/.config/ranger/rifle.conf
++++ b/ranger/.config/ranger/rifle.conf
+@@ -118,15 +118,15 @@ ext midi?,        terminal, has wildmidi = wildmidi -- "$@"
+ #--------------------------------------------
+ # Video/Audio with a GUI
+ #-------------------------------------------
++mime ^video|audio, has vlc,      X, flag f = vlc -- "$@"
+ mime ^video|audio, has gmplayer, X, flag f = gmplayer -- "$@"
+ mime ^video|audio, has smplayer, X, flag f = smplayer "$@"
+ mime ^video,       has mpv,      X, flag f = mpv -- "$@"
+ mime ^video,       has mpv,      X, flag f = mpv --fs -- "$@"
+ mime ^video,       has mplayer2, X, flag f = mplayer2 -- "$@"
+ mime ^video,       has mplayer2, X, flag f = mplayer2 -fs -- "$@"
+ mime ^video,       has mplayer,  X, flag f = mplayer -- "$@"
+ mime ^video,       has mplayer,  X, flag f = mplayer -fs -- "$@"
+-mime ^video|audio, has vlc,      X, flag f = vlc -- "$@"
+ mime ^video|audio, has totem,    X, flag f = totem -- "$@"
+ mime ^video|audio, has totem,    X, flag f = totem --fullscreen -- "$@"
+ 

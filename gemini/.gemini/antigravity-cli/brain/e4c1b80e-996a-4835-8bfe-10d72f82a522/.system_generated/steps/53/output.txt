@@ -1,0 +1,29 @@
+Created At: 2026-11-14T10:11:05+03:00
+Completed At: 2026-11-14T10:11:06+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/frontend/src/components/Hero/Hero.tsx b/frontend/src/components/Hero/Hero.tsx
+index dbb3a05..f232fd0 100644
+--- a/frontend/src/components/Hero/Hero.tsx
++++ b/frontend/src/components/Hero/Hero.tsx
+@@ -4,7 +4,7 @@ import { Suspense } from "react";
+ import "./Hero.css";
+ import { useIsMobile } from "../../hooks/useIsMobile";
+ 
+-const DESKTOP_BUBBLE_MODEL = "/portfolio_bubble_text_desktop.glb";
++const DESKTOP_BUBBLE_MODEL = "/portfolio_text_desktop.glb";
+ const MOBILE_BUBBLE_MODEL = "/portfolio_bubble_text_mobile.glb";
+ 
+ interface HeroProps {
+@@ -24,8 +24,8 @@ function Hero({ className, setIsLoaded }: HeroProps) {
+           <div className="bubble-container">
+             <Canvas>
+               <Suspense fallback={null}>
+-                <ambientLight intensity={0.1} />
+-                <directionalLight color="red" position={[0, 0, 5]} />
++                <ambientLight intensity={1.0} />
++                <directionalLight position={[0, 0, 5]} intensity={1.5} />
+                 <BubbleText
+                   key={isMobile ? "mobile" : "desktop"}
+                   modelPath={

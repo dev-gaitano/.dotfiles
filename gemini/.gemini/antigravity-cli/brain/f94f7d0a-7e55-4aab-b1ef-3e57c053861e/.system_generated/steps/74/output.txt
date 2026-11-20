@@ -1,0 +1,49 @@
+Created At: 2026-11-20T10:32:20+03:00
+Completed At: 2026-11-20T10:32:24+03:00
+The search for ""hl.exec_cmd" "rules" hyprland site:wiki.hypr.land OR site:github.com" returned the following summary:
+In Hyprland's Lua-based configuration system (introduced in version 0.55), **`hl.exec_cmd(cmd, rules)`** (and its dispatcher equivalent **`hl.dsp.exec_cmd(cmd, rules)`**) allows you to execute a shell command while optionally passing a table of window rule effects/parameters to apply to the spawned process[1][2].
+
+### Overview
+
+* **Syntax:** `hl.exec_cmd("command", { rules })` or `hl.dsp.exec_cmd("command", { rules })`[1]
+* **Behavior:** It spawns an asynchronous process (using `sh -c`)[1][3]. Unlike the legacy `exec-once` syntax from `hyprlang`, you do not need trailing `& disown` characters[4][3]. 
+* **Rules Parameter:** The second argument takes a table of window rule properties/effects to target the resulting window directly[1].
+
+---
+
+### Examples
+
+#### 1. Launching an app on a specific workspace (Silently)
+In the Lua configuration, rules like workspace placement can be supplied directly inside the execution command wrapper[5]:
+
+```lua
+hl.on("hyprland.start", function()
+    -- Launch Thunderbird on workspace 2 silently
+    hl.exec_cmd("thunderbird", { workspace = "2 silent" })
+end)
+```
+
+#### 2. Keybindings with `hl.dsp.exec_cmd`
+When binding commands to key combinations, you can pass rules or flags to format how the window behaves upon launch[5]:
+
+```lua
+-- Open a floating window with specific dimensions and placement on a workspace via keybind
+hl.bind("SUPER + SHIFT + W", hl.dsp.exec_cmd("librewolf --new-window https://www.youtube.com", { 
+    workspace = "6 silent", 
+    float = true, 
+    size = { 1275, 1383 }, 
+    move = { 1279, 199 } 
+}))
+```
+
+*(Note: Depending on how quickly asynchronous apps like Electron/GTK applications start up and request focus, some users manage complex layout positioning via standard global `hl.window_rule` definitions matched by application class, as process-tracking rules via `exec_cmd` can occasionally vary based on application PID behavior)[4][6].*
+
+Sources:
+[1] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQH0sQHbmLJmYTRS5lZWnNLgLxhAa25f7cWJiAyA0gjkQtM0F_Lh7YFBhM9Oy-nw1zqfj93JjVsc0dHpiU5AhR5pDMAl5_wszvW-0FhjZLE5dXP4RHPHVsaGS1WB-H_3qbABVwQ4sA4HPF6u)
+[2] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEesuoSGlYr4MX7wv5k6CgywSNIPLltfoFwm5fgwVWA_wEhSEh7xIutr5mN_T2IPQmvyE2U8u2mrrXnS24JC8YDNvJSO4noL0Wxtr9LYMv0JKbmBFvgAn7lxu34A==)
+[3] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFe1uW9hNCDKxTzK7SWIuFwyDM0pf4871FpzaGazwSIR5pdmbachKpzs6BIKnwMeqfO3MeFAH1MtnyUxuqrY_U7zyBzptUnBuAykf8r_jNzO_28SLMj5bXduB4tmV105lGEmm5CK8ubARvsQKvF7zRW7g==)
+[4] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHwL-6EyKlvvrPmIg6QVKwakl3AeNFKKnq5a13vvel_ESg0e4A290Mc2K_2OSrTddJqrItXW5xD7ANK2drlXEAGUZomkI5PBWzoX7Euru-b7oUV5iE_j2Z38A9w9wjP2PvSBAK1w6AnLq4n)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGmkNwZMh715Zn8GNWIrZK_UyeEPriIUD5U3zZMSMyhOH2GGJGCIETkwUbZ_Uac-DgFBa2-aUe8GkfQ0XnLxSy3NhMrAqH9DoskaJ4zKxYn5vwzACtP6wqeTPJqRySE1ZXl8QmA-GFOOyeVIonHQqQI7cMgevyS15appAqzbMWgBAq6semRtywXTTNdJw1QBXLB7lOMNOLC)
+[6] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEBOQXESe6TwBv2v5PCIaC8GrQp7YaeMU6CQqvDliQMDy60SifMcmCkmppWAhYCX9lP4P5A-dE0cBjMQ6kxWj1cJ_Ov99cS8Tuqjr2xy9XbKK1-8_qzcZngdJUKG5PC12Qk9SsQFvhk6cHE1s_4CgzpQ5OAJSrvoqlLh0zgl9OVnMkr6B52DJ9LNGYL)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

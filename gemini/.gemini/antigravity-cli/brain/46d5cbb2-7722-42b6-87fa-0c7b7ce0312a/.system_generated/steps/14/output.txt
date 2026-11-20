@@ -1,0 +1,77 @@
+Created At: 2026-11-19T11:20:36+03:00
+Completed At: 2026-11-19T11:20:37+03:00
+Command exited with code 0.
+
+Command output:
+ index.html               | 20 +++++++++-----------
+ src/scene.ts             |  5 +++--
+ src/shader/fragment.glsl |  2 ++
+ 3 files changed, 14 insertions(+), 13 deletions(-)
+diff --git a/index.html b/index.html
+index 5423b3c..2c5e0b6 100644
+--- a/index.html
++++ b/index.html
+@@ -1,15 +1,13 @@
+ <!doctype html>
+ <html lang="en">
++  <head>
++    <meta charset="UTF-8" />
++    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
++    <title>shader-template-react-ts</title>
++  </head>
+ 
+-<head>
+-  <meta charset="UTF-8" />
+-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-  <title>homoculus-jp</title>
+-</head>
+-
+-<body>
+-  <div id="root"></div>
+-  <script type="module" src="/src/main.tsx"></script>
+-</body>
+-
++  <body>
++    <div id="root"></div>
++    <script type="module" src="/src/main.tsx"></script>
++  </body>
+ </html>
+diff --git a/src/scene.ts b/src/scene.ts
+index 5805751..4b7fa51 100644
+--- a/src/scene.ts
++++ b/src/scene.ts
+@@ -14,19 +14,20 @@ export function init(container: HTMLElement) {
+   const timer = new THREE.Timer();
+ 
+   // Add objects
+-  const geometry = new THREE.PlaneGeometry(10, 10, 60, 60);
++  const geometry = new THREE.PlaneGeometry(2, 2);
+ 
+   const uniforms = {
+     u_time: { type: "f", value: 0.0 },
+     u_resolution: { type: "v2", value: new THREE.Vector2() },
+     u_mouse: { type: "v2", value: new THREE.Vector2() },
+   };
+ 
+   const material = new THREE.ShaderMaterial({
+     uniforms: uniforms,
+     vertexShader: vertex,
+     fragmentShader: fragment,
+-    wireframe: true,
++    //wireframe: true,
++    //transparent: true,
+   });
+ 
+   const mesh = new THREE.Mesh(geometry, material);
+diff --git a/src/shader/fragment.glsl b/src/shader/fragment.glsl
+index 9a084ea..c698a79 100644
+--- a/src/shader/fragment.glsl
++++ b/src/shader/fragment.glsl
+@@ -11,5 +11,7 @@ varying vec2 vUv;
+ void main() {
+         vec2 st = gl_FragCoord.xy / u_resolution;
+ 
++        st = st * 2. - 1.;
++
+         gl_FragColor = vec4(st.x, st.y, 0., 1.);
+ }

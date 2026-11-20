@@ -1,0 +1,24 @@
+Created At: 2026-11-20T10:29:23+03:00
+Completed At: 2026-11-20T10:29:26+03:00
+The search for ""hyprland.lua" "/usr/share/hypr/hyprland.lua" OR "default hyprland.lua"" returned the following summary:
+`/usr/share/hypr/hyprland.lua` is the official default starter configuration file bundled with **Hyprland (version 0.55 and newer)**, which transitioned from the legacy `hyprlang` (`hyprland.conf`) syntax to native **Lua** configuration[1][2].
+
+### Key Purpose & Usage
+* **Default Template:** When you start using Hyprland with Lua configuration enabled, this file serves as the official reference template showcasing how to structure monitors, input options, layouts, animations, window rules, and keybinds using the Lua API[2][3].
+* **Quick Setup / Migration:** If you want to migrate away from an old configuration format or quickly generate a baseline working environment, you can copy the system-provided template directly into your user config directory[4][5]:
+  ```bash
+  mkdir -p ~/.config/hypr
+  cp /usr/share/hypr/hyprland.lua ~/.config/hypr/hyprland.lua
+  ```
+* **Location Path:** Depending on your distribution package, it lives alongside helper assets and LSP stubs (such as `hl.meta.lua`) under the shared system path `/usr/share/hypr/`[6][7].
+
+Sources:
+[1] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFR4JG0qvr7-ezA1wfSLZVlsQM-PWMHPtDdniQ3wclpF0ZAKum8GqVd4-3Igc8ZvGtEreMiVxfI1WoXuaDoLF2QEDUcdAbFGMD8s2JMtX6ou6Dwjg0=)
+[2] [archlinux.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHYKHyBu5gac-W9rkjns-WYRLrLH8St5qggC36ISxcvFzl3U3MPyH4n2WkpgiYaZAUBai4QrvfmA25URrHTbKZjwBx9fIAsM2dmZu_gF37Hq7iYUrqI5JWW025r8jMz)
+[3] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKFvNBgLJ43ry2RhG-iamjRbAk8ujLEBErxk3pFE6ENgjan1Ai6y7ZhjAvKUAFCH2prYvI6cynTtqcBnty7ZGpOpATxEdabXWzRtioqLDUTa8OJ4K6C0HMKnz8K20=)
+[4] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQF-l-n47Ui_k3BN1mRzdT-b2dquWGxhZ9Ljyqxpj9-UCZmq7jkkIGQdh8lGyMii37_hlB5EJ2mssZKY1_u6N6RG2FAMye9vdLhsaS-CFADIfGkDIEo2aZCdD6XG7kkNGp5Qp11D6zUPetXMHoA8V4vztXi41IXRR1X2xgww)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRCbw92hxfA4XGs6xTXV17_Xr2M0IyQFKZfSjwGS-yuE5UW0ZwRiy6K6Z2xh2RCAHxsa0BhGbLfvGQDpZEerQQiesGmb3Cfs6wX6VtGosodR90p74AycdigSyXyHqklkE0XTUOTjly6hKiDPt2dBfIkUhloOxh76yv5J-w4dR8J643IDTkryz6XAI=)
+[6] [rafaelcosquiere.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGYBSiTT1YJByLynf_SzBESHd7h99DHxlHUiXvGP2BeXhjNqO9DIMSEQepDsDJFFxh2VmLH5rhv627fNZcVWt4vfBVvG4STJHfEGpCmty7W4Kqhcjbu5pPnlFoza6CKZO0lyTXmmE3MRKwSJ_a2kXP4gNxgfbl-doKp5a5YklbgDxaH-g==)
+[7] [ubuntu.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGZZtX2pAH-5OZu8cA6IX9YR37TyaXvwm_22GwGvJtn-A_n2riWQ7s_JJUjpCarFFOwonHjYDcQ0tp-PmOfRYqjPWscOzpQI6geQj63EqO5d2QK37uAI9cxKzSKum82uR7G8r4pTM8vTTATLjwLPeA1eBF7tw==)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

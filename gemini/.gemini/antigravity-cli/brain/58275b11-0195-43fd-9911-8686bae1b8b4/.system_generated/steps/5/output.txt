@@ -1,0 +1,21 @@
+Created At: 2026-11-19T17:38:09+03:00
+Completed At: 2026-11-19T17:38:09+03:00
+Command exited with code 0.
+
+Command output:
+total 172
+drwxrwxr-x   6 gaitano gaitano   4096 Nov 14 10:01 .
+drwxrwxr-x   6 gaitano gaitano   4096 Oct 15 16:17 ..
+drwxrwxr-x   3 gaitano gaitano   4096 Nov 14 10:11 dist
+-rw-rw-r--   1 gaitano gaitano   1223 Aug 14 23:55 .env.local
+-rw-rw-r--   1 gaitano gaitano    591 Aug 14 08:05 eslint.config.js
+-rw-rw-r--   1 gaitano gaitano    541 Aug 30 15:43 index.html
+drwxrwxr-x 160 gaitano gaitano   4096 Aug 24 15:35 node_modules
+-rw-rw-r--   1 gaitano gaitano    896 Aug 24 15:35 package.json
+-rw-rw-r--   1 gaitano gaitano 118160 Aug 24 15:35 package-lock.json
+drwxrwxr-x   2 gaitano gaitano   4096 Nov 14 10:12 public
+drwxrwxr-x   8 gaitano gaitano   4096 Nov 19 17:27 src
+-rw-rw-r--   1 gaitano gaitano    655 Aug 14 08:05 tsconfig.app.json
+-rw-rw-r--   1 gaitano gaitano    119 Aug 14 08:05 tsconfig.json
+-rw-rw-r--   1 gaitano gaitano    558 Aug 14 08:05 tsconfig.node.json
+-rw-rw-r--   1 gaitano gaitano    161 Aug 14 08:05 vite.config.ts

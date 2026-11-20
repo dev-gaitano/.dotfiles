@@ -1,0 +1,18 @@
+Created At: 2026-11-15T13:14:28+03:00
+Completed At: 2026-11-15T13:14:28+03:00
+Task: 75e9a315-30d4-4549-bcae-0f85bd4a48a3/task-46
+Status: DONE
+Log: file:///home/gaitano/.gemini/antigravity-cli/brain/75e9a315-30d4-4549-bcae-0f85bd4a48a3/.system_generated/tasks/task-46.log
+Log output:
+<truncated 3 lines>
+): Failed to resolve 'pypi.org' ([Errno -3] Temporary failure in name resolution)")': /simple/pip/
+WARNING: Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='pypi.org', port=443): Failed to resolve 'pypi.org' ([Errno -3] Temporary failure in name resolution)")': /simple/pip/
+WARNING: Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NameResolutionError("HTTPSConnection(host='pypi.org', port=443): Failed to resolve 'pypi.org' ([Errno -3] Temporary failure in name resolution)")': /simple/pip/
+ERROR: Could not find a version that satisfies the requirement pip>=23.1 (from versions: none)
+ERROR: No matching distribution found for pip>=23.1
+Failed to upgrade shared libraries
+'/home/gaitano/.local/share/pipx/shared/bin/python -m pip --no-input
+--disable-pip-version-check install --upgrade --force-reinstall -q pip >=
+23.1' failed
+
+Last progress: 2s ago

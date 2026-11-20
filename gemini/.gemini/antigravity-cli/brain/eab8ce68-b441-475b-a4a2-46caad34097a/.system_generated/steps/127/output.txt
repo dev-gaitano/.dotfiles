@@ -1,0 +1,38 @@
+
+The command exited with code 0.
+Output:
+interactive rebase in progress; onto cb6371c
+Last command done (1 command done):
+   pick 7f17ff9 # fix(daily-options): update missing image urls
+Next commands to do (20 remaining commands):
+   pick 64604ed # feat(Navbar): make user profile a link, gate admin link by role
+   pick d888e4e # refactor(Menu): extract DailyMealOptions and FullMenu, wire up state
+  (use "git rebase --edit-todo" to view and edit)
+
+All conflicts fixed but you are still merging.
+  (use "git commit" to conclude merge)
+
+Changes to be committed:
+	modified:   package-lock.json
+	modified:   package.json
+	new file:   src/components/CurrentMealOptionCard/CurrentMealOptionCard.css
+	new file:   src/components/CurrentMealOptionCard/CurrentMealOptionCard.jsx
+	deleted:    src/components/DailyMealOptionCard/DailyMealOptionCard.css
+	deleted:    src/components/DailyMealOptionCard/DailyMealOptionCard.jsx
+	modified:   src/components/DailyMealOptions/DailyMealOptions.css
+	modified:   src/components/DailyMealOptions/DailyMealOptions.jsx
+	modified:   src/components/FullMenu/FullMenu.css
+	modified:   src/components/FullMenu/FullMenu.jsx
+	modified:   src/components/LoginCard/LoginCard.jsx
+	modified:   src/components/MealOptionCard/MealOptionCard.css
+	modified:   src/components/Navbar/Navbar.css
+	modified:   src/components/Navbar/Navbar.jsx
+	modified:   src/components/SignupCard/SignupCard.jsx
+	deleted:    src/components/ui/BtnPrimary.jsx
+	deleted:    src/components/ui/InputPrimary.jsx
+	modified:   src/data/mockData.js
+	modified:   src/pages/Admin.jsx
+	modified:   src/pages/Menu.jsx
+	modified:   src/pages/Profile.jsx
+
+

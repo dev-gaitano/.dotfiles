@@ -1,0 +1,122 @@
+Command exited with code 0.
+
+Command output:
+A  frontend/public/portfolio_bubble_text_desktop.glb
+D  frontend/public/portfolio_bubble_text_ss1.glb
+R  frontend/public/project_card.glb -> frontend/public/project_card_jasmijn_schrofer.glb
+A  frontend/public/project_card_topbox.glb
+A  frontend/public/project_card_wayalink.glb
+M  frontend/src/components/Hero/Hero.tsx
+M  frontend/src/components/ui/BubbleText.tsx
+M  frontend/src/components/ui/ProjectCard.tsx
+M  frontend/src/components/ui/ProjectCard01.tsx
+M  frontend/src/components/ui/ProjectCard02.tsx
+diff --git a/frontend/public/portfolio_bubble_text_desktop.glb b/frontend/public/portfolio_bubble_text_desktop.glb
+new file mode 100644
+index 0000000..6f1115a
+Binary files /dev/null and b/frontend/public/portfolio_bubble_text_desktop.glb differ
+diff --git a/frontend/public/portfolio_bubble_text_ss1.glb b/frontend/public/portfolio_bubble_text_ss1.glb
+deleted file mode 100644
+index 1ae5094..0000000
+Binary files a/frontend/public/portfolio_bubble_text_ss1.glb and /dev/null differ
+diff --git a/frontend/public/project_card.glb b/frontend/public/project_card_jasmijn_schrofer.glb
+similarity index 100%
+rename from frontend/public/project_card.glb
+rename to frontend/public/project_card_jasmijn_schrofer.glb
+diff --git a/frontend/public/project_card_topbox.glb b/frontend/public/project_card_topbox.glb
+new file mode 100644
+index 0000000..9be0caa
+Binary files /dev/null and b/frontend/public/project_card_topbox.glb differ
+diff --git a/frontend/public/project_card_wayalink.glb b/frontend/public/project_card_wayalink.glb
+new file mode 100644
+index 0000000..9be0caa
+Binary files /dev/null and b/frontend/public/project_card_wayalink.glb differ
+diff --git a/frontend/src/components/Hero/Hero.tsx b/frontend/src/components/Hero/Hero.tsx
+index 98969a7..dbb3a05 100644
+--- a/frontend/src/components/Hero/Hero.tsx
++++ b/frontend/src/components/Hero/Hero.tsx
+@@ -4,7 +4,7 @@ import { Suspense } from "react";
+ import "./Hero.css";
+ import { useIsMobile } from "../../hooks/useIsMobile";
+ 
+-const DESKTOP_BUBBLE_MODEL = "/portfolio_bubble_text_ss1.glb";
++const DESKTOP_BUBBLE_MODEL = "/portfolio_bubble_text_desktop.glb";
+ const MOBILE_BUBBLE_MODEL = "/portfolio_bubble_text_mobile.glb";
+ 
+ interface HeroProps {
+diff --git a/frontend/src/components/ui/BubbleText.tsx b/frontend/src/components/ui/BubbleText.tsx
+index 2c4a497..f3b4ab4 100644
+--- a/frontend/src/components/ui/BubbleText.tsx
++++ b/frontend/src/components/ui/BubbleText.tsx
+@@ -38,7 +38,7 @@ function BubbleText({
+ }
+ 
+ // Load the models before they're needed
+-useGLTF.preload("/portfolio_bubble_text_ss1.glb");
++useGLTF.preload("/portfolio_bubble_text_desktop.glb");
+ useGLTF.preload("/portfolio_bubble_text_mobile.glb");
+ 
+ export default BubbleText;
+diff --git a/frontend/src/components/ui/ProjectCard.tsx b/frontend/src/components/ui/ProjectCard.tsx
+index e7d9da5..5ead384 100644
+--- a/frontend/src/components/ui/ProjectCard.tsx
++++ b/frontend/src/components/ui/ProjectCard.tsx
+@@ -8,7 +8,7 @@ function ProjectCard({
+   scale,
+ }: ProjectCardProps) {
+   // Get scene attribute from model
+-  const model = useGLTF("/project_card.glb");
++  const model = useGLTF("/project_card_jasmijn_schrofer.glb");
+   const model_scene = model.scene;
+ 
+   // return a primitive element
+@@ -22,6 +22,6 @@ function ProjectCard({
+ }
+ 
+ // Load the model before it's needed
+-useGLTF.preload("/project_card.glb");
++useGLTF.preload("/project_card_jasmijn_schrofer.glb");
+ 
+ export default ProjectCard;
+diff --git a/frontend/src/components/ui/ProjectCard01.tsx b/frontend/src/components/ui/ProjectCard01.tsx
+index e972594..a9c4725 100644
+--- a/frontend/src/components/ui/ProjectCard01.tsx
++++ b/frontend/src/components/ui/ProjectCard01.tsx
+@@ -9,7 +9,7 @@ function ProjectCard01({
+   scale,
+ }: ProjectCardProps) {
+   // Get scene attribute from model
+-  const model = useGLTF("/project_card.glb");
++  const model = useGLTF("/project_card_topbox.glb");
+   const modelScene = model.scene;
+   const clonedScene = useMemo(() => modelScene.clone(), [modelScene]);
+ 
+@@ -24,6 +24,6 @@ function ProjectCard01({
+ }
+ 
+ // Load the model before it's needed
+-useGLTF.preload("/project_card.glb");
++useGLTF.preload("/project_card_topbox.glb");
+ 
+ export default ProjectCard01;
+diff --git a/frontend/src/components/ui/ProjectCard02.tsx b/frontend/src/components/ui/ProjectCard02.tsx
+index c22e361..8fcf630 100644
+--- a/frontend/src/components/ui/ProjectCard02.tsx
++++ b/frontend/src/components/ui/ProjectCard02.tsx
+@@ -9,7 +9,7 @@ function ProjectCard02({
+   scale,
+ }: ProjectCardProps) {
+   // Get scene attribute from model
+-  const model = useGLTF("/project_card.glb");
++  const model = useGLTF("/project_card_wayalink.glb");
+   const modelScene = model.scene;
+   const clonedScene = useMemo(() => modelScene.clone(), [modelScene]);
+ 
+@@ -24,6 +24,6 @@ function ProjectCard02({
+ }
+ 
+ // Load the model before it's needed
+-useGLTF.preload("/project_card.glb");
++useGLTF.preload("/project_card_wayalink.glb");
+ 
+ export default ProjectCard02;

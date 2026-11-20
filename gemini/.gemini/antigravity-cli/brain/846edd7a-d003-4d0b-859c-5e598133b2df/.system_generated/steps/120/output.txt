@@ -1,0 +1,53 @@
+The following changes were made by the replace_file_content tool to: /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/src/components/ui/ContactCard.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -17,9 +17,11 @@
+ } from "./contactCardConstants";
+ 
+ function ContactCard({
+-  rotationX = ROTATION_X,
++  rotationX,
++  startX,
+   startY,
+   startZ,
++  endX,
+   endY,
+   endZ,
+   scale,
+@@ -38,8 +38,10 @@
+       : DESKTOP_ROTATION_START;
+     const defaultEnd = isMobile ? MOBILE_ROTATION_END : DESKTOP_ROTATION_END;
+ 
++    const initialX = startX ?? rotationX ?? defaultStart.x;
+     const initialY = startY ?? defaultStart.y;
+     const initialZ = startZ ?? defaultStart.z;
++    const finalX = endX ?? rotationX ?? defaultEnd.x;
+     const finalY = endY ?? defaultEnd.y;
+     const finalZ = endZ ?? defaultEnd.z;
+ 
+@@ -46,7 +46,7 @@
+       gsap.fromTo(
+         cardRef.current!.rotation,
+         {
+-          x: rotationX,
++          x: initialX,
+           y: initialY,
+           z: initialZ,
+         },
+@@ -53,4 +53,4 @@
+-          x: rotationX,
++          x: finalX,
+           y: finalY,
+           z: finalZ,
+           ease: "none",
+@@ -65,7 +65,7 @@
+     });
+ 
+     return () => ctx.revert();
+-  }, [isMobile, rotationX, startY, startZ, endY, endZ]);
++  }, [isMobile, rotationX, startX, startY, startZ, endX, endY, endZ]);
+ 
+   // return a primitive element
+   return (
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

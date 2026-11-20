@@ -1,0 +1,26 @@
+Created At: 2026-11-20T10:31:57+03:00
+Completed At: 2026-11-20T10:31:58+03:00
+Command exited with code 0.
+
+Command output:
+$wallpaper = /home/gaitano/02-media/01-pictures/03-wallpapers/991577ilsdl.jpg
+
+$foreground = rgba(197,196,195,1.0)
+$background = rgba(26,22,17,1.0)
+
+$color0 = rgba(26,22,17,1.0)
+$color1 = rgba(164,145,110,1.0)
+$color2 = rgba(212,142,101,1.0)
+$color3 = rgba(218,197,124,1.0)
+$color4 = rgba(174,159,138,1.0)
+$color5 = rgba(209,184,143,1.0)
+$color6 = rgba(228,201,156,1.0)
+$color7 = rgba(197,196,195,1.0)
+$color8 = rgba(113,103,92,1.0)
+$color9 = rgba(164,145,110,1.0)
+$color10 = rgba(212,142,101,1.0)
+$color11 = rgba(218,197,124,1.0)
+$color12 = rgba(174,159,138,1.0)
+$color13 = rgba(209,184,143,1.0)
+$color14 = rgba(228,201,156,1.0)
+$color15 = rgba(197,196,195,1.0)

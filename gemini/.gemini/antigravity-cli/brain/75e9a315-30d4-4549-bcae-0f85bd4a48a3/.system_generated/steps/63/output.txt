@@ -1,0 +1,6 @@
+Created At: 2026-11-15T13:15:19+03:00
+Completed At: 2026-11-15T13:15:20+03:00
+Command exited with code 1.
+
+Command output:
+error: invalid hyprpaper request

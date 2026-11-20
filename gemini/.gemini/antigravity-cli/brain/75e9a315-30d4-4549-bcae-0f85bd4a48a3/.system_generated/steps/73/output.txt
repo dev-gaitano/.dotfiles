@@ -1,0 +1,23 @@
+Created At: 2026-11-15T13:15:47+03:00
+Completed At: 2026-11-15T13:15:47+03:00
+Command exited with code 0.
+
+Command output:
+HYPRLAND_CMD=Hyprland --watchdog-fd 4
+XDG_SESSION_PATH=/org/freedesktop/DisplayManager/Session1
+XDG_BACKEND=wayland
+XDG_SEAT=seat0
+XDG_SESSION_DESKTOP=Hyprland
+XDG_SESSION_TYPE=wayland
+XDG_CURRENT_DESKTOP=Hyprland
+WAYLAND_DISPLAY=wayland-1
+XDG_SEAT_PATH=/org/freedesktop/DisplayManager/Seat0
+XDG_SESSION_CLASS=user
+HYPRLAND_INSTANCE_SIGNATURE=efb50993780079460b0cbed1363e2166a2de1d9f_1794657010_1254708284
+ANTIGRAVITY_SOURCE_METADATA={"tool":{"conversationId":"75e9a315-30d4-4549-bcae-0f85bd4a48a3","stepIndex":73,"toolCall":{"id":"call_12225602877191477440","name":"run_command","argumentsJson":"{\"CommandLine\":\"env | grep -E \\\"HYPR|WAYLAND|XDG\\\"\",\"WaitMsBeforeAsync\":5000,\"toolSummary\":\"Check hypr and wayland environment variables\"}"}}}
+MOZ_ENABLE_WAYLAND=1
+XDG_VTNR=1
+XDG_SESSION_ID=3
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/home/gaitano/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+HYPRCURSOR_SIZE=24

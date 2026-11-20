@@ -1,0 +1,16 @@
+Created At: 2026-11-20T10:31:14+03:00
+Completed At: 2026-11-20T10:31:14+03:00
+Command exited with code 0.
+
+Command output:
+994----@field next fun(...): HL.Dispatcher
+995----@field prev fun(...): HL.Dispatcher
+996----@field toggle fun(...): HL.Dispatcher
+997-local __HL_DspGroupNamespace = {}
+998-
+999:---@class HL.DspWindowNamespace
+1000----@field alter_zorder fun(...): HL.Dispatcher
+1001----@field bring_to_top fun(...): HL.Dispatcher
+1002----@field center fun(...): HL.Dispatcher
+1003----@field clear_tags fun(...): HL.Dispatcher
+1004----@field close fun(...): HL.Dispatcher

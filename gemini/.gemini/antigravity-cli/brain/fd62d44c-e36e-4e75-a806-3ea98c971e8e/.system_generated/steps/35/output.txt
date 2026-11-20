@@ -1,0 +1,23 @@
+Created At: 2026-11-18T17:37:46+03:00
+Completed At: 2026-11-18T17:37:46+03:00
+Command exited with code 0.
+
+Command output:
+On branch dev
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   index.html
+	deleted:    public/shaders/fragment.glsl
+	deleted:    public/shaders/vertex.glsl
+	modified:   src/scene.js
+	modified:   src/shader/fragment.glsl
+	modified:   src/shader/vertex.glsl
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.github/
+	public/shader/
+	src/scene.js.bak
+
+no changes added to commit (use "git add" and/or "git commit -a")

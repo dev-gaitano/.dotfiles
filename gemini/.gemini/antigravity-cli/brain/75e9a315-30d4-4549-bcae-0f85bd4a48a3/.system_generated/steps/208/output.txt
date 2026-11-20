@@ -1,0 +1,14 @@
+Created At: 2026-11-19T23:31:15+03:00
+Completed At: 2026-11-19T23:31:15+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.local/share/applications/wine/
+/home/gaitano/.local/share/applications/wine/Programs
+/home/gaitano/.local/share/applications/wine/Programs/ATAS Platform
+/home/gaitano/.local/share/applications/wine/Programs/MetaTrader 5
+/home/gaitano/.local/share/applications/wine/Programs/MetaTrader 5/MetaTrader 5.desktop
+/home/gaitano/.local/share/applications/wine/Programs/MetaTrader 5/MetaEditor.desktop
+/home/gaitano/.local/share/applications/wine/Programs/MetaTrader 5/Uninstall.desktop
+/home/gaitano/.local/share/applications/wine/Programs/NinjaTrader
+/home/gaitano/.local/share/applications/wine/Programs/SierraChart_64 (C_SierraChart).desktop

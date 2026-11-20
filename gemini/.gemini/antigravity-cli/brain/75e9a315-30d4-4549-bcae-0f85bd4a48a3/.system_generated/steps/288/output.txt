@@ -1,0 +1,15 @@
+Created At: 2026-11-20T00:19:33+03:00
+Completed At: 2026-11-20T00:19:34+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name   Version      Architecture   Description
+├┼┼─══════─════════════─══════════════─═════════════════════════════════════════
+ii  zoom   6.7.2.6498   amd64          Zoom Workplace 
+drwxrwxr-x 3 gaitano gaitano 4096 Mar 26  2026  /home/gaitano/.cache/zoom
+-rw------- 1 gaitano gaitano   86 Mar 26  2026  /home/gaitano/.config/zoom.conf
+-rw-rw-r-- 1 gaitano gaitano 1492 Nov  4 13:30  /home/gaitano/.config/zoomus.conf
+drwx------ 7 gaitano gaitano 4096 Nov  4 13:31  /home/gaitano/.zoom

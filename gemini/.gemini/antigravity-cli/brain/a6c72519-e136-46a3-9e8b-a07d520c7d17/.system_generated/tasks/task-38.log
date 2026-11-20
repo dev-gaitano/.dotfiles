@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-08-16T10:34:44+03:00
+Prompt: Wait for grep task to finish
+Early Termination: any
+
+[2026-08-16T10:34:44+03:00] Timer fired.

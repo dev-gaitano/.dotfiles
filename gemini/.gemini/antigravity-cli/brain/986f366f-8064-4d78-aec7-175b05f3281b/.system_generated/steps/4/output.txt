@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+total 16
+drwxrwxr-x 2 gaitano gaitano 4096 Aug 24 15:11 .
+drwxrwxr-x 9 gaitano gaitano 4096 Aug 15 14:08 ..
+-rw-rw-r-- 1 gaitano gaitano 1043 Nov 10 15:58 About.css
+-rw-rw-r-- 1 gaitano gaitano 2199 Nov 10 15:52 About.tsx

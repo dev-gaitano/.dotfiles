@@ -1,0 +1,16 @@
+Created At: 2026-11-15T13:13:39+03:00
+Completed At: 2026-11-15T13:13:39+03:00
+Command exited with code 0.
+
+Command output:
+total 36
+drwxrwxr-x 2 gaitano gaitano 4096 Sep  4  2025 .
+drwxrwxr-x 6 gaitano gaitano 4096 Sep  4  2025 ..
+-rw-r--r-- 1 gaitano gaitano 2206 Sep  4  2025 activate
+-rw-r--r-- 1 gaitano gaitano  940 Sep  4  2025 activate.csh
+-rw-r--r-- 1 gaitano gaitano 2211 Sep  4  2025 activate.fish
+-rw-r--r-- 1 gaitano gaitano 9031 Jun 25  2025 Activate.ps1
+lrwxrwxrwx 1 gaitano gaitano   10 Sep  4  2025 python -> python3.13
+lrwxrwxrwx 1 gaitano gaitano   10 Sep  4  2025 python3 -> python3.13
+lrwxrwxrwx 1 gaitano gaitano   19 Sep  4  2025 python3.13 -> /usr/bin/python3.13
+-rwxrwxr-x 1 gaitano gaitano  226 Sep  4  2025 wal

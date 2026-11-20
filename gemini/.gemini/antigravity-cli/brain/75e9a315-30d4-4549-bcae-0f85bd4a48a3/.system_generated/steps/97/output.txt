@@ -1,0 +1,25 @@
+Created At: 2026-11-15T13:19:57+03:00
+Completed At: 2026-11-15T13:19:59+03:00
+The search for ""hyprpaper.conf" "ipc" default on true" returned the following summary:
+In your `~/.config/hypr/hyprpaper.conf` file, the global option for enabling Inter-Process Communication (IPC)—which allows you to control `hyprpaper` dynamically via `hyprctl`[1]—is set like this[2]:
+
+```ini
+ipc = true
+```
+
+### Details:
+* **Default Value:** `true`[2]
+* **Purpose:** Keeping IPC enabled (`true`) allows you to use commands like `hyprctl hyprpaper` to change wallpapers on the fly, list loaded images, or script dynamic wallpaper switches without restarting the application[3][4].
+* **Disabling it:** If you want to disable IPC completely, you can set it to `false`[5]:
+  ```ini
+  ipc = false
+  ```
+
+Sources:
+[1] [debian.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHP1fe0qAfvRDFw3BE4SXS8RQKGyultxVmIpO5if5vYIalQbCqUq6JA6HG0tAlZOMLMEqJDgPDQJwazmZbIFYKdDG0MsYj0SfcOUCQcu4bCZamNMU6d_2W3WXav83MrMzeeG7k1nb6Psha6eU3p12Bh7eIwPkxUpA==)
+[2] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHSJXUspYRxN2xruA_-yQKqntVR9HdDmcFh8ngVHSvEeQ_iqCf_5o5wPYH0nIgrWF3tV0dEzEliy0lPNsYmN5xax5aQRGebNE6ORbbZQKltUILGFdvyeQsXLd39t0dFFZew0DDPz4rlzPoxww==)
+[3] [hyprland.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFB0B3MC1Cljp5jVPvCI05NOqCbCwdtojME2SnvyYsoWW01kGmm869PvKTGe586P7w8T0eQWy4jqSqcmjiZSmHoVT9yAxdpx-7mj1kooBAMLGV_3Iwe3sgTzzFmvel4S1icqYtEPpAV_CvwNh3oJ5W)
+[4] [linuxcommandlibrary.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEFHuh7tq-dnsoSoCwTtYAN7RDApOeWFun1kUTgYXFn5VQawtWVjDhAiDu8-93c-ZOA7YiWh_kkLAVhapPVjmwnZDOLdlhdwPwSenPG7Rqzu38O-ahfcHBC75QeR5ujywtDtS8=)
+[5] [reddit.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHLNgKOFmrpF41nVVl3Io9xjYK2-TRDtm2UItywUkdaNSqyE8qifY3SwnuTWkCqHXBiL3ohl4ntuN-Kx7DIYYt2thjt0Lr1SWtE1EYv-NplhV8bbllgQw6NyAE73Azqv-yQd-JrAcRc833EKzaij5Y7GUMaMtnM2uzvhA==)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

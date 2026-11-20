@@ -1,0 +1,29 @@
+
+The command exited with code 1.
+Output:
+hint: Waiting for your editor to close the file...
+[detached HEAD e656cb5] feat(Navbar): make user profile a link, gate admin link by role
+ 2 files changed, 44 insertions(+), 32 deletions(-)
+Rebasing (3/21)CONFLICT (modify/delete): src/components/DailyMealOptionCard/DailyMealOptionCard.css deleted in HEAD and modified in d888e4e (refactor(Menu): extract DailyMealOptions and FullMenu, wire up state).  Version d888e4e (refactor(Menu): extract DailyMealOptions and FullMenu, wire up state) of src/components/DailyMealOptionCard/DailyMealOptionCard.css left in tree.
+CONFLICT (modify/delete): src/components/DailyMealOptionCard/DailyMealOptionCard.jsx deleted in HEAD and modified in d888e4e (refactor(Menu): extract DailyMealOptions and FullMenu, wire up state).  Version d888e4e (refactor(Menu): extract DailyMealOptions and FullMenu, wire up state) of src/components/DailyMealOptionCard/DailyMealOptionCard.jsx left in tree.
+Auto-merging src/components/DailyMealOptions/DailyMealOptions.css
+CONFLICT (add/add): Merge conflict in src/components/DailyMealOptions/DailyMealOptions.css
+Auto-merging src/components/DailyMealOptions/DailyMealOptions.jsx
+CONFLICT (add/add): Merge conflict in src/components/DailyMealOptions/DailyMealOptions.jsx
+Auto-merging src/components/FullMenu/FullMenu.css
+CONFLICT (add/add): Merge conflict in src/components/FullMenu/FullMenu.css
+Auto-merging src/components/FullMenu/FullMenu.jsx
+CONFLICT (add/add): Merge conflict in src/components/FullMenu/FullMenu.jsx
+Auto-merging src/index.css
+CONFLICT (content): Merge conflict in src/index.css
+Auto-merging src/pages/Menu.css
+Auto-merging src/pages/Menu.jsx
+CONFLICT (content): Merge conflict in src/pages/Menu.jsx
+error: could not apply d888e4e... refactor(Menu): extract DailyMealOptions and FullMenu, wire up state
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply d888e4e... # refactor(Menu): extract DailyMealOptions and FullMenu, wire up state
+

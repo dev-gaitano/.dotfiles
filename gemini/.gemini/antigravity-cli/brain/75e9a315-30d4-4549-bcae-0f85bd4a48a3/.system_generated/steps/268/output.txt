@@ -1,0 +1,16 @@
+Created At: 2026-11-19T23:59:05+03:00
+Completed At: 2026-11-19T23:59:05+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name            Version     Architecture Description
+├┼┼─═══════════════─═══════════─════════════─══════════════════════════════════════════════════════════════
+ii  gnucash         1:5.14-1+b2 amd64        personal and small-business financial-accounting software
+ii  gnucash-common  1:5.14-1    all          common files for the financial-accounting software Gnucash
+ii  gnucash-docs    5.16-1      all          Documentation for gnucash, a personal finance tracking program
+ii  python3-gnucash 1:5.16-2+b1 amd64        Gnucash interface for Python
+/usr/bin/gnucash
+/usr/share/applications/gnucash.desktop

@@ -1,0 +1,13 @@
+Created At: 2026-11-14T10:04:05+03:00
+Completed At: 2026-11-14T10:04:05+03:00
+Command exited with code 0.
+
+Command output:
+ee425daf20dfe4c5a46d6a3012dc2967  frontend/public/portfolio_text_desktop.glb
+6f1115aae4238f23ee384ee94232c80aa81b0354
+100644 blob d7622e320ac3237dce776aa80f753f9e9b1aa31e	frontend/public/contact_card.glb
+100644 blob 6f1115aae4238f23ee384ee94232c80aa81b0354	frontend/public/portfolio_bubble_text_desktop.glb
+100644 blob 8dc275ee2eecb0248791a5d208e4ad0515fdb530	frontend/public/portfolio_bubble_text_mobile.glb
+100644 blob 122dfb2180c3857d425fa53a0d5702d410f13beb	frontend/public/project_card_jasmijn_schrofer.glb
+100644 blob 02f8856524083e34928e20d7458afc03091a655c	frontend/public/project_card_topbox.glb
+100644 blob 9ce112ae7a7e7655eaa36de030a32c91d8177f33	frontend/public/project_card_wayalink.glb

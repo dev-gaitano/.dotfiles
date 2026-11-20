@@ -1,0 +1,68 @@
+
+The command exited with code 0.
+Output:
+interactive rebase in progress; onto cb6371c
+Last command done (1 command done):
+   pick 7f17ff9 # fix(daily-options): update missing image urls
+Next commands to do (20 remaining commands):
+   pick 64604ed # feat(Navbar): make user profile a link, gate admin link by role
+   pick d888e4e # refactor(Menu): extract DailyMealOptions and FullMenu, wire up state
+  (use "git rebase --edit-todo" to view and edit)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+	new file:   src/components/CurrentMealOptionCard/CurrentMealOptionCard.css
+	new file:   src/components/CurrentMealOptionCard/CurrentMealOptionCard.jsx
+
+Unmerged paths:
+  (use "git add/rm <file>..." as appropriate to mark resolution)
+	both modified:   package-lock.json
+	both modified:   package.json
+	deleted by them: src/components/DailyMealOptionCard/DailyMealOptionCard.css
+	deleted by them: src/components/DailyMealOptionCard/DailyMealOptionCard.jsx
+	both added:      src/components/DailyMealOptions/DailyMealOptions.css
+	both added:      src/components/DailyMealOptions/DailyMealOptions.jsx
+	both added:      src/components/FullMenu/FullMenu.css
+	both added:      src/components/FullMenu/FullMenu.jsx
+	both modified:   src/components/LoginCard/LoginCard.jsx
+	both added:      src/components/MealOptionCard/MealOptionCard.css
+	both modified:   src/components/Navbar/Navbar.css
+	both modified:   src/components/Navbar/Navbar.jsx
+	both modified:   src/components/SignupCard/SignupCard.jsx
+	deleted by them: src/components/ui/BtnPrimary.jsx
+	deleted by them: src/components/ui/InputPrimary.jsx
+	both modified:   src/data/mockData.js
+	both modified:   src/pages/Admin.jsx
+	both modified:   src/pages/Menu.jsx
+	both modified:   src/pages/Profile.jsx
+
+commit cb6371c2433bce4fe03b092e08f28788eff72da3 (HEAD, origin/main)
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 12:20:57 2026 +0300
+
+    Merge fix/ui branch, resolve all conflicts, add missing routes and Favorites page
+    
+    Resolve merge conflicts from fix/ui branch by merging upstream's API
+    integration with the new nav UI (lucide icons, logout button). Add routes
+    for Menu, Profile, Orders, and Favorites pages. Create Favorites page
+    with empty state. Clean up Navbar CSS by removing unused dark theme.
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+commit cb6371c2433bce4fe03b092e08f28788eff72da3 (HEAD, origin/main)
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 12:20:57 2026 +0300
+
+    Merge fix/ui branch, resolve all conflicts, add missing routes and Favorites page
+    
+    Resolve merge conflicts from fix/ui branch by merging upstream's API
+    integration with the new nav UI (lucide icons, logout button). Add routes
+    for Menu, Profile, Orders, and Favorites pages. Create Favorites page
+    with empty state. Clean up Navbar CSS by removing unused dark theme.
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+rm 'src/components/DailyMealOptionCard/DailyMealOptionCard.css'
+rm 'src/components/DailyMealOptionCard/DailyMealOptionCard.jsx'
+rm 'src/components/ui/BtnPrimary.jsx'
+rm 'src/components/ui/InputPrimary.jsx'
+

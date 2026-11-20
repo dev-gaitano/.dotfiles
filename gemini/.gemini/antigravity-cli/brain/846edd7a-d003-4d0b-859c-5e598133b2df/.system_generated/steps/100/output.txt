@@ -1,0 +1,31 @@
+
+The command exited with code 0.
+Output:
+On branch feat/ui-elements
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   frontend/src/pages/Resume.css
+	modified:   frontend/src/pages/Resume.tsx
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   frontend/src/components/About/About.tsx
+	modified:   frontend/src/components/ScrollIndicator/ScrollIndicator.css
+	modified:   frontend/src/components/ScrollIndicator/ScrollIndicator.tsx
+	modified:   frontend/src/components/ui/BubbleText.tsx
+	modified:   frontend/src/components/ui/ContactCard.tsx
+	modified:   frontend/src/pages/Home.tsx
+	modified:   frontend/src/types/MeshImportProps.tsx
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	core.1019782
+	core.1019875
+	frontend/public/polaroid_film_gaitano.glb
+	frontend/public/polaroid_film_gaitano_001.glb
+	frontend/public/polaroid_film_texture.glb
+	frontend/src/components/ScrollIndicator/scrollPositions.ts
+	frontend/src/components/ui/contactCardConstants.ts
+
+

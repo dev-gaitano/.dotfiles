@@ -1,0 +1,91 @@
+
+The command exited with code 0.
+Output:
+* (no branch, rebasing main)
+  feat/auth-ui
+  feat/ui
+  fix/daily-options
+  fix/ui
+  main
+  remotes/origin/feat/auth-ui
+  remotes/origin/feat/ui
+  remotes/origin/fix/daily-options
+  remotes/origin/fix/ui
+  remotes/origin/main
+commit cb6371c2433bce4fe03b092e08f28788eff72da3 (HEAD, origin/main)
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 12:20:57 2026 +0300
+
+    Merge fix/ui branch, resolve all conflicts, add missing routes and Favorites page
+    
+    Resolve merge conflicts from fix/ui branch by merging upstream's API
+    integration with the new nav UI (lucide icons, logout button). Add routes
+    for Menu, Profile, Orders, and Favorites pages. Create Favorites page
+    with empty state. Clean up Navbar CSS by removing unused dark theme.
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+
+commit 85286b14bf8e74819053510fb5bf0719c14453ed
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 11:46:23 2026 +0300
+
+    Fix frontend-backend alignment: category filter, images, logout
+    
+    - Fix OrderHistoryCard to handle null meal images with a
+      letter placeholder instead of broken img tags
+    - Add logout button to Navbar wired to AuthContext
+    - Update API client to send category and image fields on
+      meal option create/update for backend compatibility
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+
+commit 8a0423029745d66ab3e2ed9fe88319423d8ad4a3
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 11:35:09 2026 +0300
+
+    Add full cart/order placement flow with review modal and confirmation
+    
+    Replace one-click order placement with a three-step flow:
+    1. Select meals with quantity steppers on the daily options grid
+    2. Open cart review modal showing line items, quantities, subtotals,
+       and total with confirm/clear/cancel actions
+    3. Order confirmation screen showing order ID, item summary,
+       total, and status badge after successful API submission
+    
+    Add auth check that redirects unauthenticated users to login,
+    toast notifications for errors, and a spinner on the confirm
+    button during placement. Track lastOrder in DailyOptionsContext
+    for the confirmation screen to render.
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+
+commit 317ebdfad58864047cf70ab3d865e78b6b508f09
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 11:06:53 2026 +0300
+
+    Connect Profile, Menu, and Orders pages to real backend APIs
+    
+    Replace mock data imports with API calls: Profile uses
+    apiUpdateProfile for save, Menu fetches categories and meals
+    from /api/menus and /api/categories, Orders fetches user order
+    history from /api/orders with loading states.
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+
+commit 8e98ac33dd626073c95f638a4795e75a2d0e2c8b
+Author: Larry Thuku <larrythuku18@gmail.com>
+Date:   Wed Aug 26 11:06:48 2026 +0300
+
+    Connect DailyMealOptionCard to real API for menu and order placement
+    
+    Replace mock dailyOptions with DailyOptionsContext data from
+    backend, add order placement via API with loading states and
+    success confirmation feedback.
+    
+    🤖 Generated with Codebuff
+    Co-Authored-By: Codebuff <noreply@codebuff.com>
+

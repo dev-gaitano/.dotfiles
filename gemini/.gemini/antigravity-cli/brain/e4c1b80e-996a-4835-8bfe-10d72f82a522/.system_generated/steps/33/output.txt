@@ -1,0 +1,14 @@
+Created At: 2026-11-14T10:04:36+03:00
+Completed At: 2026-11-14T10:04:37+03:00
+Command exited with code 0.
+
+Command output:
+total 46280
+drwxrwxr-x 2 gaitano gaitano     4096 Nov 14 10:01 .
+drwxrwxr-x 6 gaitano gaitano     4096 Nov 14 10:01 ..
+-rw-rw-r-- 1 gaitano gaitano  5698396 Oct 28 20:28 project_card_wayalink.glb
+-rw-rw-r-- 1 gaitano gaitano  5185340 Oct 28 20:25 project_card_topbox.glb
+-rw-rw-r-- 1 gaitano gaitano  5157384 Oct 28 20:17 project_card_jasmijn_schrofer.glb
+-rw-rw-r-- 1 gaitano gaitano 18518596 Oct 28 07:23 portfolio_text_desktop.glb
+-rw-rw-r-- 1 gaitano gaitano  7711876 Aug 30 14:34 contact_card.glb
+-rw-rw-r-- 1 gaitano gaitano  5097244 Aug 30 03:46 portfolio_bubble_text_mobile.glb

@@ -1,0 +1,8 @@
+
+The command exited with code 0.
+Output:
+frontend/src/components/About/About.tsx:2:import ContactCard from "../ui/ContactCard";
+frontend/src/components/About/About.tsx:28:              <ContactCard
+frontend/src/components/ui/ContactCard.tsx:4:function ContactCard({
+frontend/src/components/ui/ContactCard.tsx:27:export default ContactCard;
+

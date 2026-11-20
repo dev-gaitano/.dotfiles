@@ -1,0 +1,70 @@
+Created At: 2026-11-14T10:10:12+03:00
+Completed At: 2026-11-14T10:10:13+03:00
+Command exited with code 0.
+
+Command output:
+commit 0fe860d04530fdb4747a02cd5d7ceaac8c819b4d
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sat Aug 15 11:13:32 2026 +0300
+
+    feat(3d): add react-three-fiber models for Hero, About, and Projects
+    
+    - Add @react-three/fiber, @react-three/drei, three, and related
+      dependencies
+    - Add GLB assets: polaroid_film.glb, portfolio_bubble_text.glb,
+      and project_card.glb
+    - Add BubbleText, ContactCard, and ProjectCard/01/02 components
+      rendering their GLB models via useGLTF, each wrapped in
+      <Suspense>
+    - Wire BubbleText into Hero (with ambient + directional
+      lighting), ContactCard into About, and the three ProjectCard
+      variants into Projects, replacing the placeholder divs in all
+      three sections
+    - Extract shared MeshImportProps types (BubbleTextProps,
+      PolaroidFilmProps, ProjectCardProps) into
+      types/MeshImportProps.tsx
+    - Adjust Hero/About/Projects layout for the 3D content (centered
+      hero content, full-viewport contact-container height, new
+      absolutely-positioned card containers in Projects)
+    - Comment out the old placeholder project-card markup in
+      Projects.tsx instead of deleting it, and rename the earlier
+      card-a/card-b classes to card-a0/card-b0 to make room for the
+      new 3D card containers
+    - Remove the old inline social/x SVG icon symbols from
+      public/icons.svg (leftover from the deleted Vite starter)
+
+diff --git a/frontend/src/components/Hero/Hero.tsx b/frontend/src/components/Hero/Hero.tsx
+index 85f0921..e30e37a 100644
+--- a/frontend/src/components/Hero/Hero.tsx
++++ b/frontend/src/components/Hero/Hero.tsx
+@@ -1,3 +1,6 @@
++import { Canvas } from "@react-three/fiber";
++import BubbleText from "../ui/BubbleText";
++import { Suspense } from "react";
+ import "./Hero.css";
+ 
+ function Hero() {
+@@ -5,9 +8,20 @@ function Hero() {
+     <>
+       <section id="hero" className="section hero">
+         <div className="hero-content">
+-          <h1>EUGENE GAITANO'S</h1>
+-          <div className="placeholder bubble-placeholder">
+-            Bubble text / intro copy
++          <h1>GAITANO'S</h1>
++          <div className="bubble-placeholder">
++            <Canvas>
++              <Suspense fallback={null}>
++                <ambientLight intensity={0.1} />
++                <directionalLight color="red" position={[0, 0, 5]} />
++                <BubbleText
++                  rotationX={0}
++                  rotationY={0}
++                  rotationZ={0}
++                  scale={0.65}
++                />
++              </Suspense>
++            </Canvas>
+           </div>
+         </div>
+       </section>

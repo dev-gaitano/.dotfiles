@@ -1,0 +1,14 @@
+{
+  "id": "1d7ee520-7b76-43a4-9505-0bf6a9c50eef",
+  "name": "/home/gaitano/01-studio/01-src",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///home/gaitano/01-studio/01-src",
+          "allowWrite": true
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+Created At: 2026-11-18T21:12:27+03:00
+Completed At: 2026-11-18T21:12:28+03:00
+Command exited with code 0.
+
+Command output:
+On branch dev
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   index.html
+	modified:   package-lock.json
+	modified:   package.json
+	modified:   src/App.tsx
+	new file:   src/scene.ts
+	new file:   src/shader/fragment.glsl
+	new file:   src/shader/vertex.glsl
+	modified:   vite.config.ts
+

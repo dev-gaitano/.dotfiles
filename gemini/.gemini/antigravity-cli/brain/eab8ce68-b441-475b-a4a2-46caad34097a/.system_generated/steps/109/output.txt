@@ -1,0 +1,54 @@
+
+The command exited with code 0.
+Output:
+import { useState } from "react";
+import Navbar from "../components/Navbar/Navbar";
+import { useDailyOptions } from "../contexts/DailyOptionsContext";
+import { meals, currentUser } from "../data/mockData";
+import "./Admin.css";
+
+const emptyForm = { name: "", description: "", price: "", image: "" };
+
+function Admin() {
+  const { options: dailyOptions, addOption, updateOption, removeOption } =
+    useDailyOptions();
+  const [showForm, setShowForm] = useState(false);
+  const [editingId, setEditingId] = useState(null);
+  const [form, setForm] = useState(emptyForm);
+
+  const totalMeals = meals.length;
+  const availableMeals = meals.filter((m) => m.available).length;
+
+  const handleChange = (e) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (!form.name || !form.price) return;
+
+    const payload = {
+      name: form.name,
+      description: form.description,
+      price: Number(form.price),
+      image:
+        form.image ||
+        "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=400&h=300&fit=crop",
+    };
+
+    if (editingId) {
+      updateOption(editingId, payload);
+    } else {
+      addOption(payload);
+    }
+
+    setForm(emptyForm);
+    setEditingId(null);
+    setShowForm(false);
+  };
+
+  const handleEdit = (option) => {
+    setForm({
+      name: option.name,
+      description: option.description,
+

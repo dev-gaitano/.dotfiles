@@ -1,0 +1,6 @@
+Created At: 2026-11-20T10:33:38+03:00
+Completed At: 2026-11-20T10:33:38+03:00
+Command exited with code 1.
+
+Command output:
+/usr/bin/lua

@@ -1,0 +1,8 @@
+Command exited with code 0.
+
+Command output:
+On branch feat/ui-elements
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   frontend/src/pages/Resume.tsx
+

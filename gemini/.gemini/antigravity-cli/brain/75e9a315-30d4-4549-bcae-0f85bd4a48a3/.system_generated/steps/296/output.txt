@@ -1,0 +1,13 @@
+Created At: 2026-11-20T00:22:20+03:00
+Completed At: 2026-11-20T00:22:21+03:00
+Command exited with code 0.
+
+Command output:
+libgimp-3.0-0
+Reverse Depends:
+  gir1.2-gimp-3.0
+  gimp
+  gimp
+  gir1.2-gimp-3.0
+  gimp
+  gimp

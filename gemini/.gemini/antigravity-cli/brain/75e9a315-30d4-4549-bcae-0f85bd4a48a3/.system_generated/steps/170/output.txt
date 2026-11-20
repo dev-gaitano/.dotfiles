@@ -1,0 +1,6 @@
+Created At: 2026-11-19T22:10:36+03:00
+Completed At: 2026-11-19T22:10:37+03:00
+Command exited with code 2.
+
+Command output:
+ls: cannot access '/opt': No such file or directory

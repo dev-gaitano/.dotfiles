@@ -1,0 +1,21 @@
+Created At: 2026-11-20T10:31:00+03:00
+Completed At: 2026-11-20T10:31:01+03:00
+Command exited with code 0.
+
+Command output:
+576:---@class HL.DeviceSpec
+577----@field absolute_region_position? boolean
+578----@field accel_profile? string
+579----@field active_area_position? HL.Vec2Like
+580----@field active_area_size? HL.Vec2Like
+581----@field clickfinger_behavior? boolean
+582----@field disable_while_typing? boolean
+583----@field drag_3fg? integer|boolean
+584----@field drag_lock? integer|boolean
+585----@field enabled? boolean
+586----@field flip_x? boolean
+587----@field flip_y? boolean
+588----@field kb_file? string
+589----@field kb_layout? string
+590----@field kb_model? string
+591----@field kb_options? string

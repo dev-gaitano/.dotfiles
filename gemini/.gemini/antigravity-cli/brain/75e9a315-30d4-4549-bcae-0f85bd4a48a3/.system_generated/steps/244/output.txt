@@ -1,0 +1,18 @@
+Created At: 2026-11-19T23:39:21+03:00
+Completed At: 2026-11-19T23:39:22+03:00
+Command exited with code 0.
+
+Command output:
+
+(process:25): Rofi-WARNING **: 23:39:22.065: Failed to create user runtime directory: /run/user/1000 with error: Read-only file system
+/*	modes: "drun,run,filebrowser";*/
+/*	drun-match-fields: "name,generic,exec,categories,keywords";*/
+/*	drun-categories: ;*/
+/*	drun-exclude-categories: ;*/
+/*	drun-show-actions: false;*/
+	drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+/*	drun-url-launcher: "xdg-open";*/
+/*	cache-dir: ;*/
+/*	drun-use-desktop-cache: false;*/
+/*	drun-reload-desktop-cache: false;*/
+	display-drun: " Apps";

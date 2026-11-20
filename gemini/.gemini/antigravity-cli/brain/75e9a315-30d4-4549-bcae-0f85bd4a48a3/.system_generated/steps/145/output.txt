@@ -1,0 +1,14 @@
+Created At: 2026-11-19T22:08:34+03:00
+Completed At: 2026-11-19T22:08:36+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.cache/blender
+/home/gaitano/.cache/thumbnails/fail/blender
+/home/gaitano/02-media/04-objects/cgc-ultimate-blender-teaching-guide.zip
+/home/gaitano/.local/share/applications/blender.desktop
+/home/gaitano/01-studio/06-blender
+/home/gaitano/01-studio/06-blender/projects/blender-bros
+/home/gaitano/01-studio/06-blender/addons/BlenderQuickMap.zip
+/home/gaitano/.config/blender
+/home/gaitano/.var/app/org.blender.Blender

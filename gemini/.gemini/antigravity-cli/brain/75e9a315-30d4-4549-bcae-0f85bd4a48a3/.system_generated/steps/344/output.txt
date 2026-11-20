@@ -1,0 +1,19 @@
+Created At: 2026-11-20T01:00:19+03:00
+Completed At: 2026-11-20T01:00:19+03:00
+Command exited with code 0.
+
+Command output:
+Manage web apps
+
+Usage: firefoxpwa site <COMMAND>
+
+Commands:
+  launch     Launch a web app
+  install    Install a web app
+  uninstall  Uninstall a web app
+  update     Update a web app
+  help       Print this message or the help of the given subcommand(s)
+
+Options:
+  -h, --help     Print help
+  -V, --version  Print version

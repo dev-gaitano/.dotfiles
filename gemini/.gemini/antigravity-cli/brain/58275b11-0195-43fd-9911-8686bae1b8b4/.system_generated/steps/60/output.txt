@@ -1,0 +1,51 @@
+Created At: 2026-11-19T19:00:35+03:00
+Completed At: 2026-11-19T19:00:35+03:00
+Command exited with code 0.
+
+Command output:
+frontend/src/scene.ts:1:import * as THREE from "three";
+frontend/src/scene.ts:2:import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+frontend/src/scene.ts:26:  const scene = new THREE.Scene();
+frontend/src/scene.ts:48:  scene.add(mesh);
+frontend/src/scene.ts:78:    renderer.render(scene, camera);
+frontend/src/components/Projects/Projects.tsx:1:import { Canvas } from "@react-three/fiber";
+frontend/src/components/Projects/Projects.tsx:126:                <Canvas>
+frontend/src/components/Projects/Projects.tsx:137:                </Canvas>
+frontend/src/components/Hero/Hero.tsx:1:import { Canvas } from "@react-three/fiber";
+frontend/src/components/Hero/Hero.tsx:25:            <Canvas>
+frontend/src/components/Hero/Hero.tsx:41:            </Canvas>
+frontend/src/components/About/About.tsx:1:import { Canvas } from "@react-three/fiber";
+frontend/src/components/About/About.tsx:19:          <Canvas>
+frontend/src/components/About/About.tsx:25:          </Canvas>
+frontend/src/components/ui/BackgroundScene.tsx:2:import { init } from "../../scene";
+frontend/src/components/ui/BubbleText.tsx:1:import { useGLTF } from "@react-three/drei";
+frontend/src/components/ui/BubbleText.tsx:21:  // Get scene attribute from model
+frontend/src/components/ui/BubbleText.tsx:22:  const model = useGLTF(modelPath);
+frontend/src/components/ui/BubbleText.tsx:23:  const model_scene = model.scene;
+frontend/src/components/ui/BubbleText.tsx:28:  }, [model_scene, setIsLoaded]);
+frontend/src/components/ui/BubbleText.tsx:33:      object={model_scene}
+frontend/src/components/ui/BubbleText.tsx:41:useGLTF.preload("/portfolio_bubble_text_desktop.glb");
+frontend/src/components/ui/BubbleText.tsx:42:useGLTF.preload("/portfolio_bubble_text_mobile.glb");
+frontend/src/components/ui/ProjectCard.tsx:1:import { useGLTF } from "@react-three/drei";
+frontend/src/components/ui/ProjectCard.tsx:10:  // Get scene attribute from model
+frontend/src/components/ui/ProjectCard.tsx:11:  const model = useGLTF("/project_card_wayalink.glb");
+frontend/src/components/ui/ProjectCard.tsx:12:  const model_scene = model.scene;
+frontend/src/components/ui/ProjectCard.tsx:17:      object={model_scene}
+frontend/src/components/ui/ProjectCard.tsx:25:useGLTF.preload("/project_card_wayalink.glb");
+frontend/src/components/ui/ProjectCard01.tsx:1:import { useGLTF } from "@react-three/drei";
+frontend/src/components/ui/ProjectCard01.tsx:10:  // Get scene attribute from model
+frontend/src/components/ui/ProjectCard01.tsx:11:  const model = useGLTF("/project_card_topbox.glb");
+frontend/src/components/ui/ProjectCard01.tsx:12:  const modelScene = model.scene;
+frontend/src/components/ui/ProjectCard01.tsx:25:useGLTF.preload("/project_card_topbox.glb");
+frontend/src/components/ui/ProjectCard02.tsx:1:import { useGLTF } from "@react-three/drei";
+frontend/src/components/ui/ProjectCard02.tsx:10:  // Get scene attribute from model
+frontend/src/components/ui/ProjectCard02.tsx:11:  const model = useGLTF("/project_card_jasmijn_schrofer.glb");
+frontend/src/components/ui/ProjectCard02.tsx:12:  const modelScene = model.scene;
+frontend/src/components/ui/ProjectCard02.tsx:25:useGLTF.preload("/project_card_jasmijn_schrofer.glb");
+frontend/src/components/ui/ContactCard.tsx:2:import { useGLTF } from "@react-three/drei";
+frontend/src/components/ui/ContactCard.tsx:5:import type { Group } from "three";
+frontend/src/components/ui/ContactCard.tsx:21:  // Get scene attribute from model
+frontend/src/components/ui/ContactCard.tsx:22:  const model = useGLTF("/contact_card.glb");
+frontend/src/components/ui/ContactCard.tsx:23:  const model_scene = model.scene;
+frontend/src/components/ui/ContactCard.tsx:70:      <primitive object={model_scene} rotation={[0, 0, 0]} />
+frontend/src/components/ui/ContactCard.tsx:76:useGLTF.preload("/contact_card.glb");

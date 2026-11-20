@@ -1,0 +1,171 @@
+Created At: 2026-11-18T18:27:48+03:00
+Completed At: 2026-11-18T18:27:48+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/src/scene.js b/src/scene.js
+index 8993251..ce50d02 100644
+--- a/src/scene.js
++++ b/src/scene.js
+@@ -3,39 +3,73 @@ import * as THREE from "three";
+ import fragment from "./shader/fragment.glsl";
+ import vertex from "./shader/vertex.glsl";
+ 
+-export default class Sketch {
+-  constructor() {
+-    this.container = getElementById("container");
+-
+-    this.scene = new THREE.Scene();
+-    this.clock = new THREE.Clock();
+-
+-    this.camera = new THREE.PerspectiveCamera(
+-      75,
+-      window.innerWidth / window.innerHeight,
+-      0.001,
+-      1000,
+-    );
+-
+-    this.addObjects();
+-  }
+-
+-  addObjects() {
+-    this.geometry = new THREE.PlaneBufferGeometry(2, 2);
+-
+-    this.uniforms = {
+-      u_time: { type: "f", value: 1.0 },
+-      u_resolution: { type: "v2", value: new THREE.Vector2() },
+-      u_mouse: { type: "v2", value: new THREE.Vector2() },
+-    };
+-
+-    this.material = new THREE.ShaderMaterial({
+-      uniforms: this.uniforms,
+-      vertexShader: vertex,
+-      fragmentShader: fragment,
+-    });
+-  }
+-
+-  onWindowResize(event) { }
+-  render() { }
++let container;
++let camera, scene, renderer, timer;
++let uniforms;
++
++init();
++animate();
++
++function init() {
++  //Scene container
++  container = document.getElementById("app");
++
++  // Camera
++  camera = new THREE.Camera();
++  camera.position.z = 1;
++
++  scene = new THREE.Scene();
++  timer = new THREE.Timer();
++
++  // Add objects
++  addObjects();
++
++  // Render
++  renderer = new THREE.WebGLRenderer();
++  renderer.setPixelRatio(window.devicePixelRatio);
++  container.appendChild(renderer.domElement);
++
++  // Handle window resize
++  onWindowResize();
++  window.addEventListener("resize", onWindowResize, false);
++
++  document.onmousemove = function(e) {
++    uniforms.u_mouse.value.x = e.pageX;
++    uniforms.u_mouse.value.y = e.pageY;
++  };
++}
++
++function addObjects() {
++  let geometry = new THREE.PlaneGeometry(2, 2);
++
++  uniforms = {
++    u_time: { type: "f", value: 1.0 },
++    u_resolution: { type: "v2", value: new THREE.Vector2() },
++    u_mouse: { type: "v2", value: new THREE.Vector2() },
++  };
++
++  let material = new THREE.ShaderMaterial({
++    uniforms: uniforms,
++    vertexShader: vertex,
++    fragmentShader: fragment,
++  });
++
++  let mesh = new THREE.Mesh(geometry, material);
++  scene.add(mesh);
++}
++
++function onWindowResize(event) {
++  renderer.setSize(window.innerWidth, window.innerHeight);
++  uniforms.u_resolution.value.x = renderer.domElement.width;
++  uniforms.u_resolution.value.y = renderer.domElement.height;
++}
++
++function animate() {
++  requestAnimationFrame(animate);
++  render();
++}
++
++function render() {
++  uniforms.u_time.value += timer.getDelta();
++  renderer.render(scene, camera);
+ }
+diff --git a/src/shader/fragment.glsl b/src/shader/fragment.glsl
+index 8903785..a8772fe 100644
+--- a/src/shader/fragment.glsl
++++ b/src/shader/fragment.glsl
+@@ -1,8 +1,21 @@
+-#version 300 es
++#ifdef GL_ES
++precision mediump float;
++#endif
++
++uniform vec2 u_resolution;
++uniform vec2 u_mouse;
+ uniform float u_time;
+ 
+-out vec4 fragColor;
++varying vec2 pos;
+ 
+ void main() {
+-        fragColor = vec4(0.0, 0.0, 0.0, 0.0)
++        //gl_FragColor = vec4(abs(sin(u_time / 1000.)), 1., 1., 1.);
++        //vec2 rg = u_mouse.xy / u_resolution;
++        vec2 rg = gl_FragCoord.xy / u_resolution;
++        // While using mouse coordinates, (0., 0.) is at the top left
++        // While using global fragment coordinates, (0., 0.) is at the bottom left
++        // We divide by the resolution to normalize the values since they are in pixels
++
++        //gl_FragColor = vec4(rg.x, rg.y, abs(sin(u_time / 1000.)), 1.);
++        gl_FragColor = vec4(rg.x, rg.y, 0., 1.);
+ }
+diff --git a/src/shader/vertex.glsl b/src/shader/vertex.glsl
+index efbca4e..7ffa5f9 100644
+--- a/src/shader/vertex.glsl
++++ b/src/shader/vertex.glsl
+@@ -1,13 +1,10 @@
+-in vec3 aPosition;
+-in vec2 aTexCoord;
+-
+-out vec2 pos;
++varying vec2 pos;
+ 
+ void main() {
+-        pos = aTexCoord;
+-
+-        vec4 position = vec4(aPosition, 1.0);
+-        position.xy = position.xy * 2.0 - 1.0;
++        pos = uv;
+ 
+-        gl_Position = position;
++        // Three.js built-in uniforms to calculate the final position of a vertex
++        //     - projectionMatrix
++        //     - modelViewMatrix
++        gl_Position = vec4(position, 1.0);
+ }

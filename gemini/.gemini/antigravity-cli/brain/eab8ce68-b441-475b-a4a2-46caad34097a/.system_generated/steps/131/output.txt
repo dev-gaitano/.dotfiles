@@ -1,0 +1,10 @@
+
+The command exited with code 0.
+Output:
+* (no branch, rebasing main)
+  feat/ui
+  fix/ui
+  main
+  remotes/origin/feat/ui
+  remotes/origin/fix/ui
+

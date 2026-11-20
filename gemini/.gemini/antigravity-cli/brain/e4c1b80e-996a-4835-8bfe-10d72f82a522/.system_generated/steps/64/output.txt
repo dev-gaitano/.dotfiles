@@ -1,0 +1,23 @@
+Created At: 2026-11-14T10:18:44+03:00
+Completed At: 2026-11-14T10:18:45+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/frontend/public/portfolio_bubble_text_desktop.glb b/frontend/public/portfolio_bubble_text_desktop.glb
+index 6f1115a..da7e543 100644
+Binary files a/frontend/public/portfolio_bubble_text_desktop.glb and b/frontend/public/portfolio_bubble_text_desktop.glb differ
+diff --git a/frontend/src/components/Hero/Hero.tsx b/frontend/src/components/Hero/Hero.tsx
+index dbb3a05..3dbee05 100644
+--- a/frontend/src/components/Hero/Hero.tsx
++++ b/frontend/src/components/Hero/Hero.tsx
+@@ -24,8 +24,8 @@ function Hero({ className, setIsLoaded }: HeroProps) {
+           <div className="bubble-container">
+             <Canvas>
+               <Suspense fallback={null}>
+-                <ambientLight intensity={0.1} />
+-                <directionalLight color="red" position={[0, 0, 5]} />
++                <ambientLight intensity={0.8} />
++                <directionalLight position={[0, 0, 5]} intensity={1.0} />
+                 <BubbleText
+                   key={isMobile ? "mobile" : "desktop"}
+                   modelPath={

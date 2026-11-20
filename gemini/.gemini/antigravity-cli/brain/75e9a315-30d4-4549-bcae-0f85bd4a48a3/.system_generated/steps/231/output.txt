@@ -1,0 +1,19 @@
+Created At: 2026-11-19T23:38:50+03:00
+Completed At: 2026-11-19T23:38:51+03:00
+Command exited with code 0.
+
+Command output:
+[Desktop Entry]
+Type=Application
+Version=1.4
+Name=Google Drive
+Comment=
+Keywords=;
+Categories=GTK;Utility;
+Icon=FFPWA-01KK3MQYH2KA75HNC143BGHPYR
+Exec=/usr/bin/firefoxpwa site launch 01KK3MQYH2KA75HNC143BGHPYR --protocol %u
+Actions=
+MimeType=
+Terminal=false
+StartupNotify=true
+StartupWMClass=FFPWA-01KK3MQYH2KA75HNC143BGHPYR

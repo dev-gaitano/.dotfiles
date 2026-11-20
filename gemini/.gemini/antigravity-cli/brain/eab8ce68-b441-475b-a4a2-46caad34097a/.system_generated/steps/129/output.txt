@@ -1,0 +1,17 @@
+
+The command exited with code 1.
+Output:
+hint: Waiting for your editor to close the file...
+[detached HEAD 9ad5c89] fix(daily-options): update missing image urls
+Rebasing (2/21)Auto-merging src/components/Navbar/Navbar.css
+CONFLICT (content): Merge conflict in src/components/Navbar/Navbar.css
+Auto-merging src/components/Navbar/Navbar.jsx
+CONFLICT (content): Merge conflict in src/components/Navbar/Navbar.jsx
+error: could not apply 64604ed... feat(Navbar): make user profile a link, gate admin link by role
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+hint: Disable this message with "git config set advice.mergeConflict false"
+Could not apply 64604ed... # feat(Navbar): make user profile a link, gate admin link by role
+

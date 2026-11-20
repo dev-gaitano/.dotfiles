@@ -1,0 +1,6 @@
+Created At: 2026-11-19T23:51:07+03:00
+Completed At: 2026-11-19T23:51:07+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/.config/gthumb  /home/gaitano/.local/share/gthumb

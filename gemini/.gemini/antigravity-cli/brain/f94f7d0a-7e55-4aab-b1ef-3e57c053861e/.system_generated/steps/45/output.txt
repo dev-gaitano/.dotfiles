@@ -1,0 +1,31 @@
+Created At: 2026-11-20T10:30:41+03:00
+Completed At: 2026-11-20T10:30:42+03:00
+Command exited with code 0.
+
+Command output:
+501:---@class HL.BindOptions
+502----@field repeating? boolean
+503----@field locked? boolean
+504----@field release? boolean
+505----@field non_consuming? boolean
+506----@field transparent? boolean
+507----@field ignore_mods? boolean
+508----@field dont_inhibit? boolean
+509----@field long_press? boolean
+510----@field submap_universal? boolean
+511----@field click? boolean
+512----@field drag? boolean
+513----@field description? string
+514----@field desc? string
+515----@field device? {inclusive?: boolean, list?: string[]}
+516----@field allow_input_capture? boolean
+517-local __HL_BindOptions = {}
+518-
+519----@class HL.TimerOptions
+520----@field timeout integer
+521----@field type "repeat"|"oneshot"
+522-local __HL_TimerOptions = {}
+523-
+524----@class HL.GetMonitorsOptions
+525----@field all? boolean
+526-local __HL_GetMonitorsOptions = {}

@@ -1,0 +1,6 @@
+/var/lib/flatpak/exports/share/applications/com.valvesoftware.Steam.desktop
+/var/lib/flatpak/app/com.valvesoftware.Steam/x86_64/stable/a28933d177a1edd2960f0a48c0bb8bcfe994efec864c8dd6953fc49576b1e7d4/files/lib/steam/steam.desktop
+/var/lib/flatpak/app/com.valvesoftware.Steam/x86_64/stable/a28933d177a1edd2960f0a48c0bb8bcfe994efec864c8dd6953fc49576b1e7d4/files/share/applications/com.valvesoftware.Steam.desktop
+/var/lib/flatpak/app/com.valvesoftware.Steam/x86_64/stable/a28933d177a1edd2960f0a48c0bb8bcfe994efec864c8dd6953fc49576b1e7d4/export/share/applications/com.valvesoftware.Steam.desktop
+/usr/lib/steam/steam.desktop
+/usr/share/applications/steam.desktop

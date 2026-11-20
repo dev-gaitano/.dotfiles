@@ -1,0 +1,7 @@
+
+The command exited with code 0.
+Output:
+frontend/src/types/MeshImportProps.tsx:1:export type PolaroidFilmProps = {
+frontend/src/components/ui/ContactCard.tsx:2:import type { PolaroidFilmProps } from "../../types/MeshImportProps";
+frontend/src/components/ui/ContactCard.tsx:9:}: PolaroidFilmProps) {
+

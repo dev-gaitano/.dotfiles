@@ -1,0 +1,9 @@
+Created At: 2026-11-15T13:13:42+03:00
+Completed At: 2026-11-15T13:13:42+03:00
+Command exited with code 0.
+
+Command output:
+lrwxrwxrwx 1 nobody nogroup      10 Aug 27 12:09 /usr/bin/python3 -> python3.14
+-rwxr-xr-x 1 nobody nogroup 8264008 Oct  1 22:55 /usr/bin/python3.14
+lrwxrwxrwx 1 nobody nogroup      34 Oct  1 22:55 /usr/bin/python3.14-config -> x86_64-linux-gnu-python3.14-config
+lrwxrwxrwx 1 nobody nogroup      17 Aug 27 12:09 /usr/bin/python3-config -> python3.14-config

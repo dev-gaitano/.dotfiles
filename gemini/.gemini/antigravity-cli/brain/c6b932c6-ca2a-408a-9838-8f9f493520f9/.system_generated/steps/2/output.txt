@@ -1,0 +1,24 @@
+Created At: 2026-11-19T12:11:35+03:00
+Completed At: 2026-11-19T12:11:36+03:00
+Command exited with code 0.
+
+Command output:
+{
+  "name": "shaders-intro-01",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.2.0",
+    "vite-plugin-glsl": "^1.6.1"
+  },
+  "dependencies": {
+    "p5": "^2.3.2",
+    "three": "^0.185.1"
+  }
+}

@@ -1,0 +1,21 @@
+
+The command exited with code 1.
+There were sandbox errors that may or may not be related to the failure. If you think the failure is because of running in the sandbox, you can run the command again with `BypassSandbox` set to true to request explicit user permission.
+Output:
+failed to load config from /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/vite.config.ts
+error during build:
+Error: EROFS: read-only file system, open '/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/.vite-temp/vite.config.ts.timestamp-1791995400889-32e69bead656c8.mjs'
+    at async open (node:internal/fs/promises:642:25)
+    at async Object.writeFile (node:internal/fs/promises:1249:14)
+    at async loadConfigFromBundledFile (file:///home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/vite/dist/node/chunks/node.js:37064:3)
+    at async bundleAndLoadConfigFile (file:///home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/vite/dist/node/chunks/node.js:36919:21)
+    at async loadConfigFromFile (file:///home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/vite/dist/node/chunks/node.js:36879:42)
+    at async resolveConfig (file:///home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/vite/dist/node/chunks/node.js:36488:22)
+    at async createBuilder (file:///home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/vite/dist/node/chunks/node.js:34125:17)
+    at async CAC.<anonymous> (file:///home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/vite/dist/node/cli.js:765:19) {
+  errno: -30,
+  code: 'EROFS',
+  syscall: 'open',
+  path: '/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/node_modules/.vite-temp/vite.config.ts.timestamp-1791995400889-32e69bead656c8.mjs'
+}
+

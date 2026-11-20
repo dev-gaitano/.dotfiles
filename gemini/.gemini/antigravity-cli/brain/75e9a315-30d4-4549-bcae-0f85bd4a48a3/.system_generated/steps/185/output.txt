@@ -1,0 +1,13 @@
+Created At: 2026-11-19T23:25:18+03:00
+Completed At: 2026-11-19T23:25:19+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name          Version    Architecture   Description
+├┼┼─═════════════─══════════─══════════════─════════════════════════════════════
+ii  speedcrunch   0.12.0-9   amd64          High precision calculator
+/usr/bin/speedcrunch
+/usr/share/applications/speedcrunch.desktop

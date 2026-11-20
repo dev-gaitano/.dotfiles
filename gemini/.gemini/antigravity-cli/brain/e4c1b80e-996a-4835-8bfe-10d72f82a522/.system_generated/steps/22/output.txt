@@ -1,0 +1,30 @@
+Created At: 2026-11-14T10:04:00+03:00
+Completed At: 2026-11-14T10:04:00+03:00
+Task: e4c1b80e-996a-4835-8bfe-10d72f82a522/task-20
+Status: DONE
+Log: file:///home/gaitano/.gemini/antigravity-cli/brain/e4c1b80e-996a-4835-8bfe-10d72f82a522/.system_generated/tasks/task-20.log
+Log output:
+<truncated 59 lines>
+38a56081bea87
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Sun Aug 30 16:30:43 2026 +0300
+
+    feat(responsive): add mobile breakpoints across sections
+    
+    - Add resize-driven scale/rotation state to Hero, About, and
+      Projects, swapping in smaller scales (and a separate mobile
+      GLB model for Hero's bubble text) below 768px
+    - Add mobile @media rules for About, Footer, Hero, Navbar,
+      Projects, and ScrollIndicator (Navbar becomes a horizontal
+      bottom/top bar, ScrollIndicator hides entirely, tech pills
+      wrap, project cards resize)
+    - Shrink --side-gap/--nav-width, h1/h2 font sizes, and other
+      layout variables under 768px in index.css
+    - Add useIsMobile hook (single resize listener, 768px
+      breakpoint), replacing the four separate per-component
+      resize listeners in Hero, About, and Projects
+
+ frontend/public/portfolio_bubble_text_mobile.glb | Bin 0 -> 5097244 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+Last progress: 2s ago

@@ -1,0 +1,72 @@
+Created At: 2026-11-15T13:19:28+03:00
+Completed At: 2026-11-15T13:19:32+03:00
+The search for ""hyprpaper" symlink wallpaper" returned the following summary:
+Using a **symlink (symbolic link)** with `hyprpaper` is a popular technique for managing wallpapers, especially if you want to:
+1. Easily change your wallpaper dynamically via scripts[1] without rewriting your main `hyprpaper.conf` every time.
+2. Maintain a persistent "current wallpaper" state across reboots[1].
+
+Here is how you can set up and use a symlink workflow with `hyprpaper`.
+
+---
+
+### Step 1: Create a Static Symlink Path
+Instead of pointing `hyprpaper` directly to a constantly changing filename or deep directory, point it to a generic symlink path (e.g., `~/.config/hypr/wallpaper.png` or a state directory)[1].
+
+Open your terminal and link an initial wallpaper to a fixed target path:
+```bash
+# Syntax: ln -sf /path/to/your/actual_image.png /path/to/symlink.png
+ln -sf ~/Pictures/wallpapers/mountain.png ~/.config/hypr/current_wallpaper.png
+```
+
+### Step 2: Configure `hyprpaper.conf`
+Point your `hyprpaper` configuration file (`~/.config/hypr/hyprpaper.conf`) to use that exact symlink[2][3]:
+
+```ini
+preload = /home/yourusername/.config/hypr/current_wallpaper.png
+
+# Set it for your monitor (replace eDP-1 with your actual monitor name from `hyprctl monitors`)
+wallpaper = eDP-1, /home/yourusername/.config/hypr/current_wallpaper.png
+
+splash = false
+```
+
+---
+
+### Step 3: Changing Wallpapers Dynamically (The Real Power of Symlinks)
+
+Because `hyprpaper` reads the file pointed to by the symlink, you can write a simple shell script to switch wallpapers on the fly[1]. When you change the symlink and tell `hyprpaper` to reload, it will instantly display the new image.
+
+Create a script (e.g., `~/bin/switch-wallpaper.sh`):
+
+```bash
+#!/bin/bash
+
+# 1. Pick a new wallpaper (using an image picker like rofi, or finding a random file in a folder)
+WALLPAPER_DIR="$HOME/Pictures/wallpapers/"
+NEW_WALL=$(find "$WALLPAPER_DIR" -type f \( -name "*.jpg" -o -name "*.png" -o -name "*.webp" \) | shuf -n 1)
+
+# 2. Update the symlink to point to the new wallpaper
+ln -sf "$NEW_WALL" ~/.config/hypr/current_wallpaper.png
+
+# 3. Tell hyprpaper to unload unused images, preload the symlink target, and apply it
+hyprctl hyprpaper preload "~/.config/hypr/current_wallpaper.png"
+hyprctl hyprpaper wallpaper "eDP-1, ~/.config/hypr/current_wallpaper.png"
+hyprctl hyprpaper unload unused
+```
+
+Make the script executable:
+```bash
+chmod +x ~/bin/switch-wallpaper.sh
+```
+
+### Tips & Caveats:
+* **Caching/Preloading quirks:** `hyprpaper` caches images in memory based on their path. Because your symlink path (`current_wallpaper.png`) remains constant while the underlying file changes, `hyprpaper` might occasionally hold onto the old image buffer unless you use `hyprctl hyprpaper reload` or clear unused assets properly via `unload`.
+* **Alternative (Native Directories):** Recent versions of `hyprpaper` natively support passing a directory path directly into the configuration block (allowing automated timed rotations without manual scripting)[4]. However, if you prefer manual control, random hot-swapping, or integration with CLI pickers (like `waybar`, `rofi`, or `wofi`), the symlink method remains heavily utilized.
+
+Sources:
+[1] [github.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHF1rJLZ9eJldKTeWK6cKZM0-2tL-iIFKhujiQQ4CIn9W1U7HjfhSQbb32I3p5jEWYz1k3EdDxCMvqHnlVAV4dXSBMTXdT4ygb3JdA57ukP3oTWrUfF2Xz1ADIbbOBtMe0jr0f8)
+[2] [hyprland.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFRXwozsvvRwpJQUNVP5xhQuGp__eWoKfr2m8wm_CyKOt5zSn65O759M0ApdrbVAPuCePZ-gx0yHdAcvK5FwecVFREhENMBwqbKISpEnahPKIFInDS4QxtsHq1k_AV0uYjcoZbp-UkglPcYqm5QUTyU)
+[3] [linuxcommandlibrary.com](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQGu0iq0CoEjZz3vNGh15I2dskZI3Dw3w__h4c5zOJuhUEYB7IM4B-5ZV1ECHv7_yuru2c03mKrvb3XvvgebAsDSmBF6VAQHzRkV7Ju6e8qnT-LjzY1VhVL7lw80Y_pZxPZITC4=)
+[4] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFqWtaRqTbfTi11rpc0yh8DNLhABfu47BsXTOThHBPcCbFLW8e5TOeu8rJ0NKSiAyJmgRts4bv7ZfS0EqClpQBJOn4l5157DQwDXNGk97hHQmsFcyK8U0xK5ArY7mreoM0DQyWYcL6VIu_lDw==)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

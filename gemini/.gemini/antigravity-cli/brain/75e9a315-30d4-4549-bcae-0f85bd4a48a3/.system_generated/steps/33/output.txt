@@ -1,0 +1,17 @@
+Created At: 2026-11-15T13:13:34+03:00
+Completed At: 2026-11-15T13:13:35+03:00
+Command exited with code 1.
+
+There were sandbox errors that may or may not be related to the failure. If you think the failure is because of running in the sandbox, you can run the command again with `BypassSandbox` set to true to request explicit user permission.
+
+Command output:
+total 20
+drwxrwxr-x 5 gaitano gaitano 4096 Oct 15  2025 .
+drwxrwxr-x 5 gaitano gaitano 4096 Sep  4  2025 ..
+drwxrwxr-x 5 gaitano gaitano 4096 Oct  1  2025 fava
+drwxrwxr-x 6 gaitano gaitano 4096 Sep  4  2025 pywal16
+drwxrwxr-x 5 gaitano gaitano 4096 Sep 29  2025 vit
+/home/gaitano/.miniconda3/bin/python3
+venvs are in /home/gaitano/.local/share/pipx/venvs
+apps are exposed on your $PATH at /home/gaitano/.local/bin
+manual pages are exposed at /home/gaitano/.local/share/man

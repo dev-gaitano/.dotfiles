@@ -1,0 +1,10 @@
+Created At: 2026-11-19T14:50:31+03:00
+Completed At: 2026-11-19T14:50:33+03:00
+Command exited with code 0.
+
+Command output:
+total 16
+drwxrwxrwx 2 gaitano gaitano 4096 Nov 18 17:37 .
+drwxrwxr-x 3 gaitano gaitano 4096 Nov 18 20:32 ..
+-rw-rw-r-- 1 gaitano gaitano  276 Nov 19 14:47 fragment.glsl
+-rw-rw-r-- 1 gaitano gaitano  203 Nov 19 12:03 vertex.glsl

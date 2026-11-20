@@ -1,0 +1,17 @@
+
+> jasmijn-schrofer-portfolio@0.0.0 build
+> vite build
+
+vite v7.0.6 building for production...
+Browserslist: browsers data (caniuse-lite) is 13 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+transforming (1) src/main.tsxtransforming (4) node_modules/@vercel/speed-insights/dist/react/index.mjstransforming (14) src/index.csstransforming (29) node_modules/react/cjs/react-jsx-runtime.production.min.jstransforming (34) node_modules/react/jsx-runtime.jstransforming (43) src/pages/InDevelopment.tsxtransforming (67) node_modules/@clerk/shared/dist/chunk-IBXKDGSZ.mjstransforming (91) node_modules/gsap/Observer.jstransforming (380) node_modules/lucide-react/dist/esm/icons/arrows-up-from-linetransforming (1062) node_modules/lucide-react/dist/esm/icons/mail-plus.jstransforming (1086) node_modules/lucide-react/dist/esm/icons/medal.jstransforming (1100) node_modules/lucide-react/dist/esm/icons/message-circle-reptransforming (1382) node_modules/lucide-react/dist/esm/icons/sheet.jstransforming (1653) node_modules/@firebase/app/dist/esm/index.esm.jstransforming (1661) node_modules/@firebase/util/dist/index.esm.jstransforming (1676) node_modules/scheduler/index.jstransforming (1683) src/components/ui/slider.tsxtransforming (1693) node_modules/framer-motion/dist/es/components/LayoutGroup/itransforming (1775) node_modules/@radix-ui/react-slider/dist/index.mjstransforming (1784) node_modules/@react-spring/types/dist/react-spring_types.motransforming (1949) node_modules/motion-dom/dist/es/value/types/numbers/units.mtransforming (1971) node_modules/aria-hidden/dist/es2015/index.jstransforming (1998) node_modules/framer-motion/dist/es/context/ReorderContext.mtransforming (2044) node_modules/@radix-ui/react-use-effect-event/dist/index.mjtransforming (2095) node_modules/framer-motion/dist/es/render/dom/scroll/offsettransforming (2124) node_modules/framer-motion/dist/es/render/html/use-props.mjtransforming (2132) node_modules/use-callback-ref/dist/es2015/assignRef.js✓ 2157 modules transformed.
+transforming (2160) node_modules/@radix-ui/react-accordion/dist/index.mjsrendering chunks (1)...rendering chunks (2)...rendering chunks (3)...rendering chunks (4)...rendering chunks (5)...computing gzip size (0)...computing gzip size (1)...computing gzip size (2)...computing gzip size (3)...computing gzip size (4)...computing gzip size (5)...computing gzip size (6)...computing gzip size (7)...dist/index.html                       1.46 kB │ gzip:  0.63 kB
+dist/assets/index-C-eA_82T.css       72.27 kB │ gzip: 12.93 kB
+dist/assets/animations-B-oCd1G3.js   21.20 kB │ gzip:  9.30 kB
+dist/assets/ui-CB7Wpa0Z.js           61.11 kB │ gzip: 22.19 kB
+dist/assets/vendor-DavUf6mE.js      141.72 kB │ gzip: 45.48 kB
+dist/assets/firebase-DYsH3ZAi.js    148.07 kB │ gzip: 40.69 kB
+dist/assets/index-DEdLL-0R.js       277.59 kB │ gzip: 92.59 kB
+✓ built in 18.16s

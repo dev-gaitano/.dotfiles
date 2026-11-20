@@ -1,0 +1,78 @@
+Command exited with code 0.
+
+Command output:
+commit 8c8040ed21e5645ab004fdb23f134e9893eb8bb0
+Author: gaitano <dev.gaitano@gmail.com>
+Date:   Fri Aug 14 10:50:58 2026 +0300
+
+    feat(Projects): add stacked project cards placeholder
+    
+    - Add Projects: three overlapping, rotated placeholder cards
+      (thumbnail, name, description) absolutely positioned and
+      centered in the section
+    - Wire Projects into Home after About
+
+diff --git a/frontend/src/components/Projects/Projects.css b/frontend/src/components/Projects/Projects.css
+index e69de29..1754227 100644
+--- a/frontend/src/components/Projects/Projects.css
++++ b/frontend/src/components/Projects/Projects.css
+@@ -0,0 +1,59 @@
++.projects {
++  position: relative;
++  justify-content: center;
++}
++
++.project-card {
++  background: var(--gray-mid);
++  position: absolute;
++  width: 620px;
++  max-width: 90%;
++  height: 720px;
++  padding: 40px;
++  display: flex;
++  flex-direction: column;
++  gap: 32px;
++}
++
++.project-thumbnail {
++  background: var(--gray-light);
++  height: 480px;
++  width: 100%;
++}
++
++.project-name {
++  background: var(--gray-light);
++  height: 64px;
++  width: 320px;
++  max-width: 100%;
++}
++
++.project-description {
++  background: var(--gray-light);
++  height: 24px;
++  width: 240px;
++  max-width: 100%;
++}
++
++.card-a {
++  background: var(--gray-light-3);
++  top: 50%;
++  left: 50%;
++  transform: translate(-50%, -50%) rotate(-10deg);
++  z-index: 1;
++}
++
++.card-b {
++  background: var(--gray-light-2);
++  top: 50%;
++  left: 50%;
++  transform: translate(-50%, -50%) rotate(12deg);
++  z-index: 2;
++}
++
++.card-c {
++  top: 50%;
++  left: 50%;
++  transform: translate(-50%, -50%) rotate(-2deg);
++  z-index: 3;
++}

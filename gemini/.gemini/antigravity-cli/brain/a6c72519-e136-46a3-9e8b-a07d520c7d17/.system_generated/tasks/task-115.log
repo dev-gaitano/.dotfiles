@@ -1,0 +1,6 @@
+Successfully scheduled one-shot timer.
+Expected to fire at: 2026-08-16T10:40:06+03:00
+Prompt: Wait for npm info
+Early Termination: any
+
+[2026-08-16T10:40:06+03:00] Timer fired.

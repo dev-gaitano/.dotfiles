@@ -1,0 +1,17 @@
+Created At: 2026-11-14T10:04:25+03:00
+Completed At: 2026-11-14T10:04:26+03:00
+Command exited with code 0.
+
+Command output:
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/public/project_card_wayalink.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/public/project_card_jasmijn_schrofer.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/public/contact_card.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/public/portfolio_text_desktop.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/public/portfolio_bubble_text_mobile.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/public/project_card_topbox.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/dist/project_card_wayalink.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/dist/project_card_jasmijn_schrofer.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/dist/portfolio_bubble_text_desktop.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/dist/contact_card.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/dist/portfolio_bubble_text_mobile.glb
+/home/gaitano/01-studio/01-src/eugene-gaitano/frontend/dist/project_card_topbox.glb

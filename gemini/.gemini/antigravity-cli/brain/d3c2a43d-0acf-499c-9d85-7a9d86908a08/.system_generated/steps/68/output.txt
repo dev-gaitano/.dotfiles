@@ -1,0 +1,7 @@
+Command exited with code 0.
+
+Command output:
+frontend/src/components/About/About.tsx:20:            <ambientLight intensity={1.0} />
+frontend/src/components/About/About.tsx:21:            <directionalLight position={[2, 2, 4]} intensity={1.5} />
+frontend/src/components/Hero/Hero.tsx:27:                <ambientLight intensity={0.1} />
+frontend/src/components/Hero/Hero.tsx:28:                <directionalLight color="red" position={[0, 0, 5]} />

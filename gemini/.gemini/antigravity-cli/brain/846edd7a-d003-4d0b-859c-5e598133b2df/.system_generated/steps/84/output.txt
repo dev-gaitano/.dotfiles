@@ -1,0 +1,33 @@
+The following changes were made by the replace_file_content tool to: /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/src/components/About/About.tsx. If relevant, proactively run terminal commands to execute this code for the USER. Don't ask for permission.
+[diff_block_start]
+@@ -9,13 +9,8 @@
+ }
+ 
+ function About({ className }: AboutProps) {
+-  const rotationX = Math.PI / 2;
+-  const rotationY = 12.5 * (Math.PI / 180);
+-  const rotationZ = -8 * (Math.PI / 180);
+-
+   const isMobile = useIsMobile();
+   const scale = isMobile ? 0.28 : 0.18;
+-  const rotation: [number, number] = isMobile ? [0, 0] : [rotationY, rotationZ];
+ 
+   return (
+     <>
+@@ -24,12 +24,7 @@
+             <ambientLight intensity={1.0} />
+             <directionalLight position={[2, 2, 4]} intensity={1.5} />
+             <Suspense>
+-              <ContactCard
+-                rotationX={rotationX}
+-                rotationY={rotation[0]}
+-                rotationZ={rotation[1]}
+-                scale={scale}
+-              />
++              <ContactCard scale={scale} />
+             </Suspense>
+           </Canvas>
+         </div>
+[diff_block_end]
+
+Please note that the above snippet only shows the MODIFIED lines from the last change. It shows up to 3 lines of unchanged lines before and after the modified lines. The actual file contents may have many more lines not shown.

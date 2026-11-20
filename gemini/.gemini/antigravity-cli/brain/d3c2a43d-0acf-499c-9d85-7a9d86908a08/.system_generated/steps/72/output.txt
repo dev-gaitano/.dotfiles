@@ -1,0 +1,1 @@
+Made 1 replacement in /home/gaitano/01-studio/01-src/eugene-gaitano/frontend/src/components/Projects/Projects.tsx starting at line 126 (+3/-0 lines).

@@ -1,0 +1,14 @@
+{
+  "id": "3a0ee011-859e-4e56-bc33-b5ddaee9978d",
+  "name": "/home/gaitano/.minecraft/versions/better-defaults 26.1.2/minescript",
+  "projectResources": {
+    "resources": [
+      {
+        "gitFolder": {
+          "folderUri": "file:///home/gaitano/.minecraft/versions/better-defaults 26.1.2/minescript",
+          "allowWrite": true
+        }
+      }
+    ]
+  }
+}

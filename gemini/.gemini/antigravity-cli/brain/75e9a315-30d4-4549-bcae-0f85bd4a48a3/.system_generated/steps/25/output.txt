@@ -1,0 +1,13 @@
+Created At: 2026-11-15T13:13:11+03:00
+Completed At: 2026-11-15T13:13:12+03:00
+Command exited with code 0.
+
+Command output:
+┏ hyprpaper v0.8.4
+┣━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┣ --config  -c [str]  | Set a custom config path                                 ┃
+┣ --verbose           | Enable more logging                                      ┃
+┣ --version -v        | Show hyprpaper's version                                 ┃
+┣ --help    -h        | Show the help menu                                       ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+

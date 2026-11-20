@@ -1,0 +1,8 @@
+Created At: 2026-11-20T10:31:10+03:00
+Completed At: 2026-11-20T10:31:10+03:00
+Command exited with code 2.
+
+Command output:
+grep: unrecognized option '---@class HL.DspWindowNamespace'
+Usage: grep [OPTION]... PATTERNS [FILE]...
+Try 'grep --help' for more information.

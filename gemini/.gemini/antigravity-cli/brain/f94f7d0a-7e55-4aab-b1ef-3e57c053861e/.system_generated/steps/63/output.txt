@@ -1,0 +1,53 @@
+Created At: 2026-11-20T10:31:34+03:00
+Completed At: 2026-11-20T10:31:38+03:00
+The search for "site:wiki.hypr.land "hl.dsp" "fullscreen" OR "movewindow" OR "killactive"" returned the following summary:
+With Hyprland's transition to a Lua-based configuration system (introduced in version 0.55), window management actions are handled via Lua dispatchers under the `hl.dsp.window.*` namespace[1][2]. 
+
+The equivalent dispatcher functions for fullscreen, closing/killing, and moving windows are structured as follows:
+
+### 1. Fullscreen
+* **Dispatcher:** `hl.dsp.window.fullscreen({ mode?, action?, window? })`[1]
+* **Parameters:**
+  * `mode`: Can be `"fullscreen"` or `"maximized"`[1].
+  * `action`: Can be `"toggle"`, `"set"`, or `"unset"` (defaults to `"toggle"`)[1][3].
+  * `window`: Optional window selector (defaults to `"activewindow"`)[1][3].
+* **Example Usage in a Bind:**
+  ```lua
+  hl.bind("SUPER + F", hl.dsp.window.fullscreen({ action = "toggle" }))
+  ```
+
+### 2. Closing / Killing Active Windows
+In the Lua configuration setup, closing and killing windows are split into separate dispatcher options:
+* **Graceful Close:** `hl.dsp.window.close({ window? })` — Sends a graceful close request to the window[1][4].
+* **Force Kill:** `hl.dsp.window.kill({ window? })` — Forcefully kills the window process[1][5].
+* **Example Usage in a Bind:**
+  ```lua
+  hl.bind("SUPER + Q", hl.dsp.window.close())
+  -- or for force killing:
+  hl.bind("SUPER + SHIFT + Q", hl.dsp.window.kill())
+  ```
+
+### 3. Moving Windows
+The legacy `movewindow` commands map to various methods under `hl.dsp.window.move({ ... })` depending on whether you are moving a window in a direction, to a workspace, across monitors, or via coordinates[6]:
+* **Directional Move:** `hl.dsp.window.move({ direction = "l"|"r"|"u"|"d" })` (or using variables/layouts)
+* **To a Workspace:** `hl.dsp.window.move({ workspace = "name", follow = true })`[7]
+* **To a Monitor:** `hl.dsp.window.move({ monitor = "name", follow = true })`[6]
+* **Exact Coordinates:** `hl.dsp.window.move({ x = 100, y = 100, relative = false })`[6]
+* **Example Usage in a Bind:**
+  ```lua
+  hl.bind("SUPER + SHIFT + L", hl.dsp.window.move({ direction = "right" }))
+  ```
+
+*(Note: To execute these dispatchers inside a custom Lua function rather than directly in a `hl.bind`, you must wrap them with `hl.dispatch()`, e.g., `hl.dispatch(hl.dsp.window.fullscreen({ action = "toggle" }))`)*[8].
+
+Sources:
+[1] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQE0sCTFz0QDBhFP_PiA5LGCFEpFrMbH5GVAz4z_NGYmPPydNjqFttFDWFTIPMtPb82eUFb8jsSHSdq4RLk1cC0pi6gLXZau2l4_6dOT8v5pwpzND7xr0D_08wXfbPeuvGDCv-UvR_6XC6K6ZIkIUWhdoSTU)
+[2] [wikipedia.org](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFEOJwwJFDH8nslzHQ4fLticPgwVdN4Yv1qJ9RjNhpl_erwILN28F1fFS_vU6_FYNduEsNOsQvunlVE2ogMaK5MgtRwxUuQteqF4hDwUBGVhqtG6TMgvsjZh8huzw==)
+[3] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQFT_vEf0v0i6U_tqaa7OPWVoS5jCqQC-OUS7-8SaeRUmytrQwsxPYZewG_07bLzvCVJXWKAD7KbAUH7gqxGRddxAwFZD8Hy0-hqD0Pu5Gcm5AAIGlTuJ4xqv9AkPAx_XIuqMnIXWTGZt2YU)
+[4] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEdj2Nyvc1bhrDDrCbJGd9wF1w3h0bG6rLlbdWDMe_2c0B2dpw7dvr4113mQw7b45QPAerotoVFXuIJPBmvhrKXNx6A5hBhpDm_dAZUz8V6L0KdVoWOzX3vZ2NpNwe4jtPrqoS4tvBaOKNL)
+[5] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEJJBsSxzl6pVQp3ksZ7O7DWPANc9NIGqDCs7ck3u_2PWJV36bOsO_rLoUdfYgm4CyX09GS5BU_TTkQfC8GxpOqiehWXkSytaQmJG9aVvA0LUUqpSQRwHrIoBO9Bt_-5WaD4E7XFFDKy6OdKo8E0WOu7ZvR)
+[6] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHRbI3OO7XtL958qqRtYL_VgsQIH3V6PnkFqn03PwmPSRXbfrN5EOb2ITGso6gL0dGzOCUredYekuDSqogeQX-XjzrCsvxxBDOPqPnGNFARf8YTIwepQuSWG_IZKEXMKiIrfP2JzTU28PeCZ74PfYSFWWDQ)
+[7] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQHKa4MmaiB1wByA4m3o5qpFm7oHwEY7NSzlFncZtTpaqL7LnXPCMQR-OoSX_YrvrwNYqCCkkyjH5bGzQDZB97DVQjhycrJo9JaqotmdbMCOTDXTEECIhKU8I6SGii-wIj0OwRpp28vEbm232x8=)
+[8] [hypr.land](https://vertexaisearch.cloud.google.com/grounding-api-redirect/AUZIYQEeMLZqa1oT5UKCkmDfls91omiszHTZ3OqUf9jBfQufs_m2zRuNy7nMEscBCgmPkSmQasA3c-JO80U0W2y4qV44OFoWs9gu3UFI9V9Ymg7_045UcYVsl5qRaKAjUWyIE8Oj_tNOmC8blMm1)
+
+Note: Source URLs are HTTP redirects; check where they resolve if you need the direct link.

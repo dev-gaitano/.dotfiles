@@ -1,0 +1,8 @@
+Created At: 2026-11-20T01:00:45+03:00
+Completed At: 2026-11-20T01:00:45+03:00
+Command exited with code 0.
+
+Command output:
+22:00:45 [INFO] Uninstalling the web app
+22:00:45 [INFO] Uninstalling system integration
+22:00:45 [INFO] Web app uninstalled!

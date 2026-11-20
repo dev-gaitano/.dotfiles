@@ -1,0 +1,12 @@
+Created At: 2026-11-20T00:32:24+03:00
+Completed At: 2026-11-20T00:32:25+03:00
+Command exited with code 0.
+
+Command output:
+0::f:vlc -- "$@"
+1:open::xdg-open -- "$@"
+2:open::open -- "$@"
+3:::ask
+4:editor::${VISUAL:-$EDITOR} -- "$@"
+5:pager::"$PAGER" -- "$@"
+6:trash::mkdir -p -- ${XDG_DATA_DIR:-$HOME/.ranger}/ranger-trash; mv -- "$@" ${XDG_DATA_DIR:-$HOME/.ranger}/ranger-trash

@@ -1,0 +1,10 @@
+Created At: 2026-11-18T19:01:33+03:00
+Completed At: 2026-11-18T19:01:34+03:00
+Command exited with code 0.
+
+Command output:
+getElapsed() {
+
+		return this._elapsed / 1000;
+
+	}

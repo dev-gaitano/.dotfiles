@@ -1,0 +1,9 @@
+Created At: 2026-11-15T13:12:56+03:00
+Completed At: 2026-11-15T13:12:57+03:00
+Command exited with code 0.
+
+Command output:
+DESKTOP=Hyprland DISPLAY= WAYLAND=wayland-1
+/home/gaitano/.dotfiles/rofi/.config/rofi/images/paper.png
+/home/gaitano/.dotfiles/rofi/.config/rofi/colors/paper.rasi
+/home/gaitano/.dotfiles/hypr/.config/hypr/hyprpaper.conf

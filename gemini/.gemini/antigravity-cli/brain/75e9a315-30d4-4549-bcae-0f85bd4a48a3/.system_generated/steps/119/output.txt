@@ -1,0 +1,55 @@
+Created At: 2026-11-15T13:21:12+03:00
+Completed At: 2026-11-15T13:21:13+03:00
+Command exited with code 0.
+
+Command output:
+diff --git a/hypr/.config/hypr/hyprpaper.conf b/hypr/.config/hypr/hyprpaper.conf
+index 4dd930d..5665eaa 100644
+--- a/hypr/.config/hypr/hyprpaper.conf
++++ b/hypr/.config/hypr/hyprpaper.conf
+@@ -1,5 +1,5 @@
+ wallpaper {
+     monitor = 
+-    path = ~/02-media/01-pictures/03-wallpapers
++    path = ~/.config/hypr/current_wallpaper.jpg
+     fit_mode = cover
+ }
+diff --git a/scripts/.scripts/pywal.sh b/scripts/.scripts/pywal.sh
+index bf814a6..301c7dc 100755
+--- a/scripts/.scripts/pywal.sh
++++ b/scripts/.scripts/pywal.sh
+@@ -1,11 +1,31 @@
+ #!/usr/bin/env sh
+ 
+-wal -i ~/02-media/01-pictures/03-wallpapers/
++if [ -n "$1" ]; then
++    wal -i "$1" -n
++else
++    wal -i ~/02-media/01-pictures/03-wallpapers/ -n
++fi
++
++if [ $? -ne 0 ]; then
++    echo "wal failed" >&2
++    exit 1
++fi
++
++WALLPAPER=$(cat ~/.cache/wal/wal)
++
++# Update symlink for hyprpaper boot / restart
++ln -sf "$WALLPAPER" ~/.config/hypr/current_wallpaper.jpg
++
++# Apply live wallpaper to hyprpaper
++hyprctl hyprpaper wallpaper ",$WALLPAPER,cover" >/dev/null 2>&1
+ 
+ # Restart Dunst to apply colors
+-killall dunst
++killall dunst 2>/dev/null
+ dunst --config ~/.config/dunst/dunstrc &
+ 
++# Reload waybar colors if running
++killall -SIGUSR2 waybar 2>/dev/null
++
+ clear
+ 
+-echo "Pywal applied"
++echo "Pywal applied: $WALLPAPER"

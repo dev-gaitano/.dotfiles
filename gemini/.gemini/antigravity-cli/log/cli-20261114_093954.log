@@ -1,0 +1,173 @@
+I1114 09:39:54.043382      23 server.go:2531] Starting language server process with pid 12002
+I1114 09:39:54.050242      23 workflow_python.go:21] run_workflow Python: interpreter "", embedded true
+I1114 09:39:54.059022      23 server.go:2590] Language server version: 1.5.8
+I1114 09:39:54.059124      23 server.go:1259] Language server will attempt to listen on host localhost
+I1114 09:39:54.065067      23 server.go:1274] Language server listening on random port at 33189 for HTTPS (gRPC)
+I1114 09:39:54.069323      23 server.go:1282] Language server listening on random port at 38485 for HTTP
+I1114 09:39:54.082288      42 model_configs.go:209] Auth mode is unspecified, skipping fetchAvailableModels and returning empty response
+W1114 09:39:54.088246      82 cache.go:157] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1114 09:39:54.088401      82 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+W1114 09:39:54.091664      71 cache.go:157] Cache(userInfo): Singleflight refresh failed: failed to get load code assist response: error getting token source: You are not logged into Antigravity.
+E1114 09:39:54.093293      42 errorreport.go:273] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I1114 09:39:54.111419      83 store_client.go:714] summary store: starting background reconciliation (trigger=startup)
+I1114 09:39:54.123345      83 store_client.go:764] summary store: reconciliation complete, synced 39 records
+W1114 09:39:54.127767     103 cache.go:157] Cache(peopleInfo): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1114 09:39:54.127906     103 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+I1114 09:39:54.127635      23 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1114 09:39:54.128221      23 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+W1114 09:39:54.141279      23 defaults.go:719] failed to get cs path: cs path /usr/bin/cs invalid
+I1114 09:39:54.142184      23 manager.go:140] Creating trajectory store manager with proto store and SQLite store
+I1114 09:39:54.212411     136 manager.go:98] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I1114 09:39:54.213578     136 manager.go:107] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1114 09:39:54.213642     136 manager.go:98] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I1114 09:39:54.214130     136 manager.go:107] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1114 09:39:54.214195     136 manager.go:98] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I1114 09:39:54.214613     136 manager.go:107] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1114 09:39:54.214675     136 manager.go:95] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I1114 09:39:54.214704     136 manager.go:95] Migration [MIGRATION_ID_ADOPT_BWG_INSTALLS] is disabled, skipping entirely
+I1114 09:39:54.215066     136 manager.go:95] Migration [MIGRATION_ID_GDRIVE_BUILTIN_PLUGIN] is disabled, skipping entirely
+I1114 09:39:54.215120     136 manager.go:95] Migration [MIGRATION_ID_SPLIT_SCIENCE_PLUGIN] is disabled, skipping entirely
+I1114 09:39:54.421734      49 server.go:4633] Auth succeeded, refreshing features and managers
+I1114 09:39:54.421619      23 server.go:3891] initialized server successfully in 374.538273ms
+W1114 09:39:54.423372     108 cache.go:157] Cache(peopleInfo): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1114 09:39:54.423481     108 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+W1114 09:39:54.424368     109 cache.go:157] Cache(loadCodeAssistResponse): Singleflight refresh failed: error getting token source: You are not logged into Antigravity.
+E1114 09:39:54.424509     109 errorreport.go:273] error getting token source: You are not logged into Antigravity.
+W1114 09:39:54.424585     108 rpcs_plugin_auth.go:109] Not reloading plugin MCP servers: cannot get the signed-in user: error getting token source: You are not logged into Antigravity.
+E1114 09:39:54.424740      49 errorreport.go:273] Failed to poll ListExperiments: error getting token source: You are not logged into Antigravity.
+I1114 09:39:54.424907      49 server.go:4652] State refresh took 3ms
+I1114 09:39:54.424958      49 server.go:4667] [RemoteControl] Subscription callback triggered.
+I1114 09:39:54.425325      49 server.go:4670] [RemoteControl] RemoteControlEnabled value: false
+I1114 09:39:54.425344      49 server.go:5766] [RemoteControl] Session toggle is off, staying disconnected
+I1114 09:39:54.425975      49 server.go:5449] [RemoteControl] Resolved proxyServerURL: ""
+I1114 09:39:54.426789      49 profiler.go:231] Continuous pprof profiling is disabled.
+I1114 09:39:54.426849     169 manager.go:98] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] is enabled
+I1114 09:39:54.427431     169 manager.go:107] Migration [MIGRATION_ID_SANITY_CHECK_PROJECT_URIS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1114 09:39:54.427449     163 reconcile_summaries.go:94] [Summaries] reconcile checked 39 conversations, restored 0, cached 39, skipped 0, dropped 0, cancelled false in 1ms (resident: 0 -> 0)
+I1114 09:39:54.427476     169 manager.go:98] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] is enabled
+I1114 09:39:54.427830     169 manager.go:107] Migration [MIGRATION_ID_PLUGIN_ENABLEMENT] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1114 09:39:54.427864     169 manager.go:98] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] is enabled
+I1114 09:39:54.428134     169 manager.go:107] Migration [MIGRATION_ID_BUILTIN_SIDECARS_TO_PLUGINS] already has status MIGRATION_STATUS_COMPLETED, skipping
+I1114 09:39:54.428173     169 manager.go:95] Migration [MIGRATION_ID_LIN_BUILTIN_TO_MARKETPLACE] is disabled, skipping entirely
+I1114 09:39:54.428196     169 manager.go:95] Migration [MIGRATION_ID_ADOPT_BWG_INSTALLS] is disabled, skipping entirely
+I1114 09:39:54.428275     169 manager.go:95] Migration [MIGRATION_ID_GDRIVE_BUILTIN_PLUGIN] is disabled, skipping entirely
+I1114 09:39:54.428298     169 manager.go:95] Migration [MIGRATION_ID_SPLIT_SCIENCE_PLUGIN] is disabled, skipping entirely
+I1114 09:39:54.428033       1 auto_updater.go:334] Spawned background update process with PID 12334
+I1114 09:39:54.429219       1 common.go:191] Launching CLI mode
+E1114 09:39:54.429622       1 launchsteps.go:95] Failed to resolve GeminiDir ".gemini": .gemini must be an absolute path: path is not absolute, falling back to default
+I1114 09:39:54.429708       1 common.go:212] CLI app data directory: /home/gaitano/.gemini/antigravity-cli
+I1114 09:39:54.429805       1 server.go:313] Creating CLI server backend: product=antigravity workspaceDirs=[/home/gaitano] appDataDir=/home/gaitano/.gemini/antigravity-cli languageServer=true codeAssist=true
+I1114 09:39:54.433581       1 auth_provider.go:813] [AuthProvider] SetEnableBusinessLogin called with enable: true
+I1114 09:39:54.441535       1 server.go:2258] Backend project ID updated dynamically to: default-cli-project
+I1114 09:39:54.442252       1 manager.go:555] Initializing CLI store manager for workspace /home/gaitano
+E1114 09:39:54.456434     190 server.go:3211] Failed to read conversations directory /home/gaitano/.gemini/antigravity/conversations: open /home/gaitano/.gemini/antigravity/conversations: no such file or directory
+I1114 09:39:54.456564     190 server.go:3113] ListConversations returning 39 summaries
+I1114 09:39:54.461370       1 cli_setting_manager.go:164] applyUserSettings: no shared config permissions from /home/gaitano/.gemini/config/config.json
+I1114 09:39:54.467776       1 cli_setting_manager.go:98] CLI settings initialized: permissions=&{Allow:[command(git status) command(git diff) command(git log) command(pytest)] Deny:[] Ask:[]}, toolPermission=request-review
+I1114 09:39:54.501300       1 hooks_manager.go:54] loaded 0 named hooks from 0 hooks.json file(s)
+I1114 09:39:54.501783       1 manager.go:729] CLI store manager initialized successfully
+I1114 09:39:54.501851       1 common.go:346] CLI store manager created successfully
+I1114 09:39:54.501888       1 cli_setting_manager.go:228] ApplyProjectPermissionGrants: no grants for project "CLI Project", cleared project permissions
+I1114 09:39:54.501880     214 quota_manager.go:36] doRefreshQuota: skipped (not logged in)
+I1114 09:39:54.562287       1 terminal_info_manager.go:354] Terminal detection: TERM="xterm-kitty" altScreen=true ssh=false osc8=false osc52=true appleTerminalSSH=false
+I1114 09:39:54.564661       1 common.go:543] Starting CLI program
+CLI ready for user input
+I1114 09:39:54.574000     229 rerender.go:97] Window redraw committed (RerenderAll) for conversation  (epoch 0, items 1) after 1ms
+I1114 09:39:54.574115     229 manager.go:1122] Full redraw completed (RerenderAll) for conversation  (epoch 0, items 1) in 1ms
+I1114 09:39:54.574335     284 gemini_extensions.go:29] Detecting Gemini extensions in /home/gaitano/.gemini/extensions
+I1114 09:39:54.574647     291 manager.go:1677] Reloading system slash commands and skills
+I1114 09:39:54.575256     291 manager.go:1633] Reloading system slash commands
+I1114 09:39:54.575302     291 manager.go:1642] Slash commands unchanged, skipping update
+I1114 09:39:54.575508       1 analytics.go:249] CLI startup completed (took 543.075825ms, phases [main_entered=5ms ls_start=9ms ls_ready=389ms launch_cli=397ms backend_created=405ms project_resolved=409ms manager_created=469ms program_run=532ms tui_init_start=535ms tui_init_done=535ms])
+I1114 09:39:54.579560     284 gemini_extensions.go:47] Found 1 extensions: [caveman]
+I1114 09:39:54.585313     290 hooks_manager.go:54] loaded 0 named hooks from 0 hooks.json file(s)
+I1114 09:39:54.589838     268 keyring.go:64] keyringAuth: loaded token, expiry=2026-11-14 10:37:02.059822908 +0300 EAT expired=false
+I1114 09:39:54.589963     267 auth.go:157] ChainedAuth: authenticated via keyring (effective: keyring)
+I1114 09:39:54.589981     267 server_oauth.go:221] applyAuthResult: email=dev.gaitano@gmail.com, authMethod=consumer, quotaProject=
+I1114 09:39:54.589993     267 server_oauth.go:226] OAuth: authenticated successfully as dev.gaitano@gmail.com
+I1114 09:39:54.590030     267 server_oauth.go:235] b.codeAssistClient.AuthProvider (0x13bd1219cff0) is same as b.cliAuth (0x13bd1219cff0)
+W1114 09:39:54.590228     398 cache.go:189] Failed to refresh cache in background: admin controls not applicable
+W1114 09:39:54.593923     442 cache.go:189] Failed to refresh cache in background: admin controls not applicable
+I1114 09:39:54.623735     447 rerender.go:97] Window redraw committed (RerenderAll) for conversation  (epoch 0, items 1) after 1ms
+I1114 09:39:54.623826     447 manager.go:1122] Full redraw completed (RerenderAll) for conversation  (epoch 0, items 1) in 1ms
+I1114 09:39:54.624950     286 encoder_embed.go:85] Installing/updating embedded webm_encoder binary to /home/gaitano/.gemini/antigravity-cli/bin/webm_encoder
+I1114 09:39:55.964240     397 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x4b50f5eaf95b84c7
+I1114 09:39:57.020920     394 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x4c33d3f91999bf5
+I1114 09:39:57.326775     267 model_resolver.go:155] model alias "Gemini 3.6 Flash (Medium)" resolved to "Gemini 3.8 Flash (High)"
+I1114 09:39:57.327868     267 model_config_manager.go:375] Propagating selected model override to backend: label="Gemini 3.8 Flash (High)"
+I1114 09:39:57.327917     214 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I1114 09:39:58.065659     215 experiment_manager.go:66] Starting experiment refresh after login
+W1114 09:39:59.570322     579 code_assist_client.go:464] CCPA routed this account to AICode, but AICode FetchConfig failed, serving CCPA's flags: failed to make AI Code FetchConfig request: Get "https://aicode.googleapis.com/v1alpha:fetchConfig": context deadline exceeded
+I1114 09:39:59.572417     215 http_helpers.go:108] UseAICodeMendel routing switch changed: false -> true
+I1114 09:39:59.572794     215 server.go:5286] [RemoteControl] Mendel flags changed (remote-control-setting-enabled=true, remote-control-proxy-server-url="jetski-webchannel.googleapis.com:443"), re-evaluating the connection
+I1114 09:39:59.573179     215 server.go:5766] [RemoteControl] Session toggle is off, staying disconnected
+I1114 09:39:59.573203     215 server.go:5449] [RemoteControl] Resolved proxyServerURL: ""
+I1114 09:39:59.573217     215 experiment_manager.go:70] Experiments refreshed after login
+I1114 09:39:59.573651     602 manager.go:1633] Reloading system slash commands
+I1114 09:39:59.573928     597 server.go:5766] [RemoteControl] Session toggle is off, staying disconnected
+I1114 09:39:59.573958     597 server.go:5449] [RemoteControl] Resolved proxyServerURL: ""
+I1114 09:39:59.573563     217 manager.go:1726] SetCycleMode called: auto
+W1114 09:39:59.753946     580 aicode_scope.go:88] OAuth token lacks https://www.googleapis.com/auth/aicode; routing AICode traffic to CCPA for 1h0m0s
+I1114 09:39:59.754575     778 auth_manager.go:387] Personal consumer token lacks https://www.googleapis.com/auth/aicode; warning the user to sign in again
+I1114 09:40:00.022795     578 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe1823b6f8869193d
+I1114 09:40:00.372544     256 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1114 09:40:00.372641     256 auth_store.go:199] Using file-based secret storage at /home/gaitano/.config/antigravity/plugin-secrets.json
+I1114 09:40:01.892127     578 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xc571303e07ae2bd7
+I1114 09:40:02.302650     578 model_config_manager.go:375] Propagating selected model override to backend: label="Gemini 3.8 Flash (High)"
+I1114 09:40:02.302791     214 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I1114 09:40:02.302815     215 experiment_manager.go:66] Starting experiment refresh after login
+I1114 09:40:02.303923     758 model_config_manager.go:375] Propagating selected model override to backend: label="Gemini 3.8 Flash (High)"
+I1114 09:40:03.006176     214 quota_manager.go:45] doRefreshQuota: starting reload (force=true)
+I1114 09:40:03.013836     215 server.go:5766] [RemoteControl] Session toggle is off, staying disconnected
+I1114 09:40:03.013875     215 server.go:5449] [RemoteControl] Resolved proxyServerURL: ""
+I1114 09:40:03.013891     215 experiment_manager.go:70] Experiments refreshed after login
+I1114 09:40:03.014142     820 manager.go:1633] Reloading system slash commands
+I1114 09:40:03.014154     215 experiment_manager.go:66] Starting experiment refresh after login
+I1114 09:40:03.042283     820 manager.go:1642] Slash commands unchanged, skipping update
+I1114 09:40:03.469664     757 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x6a3ff8b065d3e06f
+I1114 09:40:04.655492     215 server.go:5766] [RemoteControl] Session toggle is off, staying disconnected
+I1114 09:40:04.655572     215 server.go:5449] [RemoteControl] Resolved proxyServerURL: ""
+I1114 09:40:04.655600     215 experiment_manager.go:70] Experiments refreshed after login
+I1114 09:40:04.655839     940 manager.go:1633] Reloading system slash commands
+I1114 09:40:04.688655     940 manager.go:1642] Slash commands unchanged, skipping update
+I1114 09:45:54.869877    1512 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0xd054905c77afdd35
+I1114 09:45:55.134527    1513 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0xe3bd88de30c242cf
+I1114 09:51:54.791693    1905 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:fetchAvailableModels Trace: 0x70e7a03df35addbd
+I1114 09:51:55.620621    1922 http_helpers.go:709] URL: https://daily-cloudcode-pa.googleapis.com/v1internal:loadCodeAssist Trace: 0x460040a1e5777435
+I1114 09:52:42.012658     116 server.go:4290] Got signal terminated, shutting down
+I1114 09:52:42.012839    1989 server.go:4337] Language server shutting down
+I1114 09:52:42.012906    1989 server.go:4363] Waiting for migrations to complete to prevent partial migration state...
+I1114 09:52:42.014879      13 common.go:472] Terminal gone, shutting down
+E1114 09:52:42.015938     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016022     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016044     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016060     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016078     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016097     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016113     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016128     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016144     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016159     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016175     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016190     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016205     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016221     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016238     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016255     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016271     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016287     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016303     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016318     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016333     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016347     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016362     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016380     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016397     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016411     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.016427     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.017063     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.017095     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.017114     115 file_watcher.go:194] skipping empty or temp file: 
+E1114 09:52:42.017129     115 file_watcher.go:194] skipping empty or temp file: 
+I1114 09:52:42.030221       1 common.go:552] CLI program exited, shutting down
+I1114 09:52:42.036276       1 manager.go:940] CLI store manager shutting down

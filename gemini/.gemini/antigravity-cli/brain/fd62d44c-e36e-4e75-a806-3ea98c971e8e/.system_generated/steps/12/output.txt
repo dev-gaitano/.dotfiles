@@ -1,0 +1,13 @@
+Created At: 2026-11-18T17:35:53+03:00
+Completed At: 2026-11-18T17:35:53+03:00
+Command exited with code 0.
+
+Command output:
+src/scene.js:3:import fragment from "/shader/fragment.glsl";
+src/scene.js:4:import vertex from "/shader/vertex.glsl";
+src/sketch.js:10:    // load shaders
+src/sketch.js:12:    p.loadShader("/shader/vertex.glsl", "/shader/fragment.glsl", function(s) {
+src/sketch.js:14:      p.shader(myShader);
+src/scene.js.bak:3:import fragment from "./shader/fragment.glsl";
+src/scene.js.bak:4:import vertex from "./shader/vertex.glsl";
+index.html:7:    <title>shaders-intro-01</title>

@@ -1,0 +1,13 @@
+Created At: 2026-11-19T23:51:02+03:00
+Completed At: 2026-11-19T23:51:02+03:00
+Command exited with code 0.
+
+Command output:
++-- Desired=Unknown/Install/Remove/Purge/Hold
+|+- Status=Inst/Not-inst/Confs/Unpack/halF-conf/Half-inst/trig-aWait/Trig-pend
+||+ Err?=(none)/Reinst-required (Status,Err: uppercase=bad)
+│││ Name        Version        Architecture Description
+├┼┼─═══════════─══════════════─════════════─═════════════════════════════════════════════════
+ii  gthumb      3:3.12.10-1+b1 amd64        image viewer and browser
+ii  gthumb-data 3:3.12.10-1    all          image viewer and browser - arch-independent files
+/usr/bin/gthumb

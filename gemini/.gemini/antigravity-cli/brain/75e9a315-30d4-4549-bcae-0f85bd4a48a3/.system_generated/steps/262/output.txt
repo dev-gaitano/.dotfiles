@@ -1,0 +1,13 @@
+Created At: 2026-11-19T23:53:51+03:00
+Completed At: 2026-11-19T23:53:52+03:00
+Command exited with code 0.
+
+Command output:
+[Desktop Entry]
+Name=SierraChart_64 (C_SierraChart)
+Exec=env "WINEPREFIX=/home/gaitano/.wine-sierrachart" wine "C:\\\\ProgramData\\\\Microsoft\\\\Windows\\\\Start Menu\\\\Programs\\\\SierraChart_64 (C_SierraChart).lnk"
+Type=Application
+StartupNotify=true
+Comment=SierraChart_64 (C_SierraChart)
+Icon=1A15_SierraChart_64.0
+StartupWMClass=sierrachart_64.exe

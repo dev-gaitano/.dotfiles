@@ -1,0 +1,12 @@
+Created At: 2026-11-19T22:08:57+03:00
+Completed At: 2026-11-19T22:08:58+03:00
+Command exited with code 0.
+
+Command output:
+PRETTY_NAME="Debian GNU/Linux forky/sid"
+NAME="Debian GNU/Linux"
+VERSION_CODENAME=forky
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"

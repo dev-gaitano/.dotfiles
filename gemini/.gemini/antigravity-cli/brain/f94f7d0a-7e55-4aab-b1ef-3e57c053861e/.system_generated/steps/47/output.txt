@@ -1,0 +1,41 @@
+Created At: 2026-11-20T10:30:45+03:00
+Completed At: 2026-11-20T10:30:45+03:00
+Command exited with code 0.
+
+Command output:
+623:---@class HL.LayerRuleSpec
+624----@field above_lock? integer|boolean
+625----@field animation? string
+626----@field blur? boolean
+627----@field blur_popups? boolean
+628----@field dim_around? boolean
+629----@field enabled? boolean
+630----@field ignore_alpha? number|boolean
+631----@field match? table<string, string|boolean>
+632----@field name? string
+633----@field no_anim? boolean
+634----@field no_screen_share? boolean
+635----@field order? integer|boolean
+636----@field xray? boolean
+637-local __HL_LayerRuleSpec = {}
+638-
+639----@class HL.MonitorSpec
+640----@field bitdepth? integer|boolean
+641----@field cm? string
+642----@field disabled? boolean
+643----@field icc? string
+644----@field max_avg_luminance? integer|boolean
+645----@field max_luminance? integer|boolean
+646----@field min_luminance? number|boolean
+647----@field mirror? string
+648----@field mode? string
+649----@field output string
+650----@field position? string
+651----@field reserved? integer|HL.CssGap
+652----@field reserved_area? integer|HL.CssGap
+653----@field scale? string|number
+654----@field sdr_eotf? string
+655----@field sdr_max_luminance? integer|boolean
+656----@field sdr_min_luminance? number|boolean
+657----@field sdrbrightness? number|boolean
+658----@field sdrsaturation? number|boolean
